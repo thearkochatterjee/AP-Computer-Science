@@ -141,8 +141,8 @@ public class matrix {
         ans.setMyc(myc);
         ans = multiply(ans);
         temp = ans.getMatrix();
-        for(int x = 0;x<ans.setMyr();x++){
-            for(int y = 0;y<ans.setMyc();y++){
+        for(int x = 0;x<ans.getMyr();x++){
+            for(int y = 0;y<ans.getMyc();y++){
                 temp[x][y] = determinant(m) * temp[x][y];
             }
         }
@@ -151,7 +151,9 @@ public class matrix {
     }
 
     public double determinant(matrix m){
+        double determinant = 0.0;
 
+        return determinant;
     }
 
     public String toString(){
