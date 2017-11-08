@@ -7,11 +7,11 @@ public class gui {
     private static JFrame gui = new JFrame();
     private static JLabel lblmat1 = new JLabel();
     private static JLabel lblmat2 = new JLabel();
-    private static JTextField txtm1 = new JTextField();
-    private static JTextField txtm2 = new JTextField();
+    private static JTextArea txtm1 = new JTextArea();
+    private static JTextArea txtm2 = new JTextArea();
     private static Container pane = new Container();
     private static JLabel lblans = new JLabel();
-    private static JTextField txtans = new JTextField();
+    private static JTextArea txtans = new JTextArea();
     private static JMenuBar mnubar = new JMenuBar();
     private static JMenu mnufile = new JMenu();
     private static JMenuItem mnuopen = new JMenuItem();
@@ -77,7 +77,11 @@ public class gui {
         lblans.setText("Answers");
         gui.setJMenuBar(mnubar);
         lblmat1.setBounds(20,20,100,20);
-
+        lblmat2.setBounds(150, 20, 100, 20);
+        lblans.setBounds(270,20,100,20);
+        txtm1.setBounds(20,50,100,100);
+        txtm2.setBounds(150,50,100,100);
+        txtans.setBounds(270,50,100,100);
         gui.setVisible(true);
         mnuadd.addActionListener(new add());
         mnusubtract.addActionListener(new subtract());
