@@ -34,6 +34,7 @@ public class gui {
         gui.setTitle("Matrix");
         gui.setSize(500,500);
         gui.getContentPane().add(pane);
+        gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         m1 = new matrix();
         m2 = new matrix();
         pane.add(lblmat1);

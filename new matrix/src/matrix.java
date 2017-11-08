@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -16,7 +17,7 @@ public class matrix {
     }
 
     public matrix(String m){
-        String part[] = m.split("\\n");
+        String part[] = m.split("\n");
         for(int i = 0;i<part.length;i++){
             String elements[] = part[i].split(" ");
             for(int c = 0;c<elements.length;c++){
@@ -88,6 +89,7 @@ public class matrix {
                     temp[x][y] = matrix[x][y] + m.getMatrix()[x][y];
                 }
             }
+            ans.setMatrix(temp);
             ans.setMyc(myc);
             ans.setMyr(myr);
         }
@@ -108,6 +110,7 @@ public class matrix {
                     temp[x][y] = matrix[x][y] - m.getMatrix()[x][y];
                 }
             }
+            ans.setMatrix(temp);
             ans.setMyc(myc);
             ans.setMyr(myr);
         }
@@ -158,7 +161,13 @@ public class matrix {
 
     public String toString(){
         String out = "";
-
+        for(int x = 0;x<myr;x++){
+            out += matrix[x][0];
+            for(int y = 1;y<myc;y++){
+                out += " " + matrix[x][y];
+            }
+            out += "\n";
+        }
         return out;
     }
 }
