@@ -12,26 +12,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="matrix.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="matrix.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="966">
+            <state relative-caret-position="-594">
               <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#matrix#0;class#matrix#0" expanded="false" />
                 <element signature="method#matrix#1;class#matrix#0" expanded="false" />
                 <element signature="method#matrix#2;class#matrix#0" expanded="false" />
+                <element signature="method#add#0;class#matrix#0" expanded="false" />
+                <element signature="method#subtract#0;class#matrix#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gui.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="gui.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/gui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="105" column="48" lean-forward="false" selection-start-line="105" selection-start-column="48" selection-end-line="105" selection-end-column="48" />
+            <state relative-caret-position="240">
+              <caret line="198" column="0" lean-forward="true" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#multiply#0;class#gui#0" expanded="false" />
@@ -41,6 +43,8 @@
                 <element signature="class#random#0;class#gui#0" expanded="false" />
                 <element signature="class#clear#0;class#gui#0" expanded="false" />
                 <element signature="class#quit#0;class#gui#0" expanded="false" />
+                <element signature="e#7790#7791#0" expanded="true" />
+                <element signature="e#7827#7828#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,8 +69,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/Tester.java" />
         <option value="$PROJECT_DIR$/src/TesterWindow.form" />
-        <option value="$PROJECT_DIR$/src/gui.java" />
         <option value="$PROJECT_DIR$/src/matrix.java" />
+        <option value="$PROJECT_DIR$/src/gui.java" />
       </list>
     </option>
   </component>
@@ -294,6 +298,8 @@
             <element signature="method#matrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#matrix#2;class#matrix#0" expanded="false" />
+            <element signature="method#add#0;class#matrix#0" expanded="false" />
+            <element signature="method#subtract#0;class#matrix#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -311,6 +317,8 @@
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
+            <element signature="e#7790#7791#0" expanded="true" />
+            <element signature="e#7827#7828#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -324,6 +332,8 @@
             <element signature="method#matrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#matrix#2;class#matrix#0" expanded="false" />
+            <element signature="method#add#0;class#matrix#0" expanded="false" />
+            <element signature="method#subtract#0;class#matrix#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -341,6 +351,8 @@
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
+            <element signature="e#7790#7791#0" expanded="true" />
+            <element signature="e#7827#7828#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -354,6 +366,8 @@
             <element signature="method#matrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#matrix#2;class#matrix#0" expanded="false" />
+            <element signature="method#add#0;class#matrix#0" expanded="false" />
+            <element signature="method#subtract#0;class#matrix#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -371,6 +385,8 @@
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
+            <element signature="e#7790#7791#0" expanded="true" />
+            <element signature="e#7827#7828#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -384,6 +400,8 @@
             <element signature="method#matrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#matrix#2;class#matrix#0" expanded="false" />
+            <element signature="method#add#0;class#matrix#0" expanded="false" />
+            <element signature="method#subtract#0;class#matrix#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -401,6 +419,8 @@
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
+            <element signature="e#7790#7791#0" expanded="true" />
+            <element signature="e#7827#7828#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -414,6 +434,8 @@
             <element signature="method#matrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#matrix#2;class#matrix#0" expanded="false" />
+            <element signature="method#add#0;class#matrix#0" expanded="false" />
+            <element signature="method#subtract#0;class#matrix#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -431,6 +453,8 @@
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
+            <element signature="e#7790#7791#0" expanded="true" />
+            <element signature="e#7827#7828#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -444,6 +468,8 @@
             <element signature="method#matrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#matrix#2;class#matrix#0" expanded="false" />
+            <element signature="method#add#0;class#matrix#0" expanded="false" />
+            <element signature="method#subtract#0;class#matrix#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -461,6 +487,8 @@
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
+            <element signature="e#7790#7791#0" expanded="true" />
+            <element signature="e#7827#7828#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -474,6 +502,8 @@
             <element signature="method#matrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#matrix#2;class#matrix#0" expanded="false" />
+            <element signature="method#add#0;class#matrix#0" expanded="false" />
+            <element signature="method#subtract#0;class#matrix#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -491,6 +521,8 @@
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
+            <element signature="e#7790#7791#0" expanded="true" />
+            <element signature="e#7827#7828#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -504,6 +536,8 @@
             <element signature="method#matrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#matrix#2;class#matrix#0" expanded="false" />
+            <element signature="method#add#0;class#matrix#0" expanded="false" />
+            <element signature="method#subtract#0;class#matrix#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -521,6 +555,8 @@
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
+            <element signature="e#7790#7791#0" expanded="true" />
+            <element signature="e#7827#7828#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -534,6 +570,8 @@
             <element signature="method#matrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#matrix#2;class#matrix#0" expanded="false" />
+            <element signature="method#add#0;class#matrix#0" expanded="false" />
+            <element signature="method#subtract#0;class#matrix#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -551,6 +589,8 @@
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
+            <element signature="e#7790#7791#0" expanded="true" />
+            <element signature="e#7827#7828#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -564,6 +604,8 @@
             <element signature="method#matrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#matrix#2;class#matrix#0" expanded="false" />
+            <element signature="method#add#0;class#matrix#0" expanded="false" />
+            <element signature="method#subtract#0;class#matrix#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -581,6 +623,8 @@
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
+            <element signature="e#7790#7791#0" expanded="true" />
+            <element signature="e#7827#7828#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -594,6 +638,8 @@
             <element signature="method#matrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#matrix#2;class#matrix#0" expanded="false" />
+            <element signature="method#add#0;class#matrix#0" expanded="false" />
+            <element signature="method#subtract#0;class#matrix#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -602,10 +648,25 @@
     <entry file="file://$PROJECT_DIR$/src/Tester.java" />
     <entry file="file://$PROJECT_DIR$/src/TesterWindow.java" />
     <entry file="file://$PROJECT_DIR$/src/TesterWindow.form" />
+    <entry file="file://$PROJECT_DIR$/src/matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-594">
+          <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#matrix#0;class#matrix#0" expanded="false" />
+            <element signature="method#matrix#1;class#matrix#0" expanded="false" />
+            <element signature="method#matrix#2;class#matrix#0" expanded="false" />
+            <element signature="method#add#0;class#matrix#0" expanded="false" />
+            <element signature="method#subtract#0;class#matrix#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="105" column="48" lean-forward="false" selection-start-line="105" selection-start-column="48" selection-end-line="105" selection-end-column="48" />
+        <state relative-caret-position="240">
+          <caret line="198" column="0" lean-forward="true" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#multiply#0;class#gui#0" expanded="false" />
@@ -615,19 +676,8 @@
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/matrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#matrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#matrix#1;class#matrix#0" expanded="false" />
-            <element signature="method#matrix#2;class#matrix#0" expanded="false" />
+            <element signature="e#7790#7791#0" expanded="true" />
+            <element signature="e#7827#7828#0" expanded="true" />
           </folding>
         </state>
       </provider>

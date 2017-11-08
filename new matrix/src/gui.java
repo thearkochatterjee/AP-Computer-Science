@@ -103,7 +103,12 @@ public class gui {
         public void actionPerformed(ActionEvent e) {
             m1 = new matrix(txtm1.getText());
             m2 = new matrix(txtm2.getText());
-            txtans.setText(m1.add(m2).toString());
+            if(m1.checkadd(m2)){
+                txtans.setText(m1.add(m2).toString());
+            }
+            else{
+                txtans.setText("Error: unable to add these two matrices");
+            }
         }
     }
 
@@ -112,7 +117,12 @@ public class gui {
         public void actionPerformed(ActionEvent e) {
             m1 = new matrix(txtm1.getText());
             m2 = new matrix(txtm2.getText());
-            txtans.setText(m1.subtract(m2).toString());
+            if (m1.checkadd(m2)){
+                txtans.setText(m1.subtract(m2).toString());
+            }
+            else{
+                txtans.setText("Error: unable to subtract these two matrices");
+            }
         }
     }
 
