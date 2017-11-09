@@ -24,6 +24,7 @@ public class gui {
     private static JMenuItem mnudivide = new JMenuItem();
     private static JMenuItem mnusqr = new JMenuItem();
     private static JMenuItem mnucube = new JMenuItem();
+    private static JMenuItem mnuscalarmult = new JMenuItem();
     private static JMenuItem mnuall = new JMenuItem();
     private static JMenu mnuformat = new JMenu();
     private static JMenuItem mnuclear = new JMenuItem();
@@ -54,6 +55,7 @@ public class gui {
         mnucalc.add(mnudivide);
         mnucalc.add(mnusqr);
         mnucalc.add(mnucube);
+        mnucalc.add(mnuscalarmult);
         mnucalc.add(mnuall);
         mnubar.add(mnuformat);
         mnuformat.add(mnuclear);
@@ -69,6 +71,7 @@ public class gui {
         mnudivide.setText("Divide");
         mnusqr.setText("Square");
         mnucube.setText("Cube");
+        mnuscalarmult.setText("Scalar Multiply");
         mnuall.setText("All");
         mnuformat.setText("Format");
         mnuclear.setText("Clear");
@@ -93,6 +96,7 @@ public class gui {
         mnuopen.addActionListener(new open());
         mnusave.addActionListener(new save());
         mnurandom.addActionListener(new random());
+        mnuscalarmult.addActionListener(new scalarmultiply());
         mnuall.addActionListener(new all());
         mnuclear.addActionListener(new clear());
         mnuquit.addActionListener(new quit());
@@ -131,7 +135,12 @@ public class gui {
         public void actionPerformed(ActionEvent e) {
             m1 = new matrix(txtm1.getText());
             m2 = new matrix(txtm2.getText());
-            txtans.setText(m1.multiply(m2).toString());
+            if(m1.checkmult(m2)){
+                txtans.setText(m1.multiply(m2).toString());
+            }
+            else{
+                txtans.setText("Error: unable to multiply these matrices");
+            }
         }
     }
 
@@ -140,7 +149,12 @@ public class gui {
         public void actionPerformed(ActionEvent e) {
             m1 = new matrix(txtm1.getText());
             m2 = new matrix(txtm2.getText());
-            txtans.setText(m1.divide(m2).toString());
+            if(m1.checkdivide(m2)){
+                txtans.setText(m1.divide(m2).toString());
+            }
+            else{
+                txtans.setText("Error: unable to divide this matrix");
+            }
         }
     }
 
@@ -157,6 +171,16 @@ public class gui {
         public void actionPerformed(ActionEvent e) {
             m1 = new matrix(txtm1.getText());
             txtans.setText(m1.multiply(m1.multiply(m1)).toString());
+        }
+    }
+
+    static class scalarmultiply implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            double scale = Double.valueOf(JOptionPane.showInputDialog("What Scalar value would you like to multiply this matrix by?"));
+            m1 = new matrix(txtm1.getText());
+            m2 = new matrix(txtm2.getText());
+            txtans.setText("Matrix 1\n"+m1.scalarmultiply(scale).toString()+"\nMatrix 2\n"+m2.scalarmultiply(scale).toString());
         }
     }
 
@@ -196,7 +220,9 @@ public class gui {
     static class all implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
-
+            m1 = new matrix(txtm1.getText());
+            m2 = new matrix(txtm2.getText());
+            txtans.setText("Add\n"+m1.add(m2).toString()+"\nSubtract\n");
         }
     }
 

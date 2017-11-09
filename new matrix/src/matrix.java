@@ -71,8 +71,8 @@ public class matrix {
         return myr == m.getMyc();
     }
 
-    public boolean checkdivide(){
-        return myr == myc;
+    public boolean checkdivide(matrix m){
+        return m.getMyr()==m.getMyc();
     }
 
     public matrix add(matrix m){
@@ -119,15 +119,25 @@ public class matrix {
 
     public matrix multiply(matrix m){
         matrix ans = new matrix();
+        double temp[][] = new double[100][100];
         if(checkmult(m)){
-
+            for(int i = 0; i < myr; i++) {
+                for (int j = 0; j < m.getMyc(); j++) {
+                    for (int k = 0; k < myc; k++) {
+                        temp[i][j] += matrix[i][k] * m.getMatrix()[k][j];
+                    }
+                }
+            }
         }
+        ans.setMyr(myr);
+        ans.setMyc(myc);
+        ans.setMatrix(temp);
         return ans;
     }
 
     public matrix divide(matrix m){
         matrix ans = new matrix();
-        if(checkdivide()){
+        if(checkdivide(m)){
             ans  = multiply(inverse(m));
         }
         return ans;
@@ -157,6 +167,21 @@ public class matrix {
         double determinant = 0.0;
 
         return determinant;
+    }
+
+    public matrix scalarmultiply(double scalar){
+        double temp[][] = new double[100][100];
+        matrix ans = new matrix();
+        temp = matrix;
+        for(int x = 0;x<myr;x++){
+            for(int y = 0;y<myc;y++){
+                temp[x][y] *= scalar;
+            }
+        }
+        ans.setMatrix(temp);
+        ans.setMyc(myc);
+        ans.setMyr(myr);
+        return ans;
     }
 
     public String toString(){
