@@ -169,6 +169,12 @@ public class matrix {
         return determinant;
     }
 
+    public matrix minors(matrix m){
+        matrix ans = new matrix();
+
+        return ans;
+    }
+
     public matrix scalarmultiply(double scalar){
         double temp[][] = new double[100][100];
         matrix ans = new matrix();
