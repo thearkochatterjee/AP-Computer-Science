@@ -35,6 +35,7 @@ public class matrix {
         for(int x=0;x<myr;x++){
             for(int y = 0;y<myc;y++){
                 matrix[x][y] = Math.abs(max - min)*r.nextDouble() + min;
+                matrix[x][y] = Math.round(matrix[x][y]*100)/100;
             }
         }
     }
@@ -146,27 +147,105 @@ public class matrix {
     public matrix inverse(matrix m){
         matrix ans = new matrix();
         double temp[][] = new double[100][100];
-        for(int i = 0;i<100;i++){
-            temp[i][i] = 1;
+        for(int x = 0;x<100;x++){
+            for(int y = 0;y<100;y++){
+                temp[x][y] = 0.0;
+            }
         }
-        ans.setMatrix(temp);
-        ans.setMyr(myr);
-        ans.setMyc(myc);
-        ans = multiply(ans);
-        temp = ans.getMatrix();
-        for(int x = 0;x<ans.getMyr();x++){
-            for(int y = 0;y<ans.getMyc();y++){
-                temp[x][y] = determinant(m) * temp[x][y];
+//        ans.setMatrix(temp);
+        ans.setMyr(m.getMyr());
+        ans.setMyc(m.getMyc());
+        for(int x = 0;x<m.getMyr();x++){
+            for(int y = 0;y<m.getMyc();y++){
+                temp[x][y] = determinant(m) * flipmatrix(m).getMatrix()[x][y];
             }
         }
         ans.setMatrix(temp);
+//        temp = ans.getMatrix();
+//        for(int x = 0;x<ans.getMyr();x++){
+//            for(int y = 0;y<ans.getMyc();y++){
+//                temp[x][y] = determinant(m) * temp[x][y];
+//            }
+//        }
         return ans;
     }
 
     public double determinant(matrix m){
         double determinant = 0.0;
-
+        if (m.getMyc()==2){
+            determinant = m.getMatrix()[0][0] * m.getMatrix()[1][1] - m.getMatrix()[0][1]*m.getMatrix()[1][0];
+            determinant = 1 / determinant;
+        }
+        else if (m.getMyc()==3){
+            double add = 0.0;
+            double sub = 0.0;
+            double mult[] = new double[3];
+            double temp[][] = new double[5][3];
+            for(int i = 0;i<3;i++){
+                mult[i] = 1.0;
+            }
+            for(int x = 0;x<3;x++){
+                for(int y = 0;y<3;y++){
+                    temp[x][y] = m.getMatrix()[x][y];
+                }
+            }
+            for(int i = 0;i<3;i++){
+                temp[3][i] = m.getMatrix()[0][i];
+                temp[4][i] = m.getMatrix()[1][i];
+            }
+            for(int x = 0;x<3;x++){
+                for(int i = 0;i<3;i++){
+                    mult[x] *= temp[i+x][i];
+                }
+                add += mult[x];
+            }
+            for(int x = 0;x<3;x++){
+                for(int i = 0;i<3;i++){
+                    mult[x] *= temp[i+x][2-i];
+                }
+                sub += mult[x];
+            }
+            determinant = add - sub;
+        }
         return determinant;
+    }
+
+    public matrix flipmatrix(matrix m){
+        matrix ans = new matrix();
+        if (m.getMyc()==2){
+            double temp[][] = new double[2][2];
+            ans.setMyc(m.getMyc());
+            ans.setMyr(m.getMyr());
+            temp[0][0] = m.getMatrix()[1][1];
+            temp[1][0] = m.getMatrix()[1][0] * -1;
+            temp[0][1] = m.getMatrix()[0][1] * -1;
+            temp[1][1] = m.getMatrix()[0][0];
+            ans.setMatrix(temp);
+        }
+        else if(m.getMyc()==3){
+            double temp[][] = new double[5][5];
+            double temp2[][] = new double[3][3];
+            for(int x = 0;x<3;x++){
+                for(int y = 0;y<3;y++){
+                    temp[x][y] = m.getMatrix()[x][y];
+                }
+            }
+            for(int i = 0;i<3;i++){
+                temp[3][i] = m.getMatrix()[0][i];
+                temp[4][i] = m.getMatrix()[1][i];
+            }
+            for(int i = 0;i<5;i++){
+                temp[i][3] = temp[i][0];
+                temp[i][4] = temp[i][1];
+            }
+            for(int x = 1;x<4;x++){
+                for(int i = 1;i<4;i++){
+                    temp2[i-1][x-1] = temp[i][x] * temp[i+1][x+1] - temp[i+1][x] * temp[x+1][i];
+                }
+            }
+            ans.setMatrix(temp2);
+        }
+        return ans;
     }
 
     public matrix scalarmultiply(double scalar){

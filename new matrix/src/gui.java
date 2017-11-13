@@ -2,6 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.*;
+import java.util.ArrayList;
 
 public class gui {
     private static JFrame gui = new JFrame();
@@ -25,6 +27,7 @@ public class gui {
     private static JMenuItem mnusqr = new JMenuItem();
     private static JMenuItem mnucube = new JMenuItem();
     private static JMenuItem mnuscalarmult = new JMenuItem();
+    private static JMenuItem mnuinverse = new JMenuItem();
     private static JMenuItem mnuall = new JMenuItem();
     private static JMenu mnuformat = new JMenu();
     private static JMenuItem mnuclear = new JMenuItem();
@@ -55,6 +58,7 @@ public class gui {
         mnucalc.add(mnudivide);
         mnucalc.add(mnusqr);
         mnucalc.add(mnucube);
+        mnucalc.add(mnuinverse);
         mnucalc.add(mnuscalarmult);
         mnucalc.add(mnuall);
         mnubar.add(mnuformat);
@@ -72,6 +76,7 @@ public class gui {
         mnusqr.setText("Square");
         mnucube.setText("Cube");
         mnuscalarmult.setText("Scalar Multiply");
+        mnuinverse.setText("Inverse");
         mnuall.setText("All");
         mnuformat.setText("Format");
         mnuclear.setText("Clear");
@@ -83,9 +88,9 @@ public class gui {
         lblmat1.setBounds(20,20,100,20);
         lblmat2.setBounds(150, 20, 100, 20);
         lblans.setBounds(270,20,100,20);
-        txtm1.setBounds(20,50,100,100);
-        txtm2.setBounds(150,50,100,100);
-        txtans.setBounds(270,50,100,100);
+        txtm1.setBounds(20,50,100,200);
+        txtm2.setBounds(150,50,100,200);
+        txtans.setBounds(270,50,100,200);
         gui.setVisible(true);
         mnuadd.addActionListener(new add());
         mnusubtract.addActionListener(new subtract());
@@ -162,7 +167,8 @@ public class gui {
         @Override
         public void actionPerformed(ActionEvent e) {
             m1 = new matrix(txtm1.getText());
-            txtans.setText(m1.multiply(m1).toString());
+            m2 = new matrix(txtm2.getText());
+            txtans.setText("Matrix 1\n" + m1.multiply(m1).toString()+"\nMatrix 2\n"+m2.multiply(m2).toString());
         }
     }
 
@@ -170,7 +176,8 @@ public class gui {
         @Override
         public void actionPerformed(ActionEvent e) {
             m1 = new matrix(txtm1.getText());
-            txtans.setText(m1.multiply(m1.multiply(m1)).toString());
+            m2 = new matrix(txtm2.getText());
+            txtans.setText("Matrix 1\n"+m1.multiply(m1.multiply(m1)).toString()+"\nMatrix 2\n"+m2.multiply(m2.multiply(m2)).toString());
         }
     }
 
@@ -187,14 +194,62 @@ public class gui {
     static class open implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
+            String path = "C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science\\matrix1.txt";
+            ArrayList<String> arrin = new ArrayList<String>();
+            double temp[][] = new double[100][100];
+            try(BufferedReader br = new BufferedReader(new FileReader(path))){
+                String line;
+                while((line = br.readLine())!= null){
+                    arrin.add(line);
+                }
+                br.close();
+            } catch (FileNotFoundException e1){
+                e1.printStackTrace();
+            } catch (IOException e1){
+                e1.printStackTrace();
+            }
+            for(int i = 0;i<arrin.size();i++){
 
+            }
+            path = "C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science\\matrix2.txt";
+            arrin = new ArrayList<String>();
+            try(BufferedReader br = new BufferedReader(new FileReader(path))){
+                String line;
+                while((line = br.readLine())!= null){
+                    arrin.add(line);
+                }
+                br.close();
+            } catch (FileNotFoundException e1){
+                e1.printStackTrace();
+            } catch (IOException e1){
+                e1.printStackTrace();
+            }
+            for(int i = 0;i<arrin.size();i++){
+
+            }
         }
     }
 
     static class save implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
+            String path = "C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science\\matrix.txt";
+            try(PrintWriter out = new PrintWriter(path)  ){
+                //for(int i = 0;i<arrhw.size();i++){
+                //    out.println(arrhw.get(i).toString());
+                //}
+                out.close();
+            } catch (FileNotFoundException e1) {
+                e1.printStackTrace();
+            }
+            path = "C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science\\matrix2.txt";
+            try(PrintWriter out = new PrintWriter(path)){
 
+                out.close();
+            }
+            catch (FileNotFoundException e1){
+                e1.printStackTrace();
+            }
         }
     }
 
@@ -241,6 +296,13 @@ public class gui {
         @Override
         public void actionPerformed(ActionEvent e) {
             gui.dispose();
+        }
+    }
+
+    static class inverse implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            
         }
     }
 }
