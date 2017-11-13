@@ -12,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="matrix.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="matrix.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="167" column="15" lean-forward="true" selection-start-line="167" selection-start-column="15" selection-end-line="167" selection-end-column="15" />
+            <state relative-caret-position="245">
+              <caret line="162" column="34" lean-forward="true" selection-start-line="162" selection-start-column="34" selection-end-line="162" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#matrix#0;class#matrix#0" expanded="false" />
@@ -32,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gui.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gui.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="636">
-              <caret line="304" column="12" lean-forward="false" selection-start-line="304" selection-start-column="12" selection-end-line="304" selection-end-column="12" />
+            <state relative-caret-position="423">
+              <caret line="103" column="52" lean-forward="false" selection-start-line="103" selection-start-column="52" selection-end-line="103" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#add#0;class#gui#0" expanded="false" />
@@ -46,7 +46,7 @@
                 <element signature="class#sqr#0;class#gui#0" expanded="false" />
                 <element signature="class#cube#0;class#gui#0" expanded="false" />
                 <element signature="class#scalarmultiply#0;class#gui#0" expanded="false" />
-                <element signature="e#7529#7537#0" expanded="true" />
+                <element signature="e#7582#7590#0" expanded="true" />
                 <element signature="class#random#0;class#gui#0" expanded="false" />
                 <element signature="class#clear#0;class#gui#0" expanded="false" />
                 <element signature="class#quit#0;class#gui#0" expanded="false" />
@@ -74,8 +74,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/Tester.java" />
         <option value="$PROJECT_DIR$/src/TesterWindow.form" />
-        <option value="$PROJECT_DIR$/src/matrix.java" />
         <option value="$PROJECT_DIR$/src/gui.java" />
+        <option value="$PROJECT_DIR$/src/matrix.java" />
       </list>
     </option>
   </component>
@@ -258,7 +258,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873806" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -326,7 +326,7 @@
             <element signature="class#sqr#0;class#gui#0" expanded="false" />
             <element signature="class#cube#0;class#gui#0" expanded="false" />
             <element signature="class#scalarmultiply#0;class#gui#0" expanded="false" />
-            <element signature="e#7529#7537#0" expanded="true" />
+            <element signature="e#7582#7590#0" expanded="true" />
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
@@ -365,7 +365,7 @@
             <element signature="class#sqr#0;class#gui#0" expanded="false" />
             <element signature="class#cube#0;class#gui#0" expanded="false" />
             <element signature="class#scalarmultiply#0;class#gui#0" expanded="false" />
-            <element signature="e#7529#7537#0" expanded="true" />
+            <element signature="e#7582#7590#0" expanded="true" />
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
@@ -404,7 +404,7 @@
             <element signature="class#sqr#0;class#gui#0" expanded="false" />
             <element signature="class#cube#0;class#gui#0" expanded="false" />
             <element signature="class#scalarmultiply#0;class#gui#0" expanded="false" />
-            <element signature="e#7529#7537#0" expanded="true" />
+            <element signature="e#7582#7590#0" expanded="true" />
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
@@ -443,7 +443,7 @@
             <element signature="class#sqr#0;class#gui#0" expanded="false" />
             <element signature="class#cube#0;class#gui#0" expanded="false" />
             <element signature="class#scalarmultiply#0;class#gui#0" expanded="false" />
-            <element signature="e#7529#7537#0" expanded="true" />
+            <element signature="e#7582#7590#0" expanded="true" />
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
@@ -482,7 +482,7 @@
             <element signature="class#sqr#0;class#gui#0" expanded="false" />
             <element signature="class#cube#0;class#gui#0" expanded="false" />
             <element signature="class#scalarmultiply#0;class#gui#0" expanded="false" />
-            <element signature="e#7529#7537#0" expanded="true" />
+            <element signature="e#7582#7590#0" expanded="true" />
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
@@ -521,7 +521,7 @@
             <element signature="class#sqr#0;class#gui#0" expanded="false" />
             <element signature="class#cube#0;class#gui#0" expanded="false" />
             <element signature="class#scalarmultiply#0;class#gui#0" expanded="false" />
-            <element signature="e#7529#7537#0" expanded="true" />
+            <element signature="e#7582#7590#0" expanded="true" />
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
@@ -560,7 +560,7 @@
             <element signature="class#sqr#0;class#gui#0" expanded="false" />
             <element signature="class#cube#0;class#gui#0" expanded="false" />
             <element signature="class#scalarmultiply#0;class#gui#0" expanded="false" />
-            <element signature="e#7529#7537#0" expanded="true" />
+            <element signature="e#7582#7590#0" expanded="true" />
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
@@ -599,7 +599,7 @@
             <element signature="class#sqr#0;class#gui#0" expanded="false" />
             <element signature="class#cube#0;class#gui#0" expanded="false" />
             <element signature="class#scalarmultiply#0;class#gui#0" expanded="false" />
-            <element signature="e#7529#7537#0" expanded="true" />
+            <element signature="e#7582#7590#0" expanded="true" />
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
@@ -638,7 +638,7 @@
             <element signature="class#sqr#0;class#gui#0" expanded="false" />
             <element signature="class#cube#0;class#gui#0" expanded="false" />
             <element signature="class#scalarmultiply#0;class#gui#0" expanded="false" />
-            <element signature="e#7529#7537#0" expanded="true" />
+            <element signature="e#7582#7590#0" expanded="true" />
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
@@ -677,7 +677,7 @@
             <element signature="class#sqr#0;class#gui#0" expanded="false" />
             <element signature="class#cube#0;class#gui#0" expanded="false" />
             <element signature="class#scalarmultiply#0;class#gui#0" expanded="false" />
-            <element signature="e#7529#7537#0" expanded="true" />
+            <element signature="e#7582#7590#0" expanded="true" />
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
@@ -716,7 +716,7 @@
             <element signature="class#sqr#0;class#gui#0" expanded="false" />
             <element signature="class#cube#0;class#gui#0" expanded="false" />
             <element signature="class#scalarmultiply#0;class#gui#0" expanded="false" />
-            <element signature="e#7529#7537#0" expanded="true" />
+            <element signature="e#7582#7590#0" expanded="true" />
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
@@ -755,7 +755,7 @@
             <element signature="class#sqr#0;class#gui#0" expanded="false" />
             <element signature="class#cube#0;class#gui#0" expanded="false" />
             <element signature="class#scalarmultiply#0;class#gui#0" expanded="false" />
-            <element signature="e#7529#7537#0" expanded="true" />
+            <element signature="e#7582#7590#0" expanded="true" />
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
@@ -794,7 +794,7 @@
             <element signature="class#sqr#0;class#gui#0" expanded="false" />
             <element signature="class#cube#0;class#gui#0" expanded="false" />
             <element signature="class#scalarmultiply#0;class#gui#0" expanded="false" />
-            <element signature="e#7529#7537#0" expanded="true" />
+            <element signature="e#7582#7590#0" expanded="true" />
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
@@ -833,7 +833,7 @@
             <element signature="class#sqr#0;class#gui#0" expanded="false" />
             <element signature="class#cube#0;class#gui#0" expanded="false" />
             <element signature="class#scalarmultiply#0;class#gui#0" expanded="false" />
-            <element signature="e#7529#7537#0" expanded="true" />
+            <element signature="e#7582#7590#0" expanded="true" />
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
@@ -872,7 +872,7 @@
             <element signature="class#sqr#0;class#gui#0" expanded="false" />
             <element signature="class#cube#0;class#gui#0" expanded="false" />
             <element signature="class#scalarmultiply#0;class#gui#0" expanded="false" />
-            <element signature="e#7529#7537#0" expanded="true" />
+            <element signature="e#7582#7590#0" expanded="true" />
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
@@ -911,7 +911,7 @@
             <element signature="class#sqr#0;class#gui#0" expanded="false" />
             <element signature="class#cube#0;class#gui#0" expanded="false" />
             <element signature="class#scalarmultiply#0;class#gui#0" expanded="false" />
-            <element signature="e#7529#7537#0" expanded="true" />
+            <element signature="e#7582#7590#0" expanded="true" />
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
@@ -950,7 +950,7 @@
             <element signature="class#sqr#0;class#gui#0" expanded="false" />
             <element signature="class#cube#0;class#gui#0" expanded="false" />
             <element signature="class#scalarmultiply#0;class#gui#0" expanded="false" />
-            <element signature="e#7529#7537#0" expanded="true" />
+            <element signature="e#7582#7590#0" expanded="true" />
             <element signature="class#random#0;class#gui#0" expanded="false" />
             <element signature="class#clear#0;class#gui#0" expanded="false" />
             <element signature="class#quit#0;class#gui#0" expanded="false" />
@@ -980,10 +980,31 @@
     <entry file="file://$PROJECT_DIR$/src/Tester.java" />
     <entry file="file://$PROJECT_DIR$/src/TesterWindow.java" />
     <entry file="file://$PROJECT_DIR$/src/TesterWindow.form" />
+    <entry file="file://$PROJECT_DIR$/src/gui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="103" column="52" lean-forward="false" selection-start-line="103" selection-start-column="52" selection-end-line="103" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#add#0;class#gui#0" expanded="false" />
+            <element signature="class#subtract#0;class#gui#0" expanded="false" />
+            <element signature="class#multiply#0;class#gui#0" expanded="false" />
+            <element signature="class#divide#0;class#gui#0" expanded="false" />
+            <element signature="class#sqr#0;class#gui#0" expanded="false" />
+            <element signature="class#cube#0;class#gui#0" expanded="false" />
+            <element signature="class#scalarmultiply#0;class#gui#0" expanded="false" />
+            <element signature="e#7582#7590#0" expanded="true" />
+            <element signature="class#random#0;class#gui#0" expanded="false" />
+            <element signature="class#clear#0;class#gui#0" expanded="false" />
+            <element signature="class#quit#0;class#gui#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="167" column="15" lean-forward="true" selection-start-line="167" selection-start-column="15" selection-end-line="167" selection-end-column="15" />
+        <state relative-caret-position="245">
+          <caret line="162" column="34" lean-forward="true" selection-start-line="162" selection-start-column="34" selection-end-line="162" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#matrix#0;class#matrix#0" expanded="false" />
@@ -994,27 +1015,6 @@
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#toString#0;class#matrix#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="304" column="12" lean-forward="false" selection-start-line="304" selection-start-column="12" selection-end-line="304" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#add#0;class#gui#0" expanded="false" />
-            <element signature="class#subtract#0;class#gui#0" expanded="false" />
-            <element signature="class#multiply#0;class#gui#0" expanded="false" />
-            <element signature="class#divide#0;class#gui#0" expanded="false" />
-            <element signature="class#sqr#0;class#gui#0" expanded="false" />
-            <element signature="class#cube#0;class#gui#0" expanded="false" />
-            <element signature="class#scalarmultiply#0;class#gui#0" expanded="false" />
-            <element signature="e#7529#7537#0" expanded="true" />
-            <element signature="class#random#0;class#gui#0" expanded="false" />
-            <element signature="class#clear#0;class#gui#0" expanded="false" />
-            <element signature="class#quit#0;class#gui#0" expanded="false" />
           </folding>
         </state>
       </provider>

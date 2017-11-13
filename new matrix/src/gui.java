@@ -101,6 +101,7 @@ public class gui {
         mnuopen.addActionListener(new open());
         mnusave.addActionListener(new save());
         mnurandom.addActionListener(new random());
+        mnuinverse.addActionListener(new inverse());
         mnuscalarmult.addActionListener(new scalarmultiply());
         mnuall.addActionListener(new all());
         mnuclear.addActionListener(new clear());
@@ -302,7 +303,10 @@ public class gui {
     static class inverse implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
-            
+            m1 = new matrix(txtm1.getText());
+            m2 = new matrix(txtm2.getText());
+//            JOptionPane.showMessageDialog(null,m1.determinant(m1));
+            txtans.setText("Matrix 1\n"+m1.inverse(m1).toString()+"\nMatrix 2\n"+m2.inverse(m2).toString());
         }
     }
 }

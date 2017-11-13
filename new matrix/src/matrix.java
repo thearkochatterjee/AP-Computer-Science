@@ -158,6 +158,9 @@ public class matrix {
         for(int x = 0;x<m.getMyr();x++){
             for(int y = 0;y<m.getMyc();y++){
                 temp[x][y] = determinant(m) * flipmatrix(m).getMatrix()[x][y];
+                temp[x][y] *= 100;
+                temp[x][y] = Math.round(temp[x][y]);
+                temp[x][y] /= 100;
             }
         }
         ans.setMatrix(temp);
@@ -177,35 +180,18 @@ public class matrix {
             determinant = 1 / determinant;
         }
         else if (m.getMyc()==3){
-            double add = 0.0;
-            double sub = 0.0;
-            double mult[] = new double[3];
-            double temp[][] = new double[5][3];
-            for(int i = 0;i<3;i++){
-                mult[i] = 1.0;
-            }
-            for(int x = 0;x<3;x++){
-                for(int y = 0;y<3;y++){
-                    temp[x][y] = m.getMatrix()[x][y];
-                }
-            }
-            for(int i = 0;i<3;i++){
-                temp[3][i] = m.getMatrix()[0][i];
-                temp[4][i] = m.getMatrix()[1][i];
-            }
-            for(int x = 0;x<3;x++){
-                for(int i = 0;i<3;i++){
-                    mult[x] *= temp[i+x][i];
-                }
-                add += mult[x];
-            }
-            for(int x = 0;x<3;x++){
-                for(int i = 0;i<3;i++){
-                    mult[x] *= temp[i+x][2-i];
-                }
-                sub += mult[x];
-            }
-            determinant = add - sub;
+            double a, b, c, d, e, f, g, h, i;
+            a = m.getMatrix()[0][0];
+            b = m.getMatrix()[1][0];
+            c = m.getMatrix()[2][0];
+            d = m.getMatrix()[0][1];
+            e = m.getMatrix()[1][1];
+            f = m.getMatrix()[2][1];
+            g = m.getMatrix()[0][2];
+            h = m.getMatrix()[1][2];
+            i = m.getMatrix()[2][2];
+            determinant = (a * e * i) + (b *f *g) + (c *d * h) - (g *e *c) - (h*f*c) - (i*d*b);
+            determinant = 1/determinant;
         }
         return determinant;
     }
@@ -225,24 +211,30 @@ public class matrix {
         else if(m.getMyc()==3){
             double temp[][] = new double[5][5];
             double temp2[][] = new double[3][3];
-            for(int x = 0;x<3;x++){
-                for(int y = 0;y<3;y++){
-                    temp[x][y] = m.getMatrix()[x][y];
-                }
-            }
-            for(int i = 0;i<3;i++){
-                temp[3][i] = m.getMatrix()[0][i];
-                temp[4][i] = m.getMatrix()[1][i];
-            }
-            for(int i = 0;i<5;i++){
-                temp[i][3] = temp[i][0];
-                temp[i][4] = temp[i][1];
-            }
-            for(int x = 1;x<4;x++){
-                for(int i = 1;i<4;i++){
-                    temp2[i-1][x-1] = temp[i][x] * temp[i+1][x+1] - temp[i+1][x] * temp[x+1][i];
-                }
-            }
+            double a, b, c, d, e, f, g, h, u;
+            a = m.getMatrix()[0][0];
+            b = m.getMatrix()[1][0];
+            c = m.getMatrix()[2][0];
+            d = m.getMatrix()[0][1];
+            e = m.getMatrix()[1][1];
+            f = m.getMatrix()[2][1];
+            g = m.getMatrix()[0][2];
+            h = m.getMatrix()[1][2];
+            u = m.getMatrix()[2][2];
+            temp2[0][0] = e * u - h * f;
+            temp2[1][0] = h * c - b * u;
+            temp2[2][0] = b * f - e * c;
+            temp2[0][1] = f * g - u * d;
+            temp2[1][1] = u * a - c * g;
+            temp2[2][1] = c * d - f * a;
+            temp2[0][2] = d * h - g * e;
+            temp2[1][2] = g * b - a * h;
+            temp2[2][2] = a * e - d * b;
+//            for(int x = 0;x<3;x++){
+//                for(int y = 0;y<3;y++){
+//                    JOptionPane.showMessageDialog(null, temp2[x][y]);
+//                }
+//            }
             ans.setMatrix(temp2);
         }
         return ans;
