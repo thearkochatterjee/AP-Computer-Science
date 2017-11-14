@@ -210,7 +210,6 @@ public class matrix {
             ans.setMatrix(temp);
         }
         else if(m.getMyc()==3){
-            double temp[][] = new double[5][5];
             double temp2[][] = new double[3][3];
             double a, b, c, d, e, f, g, h, u;
             a = m.getMatrix()[0][0];
@@ -231,11 +230,6 @@ public class matrix {
             temp2[0][2] = d * h - g * e;
             temp2[1][2] = g * b - a * h;
             temp2[2][2] = a * e - d * b;
-//            for(int x = 0;x<3;x++){
-//                for(int y = 0;y<3;y++){
-//                    JOptionPane.showMessageDialog(null, temp2[x][y]);
-//                }
-//            }
             ans.setMatrix(temp2);
         }
         return ans;
@@ -278,6 +272,7 @@ public class matrix {
             myc = parts.length;
         }
         myr = arrin.size();
+        matrix = temp;
     }
 
     public void savematrix(String path){
@@ -306,5 +301,15 @@ public class matrix {
             out += "\n";
         }
         return out;
+    }
+
+    public static double[][] invert(double a[][]){
+        int n = a.length;
+        double x[][] = new double[n][n];
+        double b[][] = new double[n][n];
+        int index[] = new int[n];
+        for(int i = 0;i<n;i++){
+
+        }
     }
 }

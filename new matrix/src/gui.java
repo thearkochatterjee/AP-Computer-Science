@@ -195,8 +195,8 @@ public class gui {
     static class open implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
-            m1.openmatrix("C:\\Users\\Arko\\Documents\\12th grade\\12th grade\\AP Computer Science\\matrix.txt");
-            m2.openmatrix("C:\\Users\\Arko\\Documents\\12th grade\\12th grade\\AP Computer Science\\matrix2.txt");
+            m1.openmatrix("C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science\\matrix.txt");
+            m2.openmatrix("C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science\\matrix2.txt");
             txtm1.setText(m1.toString());
             txtm2.setText(m2.toString());
         }
