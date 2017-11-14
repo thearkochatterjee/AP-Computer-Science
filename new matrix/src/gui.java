@@ -195,62 +195,18 @@ public class gui {
     static class open implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
-            String path = "C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science\\matrix1.txt";
-            ArrayList<String> arrin = new ArrayList<String>();
-            double temp[][] = new double[100][100];
-            try(BufferedReader br = new BufferedReader(new FileReader(path))){
-                String line;
-                while((line = br.readLine())!= null){
-                    arrin.add(line);
-                }
-                br.close();
-            } catch (FileNotFoundException e1){
-                e1.printStackTrace();
-            } catch (IOException e1){
-                e1.printStackTrace();
-            }
-            for(int i = 0;i<arrin.size();i++){
-
-            }
-            path = "C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science\\matrix2.txt";
-            arrin = new ArrayList<String>();
-            try(BufferedReader br = new BufferedReader(new FileReader(path))){
-                String line;
-                while((line = br.readLine())!= null){
-                    arrin.add(line);
-                }
-                br.close();
-            } catch (FileNotFoundException e1){
-                e1.printStackTrace();
-            } catch (IOException e1){
-                e1.printStackTrace();
-            }
-            for(int i = 0;i<arrin.size();i++){
-
-            }
+            m1.openmatrix("C:\\Users\\Arko\\Documents\\12th grade\\12th grade\\AP Computer Science\\matrix.txt");
+            m2.openmatrix("C:\\Users\\Arko\\Documents\\12th grade\\12th grade\\AP Computer Science\\matrix2.txt");
+            txtm1.setText(m1.toString());
+            txtm2.setText(m2.toString());
         }
     }
 
     static class save implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
-            String path = "C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science\\matrix.txt";
-            try(PrintWriter out = new PrintWriter(path)  ){
-                //for(int i = 0;i<arrhw.size();i++){
-                //    out.println(arrhw.get(i).toString());
-                //}
-                out.close();
-            } catch (FileNotFoundException e1) {
-                e1.printStackTrace();
-            }
-            path = "C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science\\matrix2.txt";
-            try(PrintWriter out = new PrintWriter(path)){
-
-                out.close();
-            }
-            catch (FileNotFoundException e1){
-                e1.printStackTrace();
-            }
+            m1.savematrix("C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science\\matrix.txt");
+            m2.savematrix("C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science\\matrix2.txt");
         }
     }
 

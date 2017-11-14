@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -253,6 +254,46 @@ public class matrix {
         ans.setMyc(myc);
         ans.setMyr(myr);
         return ans;
+    }
+
+    public void openmatrix(String path){
+        ArrayList<String> arrin = new ArrayList<String>();
+        double temp[][] = new double[100][100];
+        try(BufferedReader br = new BufferedReader(new FileReader(path))){
+            String line;
+            while((line = br.readLine())!= null){
+                arrin.add(line);
+            }
+            br.close();
+        } catch (FileNotFoundException e1){
+            e1.printStackTrace();
+        } catch (IOException e1){
+            e1.printStackTrace();
+        }
+        for(int i = 0;i<arrin.size();i++){
+            String parts[] = arrin.get(i).split(" ");
+            for(int x = 0;x<parts.length;x++){
+                temp[i][x] = Double.valueOf(parts[x]);
+            }
+            myc = parts.length;
+        }
+        myr = arrin.size();
+    }
+
+    public void savematrix(String path){
+        try(PrintWriter out = new PrintWriter(path)  ){
+            String tempout = "";
+            for(int i = 0;i<myr;i++){
+                tempout = String.valueOf(matrix[i][0]);
+                for(int x = 1;x<myr;x++){
+                    tempout = tempout + " " + String.valueOf(matrix[i][x]);
+                }
+                out.println(tempout);
+            }
+            out.close();
+        } catch (FileNotFoundException e1) {
+            e1.printStackTrace();
+        }
     }
 
     public String toString(){
