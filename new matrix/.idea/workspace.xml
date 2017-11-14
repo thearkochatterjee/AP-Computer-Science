@@ -15,8 +15,8 @@
       <file leaf-file-name="matrix.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="296" column="32" lean-forward="false" selection-start-line="296" selection-start-column="32" selection-end-line="296" selection-end-column="32" />
+            <state relative-caret-position="345">
+              <caret line="400" column="13" lean-forward="true" selection-start-line="400" selection-start-column="13" selection-end-line="400" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#matrix#0;class#matrix#0" expanded="false" />
@@ -26,7 +26,7 @@
                 <element signature="method#multiply#0;class#matrix#0" expanded="false" />
                 <element signature="method#divide#0;class#matrix#0" expanded="false" />
                 <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-                <element signature="e#7304#7312#0" expanded="true" />
+                <element signature="e#7324#7332#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -326,7 +326,7 @@
             <element signature="method#multiply#0;class#matrix#0" expanded="false" />
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="e#7304#7312#0" expanded="true" />
+            <element signature="e#7324#7332#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -364,7 +364,7 @@
             <element signature="method#multiply#0;class#matrix#0" expanded="false" />
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="e#7304#7312#0" expanded="true" />
+            <element signature="e#7324#7332#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -402,7 +402,7 @@
             <element signature="method#multiply#0;class#matrix#0" expanded="false" />
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="e#7304#7312#0" expanded="true" />
+            <element signature="e#7324#7332#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -440,7 +440,7 @@
             <element signature="method#multiply#0;class#matrix#0" expanded="false" />
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="e#7304#7312#0" expanded="true" />
+            <element signature="e#7324#7332#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -478,7 +478,7 @@
             <element signature="method#multiply#0;class#matrix#0" expanded="false" />
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="e#7304#7312#0" expanded="true" />
+            <element signature="e#7324#7332#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -516,7 +516,7 @@
             <element signature="method#multiply#0;class#matrix#0" expanded="false" />
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="e#7304#7312#0" expanded="true" />
+            <element signature="e#7324#7332#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -554,7 +554,7 @@
             <element signature="method#multiply#0;class#matrix#0" expanded="false" />
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="e#7304#7312#0" expanded="true" />
+            <element signature="e#7324#7332#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -592,7 +592,7 @@
             <element signature="method#multiply#0;class#matrix#0" expanded="false" />
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="e#7304#7312#0" expanded="true" />
+            <element signature="e#7324#7332#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -630,7 +630,7 @@
             <element signature="method#multiply#0;class#matrix#0" expanded="false" />
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="e#7304#7312#0" expanded="true" />
+            <element signature="e#7324#7332#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -668,7 +668,7 @@
             <element signature="method#multiply#0;class#matrix#0" expanded="false" />
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="e#7304#7312#0" expanded="true" />
+            <element signature="e#7324#7332#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -706,7 +706,7 @@
             <element signature="method#multiply#0;class#matrix#0" expanded="false" />
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="e#7304#7312#0" expanded="true" />
+            <element signature="e#7324#7332#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -744,7 +744,7 @@
             <element signature="method#multiply#0;class#matrix#0" expanded="false" />
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="e#7304#7312#0" expanded="true" />
+            <element signature="e#7324#7332#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -782,7 +782,7 @@
             <element signature="method#multiply#0;class#matrix#0" expanded="false" />
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="e#7304#7312#0" expanded="true" />
+            <element signature="e#7324#7332#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -820,7 +820,7 @@
             <element signature="method#multiply#0;class#matrix#0" expanded="false" />
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="e#7304#7312#0" expanded="true" />
+            <element signature="e#7324#7332#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -858,7 +858,7 @@
             <element signature="method#multiply#0;class#matrix#0" expanded="false" />
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="e#7304#7312#0" expanded="true" />
+            <element signature="e#7324#7332#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -896,7 +896,7 @@
             <element signature="method#multiply#0;class#matrix#0" expanded="false" />
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="e#7304#7312#0" expanded="true" />
+            <element signature="e#7324#7332#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -934,7 +934,7 @@
             <element signature="method#multiply#0;class#matrix#0" expanded="false" />
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="e#7304#7312#0" expanded="true" />
+            <element signature="e#7324#7332#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -972,7 +972,7 @@
             <element signature="method#multiply#0;class#matrix#0" expanded="false" />
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="e#7304#7312#0" expanded="true" />
+            <element signature="e#7324#7332#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1010,7 +1010,7 @@
             <element signature="method#multiply#0;class#matrix#0" expanded="false" />
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="e#7304#7312#0" expanded="true" />
+            <element signature="e#7324#7332#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1048,7 +1048,7 @@
             <element signature="method#multiply#0;class#matrix#0" expanded="false" />
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="e#7304#7312#0" expanded="true" />
+            <element signature="e#7324#7332#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1086,7 +1086,7 @@
             <element signature="method#multiply#0;class#matrix#0" expanded="false" />
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="e#7304#7312#0" expanded="true" />
+            <element signature="e#7324#7332#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1124,7 +1124,7 @@
             <element signature="method#multiply#0;class#matrix#0" expanded="false" />
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="e#7304#7312#0" expanded="true" />
+            <element signature="e#7324#7332#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1162,8 +1162,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="296" column="32" lean-forward="false" selection-start-line="296" selection-start-column="32" selection-end-line="296" selection-end-column="32" />
+        <state relative-caret-position="345">
+          <caret line="400" column="13" lean-forward="true" selection-start-line="400" selection-start-column="13" selection-end-line="400" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#matrix#0;class#matrix#0" expanded="false" />
@@ -1173,7 +1173,7 @@
             <element signature="method#multiply#0;class#matrix#0" expanded="false" />
             <element signature="method#divide#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="e#7304#7312#0" expanded="true" />
+            <element signature="e#7324#7332#0" expanded="true" />
           </folding>
         </state>
       </provider>
