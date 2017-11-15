@@ -90,7 +90,7 @@ public class gui {
         lblans.setBounds(270,20,100,20);
         txtm1.setBounds(20,50,100,200);
         txtm2.setBounds(150,50,100,200);
-        txtans.setBounds(270,50,100,200);
+        txtans.setBounds(270,50,200,200);
         gui.setVisible(true);
         mnuadd.addActionListener(new add());
         mnusubtract.addActionListener(new subtract());
@@ -261,8 +261,23 @@ public class gui {
         public void actionPerformed(ActionEvent e) {
             m1 = new matrix(txtm1.getText());
             m2 = new matrix(txtm2.getText());
+//            double temp1[][] = new double[m1.getMyr()][m1.getMyc()];
+//            matrix ans1 = new matrix();
+//            for(int x = 0;x<m1.getMyr();x++){
+//                for(int y = 0;y<m1.getMyc();y++){
+//                    temp1[x][y] = m1.getMatrix()[x][y];
+//                }
+//            }
+//            ans1 = m1;
+//            ans1.setMatrix(m1.invert(temp1));
 //            JOptionPane.showMessageDialog(null,m1.determinant(m1));
-            txtans.setText("Matrix 1\n"+m1.inverse(m1).toString()+"\nMatrix 2\n"+m2.inverse(m2).toString());
+            if(m1.checkinverse(m1)==false || m2.checkinverse(m2)==false){
+                txtans.setText("Cannot take inverse of this.");
+            }
+            else{
+                txtans.setText("Matrix 1\n"+m1.inverse(m1).toString()+"\nMatrix 2\n"+m2.inverse(m2).toString());
+            }
+//            txtans.setText(ans1.toString());
         }
     }
 }

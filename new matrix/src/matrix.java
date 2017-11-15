@@ -182,18 +182,26 @@ public class matrix {
             determinant = 1 / determinant;
         }
         else if (m.getMyc()==3){
-            double a, b, c, d, e, f, g, h, i;
-            a = m.getMatrix()[0][0];
-            b = m.getMatrix()[1][0];
-            c = m.getMatrix()[2][0];
-            d = m.getMatrix()[0][1];
-            e = m.getMatrix()[1][1];
-            f = m.getMatrix()[2][1];
-            g = m.getMatrix()[0][2];
-            h = m.getMatrix()[1][2];
-            i = m.getMatrix()[2][2];
-            determinant = (a * e * i) + (b *f *g) + (c *d * h) - (g *e *c) - (h*f*c) - (i*d*b);
-            determinant = 1/determinant;
+//            double a, b, c, d, e, f, g, h, i;
+//            a = m.getMatrix()[0][0];
+//            b = m.getMatrix()[1][0];
+//            c = m.getMatrix()[2][0];
+//            d = m.getMatrix()[0][1];
+//            e = m.getMatrix()[1][1];
+//            f = m.getMatrix()[2][1];
+//            g = m.getMatrix()[0][2];
+//            h = m.getMatrix()[1][2];
+//            i = m.getMatrix()[2][2];
+//            determinant = (a * e * i) + (b *f *g) + (c *d * h) - (g *e *c) - (h*f*c) - (i*d*b);
+//            determinant = 1/determinant;
+            double detr = 0.0;
+            double deto = 0.0;
+            double detl = 0.0;
+            detr = m.getMatrix()[1][1] * m.getMatrix()[2][2] - (m.getMatrix()[2][1] * m.getMatrix()[1][2]);
+            deto = m.getMatrix()[1][0] * m.getMatrix()[2][2] - (m.getMatrix()[1][2] * m.getMatrix()[2][0]);
+            detl = m.getMatrix()[1][0] * m.getMatrix()[2][1] - (m.getMatrix()[1][1] * m.getMatrix()[2][0]);
+            determinant = (m.getMatrix()[0][0] * detr) - (m.getMatrix()[0][1] * deto) + (m.getMatrix()[0][2] * detl);
+            determinant = 1 / determinant;
         }
         return determinant;
     }
@@ -211,28 +219,107 @@ public class matrix {
             ans.setMatrix(temp);
         }
         else if(m.getMyc()==3){
+//            double temp2[][] = new double[3][3];
+//            double a, b, c, d, e, f, g, h, u;
+//            a = m.getMatrix()[0][0];
+//            b = m.getMatrix()[1][0];
+//            c = m.getMatrix()[2][0];
+//            d = m.getMatrix()[0][1];
+//            e = m.getMatrix()[1][1];
+//            f = m.getMatrix()[2][1];
+//            g = m.getMatrix()[0][2];
+//            h = m.getMatrix()[1][2];
+//            u = m.getMatrix()[2][2];
+//            temp2[0][0] = e * u - h * f;
+//            temp2[1][0] = h * c - b * u;
+//            temp2[2][0] = b * f - e * c;
+//            temp2[0][1] = f * g - u * d;
+//            temp2[1][1] = u * a - c * g;
+//            temp2[2][1] = c * d - f * a;
+//            temp2[0][2] = d * h - g * e;
+//            temp2[1][2] = g * b - a * h;
+//            temp2[2][2] = a * e - d * b;
+//            ans.setMatrix(temp2);
+            matrix minor = new matrix();
+            double temp[][] = new double[3][3];
+            double mtemp[][] = new double[2][2];
             double temp2[][] = new double[3][3];
-            double a, b, c, d, e, f, g, h, u;
-            a = m.getMatrix()[0][0];
-            b = m.getMatrix()[1][0];
-            c = m.getMatrix()[2][0];
-            d = m.getMatrix()[0][1];
-            e = m.getMatrix()[1][1];
-            f = m.getMatrix()[2][1];
-            g = m.getMatrix()[0][2];
-            h = m.getMatrix()[1][2];
-            u = m.getMatrix()[2][2];
-            temp2[0][0] = e * u - h * f;
-            temp2[1][0] = h * c - b * u;
-            temp2[2][0] = b * f - e * c;
-            temp2[0][1] = f * g - u * d;
-            temp2[1][1] = u * a - c * g;
-            temp2[2][1] = c * d - f * a;
-            temp2[0][2] = d * h - g * e;
-            temp2[1][2] = g * b - a * h;
-            temp2[2][2] = a * e - d * b;
+            mtemp[0][0] = m.getMatrix()[1][1];
+            mtemp[0][1] = m.getMatrix()[1][2];
+            mtemp[1][0] = m.getMatrix()[2][1];
+            mtemp[1][1] = m.getMatrix()[2][2];
+            temp[0][0] = matrixinverseadjustment(mtemp);
+
+            mtemp[0][0] = m.getMatrix()[1][0];
+            mtemp[0][1] = m.getMatrix()[1][2];
+            mtemp[1][0] = m.getMatrix()[2][0];
+            mtemp[1][1] = m.getMatrix()[2][2];
+            temp[0][1] = matrixinverseadjustment(mtemp);
+
+            mtemp[0][0] = m.getMatrix()[1][0];
+            mtemp[0][1] = m.getMatrix()[1][1];
+            mtemp[1][0] = m.getMatrix()[2][0];
+            mtemp[1][1] = m.getMatrix()[2][1];
+            temp[0][2] = matrixinverseadjustment(mtemp);
+
+            mtemp[0][0] = m.getMatrix()[0][1];
+            mtemp[0][1] = m.getMatrix()[0][2];
+            mtemp[1][0] = m.getMatrix()[2][1];
+            mtemp[1][1] = m.getMatrix()[2][2];
+            temp[1][0] = matrixinverseadjustment(mtemp);
+
+            mtemp[0][0] = m.getMatrix()[0][0];
+            mtemp[0][1] = m.getMatrix()[0][2];
+            mtemp[1][0] = m.getMatrix()[2][0];
+            mtemp[1][1] = m.getMatrix()[2][2];
+            temp[1][1] = matrixinverseadjustment(mtemp);
+
+            mtemp[0][0] = m.getMatrix()[0][0];
+            mtemp[0][1] = m.getMatrix()[0][1];
+            mtemp[1][0] = m.getMatrix()[2][0];
+            mtemp[1][1] = m.getMatrix()[2][1];
+            temp[1][2] = matrixinverseadjustment(mtemp);
+
+            mtemp[0][0] = m.getMatrix()[0][1];
+            mtemp[0][1] = m.getMatrix()[0][2];
+            mtemp[1][0] = m.getMatrix()[1][1];
+            mtemp[1][1] = m.getMatrix()[1][2];
+            temp[2][0] = matrixinverseadjustment(mtemp);
+
+            mtemp[0][0] = m.getMatrix()[0][0];
+            mtemp[0][1] = m.getMatrix()[0][2];
+            mtemp[1][0] = m.getMatrix()[1][0];
+            mtemp[1][1] = m.getMatrix()[1][2];
+            temp[2][1] = matrixinverseadjustment(mtemp);
+
+            mtemp[0][0] = m.getMatrix()[0][0];
+            mtemp[0][1] = m.getMatrix()[0][1];
+            mtemp[1][0] = m.getMatrix()[1][0];
+            mtemp[1][1] = m.getMatrix()[1][1];
+            temp[2][2] = matrixinverseadjustment(mtemp);
+
+            temp[0][1] = temp[0][1] * -1;
+            temp[1][0] = temp[1][0] * -1;
+            temp[1][2] = temp[1][2] * -1;
+            temp[2][1] = temp[2][1] * -1;
+
+            temp2 = temp;
+            temp2[1][0] = temp[0][1];
+            temp2[0][1] = temp[1][0];
+            temp2[2][0] = temp[0][2];
+            temp2[0][2] = temp[2][0];
+            temp2[2][1] = temp[1][2];
+            temp2[1][2] = temp[2][1];
+            ans.setMyr(3);
+            ans.setMyc(3);
             ans.setMatrix(temp2);
         }
+        return ans;
+    }
+
+    public double matrixinverseadjustment(double a[][]){
+        double ans = 0.0;
+        ans = a[0][0] * a[1][1] - (a[0][1] * a[1][0]);
         return ans;
     }
 
@@ -404,5 +491,9 @@ public class matrix {
             System.out.println();
         }
         input.close();
+    }
+
+    public boolean checkinverse(matrix m){
+        return m.getMyc()==m.getMyr();
     }
 }
