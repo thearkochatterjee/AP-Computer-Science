@@ -120,19 +120,52 @@ public class matrix {
         return ans;
     }
 
+    public double dotproduct(double r[], double c[], int x){
+        double ans = 0.0;
+        for(int i = 0;i<x;i++){
+            ans += r[i]*c[i];
+        }
+        return ans;
+    }
+
+    public double[] getrow(matrix m, int r){
+        double ans[] = new double[100];
+        for(int i  = 0;i<m.getMyr();i++){
+            ans[i] = m.getMatrix()[r][i];
+        }
+        return ans;
+    }
+
+    public double[] getcolumn(matrix m, int c){
+        double ans[] = new double[100];
+        for(int i = 0;i<m.getMyc();i++){
+            ans[i] = m.getMatrix()[i][c];
+        }
+        return ans;
+    }
+
     public matrix multiply(matrix m){
         matrix ans = new matrix();
+        matrix tm = new matrix();
+        tm.setMyc(myc);
+        tm.setMyr(myr);
+        tm.setMatrix(matrix);
         double temp[][] = new double[100][100];
         if(checkmult(m)){
-            for(int i = 0; i < myr; i++) {
-                for (int j = 0; j < m.getMyc(); j++) {
-                    for (int k = 0; k < myc; k++) {
-                        temp[i][j] += matrix[i][k] * m.getMatrix()[k][j];
-                    }
+//            for(int i = 0; i < myr; i++) {
+//                for (int j = 0; j < m.getMyc(); j++) {
+//                    for (int k = 0; k < myc; k++) {
+//                        temp[i][j] += matrix[i][k] * m.getMatrix()[k][j];
+//                    }
+//                }
+//            }
+            for(int r1 = 0;r1<myr;r1++){
+                for(int c2 = 0;c2<m.getMyc();c2++){
+                    temp[c2][r1] = dotproduct(getrow(tm, r1),getcolumn(m, c2),m.getMyc());
                 }
             }
         }
-        ans.setMyr(myr);
+        ans.setMyr(m.getMyr());
         ans.setMyc(myc);
         ans.setMatrix(temp);
         return ans;
@@ -384,7 +417,7 @@ public class matrix {
         for(int x = 0;x<myr;x++){
             out += matrix[x][0];
             for(int y = 1;y<myc;y++){
-                out += " " + matrix[x][y];
+                out += " " + matrix[y][x];
             }
             out += "\n";
         }

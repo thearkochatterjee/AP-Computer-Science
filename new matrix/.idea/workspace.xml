@@ -15,28 +15,25 @@
       <file leaf-file-name="matrix.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="605">
-              <caret line="496" column="38" lean-forward="false" selection-start-line="496" selection-start-column="38" selection-end-line="496" selection-end-column="38" />
+            <state relative-caret-position="1377">
+              <caret line="155" column="23" lean-forward="false" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#matrix#0;class#matrix#0" expanded="false" />
                 <element signature="method#matrix#1;class#matrix#0" expanded="false" />
                 <element signature="method#add#0;class#matrix#0" expanded="false" />
                 <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-                <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+                <element signature="method#divide#0;class#matrix#0" expanded="false" />
+                <element signature="method#inverse#0;class#matrix#0" expanded="false" />
                 <element signature="method#determinant#0;class#matrix#0" expanded="false" />
                 <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
                 <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
                 <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
                 <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-                <element signature="e#11045#11053#0" expanded="true" />
                 <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-                <element signature="method#toString#0;class#matrix#0" expanded="false" />
                 <element signature="method#invert#0;class#matrix#0" expanded="false" />
                 <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
                 <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-                <element signature="e#15697#15698#0" expanded="true" />
-                <element signature="e#15742#15743#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,8 +42,8 @@
       <file leaf-file-name="gui.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/gui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="96" column="53" lean-forward="true" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="53" />
+            <state relative-caret-position="1360">
+              <caret line="102" column="50" lean-forward="true" selection-start-line="102" selection-start-column="50" selection-end-line="102" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#add#0;class#gui#0" expanded="false" />
@@ -89,10 +86,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1358" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -109,6 +106,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,10 +123,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -263,8 +260,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -274,12 +270,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2195122" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21870047" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.075" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.073938504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Google Cloud Storage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -364,20 +360,17 @@
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#add#0;class#matrix#0" expanded="false" />
             <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+            <element signature="method#divide#0;class#matrix#0" expanded="false" />
+            <element signature="method#inverse#0;class#matrix#0" expanded="false" />
             <element signature="method#determinant#0;class#matrix#0" expanded="false" />
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="e#11045#11053#0" expanded="true" />
             <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-            <element signature="e#15697#15698#0" expanded="true" />
-            <element signature="e#15742#15743#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -412,20 +405,17 @@
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#add#0;class#matrix#0" expanded="false" />
             <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+            <element signature="method#divide#0;class#matrix#0" expanded="false" />
+            <element signature="method#inverse#0;class#matrix#0" expanded="false" />
             <element signature="method#determinant#0;class#matrix#0" expanded="false" />
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="e#11045#11053#0" expanded="true" />
             <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-            <element signature="e#15697#15698#0" expanded="true" />
-            <element signature="e#15742#15743#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -460,20 +450,17 @@
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#add#0;class#matrix#0" expanded="false" />
             <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+            <element signature="method#divide#0;class#matrix#0" expanded="false" />
+            <element signature="method#inverse#0;class#matrix#0" expanded="false" />
             <element signature="method#determinant#0;class#matrix#0" expanded="false" />
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="e#11045#11053#0" expanded="true" />
             <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-            <element signature="e#15697#15698#0" expanded="true" />
-            <element signature="e#15742#15743#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -508,20 +495,17 @@
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#add#0;class#matrix#0" expanded="false" />
             <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+            <element signature="method#divide#0;class#matrix#0" expanded="false" />
+            <element signature="method#inverse#0;class#matrix#0" expanded="false" />
             <element signature="method#determinant#0;class#matrix#0" expanded="false" />
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="e#11045#11053#0" expanded="true" />
             <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-            <element signature="e#15697#15698#0" expanded="true" />
-            <element signature="e#15742#15743#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -556,20 +540,17 @@
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#add#0;class#matrix#0" expanded="false" />
             <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+            <element signature="method#divide#0;class#matrix#0" expanded="false" />
+            <element signature="method#inverse#0;class#matrix#0" expanded="false" />
             <element signature="method#determinant#0;class#matrix#0" expanded="false" />
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="e#11045#11053#0" expanded="true" />
             <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-            <element signature="e#15697#15698#0" expanded="true" />
-            <element signature="e#15742#15743#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -604,20 +585,17 @@
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#add#0;class#matrix#0" expanded="false" />
             <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+            <element signature="method#divide#0;class#matrix#0" expanded="false" />
+            <element signature="method#inverse#0;class#matrix#0" expanded="false" />
             <element signature="method#determinant#0;class#matrix#0" expanded="false" />
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="e#11045#11053#0" expanded="true" />
             <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-            <element signature="e#15697#15698#0" expanded="true" />
-            <element signature="e#15742#15743#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -652,20 +630,17 @@
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#add#0;class#matrix#0" expanded="false" />
             <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+            <element signature="method#divide#0;class#matrix#0" expanded="false" />
+            <element signature="method#inverse#0;class#matrix#0" expanded="false" />
             <element signature="method#determinant#0;class#matrix#0" expanded="false" />
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="e#11045#11053#0" expanded="true" />
             <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-            <element signature="e#15697#15698#0" expanded="true" />
-            <element signature="e#15742#15743#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -700,20 +675,17 @@
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#add#0;class#matrix#0" expanded="false" />
             <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+            <element signature="method#divide#0;class#matrix#0" expanded="false" />
+            <element signature="method#inverse#0;class#matrix#0" expanded="false" />
             <element signature="method#determinant#0;class#matrix#0" expanded="false" />
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="e#11045#11053#0" expanded="true" />
             <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-            <element signature="e#15697#15698#0" expanded="true" />
-            <element signature="e#15742#15743#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -748,20 +720,17 @@
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#add#0;class#matrix#0" expanded="false" />
             <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+            <element signature="method#divide#0;class#matrix#0" expanded="false" />
+            <element signature="method#inverse#0;class#matrix#0" expanded="false" />
             <element signature="method#determinant#0;class#matrix#0" expanded="false" />
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="e#11045#11053#0" expanded="true" />
             <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-            <element signature="e#15697#15698#0" expanded="true" />
-            <element signature="e#15742#15743#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -796,20 +765,17 @@
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#add#0;class#matrix#0" expanded="false" />
             <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+            <element signature="method#divide#0;class#matrix#0" expanded="false" />
+            <element signature="method#inverse#0;class#matrix#0" expanded="false" />
             <element signature="method#determinant#0;class#matrix#0" expanded="false" />
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="e#11045#11053#0" expanded="true" />
             <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-            <element signature="e#15697#15698#0" expanded="true" />
-            <element signature="e#15742#15743#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -844,20 +810,17 @@
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#add#0;class#matrix#0" expanded="false" />
             <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+            <element signature="method#divide#0;class#matrix#0" expanded="false" />
+            <element signature="method#inverse#0;class#matrix#0" expanded="false" />
             <element signature="method#determinant#0;class#matrix#0" expanded="false" />
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="e#11045#11053#0" expanded="true" />
             <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-            <element signature="e#15697#15698#0" expanded="true" />
-            <element signature="e#15742#15743#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -892,20 +855,17 @@
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#add#0;class#matrix#0" expanded="false" />
             <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+            <element signature="method#divide#0;class#matrix#0" expanded="false" />
+            <element signature="method#inverse#0;class#matrix#0" expanded="false" />
             <element signature="method#determinant#0;class#matrix#0" expanded="false" />
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="e#11045#11053#0" expanded="true" />
             <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-            <element signature="e#15697#15698#0" expanded="true" />
-            <element signature="e#15742#15743#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -940,20 +900,17 @@
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#add#0;class#matrix#0" expanded="false" />
             <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+            <element signature="method#divide#0;class#matrix#0" expanded="false" />
+            <element signature="method#inverse#0;class#matrix#0" expanded="false" />
             <element signature="method#determinant#0;class#matrix#0" expanded="false" />
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="e#11045#11053#0" expanded="true" />
             <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-            <element signature="e#15697#15698#0" expanded="true" />
-            <element signature="e#15742#15743#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -988,20 +945,17 @@
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#add#0;class#matrix#0" expanded="false" />
             <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+            <element signature="method#divide#0;class#matrix#0" expanded="false" />
+            <element signature="method#inverse#0;class#matrix#0" expanded="false" />
             <element signature="method#determinant#0;class#matrix#0" expanded="false" />
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="e#11045#11053#0" expanded="true" />
             <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-            <element signature="e#15697#15698#0" expanded="true" />
-            <element signature="e#15742#15743#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1036,20 +990,17 @@
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#add#0;class#matrix#0" expanded="false" />
             <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+            <element signature="method#divide#0;class#matrix#0" expanded="false" />
+            <element signature="method#inverse#0;class#matrix#0" expanded="false" />
             <element signature="method#determinant#0;class#matrix#0" expanded="false" />
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="e#11045#11053#0" expanded="true" />
             <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-            <element signature="e#15697#15698#0" expanded="true" />
-            <element signature="e#15742#15743#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1084,20 +1035,17 @@
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#add#0;class#matrix#0" expanded="false" />
             <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+            <element signature="method#divide#0;class#matrix#0" expanded="false" />
+            <element signature="method#inverse#0;class#matrix#0" expanded="false" />
             <element signature="method#determinant#0;class#matrix#0" expanded="false" />
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="e#11045#11053#0" expanded="true" />
             <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-            <element signature="e#15697#15698#0" expanded="true" />
-            <element signature="e#15742#15743#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1132,20 +1080,17 @@
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#add#0;class#matrix#0" expanded="false" />
             <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+            <element signature="method#divide#0;class#matrix#0" expanded="false" />
+            <element signature="method#inverse#0;class#matrix#0" expanded="false" />
             <element signature="method#determinant#0;class#matrix#0" expanded="false" />
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="e#11045#11053#0" expanded="true" />
             <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-            <element signature="e#15697#15698#0" expanded="true" />
-            <element signature="e#15742#15743#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1180,20 +1125,17 @@
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#add#0;class#matrix#0" expanded="false" />
             <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+            <element signature="method#divide#0;class#matrix#0" expanded="false" />
+            <element signature="method#inverse#0;class#matrix#0" expanded="false" />
             <element signature="method#determinant#0;class#matrix#0" expanded="false" />
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="e#11045#11053#0" expanded="true" />
             <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-            <element signature="e#15697#15698#0" expanded="true" />
-            <element signature="e#15742#15743#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1228,20 +1170,17 @@
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#add#0;class#matrix#0" expanded="false" />
             <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+            <element signature="method#divide#0;class#matrix#0" expanded="false" />
+            <element signature="method#inverse#0;class#matrix#0" expanded="false" />
             <element signature="method#determinant#0;class#matrix#0" expanded="false" />
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="e#11045#11053#0" expanded="true" />
             <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-            <element signature="e#15697#15698#0" expanded="true" />
-            <element signature="e#15742#15743#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1276,20 +1215,17 @@
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#add#0;class#matrix#0" expanded="false" />
             <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+            <element signature="method#divide#0;class#matrix#0" expanded="false" />
+            <element signature="method#inverse#0;class#matrix#0" expanded="false" />
             <element signature="method#determinant#0;class#matrix#0" expanded="false" />
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="e#11045#11053#0" expanded="true" />
             <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-            <element signature="e#15697#15698#0" expanded="true" />
-            <element signature="e#15742#15743#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1324,20 +1260,17 @@
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#add#0;class#matrix#0" expanded="false" />
             <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+            <element signature="method#divide#0;class#matrix#0" expanded="false" />
+            <element signature="method#inverse#0;class#matrix#0" expanded="false" />
             <element signature="method#determinant#0;class#matrix#0" expanded="false" />
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="e#11045#11053#0" expanded="true" />
             <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-            <element signature="e#15697#15698#0" expanded="true" />
-            <element signature="e#15742#15743#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1372,20 +1305,17 @@
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#add#0;class#matrix#0" expanded="false" />
             <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+            <element signature="method#divide#0;class#matrix#0" expanded="false" />
+            <element signature="method#inverse#0;class#matrix#0" expanded="false" />
             <element signature="method#determinant#0;class#matrix#0" expanded="false" />
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="e#11045#11053#0" expanded="true" />
             <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-            <element signature="e#15697#15698#0" expanded="true" />
-            <element signature="e#15742#15743#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1403,36 +1333,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="496" column="38" lean-forward="false" selection-start-line="496" selection-start-column="38" selection-end-line="496" selection-end-column="38" />
+        <state relative-caret-position="1377">
+          <caret line="155" column="23" lean-forward="false" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#matrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrix#1;class#matrix#0" expanded="false" />
             <element signature="method#add#0;class#matrix#0" expanded="false" />
             <element signature="method#subtract#0;class#matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#matrix#0" expanded="false" />
+            <element signature="method#divide#0;class#matrix#0" expanded="false" />
+            <element signature="method#inverse#0;class#matrix#0" expanded="false" />
             <element signature="method#determinant#0;class#matrix#0" expanded="false" />
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
             <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="e#11045#11053#0" expanded="true" />
             <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-            <element signature="e#15697#15698#0" expanded="true" />
-            <element signature="e#15742#15743#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="96" column="53" lean-forward="true" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="53" />
+        <state relative-caret-position="1360">
+          <caret line="102" column="50" lean-forward="true" selection-start-line="102" selection-start-column="50" selection-end-line="102" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#add#0;class#gui#0" expanded="false" />

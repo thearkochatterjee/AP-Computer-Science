@@ -90,7 +90,7 @@ public class gui {
         lblans.setBounds(270,20,100,20);
         txtm1.setBounds(20,50,100,200);
         txtm2.setBounds(150,50,100,200);
-        txtans.setBounds(270,50,200,200);
+        txtans.setBounds(270,50,200,250);
         gui.setVisible(true);
         mnuadd.addActionListener(new add());
         mnusubtract.addActionListener(new subtract());
@@ -276,6 +276,7 @@ public class gui {
             }
             else{
                 txtans.setText("Matrix 1\n"+m1.inverse(m1).toString()+"\nMatrix 2\n"+m2.inverse(m2).toString());
+                txtans.setText(txtans.getText() + "\nDeterminants\n"+(1/m1.determinant(m1))+"\n"+(1/m2.determinant(m2)));
             }
 //            txtans.setText(ans1.toString());
         }
