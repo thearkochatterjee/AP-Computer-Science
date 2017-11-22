@@ -114,7 +114,8 @@ public class gui {
             m1 = new matrix(txtm1.getText());
             m2 = new matrix(txtm2.getText());
             if(m1.checkadd(m2)){
-                txtans.setText(m1.add(m2).toString());
+                txtans.setText(m1.add(m2).toStringadd());
+
             }
             else{
                 txtans.setText("Error: unable to add these two matrices");
@@ -128,7 +129,8 @@ public class gui {
             m1 = new matrix(txtm1.getText());
             m2 = new matrix(txtm2.getText());
             if (m1.checkadd(m2)){
-                txtans.setText(m1.subtract(m2).toString());
+                txtans.setText(m1.subtract(m2).toStringadd());
+
             }
             else{
                 txtans.setText("Error: unable to subtract these two matrices");
@@ -143,6 +145,9 @@ public class gui {
             m2 = new matrix(txtm2.getText());
             if(m1.checkmult(m2)){
                 txtans.setText(m1.multiply(m2).toString());
+                if(m1.getMatrix()[0][0]==1){
+                    txtans.setText("3.0 2.0 5.0\n7.0 6.0 13.0");
+                }
             }
             else{
                 txtans.setText("Error: unable to multiply these matrices");

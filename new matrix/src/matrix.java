@@ -424,6 +424,19 @@ public class matrix {
         return out;
     }
 
+
+    public String toStringadd(){
+        String out = "";
+        for(int x = 0;x<myr-1;x++){
+            out += matrix[x][0];
+            for(int y = 1;y<myc+1;y++){
+                out += " " + matrix[x][y];
+            }
+            out += "\n";
+        }
+        return out;
+    }
+
     public static double[][] invert(double a[][]){
         int n = a.length;
         double x[][] = new double[n][n];
