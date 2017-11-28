@@ -1,7 +1,11 @@
+import javax.swing.*;
+
 public class Amorttable {
     double purchaseprice, totalinterest;
     double remaining[] = new double[100000];
     double annualinterestrate = 0.0;
+    double amountofprincipal[] = new double[100000];
+    double arrinterest[] = new double[100000];
     int nummonths = 0;
 
     public Amorttable(){
@@ -40,9 +44,18 @@ public class Amorttable {
         return nummonths;
     }
 
+    public double[] getAmountofprincipal() {
+        return amountofprincipal;
+    }
+
+    public double[] getArrinterest() {
+        return arrinterest;
+    }
+
     public void everything(){
-        double left = purchaseprice;
+        double left = 0.0;
         double interest = 0.0;
+        left = purchaseprice;
         remaining[0] = left;
         do{
             if(nummonths%12==0){
@@ -54,14 +67,11 @@ public class Amorttable {
             }
             nummonths++;
             left = left - payment();
+            //JOptionPane.showMessageDialog(null,left);
             remaining[nummonths] = left;
-        }while (left<=0.0);
-    }
-
-    public double[] amountofprincipal(){
-        double ans[] = new double[amountofmonths()];
-
-        return ans;
+            amountofprincipal[nummonths] = payment() - interest;
+            arrinterest[nummonths] = interest;
+        }while (left>=0.0);
     }
 
     public double payment(){
@@ -73,6 +83,16 @@ public class Amorttable {
     public double downpayment(){
         double ans = 0.0;
         ans = 0.1 * purchaseprice;
+        return ans;
+    }
+
+    public double[] roundvalues(double values[]){
+        double ans[] = new double[values.length];
+        for(int i = 0;i<values.length;i++){
+            ans[i] = values[i] * 100;
+            ans[i] = Math.round(ans[i]);
+            ans[i] = ans[i]/100;
+        }
         return ans;
     }
 }
