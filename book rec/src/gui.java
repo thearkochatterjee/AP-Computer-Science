@@ -13,12 +13,17 @@ public class gui {
     private static JMenuItem mnuaddreader = new JMenuItem();
     private static ArrayList<Book> arrallbooks = new ArrayList<Book>();
     private static ArrayList<Reader> arrallreaders = new ArrayList<Reader>();
+    private static DefaultListModel dlm = new DefaultListModel();
+    private static JList lstallreaders = new JList();
 
     public void main(String args[]){
         gui.setTitle("Book Rec");
         gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         gui.getContentPane().add(pane);
-
+        mnubar.add(mnufile);
+        mnufile.add(mnuaddreader);
+        mnufile.add(mnuaddbook);
+        gui.setJMenuBar(mnubar);
         gui.setVisible(true);
         mnuaddbook.addActionListener(new addbook());
         mnuaddreader.addActionListener(new addreader());

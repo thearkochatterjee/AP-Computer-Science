@@ -17,6 +17,7 @@ public class GUITester {
         mnubar.add(mnucalculate);
         mnucalculate.add(mnucalc);
         gui.setJMenuBar(mnubar);
+        gui.setVisible(true);
         mnucalc.addActionListener(new calc());
     }
 
