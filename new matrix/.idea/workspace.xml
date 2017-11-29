@@ -12,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="matrix.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="matrix.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="430" column="29" lean-forward="false" selection-start-line="430" selection-start-column="29" selection-end-line="430" selection-end-column="29" />
+            <state relative-caret-position="175">
+              <caret line="396" column="5" lean-forward="true" selection-start-line="396" selection-start-column="5" selection-end-line="396" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#matrix#0;class#matrix#0" expanded="false" />
@@ -29,8 +29,6 @@
                 <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
                 <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
                 <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-                <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-                <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
                 <element signature="method#invert#0;class#matrix#0" expanded="false" />
                 <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
                 <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
@@ -39,10 +37,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gui.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gui.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1309">
+            <state relative-caret-position="2079">
               <caret line="148" column="64" lean-forward="false" selection-start-line="148" selection-start-column="64" selection-end-line="148" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -103,10 +101,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -123,6 +120,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -265,7 +263,6 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -288,6 +285,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -364,8 +362,6 @@
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
@@ -406,8 +402,6 @@
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
@@ -448,8 +442,6 @@
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
@@ -490,8 +482,6 @@
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
@@ -532,8 +522,6 @@
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
@@ -574,8 +562,6 @@
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
@@ -616,8 +602,6 @@
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
@@ -658,8 +642,6 @@
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
@@ -700,8 +682,6 @@
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
@@ -742,8 +722,6 @@
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
@@ -784,8 +762,6 @@
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
@@ -826,8 +802,6 @@
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
@@ -868,8 +842,6 @@
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
@@ -910,8 +882,6 @@
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
@@ -952,8 +922,6 @@
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
@@ -994,8 +962,6 @@
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
@@ -1036,8 +1002,6 @@
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
@@ -1078,8 +1042,6 @@
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
@@ -1120,8 +1082,6 @@
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
@@ -1162,8 +1122,6 @@
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
@@ -1204,8 +1162,6 @@
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
@@ -1246,8 +1202,6 @@
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
@@ -1266,10 +1220,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2079">
+          <caret line="148" column="64" lean-forward="false" selection-start-line="148" selection-start-column="64" selection-end-line="148" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#divide#0;class#gui#0" expanded="false" />
+            <element signature="class#sqr#0;class#gui#0" expanded="false" />
+            <element signature="class#cube#0;class#gui#0" expanded="false" />
+            <element signature="class#scalarmultiply#0;class#gui#0" expanded="false" />
+            <element signature="class#random#0;class#gui#0" expanded="false" />
+            <element signature="class#clear#0;class#gui#0" expanded="false" />
+            <element signature="class#quit#0;class#gui#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="430" column="29" lean-forward="false" selection-start-line="430" selection-start-column="29" selection-end-line="430" selection-end-column="29" />
+        <state relative-caret-position="175">
+          <caret line="396" column="5" lean-forward="true" selection-start-line="396" selection-start-column="5" selection-end-line="396" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#matrix#0;class#matrix#0" expanded="false" />
@@ -1282,28 +1253,9 @@
             <element signature="method#flipmatrix#0;class#matrix#0" expanded="false" />
             <element signature="method#matrixinverseadjustment#0;class#matrix#0" expanded="false" />
             <element signature="method#scalarmultiply#0;class#matrix#0" expanded="false" />
-            <element signature="method#openmatrix#0;class#matrix#0" expanded="false" />
-            <element signature="method#savematrix#0;class#matrix#0" expanded="false" />
             <element signature="method#invert#0;class#matrix#0" expanded="false" />
             <element signature="method#gaussian#0;class#matrix#0" expanded="false" />
             <element signature="method#usinginverse#0;class#matrix#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="148" column="64" lean-forward="false" selection-start-line="148" selection-start-column="64" selection-end-line="148" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#divide#0;class#gui#0" expanded="false" />
-            <element signature="class#sqr#0;class#gui#0" expanded="false" />
-            <element signature="class#cube#0;class#gui#0" expanded="false" />
-            <element signature="class#scalarmultiply#0;class#gui#0" expanded="false" />
-            <element signature="class#random#0;class#gui#0" expanded="false" />
-            <element signature="class#clear#0;class#gui#0" expanded="false" />
-            <element signature="class#quit#0;class#gui#0" expanded="false" />
           </folding>
         </state>
       </provider>
