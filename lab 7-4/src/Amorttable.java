@@ -58,13 +58,14 @@ public class Amorttable {
         left = purchaseprice - downpayment();
         remaining[0] = left;
         do{
-            if(nummonths%12==0){
-                if(nummonths!=0){
-                    interest = left * (1 + annualinterestrate);
-                    totalinterest = totalinterest + interest;
-                    left = left + interest;
-                }
-            }
+//            if(nummonths%12==0){
+//                if(nummonths!=0){
+//
+//                }
+//            }
+            interest = left * (annualinterestrate/12);
+            totalinterest = totalinterest + interest;
+            left = left + interest;
             nummonths++;
             left = left - payment();
             //JOptionPane.showMessageDialog(null,left);

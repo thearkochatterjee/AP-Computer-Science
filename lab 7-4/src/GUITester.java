@@ -70,7 +70,12 @@ public class GUITester {
                     remain[i] = 0.0;
                 }
                 System.out.format("%6d %20.2f %12.2f %10.2f %10.2f %10.2f%n", i, ctbalence[i], interest[i], pricipal[i], payment, remain[i]);
-                txtout.setText(txtout.getText()+String.format("%6s %20s %12s %10s %10s %10s%n", i, ctbalence[i], interest[i], pricipal[i], payment, remain[i]));
+                if(i<10){
+                    txtout.setText(txtout.getText()+String.format("%6d %30.2f %12.2f %10.2f %10.2f %10.2f%n", i, ctbalence[i], interest[i], pricipal[i], payment, remain[i]));
+                }
+                else{
+                    txtout.setText(txtout.getText()+String.format("%5d %30.2f %12.2f %10.2f %10.2f %10.2f%n", i, ctbalence[i], interest[i], pricipal[i], payment, remain[i]));
+                }
             }
         }
     }
