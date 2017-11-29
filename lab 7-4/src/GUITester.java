@@ -15,8 +15,8 @@ public class GUITester {
 
     public static void main(String args[]){
         gui.setTitle("Lab 7.4");
-        gui.setSize(500,500);
-        txtout.setBounds(20,20,400,400);
+        gui.setSize(600,500);
+        txtout.setBounds(20,20,560,400);
         scrout.setViewportView(txtout);
         gui.getContentPane().add(pane);
         gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -26,7 +26,7 @@ public class GUITester {
         mnucalculate.setText("Calculations");
         mnucalc.setText("Calculate");
         pane.add(scrout);
-        scrout.setBounds(20,20,400,400);
+        scrout.setBounds(20,20,560,400);
         gui.setVisible(true);
         mnucalc.addActionListener(new calc());
     }
@@ -62,14 +62,15 @@ public class GUITester {
             for(int i = 1;i<remain.length-1;i++){
                 ctbalence[i] = remain[i-1];
             }
-            txtout.setText("Month Number | Current Balance | Interest | Principal | Payment | Remaining");
+            txtout.setText("Month Number | Current Balance | Interest | Principal | Payment | Remaining\n");
             System.out.println("Month Number | Current Balance | Interest | Principal | Payment | Remaining");
-            remain[table.getNummonths()] = 0.0;
             for(int i = 1;i<table.getNummonths()+1;i++){
+                if(i==table.getNummonths()){
+                    payment = remain[i-1];
+                    remain[i] = 0.0;
+                }
                 System.out.format("%6d %20.2f %12.2f %10.2f %10.2f %10.2f%n", i, ctbalence[i], interest[i], pricipal[i], payment, remain[i]);
-            }
-            for(int i = 0;i<table.getNummonths()+1;i++){
-                txtout.setText(txtout.getText()+String.format("%6d %20.2f %12.2f %10.2f %10.2f %10.2f%n", i, ctbalence[i], interest[i], pricipal[i], payment, remain[i]));
+                txtout.setText(txtout.getText()+String.format("%6s %20s %12s %10s %10s %10s%n", i, ctbalence[i], interest[i], pricipal[i], payment, remain[i]));
             }
         }
     }

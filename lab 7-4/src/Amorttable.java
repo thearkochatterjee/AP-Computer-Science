@@ -55,7 +55,7 @@ public class Amorttable {
     public void everything(){
         double left = 0.0;
         double interest = 0.0;
-        left = purchaseprice;
+        left = purchaseprice - downpayment();
         remaining[0] = left;
         do{
             if(nummonths%12==0){
