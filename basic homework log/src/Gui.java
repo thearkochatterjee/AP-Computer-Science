@@ -26,9 +26,10 @@ public class Gui {
 
     public static void main(String args[]){
         gui.setTitle("Basic Homework Log");
-        gui.setSize(500,500);
+        gui.setSize(500,600);
         gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         gui.getContentPane().add(pane);
+        openfile();
         mnubar.add(mnufile);
         mnufile.add(mnuaddhomework);
         mnufile.add(mnudelete);
@@ -40,6 +41,7 @@ public class Gui {
         mnuopen.setText("Open");
         mnuaddhomework.setText("Add Assignment");
         mnudelete.setText("Delete Assignment");
+        lsthw.setModel(dlm);
         lblduedate.setText("Due Date");
         lblname.setText("Name of Assignment");
         lblsubject.setText("Subject");
@@ -50,6 +52,14 @@ public class Gui {
         pane.add(lblduedate);
         pane.add(lblname);
         pane.add(lblsubject);
+        pane.add(lsthw);
+        lblname.setBounds(20,20,100,30);
+        lblsubject.setBounds(20,70,100,30);
+        lblduedate.setBounds(20,130,100,30);
+        txtname.setBounds(140,20,100,30);
+        txtsubject.setBounds(140,70,100,30);
+        txtduedate.setBounds(140,130,100,30);
+        lsthw.setBounds(20,180,200,400);
         gui.setVisible(true);
         mnuaddhomework.addActionListener(new addassignment());
         mnudelete.addActionListener(new deleteassignment());
@@ -93,21 +103,25 @@ public class Gui {
     static class open implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
-            ArrayList<String> arrin = new ArrayList<String>();
-            try(BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Arko\\Documents\\homework start up log\\homework.txt"))){
-                String line;
-                while((line = br.readLine())!= null){
-                    arrin.add(line);
-                }
-                br.close();
-            } catch (FileNotFoundException e1){
-                e1.printStackTrace();
-            } catch (IOException e1){
-                e1.printStackTrace();
+            openfile();
+        }
+    }
+
+    private static void openfile(){}{
+        ArrayList<String> arrin = new ArrayList<String>();
+        try(BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Arko\\Documents\\homework start up log\\homework.txt"))){
+            String line;
+            while((line = br.readLine())!= null){
+                arrin.add(line);
             }
-            for(int i = 0;i<arrin.size();i++){
-                arrassignments.add(new Assignment(arrin.get(i)));
-            }
+            br.close();
+        } catch (FileNotFoundException e1){
+            e1.printStackTrace();
+        } catch (IOException e1){
+            e1.printStackTrace();
+        }
+        for(int i = 0;i<arrin.size();i++){
+            arrassignments.add(new Assignment(arrin.get(i)));
         }
     }
 }
