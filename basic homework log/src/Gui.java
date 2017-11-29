@@ -14,9 +14,31 @@ public class Gui {
     private static JMenuItem mnusave = new JMenuItem();
     private static JMenuItem mnuopen = new JMenuItem();
     private static ArrayList<Assignment> arrassignments = new ArrayList<Assignment>();
+    private static JList lsthw = new JList();
+    private static DefaultListModel dlm = new DefaultListModel();
 
     public static void main(String args[]){
-
+        gui.setTitle("Basic Homework Log");
+        gui.setSize(500,500);
+        gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        gui.getContentPane().add(pane);
+        mnubar.add(mnufile);
+        mnufile.add(mnuaddhomework);
+        mnufile.add(mnudelete);
+        mnufile.add(mnusave);
+        mnufile.add(mnuopen);
+        gui.setJMenuBar(mnubar);
+        mnufile.setText("File");
+        mnusave.setText("Save");
+        mnuopen.setText("Open");
+        mnuaddhomework.setText("Add Assignment");
+        mnudelete.setText("Delete Assignment");
+        pane.add(lsthw);
+        gui.setVisible(true);
+        mnuaddhomework.addActionListener(new addassignment());
+        mnudelete.addActionListener(new deleteassignment());
+        mnusave.addActionListener(new save());
+        mnuopen.addActionListener(new open());
     }
 
     static class addassignment implements ActionListener{
@@ -48,7 +70,7 @@ public class Gui {
     static class open implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
-            
+
         }
     }
 }

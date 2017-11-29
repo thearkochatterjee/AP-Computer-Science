@@ -17,6 +17,14 @@ public class Assignment {
         this.complete = complete;
     }
 
+    public Assignment(String line){
+        String parts[] = line.split(",");
+        name = parts[0];
+        subject = parts[1];
+        date = new Duedate(parts[2]);
+        complete = parts[3].equals("1");
+    }
+
     public String getName() {
         return name;
     }
@@ -51,7 +59,12 @@ public class Assignment {
 
     public String toString() {
         String out = "";
-
+        if(complete){
+            out = name + "," + subject + "," + date.toString() + "," + "1";
+        }
+        else{
+            out = name + "," + subject + "," + date.toString() + "," + "0";
+        }
         return out;
     }
 }
