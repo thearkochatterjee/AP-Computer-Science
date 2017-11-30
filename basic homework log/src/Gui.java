@@ -1,7 +1,11 @@
 import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.io.*;
 import java.util.ArrayList;
 
@@ -53,18 +57,50 @@ public class Gui {
         pane.add(lblname);
         pane.add(lblsubject);
         pane.add(lsthw);
+        gui.addKeyListener(new key());
         lblname.setBounds(20,20,100,30);
         lblsubject.setBounds(20,70,100,30);
         lblduedate.setBounds(20,130,100,30);
-        txtname.setBounds(140,20,100,30);
-        txtsubject.setBounds(140,70,100,30);
-        txtduedate.setBounds(140,130,100,30);
-        lsthw.setBounds(20,180,200,400);
+        txtname.setBounds(140,20,200,30);
+        txtsubject.setBounds(140,70,200,30);
+        txtduedate.setBounds(140,130,200,30);
+        lsthw.setBounds(20,180,400,400);
         gui.setVisible(true);
         mnuaddhomework.addActionListener(new addassignment());
         mnudelete.addActionListener(new deleteassignment());
         mnusave.addActionListener(new save());
         mnuopen.addActionListener(new open());
+        lsthw.addListSelectionListener(new index());
+    }
+
+    static class key implements KeyListener{
+        @Override
+        public void keyPressed(KeyEvent e) {
+            if (e.getKeyCode()==KeyEvent.VK_ENTER){
+                arrassignments.get(lsthw.getSelectedIndex()).setName(txtname.getText());
+                arrassignments.get(lsthw.getSelectedIndex()).setDate(new Duedate(txtduedate.getText()));
+                arrassignments.get(lsthw.getSelectedIndex()).setSubject(txtsubject.getText());
+            }
+        }
+
+        @Override
+        public void keyReleased(KeyEvent e) {
+
+        }
+
+        @Override
+        public void keyTyped(KeyEvent e) {
+
+        }
+    }
+
+    static class index implements ListSelectionListener{
+        @Override
+        public void valueChanged(ListSelectionEvent e) {
+            txtname.setText(arrassignments.get(lsthw.getSelectedIndex()).getName());
+            txtduedate.setText(arrassignments.get(lsthw.getSelectedIndex()).getDate().toString());
+            txtsubject.setText(arrassignments.get(lsthw.getSelectedIndex()).getSubject());
+        }
     }
 
     static class addassignment implements ActionListener{
@@ -76,6 +112,7 @@ public class Gui {
             temp.setDate(new Duedate(JOptionPane.showInputDialog("What is the due date?")));
             temp.setComplete(false);
             arrassignments.add(temp);
+            dlm.addElement(temp.getName());
         }
     }
 
@@ -107,8 +144,9 @@ public class Gui {
         }
     }
 
-    private static void openfile(){}{
+    public static void openfile(){
         ArrayList<String> arrin = new ArrayList<String>();
+        dlm.clear();
         try(BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Arko\\Documents\\homework start up log\\homework.txt"))){
             String line;
             while((line = br.readLine())!= null){
@@ -122,6 +160,7 @@ public class Gui {
         }
         for(int i = 0;i<arrin.size();i++){
             arrassignments.add(new Assignment(arrin.get(i)));
+            dlm.addElement(arrassignments.get(i).getName());
         }
     }
 }

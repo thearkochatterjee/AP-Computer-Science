@@ -44,6 +44,12 @@ public class Duedate {
         this.day = day;
     }
 
+    public boolean before(Duedate compare){
+        boolean ans = false;
+
+        return ans;
+    }
+
     public String toString() {
         String out = "";
         out = month + "/" + day + "/" + year;
