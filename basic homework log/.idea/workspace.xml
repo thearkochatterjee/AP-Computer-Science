@@ -17,17 +17,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Gui.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Gui.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Gui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="59" column="38" lean-forward="true" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+            <state relative-caret-position="1088">
+              <caret line="89" column="44" lean-forward="false" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#844#856#0" expanded="true" />
-                <element signature="e#5404#5405#0" expanded="true" />
-                <element signature="e#5438#5439#0" expanded="true" />
-                <element signature="e#5529#5537#0" expanded="true" />
+                <element signature="e#6848#6856#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -36,8 +34,8 @@
       <file leaf-file-name="Assignment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Assignment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="94" column="24" lean-forward="true" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
+            <state relative-caret-position="1122">
+              <caret line="94" column="24" lean-forward="false" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -46,12 +44,13 @@
       <file leaf-file-name="Duedate.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Duedate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="46" column="42" lean-forward="false" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
               <folding>
                 <element signature="method#Duedate#0;class#Duedate#0" expanded="false" />
                 <element signature="method#Duedate#1;class#Duedate#0" expanded="false" />
                 <element signature="method#Duedate#2;class#Duedate#0" expanded="false" />
+                <element signature="method#before#0;class#Duedate#0" expanded="false" />
                 <element signature="method#toString#0;class#Duedate#0" expanded="false" />
               </folding>
             </state>
@@ -61,33 +60,29 @@
       <file leaf-file-name="Subject.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Subject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="68">
+              <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
               <folding>
-                <element signature="e#111#121#0" expanded="true" />
+                <element signature="e#281#282#0" expanded="true" />
+                <element signature="e#308#309#0" expanded="true" />
+                <element signature="e#359#360#0" expanded="true" />
+                <element signature="e#393#394#0" expanded="true" />
+                <element signature="e#433#434#0" expanded="true" />
+                <element signature="e#465#466#0" expanded="true" />
+                <element signature="e#532#533#0" expanded="true" />
+                <element signature="e#578#579#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Category.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Category.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+              <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
               <folding>
-                <element signature="e#179#191#0" expanded="true" />
                 <element signature="e#375#376#0" expanded="true" />
-                <element signature="e#408#409#0" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
-                <element signature="e#492#493#0" expanded="true" />
-                <element signature="e#528#529#0" expanded="true" />
-                <element signature="e#568#569#0" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
-                <element signature="e#644#645#0" expanded="true" />
-                <element signature="e#680#681#0" expanded="true" />
-                <element signature="e#753#754#0" expanded="true" />
-                <element signature="e#803#804#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,11 +105,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Gui.java" />
-        <option value="$PROJECT_DIR$/src/Subject.java" />
         <option value="$PROJECT_DIR$/src/Category.java" />
         <option value="$PROJECT_DIR$/src/Assignment.java" />
+        <option value="$PROJECT_DIR$/src/Subject.java" />
         <option value="$PROJECT_DIR$/src/Duedate.java" />
+        <option value="$PROJECT_DIR$/src/Gui.java" />
       </list>
     </option>
   </component>
@@ -139,8 +134,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,7 +151,9 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -295,17 +290,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -315,12 +310,13 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -340,9 +336,129 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#844#856#0" expanded="true" />
-            <element signature="e#5404#5405#0" expanded="true" />
-            <element signature="e#5438#5439#0" expanded="true" />
-            <element signature="e#5529#5537#0" expanded="true" />
+            <element signature="e#6848#6856#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1598">
+          <caret line="94" column="24" lean-forward="false" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Duedate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="46" column="42" lean-forward="false" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
+          <folding>
+            <element signature="method#Duedate#0;class#Duedate#0" expanded="false" />
+            <element signature="method#Duedate#1;class#Duedate#0" expanded="false" />
+            <element signature="method#Duedate#2;class#Duedate#0" expanded="false" />
+            <element signature="method#before#0;class#Duedate#0" expanded="false" />
+            <element signature="method#toString#0;class#Duedate#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding>
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding>
+            <element signature="e#375#376#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="59" column="38" lean-forward="false" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#844#856#0" expanded="true" />
+            <element signature="e#6848#6856#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="94" column="24" lean-forward="true" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Duedate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="method#Duedate#0;class#Duedate#0" expanded="false" />
+            <element signature="method#Duedate#1;class#Duedate#0" expanded="false" />
+            <element signature="method#Duedate#2;class#Duedate#0" expanded="false" />
+            <element signature="method#before#0;class#Duedate#0" expanded="false" />
+            <element signature="method#toString#0;class#Duedate#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding>
+            <element signature="e#375#376#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#844#856#0" expanded="true" />
+            <element signature="e#6848#6856#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -363,6 +479,7 @@
             <element signature="method#Duedate#0;class#Duedate#0" expanded="false" />
             <element signature="method#Duedate#1;class#Duedate#0" expanded="false" />
             <element signature="method#Duedate#2;class#Duedate#0" expanded="false" />
+            <element signature="method#before#0;class#Duedate#0" expanded="false" />
             <element signature="method#toString#0;class#Duedate#0" expanded="false" />
           </folding>
         </state>
@@ -375,9 +492,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#844#856#0" expanded="true" />
-            <element signature="e#5404#5405#0" expanded="true" />
-            <element signature="e#5438#5439#0" expanded="true" />
-            <element signature="e#5529#5537#0" expanded="true" />
+            <element signature="e#6848#6856#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -398,6 +513,7 @@
             <element signature="method#Duedate#0;class#Duedate#0" expanded="false" />
             <element signature="method#Duedate#1;class#Duedate#0" expanded="false" />
             <element signature="method#Duedate#2;class#Duedate#0" expanded="false" />
+            <element signature="method#before#0;class#Duedate#0" expanded="false" />
             <element signature="method#toString#0;class#Duedate#0" expanded="false" />
           </folding>
         </state>
@@ -410,9 +526,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#844#856#0" expanded="true" />
-            <element signature="e#5404#5405#0" expanded="true" />
-            <element signature="e#5438#5439#0" expanded="true" />
-            <element signature="e#5529#5537#0" expanded="true" />
+            <element signature="e#6848#6856#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -433,51 +547,7 @@
             <element signature="method#Duedate#0;class#Duedate#0" expanded="false" />
             <element signature="method#Duedate#1;class#Duedate#0" expanded="false" />
             <element signature="method#Duedate#2;class#Duedate#0" expanded="false" />
-            <element signature="method#toString#0;class#Duedate#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="59" column="38" lean-forward="true" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#844#856#0" expanded="true" />
-            <element signature="e#5404#5405#0" expanded="true" />
-            <element signature="e#5438#5439#0" expanded="true" />
-            <element signature="e#5529#5537#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Assignment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="94" column="24" lean-forward="true" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Subject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#111#121#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Duedate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="method#Duedate#0;class#Duedate#0" expanded="false" />
-            <element signature="method#Duedate#1;class#Duedate#0" expanded="false" />
-            <element signature="method#Duedate#2;class#Duedate#0" expanded="false" />
+            <element signature="method#before#0;class#Duedate#0" expanded="false" />
             <element signature="method#toString#0;class#Duedate#0" expanded="false" />
           </folding>
         </state>
@@ -486,20 +556,60 @@
     <entry file="file://$PROJECT_DIR$/src/Category.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
           <folding>
-            <element signature="e#179#191#0" expanded="true" />
             <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#644#645#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#803#804#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Duedate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="46" column="42" lean-forward="false" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
+          <folding>
+            <element signature="method#Duedate#0;class#Duedate#0" expanded="false" />
+            <element signature="method#Duedate#1;class#Duedate#0" expanded="false" />
+            <element signature="method#Duedate#2;class#Duedate#0" expanded="false" />
+            <element signature="method#before#0;class#Duedate#0" expanded="false" />
+            <element signature="method#toString#0;class#Duedate#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding>
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="94" column="24" lean-forward="false" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="89" column="44" lean-forward="false" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#844#856#0" expanded="true" />
+            <element signature="e#6848#6856#0" expanded="true" />
           </folding>
         </state>
       </provider>

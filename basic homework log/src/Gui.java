@@ -24,9 +24,15 @@ public class Gui {
     private static JTextField txtname = new JTextField();
     private static JTextField txtsubject = new JTextField();
     private static JTextField txtduedate = new JTextField();
+    private static JTextField txtcategory = new JTextField();
+    private static JTextField txtearned = new JTextField();
+    private static JTextField txttotal = new JTextField();
     private static JLabel lblname = new JLabel();
     private static JLabel lblsubject = new JLabel();
     private static JLabel lblduedate = new JLabel();
+    private static JLabel lblcategory = new JLabel();
+    private static JLabel lblearned = new JLabel();
+    private static JLabel lbltotal = new JLabel();
 
     public static void main(String args[]){
         gui.setTitle("Basic Homework Log");
@@ -53,9 +59,15 @@ public class Gui {
         pane.add(txtduedate);
         pane.add(txtname);
         pane.add(txtsubject);
+        pane.add(txtcategory);
+        pane.add(txtearned);
+        pane.add(txttotal);
         pane.add(lblduedate);
         pane.add(lblname);
         pane.add(lblsubject);
+        pane.add(lblcategory);
+        pane.add(lblearned);
+        pane.add(lbltotal);
         pane.add(lsthw);
         gui.addKeyListener(new key());
         lblname.setBounds(20,20,100,30);
@@ -80,6 +92,13 @@ public class Gui {
                 arrassignments.get(lsthw.getSelectedIndex()).setName(txtname.getText());
                 arrassignments.get(lsthw.getSelectedIndex()).setDate(new Duedate(txtduedate.getText()));
                 arrassignments.get(lsthw.getSelectedIndex()).setSubject(txtsubject.getText());
+                arrassignments.get(lsthw.getSelectedIndex()).setEarn(Double.valueOf(txtearned.getText()));
+                arrassignments.get(lsthw.getSelectedIndex()).setTotal(Double.valueOf(txttotal.getText()));
+                arrassignments.get(lsthw.getSelectedIndex()).setCategory(txtcategory.getText());
+            }
+            if(e.getKeyCode()==KeyEvent.VK_C){
+                arrassignments.get(lsthw.getSelectedIndex()).setComplete(true);
+                dlm.remove(lsthw.getSelectedIndex());
             }
         }
 
@@ -100,6 +119,9 @@ public class Gui {
             txtname.setText(arrassignments.get(lsthw.getSelectedIndex()).getName());
             txtduedate.setText(arrassignments.get(lsthw.getSelectedIndex()).getDate().toString());
             txtsubject.setText(arrassignments.get(lsthw.getSelectedIndex()).getSubject());
+            txtcategory.setText(arrassignments.get(lsthw.getSelectedIndex()).getCategory());
+            txtearned.setText(String.valueOf(arrassignments.get(lsthw.getSelectedIndex()).getEarn()));
+            txttotal.setText(String.valueOf(arrassignments.get(lsthw.getSelectedIndex()).getTotal()));
         }
     }
 

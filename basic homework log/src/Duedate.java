@@ -46,7 +46,15 @@ public class Duedate {
 
     public boolean before(Duedate compare){
         boolean ans = false;
-
+        if(compare.getYear()>year){
+            ans = true;
+        }
+        else if(compare.getMonth()>month){
+            ans = true;
+        }
+        else if(compare.getDay()>day){
+            ans = true;
+        }
         return ans;
     }
 
