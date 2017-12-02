@@ -53,7 +53,7 @@ public class DueDate {
 
     public String toString() {
         String out = "";
-
+        out = month + "/" + day + "/" + year;
         return out;
     }
 }
