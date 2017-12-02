@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class DueDate {
     private int month, day, year;
 
@@ -11,6 +13,18 @@ public class DueDate {
         this.month = month;
         this.day = day;
         this.year = year;
+    }
+
+    public DueDate(String line){
+        String parts[] = line.split("/");
+        try{
+            month = Integer.valueOf(parts[0]);
+            day = Integer.valueOf(parts[1]);
+            year = Integer.valueOf(parts[2]);
+        }
+        catch (Exception e){
+            JOptionPane.showMessageDialog(null,"Input Error");
+        }
     }
 
     public int getDay() {

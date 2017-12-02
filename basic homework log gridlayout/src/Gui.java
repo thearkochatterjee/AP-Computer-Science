@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class Gui {
     private static JFrame gui = new JFrame();
@@ -28,6 +29,7 @@ public class Gui {
     private static JMenuItem mnuopen = new JMenuItem();
     private static JList lsthw = new JList();
     private static DefaultListModel dlm = new DefaultListModel();
+    private static ArrayList<Assignments> arrassignments = new ArrayList<Assignments>();
 
     public static void main(String args[]){
         gui.setTitle("Homework");
@@ -40,10 +42,10 @@ public class Gui {
         mnufile.add(mnudelete);
         mnufile.add(mnusave);
         mnufile.add(mnuopen);
-        pane.setLayout(new GridLayout(2,1));
+        pane.setLayout(new GridLayout(2,1,20,20));
         pane.add(panein);
         pane.add(paneout);
-        panein.setLayout(new GridLayout(6,2));
+        panein.setLayout(new GridLayout(6,2,20,10));
         panein.add(lblname);
         panein.add(txtname);
         panein.add(lblsubject);
@@ -56,6 +58,8 @@ public class Gui {
         panein.add(txtearn);
         panein.add(lbltotal);
         panein.add(txttotal);
+        paneout.add(lsthw);
+        lsthw.setModel(dlm);
         lblname.setText("Name");
         lblsubject.setText("Subject");
         lblcategory.setText("Category");
@@ -68,6 +72,12 @@ public class Gui {
         lblduedate.setHorizontalAlignment(SwingConstants.CENTER);
         lblearn.setHorizontalAlignment(SwingConstants.CENTER);
         lbltotal.setHorizontalAlignment(SwingConstants.CENTER);
+        lblname.setVerticalAlignment(SwingConstants.CENTER);
+        lblsubject.setVerticalAlignment(SwingConstants.CENTER);
+        lblcategory.setVerticalAlignment(SwingConstants.CENTER);
+        lblduedate.setVerticalAlignment(SwingConstants.CENTER);
+        lblearn.setVerticalAlignment(SwingConstants.CENTER);
+        lbltotal.setVerticalAlignment(SwingConstants.CENTER);
         mnufile.setText("File");
         mnuadd.setText("Add Assignment");
         mnudelete.setText("Delete Assignment");
@@ -83,7 +93,19 @@ public class Gui {
     static class add implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
-
+            Assignments temp = new Assignments();
+            temp.setName(txtname.getText());
+            temp.setSubject(txtsubject.getText());
+            temp.setCategory(txtcategory.getText());
+            try{
+                temp.setEarn(Double.valueOf(txtearn.getText()));
+                temp.setTotal(Double.valueOf(txttotal.getText()));
+                temp.setDue(new DueDate(txtduedate.getText()));
+            }
+            catch (Exception e1){
+                JOptionPane.showMessageDialog(null,"Input Error");
+            }
+            arrassignments.add(temp);
         }
     }
 

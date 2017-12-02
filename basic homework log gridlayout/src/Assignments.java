@@ -1,6 +1,7 @@
 public class Assignments {
     private String name, category, subject;
     private double total, earn;
+    private DueDate due = new DueDate();
 
     public Assignments(){
         name = "";
@@ -8,14 +9,16 @@ public class Assignments {
         subject = "";
         total = 0.0;
         earn = 0.0;
+        due = new DueDate();
     }
 
-    public Assignments(String name, String category, String subject, double total, double earn){
+    public Assignments(String name, String category, String subject, double total, double earn, DueDate due){
         this.name = name;
         this.category = category;
         this.subject = subject;
         this.total = total;
         this.earn = earn;
+        this.due = due;
     }
 
     public String getName() {
@@ -38,6 +41,10 @@ public class Assignments {
         return earn;
     }
 
+    public DueDate getDue() {
+        return due;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -56,6 +63,10 @@ public class Assignments {
 
     public void setSubject(String subject) {
         this.subject = subject;
+    }
+
+    public void setDue(DueDate due) {
+        this.due = due;
     }
 
     public String toString() {
