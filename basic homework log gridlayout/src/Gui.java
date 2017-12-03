@@ -2,6 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.util.ArrayList;
 
 public class Gui {
@@ -9,20 +11,19 @@ public class Gui {
     private static Container pane = new Container();
     private static Container panein = new Container();
     private static Container paneout = new Container();
+    private static JCheckBox chxcomplete = new JCheckBox();
     private static JTextField txtname = new JTextField();
     private static JTextField txtsubject = new JTextField();
     private static JTextField txtduedate = new JTextField();
     private static JTextField txtcategory = new JTextField();
     private static JTextField txttotal = new JTextField();
     private static JTextField txtearn = new JTextField();
-    private static JTextField txtcomplete = new JTextField();
     private static JLabel lblname = new JLabel();
     private static JLabel lblsubject = new JLabel();
     private static JLabel lblduedate = new JLabel();
     private static JLabel lblcategory = new JLabel();
     private static JLabel lbltotal = new JLabel();
     private static JLabel lblearn = new JLabel();
-    private static JLabel lblcomplete = new JLabel();
     private static JMenuBar mnubar = new JMenuBar();
     private static JMenu mnufile = new JMenu();
     private static JMenuItem mnuadd = new JMenuItem();
@@ -62,8 +63,8 @@ public class Gui {
         panein.add(txtearn);
         panein.add(lbltotal);
         panein.add(txttotal);
-        panein.add(lblcomplete);
-        panein.add(txtcomplete);
+        panein.add(new JLabel());
+        panein.add(chxcomplete);
         paneout.add(lsthw);
         lsthw.setModel(dlm);
         lblname.setText("Name");
@@ -72,21 +73,19 @@ public class Gui {
         lblduedate.setText("Due Date");
         lblearn.setText("Points Earned");
         lbltotal.setText("Total Points");
-        lblcomplete.setText("Complete");
+        chxcomplete.setText("complete");
         lblname.setHorizontalAlignment(SwingConstants.CENTER);
         lblsubject.setHorizontalAlignment(SwingConstants.CENTER);
         lblcategory.setHorizontalAlignment(SwingConstants.CENTER);
         lblduedate.setHorizontalAlignment(SwingConstants.CENTER);
         lblearn.setHorizontalAlignment(SwingConstants.CENTER);
         lbltotal.setHorizontalAlignment(SwingConstants.CENTER);
-        lblcomplete.setHorizontalAlignment(SwingConstants.CENTER);
         lblname.setVerticalAlignment(SwingConstants.CENTER);
         lblsubject.setVerticalAlignment(SwingConstants.CENTER);
         lblcategory.setVerticalAlignment(SwingConstants.CENTER);
         lblduedate.setVerticalAlignment(SwingConstants.CENTER);
         lblearn.setVerticalAlignment(SwingConstants.CENTER);
         lbltotal.setVerticalAlignment(SwingConstants.CENTER);
-        lblcomplete.setVerticalAlignment(SwingConstants.CENTER);
         mnufile.setText("File");
         mnuadd.setText("Add Assignment");
         mnudelete.setText("Delete Assignment");
@@ -138,6 +137,13 @@ public class Gui {
         @Override
         public void actionPerformed(ActionEvent e) {
 
+        }
+    }
+
+    static class complete implements ItemListener{
+        @Override
+        public void itemStateChanged(ItemEvent e) {
+            arrassignments.get(lsthw.getSelectedIndex()).setComplete(true);
         }
     }
 

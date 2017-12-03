@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class Assignments {
     private String name, category, subject;
     private double total, earn;
@@ -22,6 +24,22 @@ public class Assignments {
         this.earn = earn;
         this.due = due;
         this.complete = complete;
+    }
+
+    public Assignments(String line){
+        String parts[] = line.split(",");
+        name = parts[0];
+        subject = parts[1];
+        category = parts[2];
+        try{
+            earn = Double.valueOf(parts[3]);
+            total = Double.valueOf(parts[4]);
+        }
+        catch (Exception e){
+            JOptionPane.showMessageDialog(null,"Data Corrupted");
+        }
+        due = new DueDate(parts[5]);
+        complete = parts[6].equals("y");
     }
 
     public boolean isComplete() {
@@ -82,7 +100,13 @@ public class Assignments {
 
     public String toString() {
         String out = "";
-
+        out = name + "," + subject + "," + category + "," + earn + "," + total +"," + due.toString() +",";
+        if(complete){
+            out +="y";
+        }
+        else{
+            out+="n";
+        }
         return out;
     }
 }
