@@ -11,6 +11,8 @@ public class Maingui {
         gui.setTitle("Muffin Knight");
         gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         gui.getContentPane().add(pane);
+        pane.add(cmdsingle);
+        pane.add(cmdquit);
     }
 
     public void show(){
