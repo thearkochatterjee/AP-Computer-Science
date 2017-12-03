@@ -27,6 +27,10 @@ public class Category {
         return weight;
     }
 
+    public String getSubject() {
+        return subject;
+    }
+
     public ArrayList<Assignments> getArrassignment() {
         return arrassignment;
     }
@@ -41,6 +45,10 @@ public class Category {
 
     public void setWeight(double weight) {
         this.weight = weight;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
     }
 
     public double percentcategory(){
