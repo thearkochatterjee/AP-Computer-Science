@@ -1,18 +1,20 @@
 import java.util.ArrayList;
 
 public class Category {
-    private String name;
+    private String name, subject;
     private double weight;
     private ArrayList<Assignments> arrassignment = new ArrayList<Assignments>();
 
     public Category(){
         name = "";
+        subject = "";
         weight = 0.0;
         arrassignment = new ArrayList<Assignments>();
     }
 
-    public Category(String name, double weight, ArrayList<Assignments> arrassignment){
+    public Category(String name, String subject, double weight, ArrayList<Assignments> arrassignment){
         this.name = name;
+        this.subject = subject;
         this.weight = weight;
         this.arrassignment = arrassignment;
     }

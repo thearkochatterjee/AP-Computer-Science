@@ -2,6 +2,7 @@ public class Assignments {
     private String name, category, subject;
     private double total, earn;
     private DueDate due = new DueDate();
+    private boolean complete = false;
 
     public Assignments(){
         name = "";
@@ -10,15 +11,21 @@ public class Assignments {
         total = 0.0;
         earn = 0.0;
         due = new DueDate();
+        complete = false;
     }
 
-    public Assignments(String name, String category, String subject, double total, double earn, DueDate due){
+    public Assignments(String name, String category, String subject, double total, double earn, DueDate due, boolean complete){
         this.name = name;
         this.category = category;
         this.subject = subject;
         this.total = total;
         this.earn = earn;
         this.due = due;
+        this.complete = complete;
+    }
+
+    public boolean isComplete() {
+        return complete;
     }
 
     public String getName() {
@@ -67,6 +74,10 @@ public class Assignments {
 
     public void setDue(DueDate due) {
         this.due = due;
+    }
+
+    public void setComplete(boolean complete) {
+        this.complete = complete;
     }
 
     public String toString() {
