@@ -1,17 +1,22 @@
 public class Book {
     private String title, author, imagepath;
-    private double rating;
 
     public Book(){
         title = "";
         author = "";
-        rating = 0;
+        imagepath = "";
+    }
+
+    public Book(String line){
+        String parts[] = line.split(",");
+        title = parts[0];
+        author = parts[1];
+        imagepath = parts[2];
     }
 
     public Book(String title, String author, double rating, String imagepath){
         this.title = title;
         this.author = author;
-        this.rating = rating;
         this.imagepath = imagepath;
     }
 
@@ -27,10 +32,6 @@ public class Book {
         return title;
     }
 
-    public double getRating() {
-        return rating;
-    }
-
     public void setTitle(String title) {
         this.title = title;
     }
@@ -43,7 +44,9 @@ public class Book {
         this.imagepath = imagepath;
     }
 
-    public void setRating(double rating) {
-        this.rating = rating;
+    public String toString() {
+        String out = "";
+        out = title + "," + author + "," + imagepath;
+        return out;
     }
 }
