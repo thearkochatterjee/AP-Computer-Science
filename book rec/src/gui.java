@@ -9,6 +9,8 @@ import java.util.ArrayList;
 public class gui {
     private static JFrame gui = new JFrame();
     private static Container pane = new Container();
+    private static Container panein = new Container();
+    private static Container paneout = new Container();
     private static JMenuBar mnubar = new JMenuBar();
     private static JMenu mnufile = new JMenu();
     private static JMenuItem mnuaddbook = new JMenuItem();
@@ -25,17 +27,15 @@ public class gui {
     private static JList lstallreaders = new JList();
     private static DefaultListModel dlm2 = new DefaultListModel();
     private static JList lstbooks = new JList();
-    private static JCheckBox chxrate1 = new JCheckBox();
-    private static JCheckBox chxrate2 = new JCheckBox();
-    private static JCheckBox chxrate3 = new JCheckBox();
-    private static JCheckBox chxrate4 = new JCheckBox();
-    private static JCheckBox chxrate5 = new JCheckBox();
-    private static JCheckBox chxnotread = new JCheckBox();
+    private static JCheckBox chxrate[] = new JCheckBox[6];
 
     public static void main(String args[]){
         gui.setTitle("Book Rec");
         gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         gui.getContentPane().add(pane);
+        pane.setLayout(new GridLayout(2,1));
+        pane.add(panein);
+        pane.add(paneout);
         mnubar.add(mnufile);
         mnufile.add(mnuaddreader);
         mnufile.add(mnuaddbook);
@@ -51,15 +51,18 @@ public class gui {
         mnuaddbook.setText("Add Text");
         mnuquit.setText("Quit");
         mnuclear.setText("Clear");
-        pane.add(lstallreaders);
-        pane.add(lstbooks);
-        pane.add(chxnotread);
-        pane.add(chxrate1);
-        pane.add(chxrate2);
-        pane.add(chxrate3);
-        pane.add(chxrate4);
-        pane.add(chxrate5);
-        pane.add(chxnotread);
+        paneout.add(lstallreaders);
+        paneout.add(lstbooks);
+        for(int i = 0;i<6;i++){
+            panein.add(chxrate[i]);
+            chxrate[i].addItemListener(new rate());
+        }
+        chxrate[0].setText("Not Read");
+        chxrate[1].setText("Hated it");
+        chxrate[2].setText("Didn't like it");
+        chxrate[3].setText("OK");
+        chxrate[4].setText("Liked it");
+        chxrate[5].setText("Loved it");
         mnudeletebook.setText("Delete Book");
         mnudeletereader.setText("Delete Reader");
         openbooks("C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science Projects\\books.txt");
@@ -71,55 +74,25 @@ public class gui {
         mnusave.addActionListener(new save());
         mnuclear.addActionListener(new clear());
         mnuquit.addActionListener(new quit());
-        chxrate1.addItemListener(new rate1());
-        chxrate2.addItemListener(new rate2());
-        chxrate3.addItemListener(new rate3());
-        chxrate4.addItemListener(new rate4());
-        chxrate5.addItemListener(new rate5());
-        chxnotread.addItemListener(new notread());
     }
 
-    static class rate1 implements ItemListener{
+    static class rate implements ItemListener{
         @Override
         public void itemStateChanged(ItemEvent e) {
+            for(int i = 0;i<6;i++){
+                if(chxrate[i].isSelected()){
+                    for(int x = 0;x<6;x++){
+                        if(x!=i){
+                            chxrate[x].setSelected(false);
+                        }
+                    }
 
+                    break;
+                }
+            }
         }
     }
 
-    static class rate2 implements ItemListener{
-        @Override
-        public void itemStateChanged(ItemEvent e) {
-
-        }
-    }
-
-    static class rate3 implements ItemListener{
-        @Override
-        public void itemStateChanged(ItemEvent e) {
-
-        }
-    }
-
-    static class rate4 implements ItemListener{
-        @Override
-        public void itemStateChanged(ItemEvent e) {
-
-        }
-    }
-
-    static class rate5 implements ItemListener{
-        @Override
-        public void itemStateChanged(ItemEvent e) {
-
-        }
-    }
-
-    static class notread implements ItemListener{
-        @Override
-        public void itemStateChanged(ItemEvent e) {
-
-        }
-    }
     static class clear implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
