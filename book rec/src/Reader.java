@@ -21,7 +21,11 @@ public class Reader {
 
     public Reader(String line){
         String parts[] = line.split(",");
-
+        name = parts[0];
+        ratings = new int[parts.length-2];
+        for(int i = 0;i<parts.length;i++){
+            ratings[i] = Integer.valueOf(parts[i+1]);
+        }
     }
 
     public String getName() {
@@ -48,10 +52,12 @@ public class Reader {
         this.name = name;
     }
 
-    @Override
     public String toString() {
         String out = "";
-        out = name + ",";
+        out = name;
+        for(int i = 0;i<rnum;i++){
+            out += "," + ratings[i];
+        }
         return out;
     }
 }

@@ -12,23 +12,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Gui.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Gui.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Gui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-149">
-              <caret line="102" column="29" lean-forward="true" selection-start-line="102" selection-start-column="29" selection-end-line="102" selection-end-column="29" />
+            <state relative-caret-position="277">
+              <caret line="216" column="12" lean-forward="false" selection-start-line="216" selection-start-column="12" selection-end-line="216" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1818#1827#0" expanded="true" />
-                <element signature="e#1897#1907#0" expanded="true" />
                 <element signature="class#guiupdate#0;class#Gui#0" expanded="false" />
                 <element signature="class#add#0;class#Gui#0" expanded="false" />
                 <element signature="class#delete#0;class#Gui#0" expanded="false" />
                 <element signature="class#save#0;class#Gui#0" expanded="false" />
                 <element signature="class#open#0;class#Gui#0" expanded="false" />
                 <element signature="class#complete#0;class#Gui#0" expanded="false" />
-                <element signature="e#7459#7460#0" expanded="true" />
-                <element signature="e#7491#7492#0" expanded="true" />
                 <element signature="class#showcomplete#0;class#Gui#0" expanded="false" />
                 <element signature="class#showincomplete#0;class#Gui#0" expanded="false" />
                 <element signature="method#update#0;class#Gui#0" expanded="false" />
@@ -40,7 +36,7 @@
       <file leaf-file-name="Assignments.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Assignments.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
+            <state relative-caret-position="714">
               <caret line="100" column="29" lean-forward="false" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="29" />
               <folding>
                 <element signature="method#Assignments#0;class#Assignments#0" expanded="false" />
@@ -52,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Subject.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Subject.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Subject.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -66,11 +62,78 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Preferences.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Preferences.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+              <folding>
+                <element signature="e#148#167#0" expanded="true" />
+                <element signature="e#228#237#0" expanded="true" />
+                <element signature="e#644#645#0" expanded="true" />
+                <element signature="e#671#672#0" expanded="true" />
+                <element signature="e#720#721#0" expanded="true" />
+                <element signature="e#753#754#0" expanded="true" />
+                <element signature="e#812#813#0" expanded="true" />
+                <element signature="e#845#846#0" expanded="true" />
+                <element signature="e#885#886#0" expanded="true" />
+                <element signature="e#917#918#0" expanded="true" />
+                <element signature="e#981#982#0" expanded="true" />
+                <element signature="e#1025#1026#0" expanded="true" />
+                <element signature="e#1099#1100#0" expanded="true" />
+                <element signature="e#1143#1144#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubjectPreference.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SubjectPreference.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+              <folding>
+                <element signature="e#310#311#0" expanded="true" />
+                <element signature="e#337#338#0" expanded="true" />
+                <element signature="e#369#370#0" expanded="true" />
+                <element signature="e#397#398#0" expanded="true" />
+                <element signature="e#437#438#0" expanded="true" />
+                <element signature="e#469#470#0" expanded="true" />
+                <element signature="e#511#512#0" expanded="true" />
+                <element signature="e#545#546#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cattime.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cattime.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="549">
+              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+              <folding>
+                <element signature="e#372#373#0" expanded="true" />
+                <element signature="e#402#403#0" expanded="true" />
+                <element signature="e#433#434#0" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
+                <element signature="e#494#495#0" expanded="true" />
+                <element signature="e#524#525#0" expanded="true" />
+                <element signature="e#570#571#0" expanded="true" />
+                <element signature="e#608#609#0" expanded="true" />
+                <element signature="e#654#655#0" expanded="true" />
+                <element signature="e#692#693#0" expanded="true" />
+                <element signature="e#732#733#0" expanded="true" />
+                <element signature="e#764#765#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Category.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+            <state relative-caret-position="595">
+              <caret line="51" column="5" lean-forward="false" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
               <folding>
                 <element signature="e#178#191#0" expanded="true" />
                 <element signature="method#percentcategory#0;class#Category#0" expanded="false" />
@@ -84,7 +147,7 @@
         <entry file="file://$PROJECT_DIR$/src/DueDate.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
-              <caret line="55" column="45" lean-forward="true" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+              <caret line="55" column="45" lean-forward="false" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
               <folding>
                 <element signature="method#DueDate#0;class#DueDate#0" expanded="false" />
                 <element signature="method#DueDate#1;class#DueDate#0" expanded="false" />
@@ -113,9 +176,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/DueDate.java" />
         <option value="$PROJECT_DIR$/src/Assignments.java" />
-        <option value="$PROJECT_DIR$/src/Gui.java" />
         <option value="$PROJECT_DIR$/src/Category.java" />
         <option value="$PROJECT_DIR$/src/Subject.java" />
+        <option value="$PROJECT_DIR$/src/SubjectPreference.java" />
+        <option value="$PROJECT_DIR$/src/Cattime.java" />
+        <option value="$PROJECT_DIR$/src/Preferences.java" />
+        <option value="$PROJECT_DIR$/src/Gui.java" />
       </list>
     </option>
   </component>
@@ -140,9 +206,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -159,7 +226,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="RunDashboard">
@@ -295,7 +361,6 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -318,6 +383,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -334,20 +400,84 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Gui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="52" column="32" lean-forward="false" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+        <state relative-caret-position="1683">
+          <caret line="102" column="29" lean-forward="true" selection-start-line="102" selection-start-column="29" selection-end-line="102" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1818#1827#0" expanded="true" />
-            <element signature="e#1897#1907#0" expanded="true" />
             <element signature="class#guiupdate#0;class#Gui#0" expanded="false" />
             <element signature="class#add#0;class#Gui#0" expanded="false" />
             <element signature="class#delete#0;class#Gui#0" expanded="false" />
             <element signature="class#save#0;class#Gui#0" expanded="false" />
             <element signature="class#open#0;class#Gui#0" expanded="false" />
             <element signature="class#complete#0;class#Gui#0" expanded="false" />
-            <element signature="e#7459#7460#0" expanded="true" />
-            <element signature="e#7491#7492#0" expanded="true" />
+            <element signature="class#showcomplete#0;class#Gui#0" expanded="false" />
+            <element signature="class#showincomplete#0;class#Gui#0" expanded="false" />
+            <element signature="method#update#0;class#Gui#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="100" column="29" lean-forward="false" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="29" />
+          <folding>
+            <element signature="method#Assignments#0;class#Assignments#0" expanded="false" />
+            <element signature="method#Assignments#1;class#Assignments#0" expanded="false" />
+            <element signature="method#Assignments#2;class#Assignments#0" expanded="false" />
+            <element signature="method#toString#0;class#Assignments#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+          <folding>
+            <element signature="e#178#191#0" expanded="true" />
+            <element signature="method#percentcategory#0;class#Category#0" expanded="false" />
+            <element signature="method#percentoverall#0;class#Category#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DueDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="55" column="45" lean-forward="true" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+          <folding>
+            <element signature="method#DueDate#0;class#DueDate#0" expanded="false" />
+            <element signature="method#DueDate#1;class#DueDate#0" expanded="false" />
+            <element signature="method#DueDate#2;class#DueDate#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+          <folding>
+            <element signature="e#111#121#0" expanded="true" />
+            <element signature="e#211#219#0" expanded="true" />
+            <element signature="method#grade#0;class#Subject#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="52" column="32" lean-forward="false" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#guiupdate#0;class#Gui#0" expanded="false" />
+            <element signature="class#add#0;class#Gui#0" expanded="false" />
+            <element signature="class#delete#0;class#Gui#0" expanded="false" />
+            <element signature="class#save#0;class#Gui#0" expanded="false" />
+            <element signature="class#open#0;class#Gui#0" expanded="false" />
+            <element signature="class#complete#0;class#Gui#0" expanded="false" />
             <element signature="class#showcomplete#0;class#Gui#0" expanded="false" />
             <element signature="class#showincomplete#0;class#Gui#0" expanded="false" />
             <element signature="method#update#0;class#Gui#0" expanded="false" />
@@ -410,16 +540,12 @@
           <caret line="52" column="32" lean-forward="false" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1818#1827#0" expanded="true" />
-            <element signature="e#1897#1907#0" expanded="true" />
             <element signature="class#guiupdate#0;class#Gui#0" expanded="false" />
             <element signature="class#add#0;class#Gui#0" expanded="false" />
             <element signature="class#delete#0;class#Gui#0" expanded="false" />
             <element signature="class#save#0;class#Gui#0" expanded="false" />
             <element signature="class#open#0;class#Gui#0" expanded="false" />
             <element signature="class#complete#0;class#Gui#0" expanded="false" />
-            <element signature="e#7459#7460#0" expanded="true" />
-            <element signature="e#7491#7492#0" expanded="true" />
             <element signature="class#showcomplete#0;class#Gui#0" expanded="false" />
             <element signature="class#showincomplete#0;class#Gui#0" expanded="false" />
             <element signature="method#update#0;class#Gui#0" expanded="false" />
@@ -482,16 +608,12 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1818#1827#0" expanded="true" />
-            <element signature="e#1897#1907#0" expanded="true" />
             <element signature="class#guiupdate#0;class#Gui#0" expanded="false" />
             <element signature="class#add#0;class#Gui#0" expanded="false" />
             <element signature="class#delete#0;class#Gui#0" expanded="false" />
             <element signature="class#save#0;class#Gui#0" expanded="false" />
             <element signature="class#open#0;class#Gui#0" expanded="false" />
             <element signature="class#complete#0;class#Gui#0" expanded="false" />
-            <element signature="e#7459#7460#0" expanded="true" />
-            <element signature="e#7491#7492#0" expanded="true" />
             <element signature="class#showcomplete#0;class#Gui#0" expanded="false" />
             <element signature="class#showincomplete#0;class#Gui#0" expanded="false" />
             <element signature="method#update#0;class#Gui#0" expanded="false" />
@@ -527,7 +649,7 @@
     <entry file="file://$PROJECT_DIR$/src/DueDate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="55" column="45" lean-forward="true" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+          <caret line="55" column="45" lean-forward="false" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
           <folding>
             <element signature="method#DueDate#0;class#DueDate#0" expanded="false" />
             <element signature="method#DueDate#1;class#DueDate#0" expanded="false" />
@@ -538,8 +660,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Category.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+        <state relative-caret-position="595">
+          <caret line="51" column="5" lean-forward="false" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
           <folding>
             <element signature="e#178#191#0" expanded="true" />
             <element signature="method#percentcategory#0;class#Category#0" expanded="false" />
@@ -548,32 +670,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-149">
-          <caret line="102" column="29" lean-forward="true" selection-start-line="102" selection-start-column="29" selection-end-line="102" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1818#1827#0" expanded="true" />
-            <element signature="e#1897#1907#0" expanded="true" />
-            <element signature="class#guiupdate#0;class#Gui#0" expanded="false" />
-            <element signature="class#add#0;class#Gui#0" expanded="false" />
-            <element signature="class#delete#0;class#Gui#0" expanded="false" />
-            <element signature="class#save#0;class#Gui#0" expanded="false" />
-            <element signature="class#open#0;class#Gui#0" expanded="false" />
-            <element signature="class#complete#0;class#Gui#0" expanded="false" />
-            <element signature="e#7459#7460#0" expanded="true" />
-            <element signature="e#7491#7492#0" expanded="true" />
-            <element signature="class#showcomplete#0;class#Gui#0" expanded="false" />
-            <element signature="class#showincomplete#0;class#Gui#0" expanded="false" />
-            <element signature="method#update#0;class#Gui#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Assignments.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
+        <state relative-caret-position="714">
           <caret line="100" column="29" lean-forward="false" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="29" />
           <folding>
             <element signature="method#Assignments#0;class#Assignments#0" expanded="false" />
@@ -592,6 +691,86 @@
             <element signature="e#111#121#0" expanded="true" />
             <element signature="e#211#219#0" expanded="true" />
             <element signature="method#grade#0;class#Subject#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cattime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SubjectPreference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding>
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Preferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding>
+            <element signature="e#148#167#0" expanded="true" />
+            <element signature="e#228#237#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#885#886#0" expanded="true" />
+            <element signature="e#917#918#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
+            <element signature="e#1099#1100#0" expanded="true" />
+            <element signature="e#1143#1144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="216" column="12" lean-forward="false" selection-start-line="216" selection-start-column="12" selection-end-line="216" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#guiupdate#0;class#Gui#0" expanded="false" />
+            <element signature="class#add#0;class#Gui#0" expanded="false" />
+            <element signature="class#delete#0;class#Gui#0" expanded="false" />
+            <element signature="class#save#0;class#Gui#0" expanded="false" />
+            <element signature="class#open#0;class#Gui#0" expanded="false" />
+            <element signature="class#complete#0;class#Gui#0" expanded="false" />
+            <element signature="class#showcomplete#0;class#Gui#0" expanded="false" />
+            <element signature="class#showincomplete#0;class#Gui#0" expanded="false" />
+            <element signature="method#update#0;class#Gui#0" expanded="false" />
           </folding>
         </state>
       </provider>

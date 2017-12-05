@@ -35,6 +35,8 @@ public class Gui {
     private static ArrayList<Assignments> arrassignments = new ArrayList<Assignments>();
     private static ArrayList<Subject> arrsubject = new ArrayList<Subject>();
     private static ArrayList<Category> arrcategory = new ArrayList<Category>();
+    private static JMenu mnutimemanage = new JMenu();
+    private static JMenuItem mnuiftime = new JMenuItem();
 
     public static void main(String args[]){
         gui.setTitle("Homework");
@@ -44,6 +46,8 @@ public class Gui {
         gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         mnubar.add(mnufile);
         mnubar.add(mnusort);
+        mnubar.add(mnutimemanage);
+        mnutimemanage.add(mnuiftime);
         mnusort.add(mnucompleted);
         mnusort.add(mnunotcompleted);
         mnufile.add(mnuadd);
@@ -204,6 +208,13 @@ public class Gui {
                     dlm.addElement(arrassignments.get(i).getName());
                 }
             }
+        }
+    }
+
+    static class time implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
         }
     }
 
