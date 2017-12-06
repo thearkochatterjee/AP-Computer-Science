@@ -28,6 +28,7 @@ public class gui {
     private static DefaultListModel dlm2 = new DefaultListModel();
     private static JList lstbooks = new JList();
     private static JCheckBox chxrate[] = new JCheckBox[6];
+    private static Recomendation rec = new Recomendation();
 
     public static void main(String args[]){
         gui.setTitle("Book Rec");
@@ -65,8 +66,12 @@ public class gui {
         chxrate[5].setText("Loved it");
         mnudeletebook.setText("Delete Book");
         mnudeletereader.setText("Delete Reader");
+        lstallreaders.setModel(dlm);
+        lstbooks.setModel(dlm2);
         openbooks("C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science Projects\\books.txt");
         openreader("C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science Projects\\reader.txt");
+        rec.setArrbook(arrallbooks);
+        rec.setArrreader(arrallreaders);
         gui.setVisible(true);
         mnuaddbook.addActionListener(new addbook());
         mnuaddreader.addActionListener(new addreader());
@@ -79,6 +84,7 @@ public class gui {
     static class rate implements ItemListener{
         @Override
         public void itemStateChanged(ItemEvent e) {
+            int rate = 0;
             for(int i = 0;i<6;i++){
                 if(chxrate[i].isSelected()){
                     for(int x = 0;x<6;x++){
@@ -86,7 +92,28 @@ public class gui {
                             chxrate[x].setSelected(false);
                         }
                     }
-
+                    switch (i){
+                        case 0:
+                            rate = 0;
+                            break;
+                        case 1:
+                            rate = -5;
+                            break;
+                        case 2:
+                           rate = -3;
+                            break;
+                        case 3:
+                            rate = 1;
+                            break;
+                        case 4:
+                            rate = 3;
+                            break;
+                        case 5:
+                            rate = 5;
+                            break;
+                    }
+                    arrallreaders.get(lstallreaders.getSelectedIndex()).setRatings(rate, lstbooks.getSelectedIndex());
+                    rec.setArrreader(arrallreaders);
                     break;
                 }
             }
@@ -141,6 +168,7 @@ public class gui {
                 }
             }
             arrallreaders.add(temp);
+            rec.setArrreader(arrallreaders);
         }
     }
 
@@ -150,6 +178,7 @@ public class gui {
             Book temp = new Book();
             temp.setTitle(JOptionPane.showInputDialog("What is the title?").trim());
             temp.setAuthor(JOptionPane.showInputDialog("Who is the author?").trim());
+            temp.setGenre(JOptionPane.showInputDialog("WHat is the genre?").trim());
             if(JOptionPane.showConfirmDialog(null,"Do you know the path for the image?","Image Path",JOptionPane.YES_NO_OPTION)==JOptionPane.YES_OPTION){
                 temp.setImagepath(JOptionPane.showInputDialog("What is the image path?").trim());
             }
@@ -157,6 +186,7 @@ public class gui {
                 temp.setImagepath("null");
             }
             arrallbooks.add(temp);
+            rec.setArrbook(arrallbooks);
         }
     }
 

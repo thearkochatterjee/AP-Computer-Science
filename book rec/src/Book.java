@@ -1,10 +1,11 @@
 public class Book {
-    private String title, author, imagepath;
+    private String title, author, imagepath, genre;
 
     public Book(){
         title = "";
         author = "";
         imagepath = "";
+        genre = "";
     }
 
     public Book(String line){
@@ -12,12 +13,18 @@ public class Book {
         title = parts[0];
         author = parts[1];
         imagepath = parts[2];
+        genre = parts[3];
     }
 
-    public Book(String title, String author, double rating, String imagepath){
+    public Book(String title, String author, String imagepath, String genre){
         this.title = title;
         this.author = author;
         this.imagepath = imagepath;
+        this.genre = genre;
+    }
+
+    public String getGenre() {
+        return genre;
     }
 
     public String getAuthor() {
@@ -42,6 +49,10 @@ public class Book {
 
     public void setImagepath(String imagepath) {
         this.imagepath = imagepath;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
 
     public String toString() {

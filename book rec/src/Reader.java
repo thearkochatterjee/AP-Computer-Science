@@ -40,6 +40,10 @@ public class Reader {
         return ratings;
     }
 
+    public void setRatings(int rate, int pos){
+        this.ratings[pos] = rate;
+    }
+
     public void setRatings(int[] ratings) {
         this.ratings = ratings;
     }
