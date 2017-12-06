@@ -1,11 +1,14 @@
+import java.util.ArrayList;
+
 public class Book {
-    private String title, author, imagepath, genre;
+    private String title, author, imagepath;
+    private ArrayList<String> arrgenre = new ArrayList<String>();
 
     public Book(){
         title = "";
         author = "";
         imagepath = "";
-        genre = "";
+        arrgenre = new ArrayList<String>();
     }
 
     public Book(String line){
@@ -13,18 +16,18 @@ public class Book {
         title = parts[0];
         author = parts[1];
         imagepath = parts[2];
-        genre = parts[3];
+
     }
 
-    public Book(String title, String author, String imagepath, String genre){
+    public Book(String title, String author, String imagepath, ArrayList<String> arrgenre){
         this.title = title;
         this.author = author;
         this.imagepath = imagepath;
-        this.genre = genre;
+        this.arrgenre = arrgenre;
     }
 
-    public String getGenre() {
-        return genre;
+    public ArrayList<String> getGenre() {
+        return arrgenre;
     }
 
     public String getAuthor() {
@@ -57,7 +60,7 @@ public class Book {
 
     public String toString() {
         String out = "";
-        out = title + "," + author + "," + imagepath;
+        out = title + "," + author + "," + imagepath + "," + genre;
         return out;
     }
 }

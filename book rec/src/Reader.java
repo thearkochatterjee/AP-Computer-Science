@@ -13,6 +13,12 @@ public class Reader {
         name = "";
     }
 
+    public Reader(Reader r){
+        this.ratings = r.getRatings();
+        this.name = r.getName();
+        this.rnum = r.getRnum();
+    }
+
     public Reader(int ratings[], String name, int rnum){
         this.ratings = ratings;
         this.name = name;

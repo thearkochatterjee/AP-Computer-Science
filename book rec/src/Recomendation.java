@@ -57,10 +57,9 @@ public class Recomendation {
     }
 
     public Book methoda(int pos){
-        Book rec = new Book();
         double avg[] = new double[arrreader.size()];
         double high = 0.0;
-        int pos = 0;
+        int p = 0;
         for (int b = 0;b<arrbook.size();b++){
             for(int r = 0;r<arrreader.size();r++){
                 if(r != pos){
@@ -72,17 +71,29 @@ public class Recomendation {
         for(int i = 0;i<avg.length;i++){
             if(avg[i]>high && arrreader.get(pos).getRatings()[i]==0){
                 high = avg[i];
-                pos = i;
+                p = i;
             }
         }
-        rec = arrbook.get(pos);
-        return rec;
+        return arrbook.get(p);
     }
 
     public Book methodb(int pos){
-        Book rec = new Book();
-
-        return rec;
+        double high = -1000.0;
+        double score = 0.0;
+        int p = 0;
+        for(int i = 0;i<arrreader.size();i++){
+            score = 0.0;
+            if(i!=pos){
+                for(int c = 0;c<arrbook.size();c++){
+                    score += arrreader.get(pos).getRatings()[c] * arrreader.get(i).getRatings()[c];
+                }
+            }
+            if(score > high){
+                high = score;
+                p = i;
+            }
+        }
+        return arrbook.get(p);
     }
 
     public Book methodc(){
