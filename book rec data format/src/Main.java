@@ -2,13 +2,14 @@ import javax.swing.*;
 import java.util.ArrayList;
 
 public class Main {
+    private static ArrayList<Book> arrbook = new ArrayList<Book>();
+
     public static void main(String args[]){
         String basepath = "";
         ArrayList<String> arrpaths = new ArrayList<String>();
-        open("C:\\Users\\Arko\\12th grade\\AP Computer Science Projects\\bookrecdata\\books.txt");
         basepath = JOptionPane.showInputDialog("Where is the folder?");
-
-        save("C:\\Users\\Arko\\12th grade\\AP Computer Science Projects\\bookrecdata\\books.txt");
+        open(basepath+"\\books.txt");
+        save(basepath+"\\books.txt");
     }
 
     private static void open(String path){

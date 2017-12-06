@@ -6,6 +6,12 @@ public class Book {
         author = "";
     }
 
+    public Book(String line){
+        String parts[] = line.split(",");
+        author = parts[0];
+        title = parts[1];
+    }
+
     public String getTitle() {
         return title;
     }
@@ -24,7 +30,7 @@ public class Book {
 
     public String toString() {
         String out = "";
-        out = author + "," + title
+        out = author + "," + title;
         return out;
     }
 }
