@@ -1,55 +1,55 @@
-Douglas Adams,The Hitchhiker's Guide To The Galaxy
-Richard Adams,Watership Down
-Mitch Albom,The Five People You Meet in Heaven
-Laurie Halse Anderson,Speak
-Maya Angelou,I Know Why the Caged Bird Sings
-Jay Asher,Thirteen Reasons Why
-Isaac Asimov,Foundation Series
-Ann Brashares,The Sisterhood of the Travelling Pants
-Libba Bray,A Great and Terrible Beauty
-Dan Brown,The Da Vinci Code
-Meg Cabot,The Princess Diaries
-Orson Scott Card,Ender's Game
-Tom Clancy,The Hunt for Red October
-Suzanne Collins,The Hunger Games
-F. Scott Fitzgerald,The Great Gatsby
-John Flanagan,Ranger's Apprentice Series
-Cornelia Funke,Inkheart
-William Gibson,Neuromancer
-William Golding,Lord of the Flies
-William Goldman,The Princess Bride
-James Gurney,Dinotopia; A Land Apart from Time
-Will Hobbs,Far North
-Alice Hoffman,Practical Magic
-Aldous Huxley,Brave New World
-Guy Gavriel Kay,The Summer Tree
-Daniel Keyes,Flowers For Algernon
-Patrice Kindl,Owl in Love
-Masashi Kishimoto,Naruto
-Tite Kubo,Bleach (graphic novel)
-Elizabeth Laird,Kiss the Dust
-Harper Lee,To Kill a Mockingbird
-C S Lewis,The Lion the Witch and the Wardrobe
-Robert Ludlum,The Bourne Series
-Yann Martel,Life of Pi
-Lurlene McDaniel,Breathless
-Stephenie Meyer,Twilight Series
-Garth Nix,Sabriel
-George Orwell,Nineteen Eighty-Four (1984)
-Christopher Paolini,Eragon
-Gary Paulsen,Hatchet
-Jodi Picoult,My Sister's Keeper
-Philip Pullman,The Golden Compass
-J.K. Rowling,Harry Potter Series
-Louis Sachar,Holes
-Shueisha,Shonen Jump Series
-Neil Shusterman,The Shadow Club
-Jeff Smith,Bone Series
-Art Spiegelman,Maus; A Survivor's Tale
-Amy Tan,The Joy Luck Club
-J R R Tolkien,The Lord of the Rings
-J R R Tolkien,The Hobbit
-Eric Walters,Shattered
-H G Wells,The War Of The Worlds
-Patricia C. Wrede,Dealing with Dragons
-John Wyndham,The Chrysalids
+Douglas Adams,The Hitchhiker's Guide To The Galaxy,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataThe Hitchhiker's Guide To The Galaxy.jpg
+Richard Adams,Watership Down,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataWatership Down.jpg
+Mitch Albom,The Five People You Meet in Heaven,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataThe Five People You Meet in Heaven.jpg
+Laurie Halse Anderson,Speak,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataSpeak.jpg
+Maya Angelou,I Know Why the Caged Bird Sings,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataI Know Why the Caged Bird Sings.jpg
+Jay Asher,Thirteen Reasons Why,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataThirteen Reasons Why.jpg
+Isaac Asimov,Foundation Series,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataFoundation Series.jpg
+Ann Brashares,The Sisterhood of the Travelling Pants,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataThe Sisterhood of the Travelling Pants.jpg
+Libba Bray,A Great and Terrible Beauty,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataA Great and Terrible Beauty.jpg
+Dan Brown,The Da Vinci Code,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataThe Da Vinci Code.jpg
+Meg Cabot,The Princess Diaries,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataThe Princess Diaries.jpg
+Orson Scott Card,Ender's Game,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataEnder's Game.jpg
+Tom Clancy,The Hunt for Red October,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataThe Hunt for Red October.jpg
+Suzanne Collins,The Hunger Games,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataThe Hunger Games.jpg
+F. Scott Fitzgerald,The Great Gatsby,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataThe Great Gatsby.jpg
+John Flanagan,Ranger's Apprentice Series,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataRanger's Apprentice Series.jpg
+Cornelia Funke,Inkheart,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataInkheart.jpg
+William Gibson,Neuromancer,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataNeuromancer.jpg
+William Golding,Lord of the Flies,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataLord of the Flies.jpg
+William Goldman,The Princess Bride,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataThe Princess Bride.jpg
+James Gurney,Dinotopia; A Land Apart from Time,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataDinotopia; A Land Apart from Time.jpg
+Will Hobbs,Far North,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataFar North.jpg
+Alice Hoffman,Practical Magic,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataPractical Magic.jpg
+Aldous Huxley,Brave New World,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataBrave New World.jpg
+Guy Gavriel Kay,The Summer Tree,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataThe Summer Tree.jpg
+Daniel Keyes,Flowers For Algernon,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataFlowers For Algernon.jpg
+Patrice Kindl,Owl in Love,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataOwl in Love.jpg
+Masashi Kishimoto,Naruto,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataNaruto.jpg
+Tite Kubo,Bleach (graphic novel),C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataBleach (graphic novel).jpg
+Elizabeth Laird,Kiss the Dust,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataKiss the Dust.jpg
+Harper Lee,To Kill a Mockingbird,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataTo Kill a Mockingbird.jpg
+C S Lewis,The Lion the Witch and the Wardrobe,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataThe Lion the Witch and the Wardrobe.jpg
+Robert Ludlum,The Bourne Series,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataThe Bourne Series.jpg
+Yann Martel,Life of Pi,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataLife of Pi.jpg
+Lurlene McDaniel,Breathless,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataBreathless.jpg
+Stephenie Meyer,Twilight Series,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataTwilight Series.jpg
+Garth Nix,Sabriel,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataSabriel.jpg
+George Orwell,Nineteen Eighty-Four (1984),C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataNineteen Eighty-Four (1984).jpg
+Christopher Paolini,Eragon,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataEragon.jpg
+Gary Paulsen,Hatchet,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataHatchet.jpg
+Jodi Picoult,My Sister's Keeper,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataMy Sister's Keeper.jpg
+Philip Pullman,The Golden Compass,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataThe Golden Compass.jpg
+J.K. Rowling,Harry Potter Series,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataHarry Potter Series.jpg
+Louis Sachar,Holes,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataHoles.jpg
+Shueisha,Shonen Jump Series,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataShonen Jump Series.jpg
+Neil Shusterman,The Shadow Club,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataThe Shadow Club.jpg
+Jeff Smith,Bone Series,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataBone Series.jpg
+Art Spiegelman,Maus; A Survivor's Tale,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataMaus; A Survivor's Tale.jpg
+Amy Tan,The Joy Luck Club,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataThe Joy Luck Club.jpg
+J R R Tolkien,The Lord of the Rings,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataThe Lord of the Rings.jpg
+J R R Tolkien,The Hobbit,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataThe Hobbit.jpg
+Eric Walters,Shattered,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataShattered.jpg
+H G Wells,The War Of The Worlds,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataThe War Of The Worlds.jpg
+Patricia C. Wrede,Dealing with Dragons,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataDealing with Dragons.jpg
+John Wyndham,The Chrysalids,C:\Users\Arko\Documents\GitHub\AP-Computer-Science\bookrecdataThe Chrysalids.jpg
