@@ -11,7 +11,7 @@ public class Book {
         String parts[] = line.split(",");
         author = parts[0];
         title = parts[1];
-        imagepath = parts[3];
+        imagepath = parts[2];
     }
 
     public String getAuthor() {

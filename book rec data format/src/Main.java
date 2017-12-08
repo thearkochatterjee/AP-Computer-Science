@@ -35,7 +35,7 @@ public class Main {
     private static void save(String path, String basepath){
         try(PrintWriter out = new PrintWriter(path)  ){
             for(int i = 0;i<arrbook.size();i++){
-                out.println(arrbook.get(i).toString()+","+basepath+arrbook.get(i).getTitle()+".jpg");
+                out.println(arrbook.get(i).toString()+","+basepath+"\\"+arrbook.get(i).getTitle()+".jpg"+","+arrbook.get(i).getGenre());
             }
             out.close();
         } catch (FileNotFoundException e1) {

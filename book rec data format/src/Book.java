@@ -1,15 +1,23 @@
 public class Book {
-    private String title, author;
+    private String title, author, imagepath, genre;
 
     public Book(){
         title = "";
         author = "";
+        imagepath = "";
+        genre = "";
     }
 
     public Book(String line){
         String parts[] = line.split(",");
         author = parts[0];
         title = parts[1];
+        imagepath = parts[2];
+        genre = parts[3];
+    }
+
+    public String getGenre() {
+        return genre;
     }
 
     public String getTitle() {
