@@ -36,6 +36,8 @@ public class gui {
         pane.add(paneout1);
         pane.add(paneout2);
         gui.setVisible(true);
+        mnuaddbook.addActionListener(new addbook());
+        mnudeletereader.addActionListener(new deletebook());
     }
 
     static class addbook implements ActionListener{
@@ -69,7 +71,14 @@ public class gui {
     static class open implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
-            
+
+        }
+    }
+
+    static class save implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
         }
     }
 }
