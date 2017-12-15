@@ -1,4 +1,6 @@
 import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -11,6 +13,7 @@ public class gui {
     private static Container pane = new Container();
     private static Container panein = new Container();
     private static Container paneout = new Container();
+    private static Container paneout2 = new Container();
     private static JMenuBar mnubar = new JMenuBar();
     private static JMenu mnufile = new JMenu();
     private static JMenuItem mnuaddbook = new JMenuItem();
@@ -29,12 +32,16 @@ public class gui {
     private static JList lstbooks = new JList();
     private static JCheckBox chxrate[] = new JCheckBox[6];
     private static Recomendation rec = new Recomendation();
+    private static JLabel imgbook = new JLabel();
 
     public static void main(String args[]){
         gui.setTitle("Book Rec");
+        gui.setSize(500,500);
         gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         gui.getContentPane().add(pane);
         pane.setLayout(new GridLayout(2,1));
+        panein.setLayout(new GridLayout(1,6));
+        paneout.setLayout(new GridLayout(2,2));
         pane.add(panein);
         pane.add(paneout);
         mnubar.add(mnufile);
@@ -55,6 +62,7 @@ public class gui {
         paneout.add(lstallreaders);
         paneout.add(lstbooks);
         for(int i = 0;i<6;i++){
+            chxrate[i] = new JCheckBox();
             panein.add(chxrate[i]);
             chxrate[i].addItemListener(new rate());
         }
@@ -79,6 +87,14 @@ public class gui {
         mnusave.addActionListener(new save());
         mnuclear.addActionListener(new clear());
         mnuquit.addActionListener(new quit());
+        lstbooks.addListSelectionListener(new books());
+    }
+
+    static class books implements ListSelectionListener{
+        @Override
+        public void valueChanged(ListSelectionEvent e) {
+            imgbook.setIcon(new ImageIcon(arrallbooks.get(lstbooks.getSelectedIndex()).getImagepath()));
+        }
     }
 
     static class rate implements ItemListener{
@@ -176,9 +192,17 @@ public class gui {
         @Override
         public void actionPerformed(ActionEvent e) {
             Book temp = new Book();
+            ArrayList<String> arrgenre = new ArrayList<String>();
+            String tempg = "";
             temp.setTitle(JOptionPane.showInputDialog("What is the title?").trim());
             temp.setAuthor(JOptionPane.showInputDialog("Who is the author?").trim());
-            temp.setGenre(JOptionPane.showInputDialog("WHat is the genre?").trim());
+            do{
+                tempg = JOptionPane.showInputDialog("What is the genre?").trim();
+                if(tempg.equals("0")==false){
+                    arrgenre.add(tempg);
+                }
+            }while(tempg.equals("0")==false);
+            temp.setGenre(arrgenre);
             if(JOptionPane.showConfirmDialog(null,"Do you know the path for the image?","Image Path",JOptionPane.YES_NO_OPTION)==JOptionPane.YES_OPTION){
                 temp.setImagepath(JOptionPane.showInputDialog("What is the image path?").trim());
             }

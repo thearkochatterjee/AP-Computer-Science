@@ -13,10 +13,13 @@ public class Book {
 
     public Book(String line){
         String parts[] = line.split(",");
+        String gpart[] = parts[3].split("-");
         title = parts[0];
         author = parts[1];
         imagepath = parts[2];
-
+        for(int i = 0;i<gpart.length;i++){
+            arrgenre.add(gpart[i]);
+        }
     }
 
     public Book(String title, String author, String imagepath, ArrayList<String> arrgenre){
@@ -54,13 +57,18 @@ public class Book {
         this.imagepath = imagepath;
     }
 
-    public void setGenre(String genre) {
-        this.genre = genre;
+    public void setGenre(ArrayList<String> arrgenre) {
+        this.arrgenre = arrgenre;
     }
 
     public String toString() {
         String out = "";
-        out = title + "," + author + "," + imagepath + "," + genre;
+        String gout = "";
+        for(int i = 0;i<arrgenre.size()-1;i++){
+            gout+=arrgenre.get(i)+"-";
+        }
+        gout+=arrgenre.get(arrgenre.size()-1);
+        out = title + "," + author + "," + imagepath + "," + gout;
         return out;
     }
 }
