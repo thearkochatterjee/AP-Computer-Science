@@ -18,6 +18,8 @@ public class gui {
     private static JMenuItem mnudeletereader = new JMenuItem();
     private static JMenuItem mnuopen = new JMenuItem();
     private static JMenuItem mnusave = new JMenuItem();
+    private static ArrayList<Reader> arrreader = new ArrayList<Reader>();
+    private static ArrayList<Book> arrbook = new ArrayList<Book>();
 
     public static void main(String args[]){
         gui.setTitle("Book Rec");
@@ -51,7 +53,9 @@ public class gui {
             Book temp = new Book();
             temp.setTitle(JOptionPane.showInputDialog("What is the title of the book?"));
             temp.setAuthor(JOptionPane.showInputDialog("Who is the author?"));
+            temp.setGenre(JOptionPane.showInputDialog("What genre is the book?"));
             temp.setImagepath(JOptionPane.showInputDialog("What is the path for the cover of the book? (use 'null' if there is none)"));
+            arrbook.add(temp);
         }
     }
 
