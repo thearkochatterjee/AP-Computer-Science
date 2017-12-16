@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class gui {
     private static JFrame gui = new JFrame();
@@ -37,13 +38,20 @@ public class gui {
         pane.add(paneout2);
         gui.setVisible(true);
         mnuaddbook.addActionListener(new addbook());
-        mnudeletereader.addActionListener(new deletebook());
+        mnudeletebook.addActionListener(new deletebook());
+        mnudeletereader.addActionListener(new deletereader());
+        mnuaddreader.addActionListener(new addreader());
+        mnuopen.addActionListener(new open());
+        mnusave.addActionListener(new save());
     }
 
     static class addbook implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
-
+            Book temp = new Book();
+            temp.setTitle(JOptionPane.showInputDialog("What is the title of the book?"));
+            temp.setAuthor(JOptionPane.showInputDialog("Who is the author?"));
+            temp.setImagepath(JOptionPane.showInputDialog("What is the path for the cover of the book? (use 'null' if there is none)"));
         }
     }
 
@@ -80,5 +88,13 @@ public class gui {
         public void actionPerformed(ActionEvent e) {
 
         }
+    }
+
+    private static void open(String path){
+
+    }
+
+    private static void save(String path){
+
     }
 }

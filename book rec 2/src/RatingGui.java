@@ -4,12 +4,13 @@ import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
 public class RatingGui extends Container{
-    private JCheckBox chxr1 = new JCheckBox();
-    private JCheckBox chxr2 = new JCheckBox();
-    private JCheckBox chxr3 = new JCheckBox();
-    private JCheckBox chxr4 = new JCheckBox();
-    private JCheckBox chxr5 = new JCheckBox();
-    private JCheckBox chxr6 = new JCheckBox();
+    private static JCheckBox chxr1 = new JCheckBox();
+    private static JCheckBox chxr2 = new JCheckBox();
+    private static JCheckBox chxr3 = new JCheckBox();
+    private static JCheckBox chxr4 = new JCheckBox();
+    private static JCheckBox chxr5 = new JCheckBox();
+    private static JCheckBox chxr6 = new JCheckBox();
+    private static int rating = 0;
 
     public RatingGui(){
         setLayout(new GridLayout(6,1));
@@ -36,42 +37,70 @@ public class RatingGui extends Container{
     static class r1 implements ItemListener {
         @Override
         public void itemStateChanged(ItemEvent e) {
-
+            chxr2.setSelected(false);
+            chxr3.setSelected(false);
+            chxr4.setSelected(false);
+            chxr5.setSelected(false);
+            chxr6.setSelected(false);
         }
     }
 
     static class r2 implements ItemListener{
         @Override
         public void itemStateChanged(ItemEvent e) {
-
+            chxr1.setSelected(false);
+            chxr3.setSelected(false);
+            chxr4.setSelected(false);
+            chxr5.setSelected(false);
+            chxr6.setSelected(false);
         }
     }
 
     static class r3 implements ItemListener{
         @Override
         public void itemStateChanged(ItemEvent e) {
-
+            chxr1.setSelected(false);
+            chxr2.setSelected(false);
+            chxr4.setSelected(false);
+            chxr5.setSelected(false);
+            chxr6.setSelected(false);
         }
     }
 
     static class r4 implements ItemListener{
         @Override
         public void itemStateChanged(ItemEvent e) {
-
+            chxr1.setSelected(false);
+            chxr2.setSelected(false);
+            chxr3.setSelected(false);
+            chxr5.setSelected(false);
+            chxr6.setSelected(false);
         }
     }
 
     static class r5 implements ItemListener{
         @Override
         public void itemStateChanged(ItemEvent e) {
-
+            chxr1.setSelected(false);
+            chxr2.setSelected(false);
+            chxr3.setSelected(false);
+            chxr4.setSelected(false);
+            chxr6.setSelected(false);
         }
     }
 
     static class r6 implements ItemListener{
         @Override
         public void itemStateChanged(ItemEvent e) {
-
+            chxr1.setSelected(false);
+            chxr2.setSelected(false);
+            chxr3.setSelected(false);
+            chxr4.setSelected(false);
+            chxr5.setSelected(false);
         }
+    }
+
+    public static int getRating() {
+        return rating;
     }
 }
