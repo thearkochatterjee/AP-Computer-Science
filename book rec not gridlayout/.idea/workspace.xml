@@ -30,13 +30,11 @@
       <file leaf-file-name="Reader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Reader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="42" column="37" lean-forward="false" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+            <state relative-caret-position="170">
+              <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
               <folding>
                 <element signature="method#Reader#0;class#Reader#0" expanded="false" />
-                <element signature="method#Reader#1;class#Reader#0" expanded="false" />
                 <element signature="method#copy#0;class#Reader#0" expanded="false" />
-                <element signature="method#toString#0;class#Reader#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -45,18 +43,16 @@
       <file leaf-file-name="Gui.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Gui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="335" column="53" lean-forward="false" selection-start-line="335" selection-start-column="53" selection-end-line="335" selection-end-column="53" />
+            <state relative-caret-position="341">
+              <caret line="218" column="9" lean-forward="true" selection-start-line="218" selection-start-column="9" selection-end-line="218" selection-end-column="9" />
               <folding>
                 <element signature="e#356#362#0" expanded="true" />
                 <element signature="e#428#436#0" expanded="true" />
                 <element signature="method#main#0;class#Gui#0" expanded="false" />
                 <element signature="class#search#0;class#Gui#0" expanded="false" />
-                <element signature="class#recommend#0;class#Gui#0" expanded="false" />
                 <element signature="e#8254#8260#0" expanded="true" />
                 <element signature="class#cover#0;class#Gui#0" expanded="false" />
                 <element signature="class#open#0;class#Gui#0" expanded="false" />
-                <element signature="class#save#0;class#Gui#0" expanded="false" />
                 <element signature="class#addbook#0;class#Gui#0" expanded="false" />
                 <element signature="class#addreader#0;class#Gui#0" expanded="false" />
                 <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
@@ -68,7 +64,6 @@
                 <element signature="method#openrating#0;class#Gui#0" expanded="false" />
                 <element signature="e#19570#19578#0" expanded="true" />
                 <element signature="method#savebook#0;class#Gui#0" expanded="false" />
-                <element signature="method#saverating#0;class#Gui#0" expanded="false" />
                 <element signature="method#findpos#0;class#Gui#0" expanded="false" />
               </folding>
             </state>
@@ -120,10 +115,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="559" />
-    <option name="y" value="-18" />
-    <option name="width" value="697" />
-    <option name="height" value="735" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -312,7 +307,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39936608" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -351,9 +346,7 @@
           <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
           <folding>
             <element signature="method#Reader#0;class#Reader#0" expanded="false" />
-            <element signature="method#Reader#1;class#Reader#0" expanded="false" />
             <element signature="method#copy#0;class#Reader#0" expanded="false" />
-            <element signature="method#toString#0;class#Reader#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -385,11 +378,9 @@
             <element signature="e#428#436#0" expanded="true" />
             <element signature="method#main#0;class#Gui#0" expanded="false" />
             <element signature="class#search#0;class#Gui#0" expanded="false" />
-            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
             <element signature="e#8254#8260#0" expanded="true" />
             <element signature="class#cover#0;class#Gui#0" expanded="false" />
             <element signature="class#open#0;class#Gui#0" expanded="false" />
-            <element signature="class#save#0;class#Gui#0" expanded="false" />
             <element signature="class#addbook#0;class#Gui#0" expanded="false" />
             <element signature="class#addreader#0;class#Gui#0" expanded="false" />
             <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
@@ -401,7 +392,6 @@
             <element signature="method#openrating#0;class#Gui#0" expanded="false" />
             <element signature="e#19570#19578#0" expanded="true" />
             <element signature="method#savebook#0;class#Gui#0" expanded="false" />
-            <element signature="method#saverating#0;class#Gui#0" expanded="false" />
             <element signature="method#findpos#0;class#Gui#0" expanded="false" />
           </folding>
         </state>
@@ -426,9 +416,7 @@
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="method#Reader#0;class#Reader#0" expanded="false" />
-            <element signature="method#Reader#1;class#Reader#0" expanded="false" />
             <element signature="method#copy#0;class#Reader#0" expanded="false" />
-            <element signature="method#toString#0;class#Reader#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -460,11 +448,9 @@
             <element signature="e#428#436#0" expanded="true" />
             <element signature="method#main#0;class#Gui#0" expanded="false" />
             <element signature="class#search#0;class#Gui#0" expanded="false" />
-            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
             <element signature="e#8254#8260#0" expanded="true" />
             <element signature="class#cover#0;class#Gui#0" expanded="false" />
             <element signature="class#open#0;class#Gui#0" expanded="false" />
-            <element signature="class#save#0;class#Gui#0" expanded="false" />
             <element signature="class#addbook#0;class#Gui#0" expanded="false" />
             <element signature="class#addreader#0;class#Gui#0" expanded="false" />
             <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
@@ -476,7 +462,6 @@
             <element signature="method#openrating#0;class#Gui#0" expanded="false" />
             <element signature="e#19570#19578#0" expanded="true" />
             <element signature="method#savebook#0;class#Gui#0" expanded="false" />
-            <element signature="method#saverating#0;class#Gui#0" expanded="false" />
             <element signature="method#findpos#0;class#Gui#0" expanded="false" />
           </folding>
         </state>
@@ -501,9 +486,7 @@
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
             <element signature="method#Reader#0;class#Reader#0" expanded="false" />
-            <element signature="method#Reader#1;class#Reader#0" expanded="false" />
             <element signature="method#copy#0;class#Reader#0" expanded="false" />
-            <element signature="method#toString#0;class#Reader#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -535,11 +518,9 @@
             <element signature="e#428#436#0" expanded="true" />
             <element signature="method#main#0;class#Gui#0" expanded="false" />
             <element signature="class#search#0;class#Gui#0" expanded="false" />
-            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
             <element signature="e#8254#8260#0" expanded="true" />
             <element signature="class#cover#0;class#Gui#0" expanded="false" />
             <element signature="class#open#0;class#Gui#0" expanded="false" />
-            <element signature="class#save#0;class#Gui#0" expanded="false" />
             <element signature="class#addbook#0;class#Gui#0" expanded="false" />
             <element signature="class#addreader#0;class#Gui#0" expanded="false" />
             <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
@@ -551,7 +532,6 @@
             <element signature="method#openrating#0;class#Gui#0" expanded="false" />
             <element signature="e#19570#19578#0" expanded="true" />
             <element signature="method#savebook#0;class#Gui#0" expanded="false" />
-            <element signature="method#saverating#0;class#Gui#0" expanded="false" />
             <element signature="method#findpos#0;class#Gui#0" expanded="false" />
           </folding>
         </state>
@@ -572,13 +552,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Reader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="42" column="37" lean-forward="false" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+        <state relative-caret-position="170">
+          <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
           <folding>
             <element signature="method#Reader#0;class#Reader#0" expanded="false" />
-            <element signature="method#Reader#1;class#Reader#0" expanded="false" />
             <element signature="method#copy#0;class#Reader#0" expanded="false" />
-            <element signature="method#toString#0;class#Reader#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -603,18 +581,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Gui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="335" column="53" lean-forward="false" selection-start-line="335" selection-start-column="53" selection-end-line="335" selection-end-column="53" />
+        <state relative-caret-position="341">
+          <caret line="218" column="9" lean-forward="true" selection-start-line="218" selection-start-column="9" selection-end-line="218" selection-end-column="9" />
           <folding>
             <element signature="e#356#362#0" expanded="true" />
             <element signature="e#428#436#0" expanded="true" />
             <element signature="method#main#0;class#Gui#0" expanded="false" />
             <element signature="class#search#0;class#Gui#0" expanded="false" />
-            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
             <element signature="e#8254#8260#0" expanded="true" />
             <element signature="class#cover#0;class#Gui#0" expanded="false" />
             <element signature="class#open#0;class#Gui#0" expanded="false" />
-            <element signature="class#save#0;class#Gui#0" expanded="false" />
             <element signature="class#addbook#0;class#Gui#0" expanded="false" />
             <element signature="class#addreader#0;class#Gui#0" expanded="false" />
             <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
@@ -626,7 +602,6 @@
             <element signature="method#openrating#0;class#Gui#0" expanded="false" />
             <element signature="e#19570#19578#0" expanded="true" />
             <element signature="method#savebook#0;class#Gui#0" expanded="false" />
-            <element signature="method#saverating#0;class#Gui#0" expanded="false" />
             <element signature="method#findpos#0;class#Gui#0" expanded="false" />
           </folding>
         </state>

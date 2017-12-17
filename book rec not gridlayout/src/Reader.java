@@ -13,7 +13,7 @@ public class Reader {
         String parts[] = line.split(",");
         String rparts[] = parts[1].split(" ");
         name = parts[0];
-        rating = new int[rparts.length];
+        //rating = new int[rparts.length];
         for(int i = 0;i<rparts.length;i++){
             rating[i] = Integer.valueOf(rparts[i]);
         }
@@ -43,8 +43,13 @@ public class Reader {
     public String toString(int rnum) {
         String out = "";
         out = name+",";
+        int temprate[] = new int[rnum];
         for(int i = 0;i<rnum;i++){
-            out+=rating[i]+" ";
+            temprate[i] = 0;
+        }
+        temprate = rating;
+        for(int i = 0;i<rnum;i++){
+            out+=temprate[i]+" ";
         }
         out = out.trim();
         return out;

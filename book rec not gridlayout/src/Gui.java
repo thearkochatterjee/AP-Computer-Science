@@ -198,22 +198,22 @@ public class Gui {
             }
             arrrec = rec.methoda(arrreader.get(lstreader.getSelectedIndex()));
             for(int i = 0;i<rec.methoda(arrreader.get(lstreader.getSelectedIndex())).size();i++){
-                if(arrreader.get(lstreader.getSelectedIndex()).getRating()[findpos(arrrec.get(i))]!=0)
+                if(arrreader.get(lstreader.getSelectedIndex()).getRating()[findpos(arrrec.get(i))]==0)
                     dlmmethoda.addElement(arrrec.get(i).getTitle() + " " + arrrec.get(i).getAuthor() + " " + arrrec.get(i).getScore());
             }
             arrrec = rec.methodb(arrreader.get(lstreader.getSelectedIndex()));
             for(int i = 0;i<rec.methodb(arrreader.get(lstreader.getSelectedIndex())).size();i++){
-                if(arrreader.get(lstreader.getSelectedIndex()).getRating()[findpos(arrrec.get(i))]!=0)
+                if(arrreader.get(lstreader.getSelectedIndex()).getRating()[findpos(arrrec.get(i))]==0)
                     dlmmethodb.addElement(arrrec.get(i).getTitle() + " " + arrrec.get(i).getAuthor() + " " + arrrec.get(i).getScore());
             }
             arrrec = rec.methodc(arrreader.get(lstreader.getSelectedIndex()));
             for(int i = 0;i<rec.methodc(arrreader.get(lstreader.getSelectedIndex())).size();i++){
-                if(arrreader.get(lstreader.getSelectedIndex()).getRating()[findpos(arrrec.get(i))]!=0)
+                if(arrreader.get(lstreader.getSelectedIndex()).getRating()[findpos(arrrec.get(i))]==0)
                     dlmmethodc.addElement(arrrec.get(i).getTitle() + " " + arrrec.get(i).getAuthor() + " " + arrrec.get(i).getScore());
             }
             arrrec = rec.methodd(arrreader.get(lstreader.getSelectedIndex()));
             for(int i = 0;i<rec.methodd(arrreader.get(lstreader.getSelectedIndex())).size();i++){
-                if(arrreader.get(lstreader.getSelectedIndex()).getRating()[findpos(arrrec.get(i))]!=0)
+                if(arrreader.get(lstreader.getSelectedIndex()).getRating()[findpos(arrrec.get(i))]==0)
                     dlmmethodd.addElement(arrrec.get(i).getTitle() + " " + arrrec.get(i).getAuthor() + " " + arrrec.get(i).getGenre() + " " + arrrec.get(i).getScore());
             }
         }
