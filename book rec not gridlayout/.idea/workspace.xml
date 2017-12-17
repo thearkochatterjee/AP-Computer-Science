@@ -12,10 +12,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Book.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Book.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
+            <state relative-caret-position="510">
               <caret line="68" column="29" lean-forward="false" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
               <folding>
                 <element signature="method#Book#0;class#Book#0" expanded="false" />
@@ -40,19 +40,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gui.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Gui.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Gui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="218" column="9" lean-forward="true" selection-start-line="218" selection-start-column="9" selection-end-line="218" selection-end-column="9" />
+            <state relative-caret-position="324">
+              <caret line="177" column="59" lean-forward="false" selection-start-line="177" selection-start-column="59" selection-end-line="177" selection-end-column="59" />
               <folding>
                 <element signature="e#356#362#0" expanded="true" />
                 <element signature="e#428#436#0" expanded="true" />
                 <element signature="method#main#0;class#Gui#0" expanded="false" />
                 <element signature="class#search#0;class#Gui#0" expanded="false" />
+                <element signature="class#recommend#0;class#Gui#0" expanded="false" />
                 <element signature="e#8254#8260#0" expanded="true" />
                 <element signature="class#cover#0;class#Gui#0" expanded="false" />
                 <element signature="class#open#0;class#Gui#0" expanded="false" />
+                <element signature="class#save#0;class#Gui#0" expanded="false" />
                 <element signature="class#addbook#0;class#Gui#0" expanded="false" />
                 <element signature="class#addreader#0;class#Gui#0" expanded="false" />
                 <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
@@ -64,6 +66,7 @@
                 <element signature="method#openrating#0;class#Gui#0" expanded="false" />
                 <element signature="e#19570#19578#0" expanded="true" />
                 <element signature="method#savebook#0;class#Gui#0" expanded="false" />
+                <element signature="method#saverating#0;class#Gui#0" expanded="false" />
                 <element signature="method#findpos#0;class#Gui#0" expanded="false" />
               </folding>
             </state>
@@ -73,7 +76,7 @@
       <file leaf-file-name="Rec.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Rec.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="351">
               <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -86,6 +89,26 @@
                 <element signature="e#6753#6771#0" expanded="false" />
                 <element signature="method#sort#0;class#Rec#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".project" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.project">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".classpath" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.classpath">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -156,6 +179,9 @@
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../12th grade/AP Computer Science Projects/eclipse book rec" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -296,9 +322,9 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -378,9 +404,11 @@
             <element signature="e#428#436#0" expanded="true" />
             <element signature="method#main#0;class#Gui#0" expanded="false" />
             <element signature="class#search#0;class#Gui#0" expanded="false" />
+            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
             <element signature="e#8254#8260#0" expanded="true" />
             <element signature="class#cover#0;class#Gui#0" expanded="false" />
             <element signature="class#open#0;class#Gui#0" expanded="false" />
+            <element signature="class#save#0;class#Gui#0" expanded="false" />
             <element signature="class#addbook#0;class#Gui#0" expanded="false" />
             <element signature="class#addreader#0;class#Gui#0" expanded="false" />
             <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
@@ -392,6 +420,7 @@
             <element signature="method#openrating#0;class#Gui#0" expanded="false" />
             <element signature="e#19570#19578#0" expanded="true" />
             <element signature="method#savebook#0;class#Gui#0" expanded="false" />
+            <element signature="method#saverating#0;class#Gui#0" expanded="false" />
             <element signature="method#findpos#0;class#Gui#0" expanded="false" />
           </folding>
         </state>
@@ -448,9 +477,11 @@
             <element signature="e#428#436#0" expanded="true" />
             <element signature="method#main#0;class#Gui#0" expanded="false" />
             <element signature="class#search#0;class#Gui#0" expanded="false" />
+            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
             <element signature="e#8254#8260#0" expanded="true" />
             <element signature="class#cover#0;class#Gui#0" expanded="false" />
             <element signature="class#open#0;class#Gui#0" expanded="false" />
+            <element signature="class#save#0;class#Gui#0" expanded="false" />
             <element signature="class#addbook#0;class#Gui#0" expanded="false" />
             <element signature="class#addreader#0;class#Gui#0" expanded="false" />
             <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
@@ -462,6 +493,7 @@
             <element signature="method#openrating#0;class#Gui#0" expanded="false" />
             <element signature="e#19570#19578#0" expanded="true" />
             <element signature="method#savebook#0;class#Gui#0" expanded="false" />
+            <element signature="method#saverating#0;class#Gui#0" expanded="false" />
             <element signature="method#findpos#0;class#Gui#0" expanded="false" />
           </folding>
         </state>
@@ -518,9 +550,11 @@
             <element signature="e#428#436#0" expanded="true" />
             <element signature="method#main#0;class#Gui#0" expanded="false" />
             <element signature="class#search#0;class#Gui#0" expanded="false" />
+            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
             <element signature="e#8254#8260#0" expanded="true" />
             <element signature="class#cover#0;class#Gui#0" expanded="false" />
             <element signature="class#open#0;class#Gui#0" expanded="false" />
+            <element signature="class#save#0;class#Gui#0" expanded="false" />
             <element signature="class#addbook#0;class#Gui#0" expanded="false" />
             <element signature="class#addreader#0;class#Gui#0" expanded="false" />
             <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
@@ -532,20 +566,39 @@
             <element signature="method#openrating#0;class#Gui#0" expanded="false" />
             <element signature="e#19570#19578#0" expanded="true" />
             <element signature="method#savebook#0;class#Gui#0" expanded="false" />
+            <element signature="method#saverating#0;class#Gui#0" expanded="false" />
             <element signature="method#findpos#0;class#Gui#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Book.java">
+    <entry file="file://$PROJECT_DIR$/src/Gui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="68" column="29" lean-forward="false" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
+        <state relative-caret-position="324">
+          <caret line="177" column="59" lean-forward="false" selection-start-line="177" selection-start-column="59" selection-end-line="177" selection-end-column="59" />
           <folding>
-            <element signature="method#Book#0;class#Book#0" expanded="false" />
-            <element signature="method#Book#1;class#Book#0" expanded="false" />
-            <element signature="method#copy#0;class#Book#0" expanded="false" />
-            <element signature="method#toString#0;class#Book#0" expanded="false" />
+            <element signature="e#356#362#0" expanded="true" />
+            <element signature="e#428#436#0" expanded="true" />
+            <element signature="method#main#0;class#Gui#0" expanded="false" />
+            <element signature="class#search#0;class#Gui#0" expanded="false" />
+            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
+            <element signature="e#8254#8260#0" expanded="true" />
+            <element signature="class#cover#0;class#Gui#0" expanded="false" />
+            <element signature="class#open#0;class#Gui#0" expanded="false" />
+            <element signature="class#save#0;class#Gui#0" expanded="false" />
+            <element signature="class#addbook#0;class#Gui#0" expanded="false" />
+            <element signature="class#addreader#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletereader#0;class#Gui#0" expanded="false" />
+            <element signature="class#changebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#changereader#0;class#Gui#0" expanded="false" />
+            <element signature="method#openbook#0;class#Gui#0" expanded="false" />
+            <element signature="e#18786#18794#0" expanded="true" />
+            <element signature="method#openrating#0;class#Gui#0" expanded="false" />
+            <element signature="e#19570#19578#0" expanded="true" />
+            <element signature="method#savebook#0;class#Gui#0" expanded="false" />
+            <element signature="method#saverating#0;class#Gui#0" expanded="false" />
+            <element signature="method#findpos#0;class#Gui#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -563,7 +616,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Rec.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="351">
           <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -579,30 +632,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gui.java">
+    <entry file="file://$PROJECT_DIR$/.project">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="218" column="9" lean-forward="true" selection-start-line="218" selection-start-column="9" selection-end-line="218" selection-end-column="9" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.classpath">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="68" column="29" lean-forward="false" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
           <folding>
-            <element signature="e#356#362#0" expanded="true" />
-            <element signature="e#428#436#0" expanded="true" />
-            <element signature="method#main#0;class#Gui#0" expanded="false" />
-            <element signature="class#search#0;class#Gui#0" expanded="false" />
-            <element signature="e#8254#8260#0" expanded="true" />
-            <element signature="class#cover#0;class#Gui#0" expanded="false" />
-            <element signature="class#open#0;class#Gui#0" expanded="false" />
-            <element signature="class#addbook#0;class#Gui#0" expanded="false" />
-            <element signature="class#addreader#0;class#Gui#0" expanded="false" />
-            <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
-            <element signature="class#deletereader#0;class#Gui#0" expanded="false" />
-            <element signature="class#changebook#0;class#Gui#0" expanded="false" />
-            <element signature="class#changereader#0;class#Gui#0" expanded="false" />
-            <element signature="method#openbook#0;class#Gui#0" expanded="false" />
-            <element signature="e#18786#18794#0" expanded="true" />
-            <element signature="method#openrating#0;class#Gui#0" expanded="false" />
-            <element signature="e#19570#19578#0" expanded="true" />
-            <element signature="method#savebook#0;class#Gui#0" expanded="false" />
-            <element signature="method#findpos#0;class#Gui#0" expanded="false" />
+            <element signature="method#Book#0;class#Book#0" expanded="false" />
+            <element signature="method#Book#1;class#Book#0" expanded="false" />
+            <element signature="method#copy#0;class#Book#0" expanded="false" />
+            <element signature="method#toString#0;class#Book#0" expanded="false" />
           </folding>
         </state>
       </provider>
