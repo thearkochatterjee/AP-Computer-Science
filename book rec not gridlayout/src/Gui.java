@@ -51,6 +51,7 @@ public class Gui {
     private static JLabel imgcover = new JLabel();
     private static Color myred = new Color(255,128,128);
     private static Rec rec = new Rec();
+    private static JMenuItem mnusearch = new JMenuItem();
 
     public static void main(String args[]){
         gui.setTitle("Book Rec");
@@ -67,6 +68,7 @@ public class Gui {
         mnufile.add(mnucalc);
         mnufile.add(mnuchangebook);
         mnufile.add(mnuchangereader);
+        mnufile.add(mnusearch);
         mnubar.add(mnufile);
         gui.setJMenuBar(mnubar);
         pane.add(lstmethoda);
@@ -114,6 +116,7 @@ public class Gui {
         mnucalc.setText("Find Recommendations");
         mnuchangebook.setText("Change Book");
         mnuchangereader.setText("Change Reader");
+        mnusearch.setText("Search");
         lstreader.setBounds(20,20,100,100);
         lstrating.setBounds(150,20,100,100);
         imgcover.setBounds(550,20,500,250);
@@ -151,6 +154,24 @@ public class Gui {
         mnuchangebook.addActionListener(new changebook());
         lstbook.addListSelectionListener(new cover());
         lstreader.addListSelectionListener(new recommend());
+        mnusearch.addActionListener(new search());
+    }
+
+    static class search implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            int pos = 0;
+            Book search = new Book();
+            search.setTitle(JOptionPane.showInputDialog("What is the title?"));
+            search.setAuthor(JOptionPane.showInputDialog("Who is the author?"));
+            for(int i = 0;i<arrbook.size();i++){
+                if(search.getTitle().equals(arrbook.get(i).getTitle())&&search.getAuthor().equals(arrbook.get(i).getAuthor())){
+                    pos = i;
+                    break;
+                }
+            }
+            imgcover.setIcon(new ImageIcon(new ImageIcon(arrbook.get(pos).getImagepath()).getImage().getScaledInstance(500, 250, Image.SCALE_DEFAULT)));
+        }
     }
 
     static class recommend implements ListSelectionListener{
