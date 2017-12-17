@@ -44,14 +44,14 @@
       <file leaf-file-name="Gui.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Gui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="169" column="26" lean-forward="false" selection-start-line="169" selection-start-column="26" selection-end-line="169" selection-end-column="26" />
+            <state relative-caret-position="278">
+              <caret line="166" column="69" lean-forward="false" selection-start-line="166" selection-start-column="69" selection-end-line="166" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#356#362#0" expanded="true" />
                 <element signature="e#428#436#0" expanded="true" />
                 <element signature="class#recommend#0;class#Gui#0" expanded="false" />
-                <element signature="e#8237#8243#0" expanded="true" />
+                <element signature="e#8254#8260#0" expanded="true" />
                 <element signature="class#cover#0;class#Gui#0" expanded="false" />
                 <element signature="class#open#0;class#Gui#0" expanded="false" />
                 <element signature="class#save#0;class#Gui#0" expanded="false" />
@@ -62,9 +62,9 @@
                 <element signature="class#changebook#0;class#Gui#0" expanded="false" />
                 <element signature="class#changereader#0;class#Gui#0" expanded="false" />
                 <element signature="method#openbook#0;class#Gui#0" expanded="false" />
-                <element signature="e#18015#18023#0" expanded="true" />
+                <element signature="e#18032#18040#0" expanded="true" />
                 <element signature="method#openrating#0;class#Gui#0" expanded="false" />
-                <element signature="e#18799#18807#0" expanded="true" />
+                <element signature="e#18816#18824#0" expanded="true" />
                 <element signature="method#savebook#0;class#Gui#0" expanded="false" />
                 <element signature="method#saverating#0;class#Gui#0" expanded="false" />
               </folding>
@@ -375,7 +375,7 @@
             <element signature="e#356#362#0" expanded="true" />
             <element signature="e#428#436#0" expanded="true" />
             <element signature="class#recommend#0;class#Gui#0" expanded="false" />
-            <element signature="e#8237#8243#0" expanded="true" />
+            <element signature="e#8254#8260#0" expanded="true" />
             <element signature="class#cover#0;class#Gui#0" expanded="false" />
             <element signature="class#open#0;class#Gui#0" expanded="false" />
             <element signature="class#save#0;class#Gui#0" expanded="false" />
@@ -386,9 +386,9 @@
             <element signature="class#changebook#0;class#Gui#0" expanded="false" />
             <element signature="class#changereader#0;class#Gui#0" expanded="false" />
             <element signature="method#openbook#0;class#Gui#0" expanded="false" />
-            <element signature="e#18015#18023#0" expanded="true" />
+            <element signature="e#18032#18040#0" expanded="true" />
             <element signature="method#openrating#0;class#Gui#0" expanded="false" />
-            <element signature="e#18799#18807#0" expanded="true" />
+            <element signature="e#18816#18824#0" expanded="true" />
             <element signature="method#savebook#0;class#Gui#0" expanded="false" />
             <element signature="method#saverating#0;class#Gui#0" expanded="false" />
           </folding>
@@ -444,7 +444,7 @@
             <element signature="e#356#362#0" expanded="true" />
             <element signature="e#428#436#0" expanded="true" />
             <element signature="class#recommend#0;class#Gui#0" expanded="false" />
-            <element signature="e#8237#8243#0" expanded="true" />
+            <element signature="e#8254#8260#0" expanded="true" />
             <element signature="class#cover#0;class#Gui#0" expanded="false" />
             <element signature="class#open#0;class#Gui#0" expanded="false" />
             <element signature="class#save#0;class#Gui#0" expanded="false" />
@@ -455,9 +455,9 @@
             <element signature="class#changebook#0;class#Gui#0" expanded="false" />
             <element signature="class#changereader#0;class#Gui#0" expanded="false" />
             <element signature="method#openbook#0;class#Gui#0" expanded="false" />
-            <element signature="e#18015#18023#0" expanded="true" />
+            <element signature="e#18032#18040#0" expanded="true" />
             <element signature="method#openrating#0;class#Gui#0" expanded="false" />
-            <element signature="e#18799#18807#0" expanded="true" />
+            <element signature="e#18816#18824#0" expanded="true" />
             <element signature="method#savebook#0;class#Gui#0" expanded="false" />
             <element signature="method#saverating#0;class#Gui#0" expanded="false" />
           </folding>
@@ -513,7 +513,7 @@
             <element signature="e#356#362#0" expanded="true" />
             <element signature="e#428#436#0" expanded="true" />
             <element signature="class#recommend#0;class#Gui#0" expanded="false" />
-            <element signature="e#8237#8243#0" expanded="true" />
+            <element signature="e#8254#8260#0" expanded="true" />
             <element signature="class#cover#0;class#Gui#0" expanded="false" />
             <element signature="class#open#0;class#Gui#0" expanded="false" />
             <element signature="class#save#0;class#Gui#0" expanded="false" />
@@ -524,9 +524,9 @@
             <element signature="class#changebook#0;class#Gui#0" expanded="false" />
             <element signature="class#changereader#0;class#Gui#0" expanded="false" />
             <element signature="method#openbook#0;class#Gui#0" expanded="false" />
-            <element signature="e#18015#18023#0" expanded="true" />
+            <element signature="e#18032#18040#0" expanded="true" />
             <element signature="method#openrating#0;class#Gui#0" expanded="false" />
-            <element signature="e#18799#18807#0" expanded="true" />
+            <element signature="e#18816#18824#0" expanded="true" />
             <element signature="method#savebook#0;class#Gui#0" expanded="false" />
             <element signature="method#saverating#0;class#Gui#0" expanded="false" />
           </folding>
@@ -575,14 +575,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Gui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="169" column="26" lean-forward="false" selection-start-line="169" selection-start-column="26" selection-end-line="169" selection-end-column="26" />
+        <state relative-caret-position="278">
+          <caret line="166" column="69" lean-forward="false" selection-start-line="166" selection-start-column="69" selection-end-line="166" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#356#362#0" expanded="true" />
             <element signature="e#428#436#0" expanded="true" />
             <element signature="class#recommend#0;class#Gui#0" expanded="false" />
-            <element signature="e#8237#8243#0" expanded="true" />
+            <element signature="e#8254#8260#0" expanded="true" />
             <element signature="class#cover#0;class#Gui#0" expanded="false" />
             <element signature="class#open#0;class#Gui#0" expanded="false" />
             <element signature="class#save#0;class#Gui#0" expanded="false" />
@@ -593,9 +593,9 @@
             <element signature="class#changebook#0;class#Gui#0" expanded="false" />
             <element signature="class#changereader#0;class#Gui#0" expanded="false" />
             <element signature="method#openbook#0;class#Gui#0" expanded="false" />
-            <element signature="e#18015#18023#0" expanded="true" />
+            <element signature="e#18032#18040#0" expanded="true" />
             <element signature="method#openrating#0;class#Gui#0" expanded="false" />
-            <element signature="e#18799#18807#0" expanded="true" />
+            <element signature="e#18816#18824#0" expanded="true" />
             <element signature="method#savebook#0;class#Gui#0" expanded="false" />
             <element signature="method#saverating#0;class#Gui#0" expanded="false" />
           </folding>

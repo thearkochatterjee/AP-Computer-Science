@@ -163,9 +163,10 @@ public class Gui {
             int pos = 0;
             Book search = new Book();
             search.setTitle(JOptionPane.showInputDialog("What is the title?"));
-            search.setAuthor(JOptionPane.showInputDialog("Who is the author?"));
+            //search.setAuthor(JOptionPane.showInputDialog("Who is the author?"));
+            //&&search.getAuthor().equals(arrbook.get(i).getAuthor())
             for(int i = 0;i<arrbook.size();i++){
-                if(search.getTitle().equals(arrbook.get(i).getTitle())&&search.getAuthor().equals(arrbook.get(i).getAuthor())){
+                if(search.getTitle().equals(arrbook.get(i).getTitle())){
                     pos = i;
                     break;
                 }
