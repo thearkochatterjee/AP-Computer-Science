@@ -190,7 +190,7 @@ public class Gui {
             dlmbr.clear();
             for(int i = 0;i<arrbook.size();i++){
                 if(arrreader.get(lstreader.getSelectedIndex()).getRating()[i]!=0){
-                    dlmbr.addElement(arrbook.get(i).getTitle() + " " + arrbook.get(i).getAuthor());
+                    dlmbr.addElement(arrbook.get(i).getTitle() + " " + arrbook.get(i).getAuthor() + " " + arrbook.get(i).getGenre());
                 }
             }
             for(int i = 0;i<arrreader.get(lstreader.getSelectedIndex()).getRating().length;i++){
@@ -214,7 +214,7 @@ public class Gui {
             arrrec = rec.methodd(arrreader.get(lstreader.getSelectedIndex()));
             for(int i = 0;i<rec.methodd(arrreader.get(lstreader.getSelectedIndex())).size();i++){
                 if(arrreader.get(lstreader.getSelectedIndex()).getRating()[findpos(arrrec.get(i))]!=0)
-                    dlmmethodd.addElement(arrrec.get(i).getTitle() + " " + arrrec.get(i).getAuthor() + " " + arrrec.get(i).getScore());
+                    dlmmethodd.addElement(arrrec.get(i).getTitle() + " " + arrrec.get(i).getAuthor() + " " + arrrec.get(i).getGenre() + " " + arrrec.get(i).getScore());
             }
         }
     }
@@ -239,7 +239,7 @@ public class Gui {
         @Override
         public void actionPerformed(ActionEvent e) {
             savebook("C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science Projects\\bookrecdata\\books.txt");
-            saverating("C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science Projects\\bookrecdata\\ratings.txt");
+            saverating("C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science Projects\\bookrecdata\\readerratings.txt");
         }
     }
 
@@ -251,6 +251,9 @@ public class Gui {
             temp.setAuthor(JOptionPane.showInputDialog("Who is the author of this book?"));
             temp.setGenre(JOptionPane.showInputDialog("What is the genre of this book?"));
             temp.setImagepath(JOptionPane.showInputDialog("What is the path for the cover of the book?"));
+            if(temp.getImagepath().equals("null")){
+                temp.setImagepath("C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science projects\\bookrecdata\\new book.jpg");
+            }
             if(arrbook.contains(temp)) {
                 JOptionPane.showMessageDialog(null,"Book already exists.");
             }
@@ -345,6 +348,9 @@ public class Gui {
             }
             else if(change.equals("imagepath")){
                 temp.setImagepath(JOptionPane.showInputDialog("What is the new imagepath?"));
+                if(temp.getImagepath().equals("null")){
+                    temp.setImagepath("C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science projects\\bookrecdata\\new book.jpg");
+                }
             }
             else if(change.equals("genre")){
                 temp.setGenre(JOptionPane.showInputDialog("What is the new genre?"));
@@ -365,11 +371,19 @@ public class Gui {
         public void actionPerformed(ActionEvent e) {
             String change = "";
             Reader temp = new Reader();
-            int rating[] = new int[arrreader.get(lstreader.getSelectedIndex()).getRating().length];
+            int rating[] = new int[arrbook.size()];
+            int nrate = 0;
+            for(int i = 0;i<arrbook.size();i++){
+                rating[i] = 0;
+            }
+            temp.copy(arrreader.get(lstreader.getSelectedIndex()));
             rating = arrreader.get(lstreader.getSelectedIndex()).getRating();
             change = JOptionPane.showInputDialog("What do you want to change?(rating,name)");
             if(change.equals("rating")){
-                rating[lstrating.getSelectedIndex()] = Integer.valueOf(JOptionPane.showInputDialog("What is the rating of "+arrbook.get(lstbook.getSelectedIndex()).getTitle()+" "+arrbook.get(lstbook.getSelectedIndex()).getAuthor()));
+                nrate = Integer.valueOf(JOptionPane.showInputDialog("What is the rating of "+arrbook.get(lstbook.getSelectedIndex()).getTitle()+" "+arrbook.get(lstbook.getSelectedIndex()).getAuthor()));
+                JOptionPane.showMessageDialog(null,nrate);
+                rating[lstbook.getSelectedIndex()] = nrate;
+                temp.setRating(rating);
             }
             else if(change.equals("name")){
                 temp.setName(JOptionPane.showInputDialog("What is the name of the person?"));
@@ -441,7 +455,7 @@ public class Gui {
     private static void saverating(String path){
         try(PrintWriter out = new PrintWriter(path)  ){
             for(int i = 0;i<arrreader.size();i++){
-                out.println(arrreader.get(i).toString());
+                out.println(arrreader.get(i).toString(arrbook.size()));
             }
             out.close();
         } catch (FileNotFoundException e1) {

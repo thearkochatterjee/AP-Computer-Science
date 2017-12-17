@@ -39,4 +39,14 @@ public class Reader {
         this.rating = copy.getRating();
         this.name = copy.getName();
     }
+
+    public String toString(int rnum) {
+        String out = "";
+        out = name+",";
+        for(int i = 0;i<rnum;i++){
+            out+=rating[i]+" ";
+        }
+        out = out.trim();
+        return out;
+    }
 }
