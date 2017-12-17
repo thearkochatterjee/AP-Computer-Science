@@ -20,6 +20,7 @@ public class Gui {
     private static JList lstreader = new JList();
     private static JList lstbook = new JList();
     private static JList lstrating = new JList();
+    private static JList lstbr = new JList();
     private static DefaultListModel dlmbook = new DefaultListModel();
     private static DefaultListModel dlmrating = new DefaultListModel();
     private static DefaultListModel dlmreader = new DefaultListModel();
@@ -27,6 +28,15 @@ public class Gui {
     private static DefaultListModel dlmmethodb = new DefaultListModel();
     private static DefaultListModel dlmmethodc = new DefaultListModel();
     private static DefaultListModel dlmmethodd = new DefaultListModel();
+    private static DefaultListModel dlmbr = new DefaultListModel();
+    private static JScrollPane scrbr = new JScrollPane();
+    private static JScrollPane scrbook = new JScrollPane();
+    private static JScrollPane scrrating = new JScrollPane();
+    private static JScrollPane scrreader = new JScrollPane();
+    private static JScrollPane scrmethoda = new JScrollPane();
+    private static JScrollPane scrmethodb = new JScrollPane();
+    private static JScrollPane scrmethodc = new JScrollPane();
+    private static JScrollPane scrmethodd = new JScrollPane();
     private static JMenuBar mnubar = new JMenuBar();
     private static JMenu mnufile = new JMenu();
     private static JMenuItem mnuaddbook = new JMenuItem();
@@ -44,7 +54,7 @@ public class Gui {
 
     public static void main(String args[]){
         gui.setTitle("Book Rec");
-        gui.setSize(500,500);
+        gui.setSize(1100,600);
         gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         gui.getContentPane().add(pane);
         mnubar.add(mnufile);
@@ -55,6 +65,8 @@ public class Gui {
         mnufile.add(mnuopen);
         mnufile.add(mnusave);
         mnufile.add(mnucalc);
+        mnufile.add(mnuchangebook);
+        mnufile.add(mnuchangereader);
         mnubar.add(mnufile);
         gui.setJMenuBar(mnubar);
         pane.add(lstmethoda);
@@ -64,7 +76,34 @@ public class Gui {
         pane.add(lstbook);
         pane.add(lstrating);
         pane.add(lstreader);
+        pane.add(lstbr);
         pane.add(imgcover);
+        pane.add(scrbook);
+        pane.add(scrmethoda);
+        pane.add(scrmethodb);
+        pane.add(scrmethodc);
+        pane.add(scrmethodd);
+        pane.add(scrrating);
+        pane.add(scrreader);
+        pane.add(scrbr);
+        scrbr.setViewportView(lstbr);
+        scrbook.setViewportView(lstbook);
+        scrmethoda.setViewportView(lstmethoda);
+        scrmethodb.setViewportView(lstmethodb);
+        scrmethodc.setViewportView(lstmethodc);
+        scrmethodd.setViewportView(lstmethodd);
+        scrrating.setViewportView(lstrating);
+        scrreader.setViewportView(lstreader);
+        lstmethoda.setModel(dlmmethoda);
+        lstmethodb.setModel(dlmmethodb);
+        lstmethodc.setModel(dlmmethodc);
+        lstmethodd.setModel(dlmmethodd);
+        lstbook.setModel(dlmbook);
+        lstrating.setModel(dlmrating);
+        lstreader.setModel(dlmreader);
+        lstbr.setModel(dlmbr);
+        openbook("C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science Projects\\bookrecdata\\books.txt");
+        openrating("C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science Projects\\bookrecdata\\readerratings.txt");
         mnufile.setText("File");
         mnuaddbook.setText("Add Book");
         mnuaddreader.setText("Add Reader");
@@ -73,7 +112,25 @@ public class Gui {
         mnusave.setText("Save");
         mnuopen.setText("Open");
         mnucalc.setText("Find Recommendations");
-        lstmethoda.setBounds(20,20,100,100);
+        mnuchangebook.setText("Change Book");
+        mnuchangereader.setText("Change Reader");
+        lstreader.setBounds(20,20,100,100);
+        lstrating.setBounds(150,20,100,100);
+        imgcover.setBounds(550,20,500,250);
+        lstbook.setBounds(20,150,500,100);
+        lstmethoda.setBounds(20,270,500,100);
+        lstmethodb.setBounds(20,390,500,100);
+        lstmethodc.setBounds(550,270,500,100);
+        lstmethodd.setBounds(550,390,500,100);
+        lstbr.setBounds(270,20,250,100);
+        scrbr.setBounds(lstbr.getBounds());
+        scrreader.setBounds(lstreader.getBounds());
+        scrrating.setBounds(lstrating.getBounds());
+        scrbook.setBounds(lstbook.getBounds());
+        scrmethoda.setBounds(lstmethoda.getBounds());
+        scrmethodb.setBounds(lstmethodb.getBounds());
+        scrmethodc.setBounds(lstmethodc.getBounds());
+        scrmethodd.setBounds(lstmethodd.getBounds());
         lstmethoda.setBackground(myred);
         lstmethodb.setBackground(myred);
         lstmethodc.setBackground(myred);
@@ -81,6 +138,7 @@ public class Gui {
         lstbook.setBackground(myred);
         lstrating.setBackground(myred);
         lstreader.setBackground(myred);
+        lstbr.setBackground(myred);
         gui.setVisible(true);
         gui.getContentPane().setBackground(Color.BLACK);
         mnuaddbook.addActionListener(new addbook());
@@ -89,6 +147,8 @@ public class Gui {
         mnudeletebook.addActionListener(new deletebook());
         mnuopen.addActionListener(new open());
         mnusave.addActionListener(new save());
+        mnuchangereader.addActionListener(new changereader());
+        mnuchangebook.addActionListener(new changebook());
         lstbook.addListSelectionListener(new cover());
         lstreader.addListSelectionListener(new recommend());
     }
@@ -99,25 +159,40 @@ public class Gui {
             rec.setArrbook(arrbook);
             rec.setArrreader(arrreader);
             ArrayList<Book> arrrec = new ArrayList<Book>();
+            int pos[] = new int[arrbook.size()];
             dlmmethoda.clear();
             dlmmethodb.clear();
             dlmmethodc.clear();
             dlmmethodd.clear();
+            dlmrating.clear();
+            dlmbr.clear();
+            for(int i = 0;i<arrbook.size();i++){
+                if(arrreader.get(lstreader.getSelectedIndex()).getRating()[i]!=0){
+                    dlmbr.addElement(arrbook.get(i).getTitle() + " " + arrbook.get(i).getAuthor());
+                }
+            }
+            for(int i = 0;i<arrreader.get(lstreader.getSelectedIndex()).getRating().length;i++){
+                dlmrating.addElement(arrreader.get(lstreader.getSelectedIndex()).getRating()[i]);
+            }
             arrrec = rec.methoda(arrreader.get(lstreader.getSelectedIndex()));
             for(int i = 0;i<rec.methoda(arrreader.get(lstreader.getSelectedIndex())).size();i++){
-                dlmmethoda.addElement(arrrec.get(i).getTitle() + " " + arrrec.get(i).getAuthor() + " " + arrrec.get(i).getScore());
+                if(arrreader.get(lstreader.getSelectedIndex()).getRating()[findpos(arrrec.get(i))]!=0)
+                    dlmmethoda.addElement(arrrec.get(i).getTitle() + " " + arrrec.get(i).getAuthor() + " " + arrrec.get(i).getScore());
             }
             arrrec = rec.methodb(arrreader.get(lstreader.getSelectedIndex()));
             for(int i = 0;i<rec.methodb(arrreader.get(lstreader.getSelectedIndex())).size();i++){
-                dlmmethodb.addElement(arrrec.get(i).getTitle() + " " + arrrec.get(i).getAuthor() + " " + arrrec.get(i).getScore());
+                if(arrreader.get(lstreader.getSelectedIndex()).getRating()[findpos(arrrec.get(i))]!=0)
+                    dlmmethodb.addElement(arrrec.get(i).getTitle() + " " + arrrec.get(i).getAuthor() + " " + arrrec.get(i).getScore());
             }
             arrrec = rec.methodc(arrreader.get(lstreader.getSelectedIndex()));
             for(int i = 0;i<rec.methodc(arrreader.get(lstreader.getSelectedIndex())).size();i++){
-                dlmmethodc.addElement(arrrec.get(i).getTitle() + " " + arrrec.get(i).getAuthor() + " " + arrrec.get(i).getScore());
+                if(arrreader.get(lstreader.getSelectedIndex()).getRating()[findpos(arrrec.get(i))]!=0)
+                    dlmmethodc.addElement(arrrec.get(i).getTitle() + " " + arrrec.get(i).getAuthor() + " " + arrrec.get(i).getScore());
             }
             arrrec = rec.methodd(arrreader.get(lstreader.getSelectedIndex()));
             for(int i = 0;i<rec.methodd(arrreader.get(lstreader.getSelectedIndex())).size();i++){
-                dlmmethodd.addElement(arrrec.get(i).getTitle() + " " + arrrec.get(i).getAuthor() + " " + arrrec.get(i).getScore());
+                if(arrreader.get(lstreader.getSelectedIndex()).getRating()[findpos(arrrec.get(i))]!=0)
+                    dlmmethodd.addElement(arrrec.get(i).getTitle() + " " + arrrec.get(i).getAuthor() + " " + arrrec.get(i).getScore());
             }
         }
     }
@@ -125,23 +200,24 @@ public class Gui {
     static class cover implements ListSelectionListener{
         @Override
         public void valueChanged(ListSelectionEvent e) {
-            imgcover.setIcon(new ImageIcon(arrbook.get(lstbook.getSelectedIndex()).getImagepath()));
+            //imgcover.setIcon(new ImageIcon(arrbook.get(lstbook.getSelectedIndex()).getImagepath()));
+            imgcover.setIcon(new ImageIcon(new ImageIcon(arrbook.get(lstbook.getSelectedIndex()).getImagepath()).getImage().getScaledInstance(500, 250, Image.SCALE_DEFAULT)));
         }
     }
 
     static class open implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
-            openbook("C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science\\bookrecdata\\books.txt");
-            openrating("C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science\\bookrecdata\\ratings.txt");
+            openbook("C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science Projects\\bookrecdata\\books.txt");
+            openrating("C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science Projects\\bookrecdata\\readerratings.txt");
         }
     }
 
     static class save implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
-            savebook("C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science\\bookrecdata\\books.txt");
-            saverating("C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science\\bookrecdata\\ratings.txt");
+            savebook("C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science Projects\\bookrecdata\\books.txt");
+            saverating("C:\\Users\\Arko\\Documents\\12th grade\\AP Computer Science Projects\\bookrecdata\\ratings.txt");
         }
     }
 
@@ -266,16 +342,20 @@ public class Gui {
         @Override
         public void actionPerformed(ActionEvent e) {
             String change = "";
+            Reader temp = new Reader();
+            int rating[] = new int[arrreader.get(lstreader.getSelectedIndex()).getRating().length];
+            rating = arrreader.get(lstreader.getSelectedIndex()).getRating();
             change = JOptionPane.showInputDialog("What do you want to change?(rating,name)");
             if(change.equals("rating")){
-
+                rating[lstrating.getSelectedIndex()] = Integer.valueOf(JOptionPane.showInputDialog("What is the rating of "+arrbook.get(lstbook.getSelectedIndex()).getTitle()+" "+arrbook.get(lstbook.getSelectedIndex()).getAuthor()));
             }
             else if(change.equals("name")){
-
+                temp.setName(JOptionPane.showInputDialog("What is the name of the person?"));
             }
             else{
                 JOptionPane.showMessageDialog(null,"Input Error");
             }
+            arrreader.get(lstreader.getSelectedIndex()).copy(temp);
         }
     }
 
@@ -299,6 +379,7 @@ public class Gui {
         for(int i = 0;i<arrbook.size();i++){
             dlmbook.addElement(arrbook.get(i).getTitle()+" "+arrbook.get(i).getAuthor());
         }
+        rec.setArrbook(arrbook);
     }
 
     private static void openrating(String path){
@@ -316,8 +397,12 @@ public class Gui {
         }
         for(int x = 0;x<arrin.size();x++)
         {
-            arrbook.add(new Book(arrin.get(x)));
+            arrreader.add(new Reader(arrin.get(x)));
         }
+        for(int i = 0;i<arrreader.size();i++){
+            dlmreader.addElement(arrreader.get(i).getName());
+        }
+        rec.setArrreader(arrreader);
     }
 
     private static void savebook(String path){
@@ -340,5 +425,16 @@ public class Gui {
         } catch (FileNotFoundException e1) {
             e1.printStackTrace();
         }
+    }
+
+    private static int findpos(Book find){
+        int pos = 0;
+        for(int i = 0;i<arrbook.size();i++){
+            if(arrbook.get(i).equals(find)){
+                pos = i;
+                break;
+            }
+        }
+        return pos;
     }
 }
