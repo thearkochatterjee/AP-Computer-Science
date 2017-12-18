@@ -206,6 +206,7 @@ public class Gui {
                 if(arrreader.get(lstreader.getSelectedIndex()).getRating()[findpos(arrrec.get(i))]==0)
                     dlmmethodb.addElement(arrrec.get(i).getTitle() + " " + arrrec.get(i).getAuthor() + " " + arrrec.get(i).getScore());
             }
+            JOptionPane.showMessageDialog(null,"The most similar reader is "+rec.getMostsimilar().getName());
             arrrec = rec.methodc(arrreader.get(lstreader.getSelectedIndex()));
             for(int i = 0;i<rec.methodc(arrreader.get(lstreader.getSelectedIndex())).size();i++){
                 if(arrreader.get(lstreader.getSelectedIndex()).getRating()[findpos(arrrec.get(i))]==0)
