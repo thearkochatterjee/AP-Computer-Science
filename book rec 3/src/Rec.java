@@ -114,48 +114,6 @@ public class Rec {
                 }
             }
         }
-//        double high = -100.0;
-//        double score = 0.0;
-//        Reader highr = new Reader();
-//        for(int i = 0;i<arrbook.size();i++){
-//            score = 0.0;
-//            for(int x = 0;x<arrreader.size();x++){
-//                if(arrreader.get(x).equals(r)==false){
-//                    score+=arrreader.get(x).getRating()[i] * r.getRating()[i];
-//                }
-//            }
-//            if(score>high){
-//                rec.clear();
-//                for(int c = 0;c<arrbook.size();c++){
-//                    if(arrreader.get(i).getRating()[c]!=0.0){
-//                        rec.add(arrbook.get(c));
-//                        rec.get(rec.size()-1).setScore(arrreader.get(i).getRating()[c]);
-//                    }
-//                }
-//                highr = arrreader.get(i);
-//            }
-//        }
-//        mostsimilar = highr;
-        Book temp[] = new Book[rec.size()];
-        Book stemp = new Book();
-        for(int i = 0;i<rec.size();i++){
-            temp[i] = new Book();
-        }
-        for(int i = 0;i<rec.size();i++){
-            temp[i] = rec.get(i);
-        }
-        for(int f = 0;f<rec.size()-1;f++){
-            for(int b = f+1;b<rec.size();b++){
-                if(temp[f].getScore()<temp[b].getScore()){
-                    stemp = temp[f];
-                    temp[f] = temp[b];
-                    temp[b] = stemp;
-                }
-            }
-        }
-        for(int i = 0;i<temp.length;i++){
-            rec.add(temp[i]);
-        }
         return rec;
     }
 
@@ -200,7 +158,51 @@ public class Rec {
         return rec;
     }
 
+    public int total(Reader r, int b){
+        int scores[] = new int[arrreader.size()];
+        for(int i = 0;i<arrreader.size();i++){
+            scores[i] = similarity(r,arrreader.get(i)) * arrreader.get(i).getRating()[b];
+        }
+        return sum(scores);
+    }
+
+    public int sum(int total[]){
+        int sum = 0;
+        for(int i = 0;i<total.length;i++){
+            sum+=total[i];
+        }
+        return sum;
+    }
+
     public ArrayList<Book> methodc(Reader r){
+        ArrayList<Book> rec = new ArrayList<Book>();
+        for(int i = 0;i<arrbook.size();i++){
+            arrbook.get(i).setScore(total(r,i));
+        }
+        Book temp[] = new Book[arrbook.size()];
+        Book stemp = new Book();
+        for(int i = 0;i<arrbook.size();i++){
+            temp[i] = new Book();
+        }
+        for(int i = 0;i<arrbook.size();i++){
+            temp[i] = arrbook.get(i);
+        }
+        for(int f = 0;f<arrbook.size()-1;f++){
+            for(int b = f+1;b<arrbook.size();b++){
+                if(temp[f].getScore()<temp[b].getScore()){
+                    stemp = temp[f];
+                    temp[f] = temp[b];
+                    temp[b] = stemp;
+                }
+            }
+        }
+        for(int i = 0;i<temp.length;i++){
+            rec.add(temp[i]);
+        }
+        return rec;
+    }
+
+    public ArrayList<Book> oldmethodc(Reader r){
         ArrayList<Book> rec = new ArrayList<Book>();
         double scores[] = new double[arrreader.size()];
         double scores2[] = new double[arrbook.size()];
