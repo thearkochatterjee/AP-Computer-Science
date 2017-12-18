@@ -12,43 +12,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Gui.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Gui.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Gui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1242">
-              <caret line="159" column="43" lean-forward="true" selection-start-line="159" selection-start-column="43" selection-end-line="159" selection-end-column="43" />
+            <state relative-caret-position="102">
+              <caret line="245" column="16" lean-forward="false" selection-start-line="245" selection-start-column="16" selection-end-line="245" selection-end-column="16" />
               <folding>
-                <element signature="class#recommend#0;class#Gui#0" expanded="false" />
+                <element signature="method#main#0;class#Gui#0" expanded="false" />
+                <element signature="class#search#0;class#Gui#0" expanded="false" />
+                <element signature="class#cover#0;class#Gui#0" expanded="false" />
+                <element signature="class#open#0;class#Gui#0" expanded="false" />
+                <element signature="class#save#0;class#Gui#0" expanded="false" />
+                <element signature="class#addbook#0;class#Gui#0" expanded="false" />
+                <element signature="class#addreader#0;class#Gui#0" expanded="false" />
+                <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
+                <element signature="class#deletereader#0;class#Gui#0" expanded="false" />
+                <element signature="class#changebook#0;class#Gui#0" expanded="false" />
+                <element signature="class#changereader#0;class#Gui#0" expanded="false" />
+                <element signature="method#openbook#0;class#Gui#0" expanded="false" />
+                <element signature="method#openrating#0;class#Gui#0" expanded="false" />
+                <element signature="method#savebook#0;class#Gui#0" expanded="false" />
+                <element signature="method#saverating#0;class#Gui#0" expanded="false" />
+                <element signature="method#findpos#0;class#Gui#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rec.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Rec.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Rec.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="81" column="44" lean-forward="false" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="44" />
+            <state relative-caret-position="176">
+              <caret line="112" column="44" lean-forward="true" selection-start-line="112" selection-start-column="44" selection-end-line="112" selection-end-column="44" />
               <folding>
-                <element signature="e#184#192#0" expanded="true" />
-                <element signature="e#247#253#0" expanded="true" />
                 <element signature="method#Rec#0;class#Rec#0" expanded="false" />
                 <element signature="method#Rec#1;class#Rec#0" expanded="false" />
-                <element signature="e#944#945#0" expanded="true" />
-                <element signature="e#978#979#0" expanded="true" />
                 <element signature="method#methoda#0;class#Rec#0" expanded="false" />
-                <element signature="e#1070#1076#0" expanded="true" />
-                <element signature="method#methodb#0;class#Rec#0" expanded="false" />
-                <element signature="e#2387#2393#0" expanded="true" />
+                <element signature="method#mostsimilar#0;class#Rec#0" expanded="false" />
                 <element signature="method#oldmethodb#0;class#Rec#0" expanded="false" />
-                <element signature="e#4006#4012#0" expanded="true" />
                 <element signature="method#methodc#0;class#Rec#0" expanded="false" />
-                <element signature="e#5394#5400#0" expanded="true" />
                 <element signature="method#methodd#0;class#Rec#0" expanded="false" />
-                <element signature="e#6963#6969#0" expanded="true" />
-                <element signature="e#8592#8610#0" expanded="false" />
+                <element signature="e#9614#9632#0" expanded="false" />
                 <element signature="method#sort#0;class#Rec#0" expanded="false" />
-                <element signature="e#11405#11411#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,8 +69,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Rec.java" />
         <option value="$PROJECT_DIR$/src/Gui.java" />
+        <option value="$PROJECT_DIR$/src/Rec.java" />
       </list>
     </option>
   </component>
@@ -90,6 +95,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -106,10 +113,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -246,16 +251,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -284,7 +290,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Rec.java</url>
-          <line>270</line>
+          <line>302</line>
           <properties />
         </line-breakpoint>
       </breakpoints>
@@ -295,38 +301,86 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Gui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="28" column="72" lean-forward="false" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
+        <state relative-caret-position="1394">
+          <caret line="240" column="18" lean-forward="false" selection-start-line="240" selection-start-column="18" selection-end-line="240" selection-end-column="18" />
           <folding>
-            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
+            <element signature="method#main#0;class#Gui#0" expanded="false" />
+            <element signature="class#search#0;class#Gui#0" expanded="false" />
+            <element signature="class#cover#0;class#Gui#0" expanded="false" />
+            <element signature="class#open#0;class#Gui#0" expanded="false" />
+            <element signature="class#save#0;class#Gui#0" expanded="false" />
+            <element signature="class#addbook#0;class#Gui#0" expanded="false" />
+            <element signature="class#addreader#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletereader#0;class#Gui#0" expanded="false" />
+            <element signature="class#changebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#changereader#0;class#Gui#0" expanded="false" />
+            <element signature="method#openbook#0;class#Gui#0" expanded="false" />
+            <element signature="method#openrating#0;class#Gui#0" expanded="false" />
+            <element signature="method#savebook#0;class#Gui#0" expanded="false" />
+            <element signature="method#saverating#0;class#Gui#0" expanded="false" />
+            <element signature="method#findpos#0;class#Gui#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Rec.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="94" column="9" lean-forward="true" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
+        <state relative-caret-position="425">
+          <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding>
-            <element signature="e#184#192#0" expanded="true" />
-            <element signature="e#247#253#0" expanded="true" />
             <element signature="method#Rec#0;class#Rec#0" expanded="false" />
             <element signature="method#Rec#1;class#Rec#0" expanded="false" />
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="e#978#979#0" expanded="true" />
             <element signature="method#methoda#0;class#Rec#0" expanded="false" />
-            <element signature="e#1070#1076#0" expanded="true" />
-            <element signature="method#methodb#0;class#Rec#0" expanded="false" />
-            <element signature="e#2387#2393#0" expanded="true" />
+            <element signature="method#mostsimilar#0;class#Rec#0" expanded="false" />
             <element signature="method#oldmethodb#0;class#Rec#0" expanded="false" />
-            <element signature="e#4006#4012#0" expanded="true" />
             <element signature="method#methodc#0;class#Rec#0" expanded="false" />
-            <element signature="e#5394#5400#0" expanded="true" />
             <element signature="method#methodd#0;class#Rec#0" expanded="false" />
-            <element signature="e#6963#6969#0" expanded="true" />
-            <element signature="e#8592#8610#0" expanded="false" />
+            <element signature="e#9614#9632#0" expanded="false" />
             <element signature="method#sort#0;class#Rec#0" expanded="false" />
-            <element signature="e#11405#11411#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+          <folding>
+            <element signature="method#main#0;class#Gui#0" expanded="false" />
+            <element signature="class#search#0;class#Gui#0" expanded="false" />
+            <element signature="class#cover#0;class#Gui#0" expanded="false" />
+            <element signature="class#open#0;class#Gui#0" expanded="false" />
+            <element signature="class#save#0;class#Gui#0" expanded="false" />
+            <element signature="class#addbook#0;class#Gui#0" expanded="false" />
+            <element signature="class#addreader#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletereader#0;class#Gui#0" expanded="false" />
+            <element signature="class#changebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#changereader#0;class#Gui#0" expanded="false" />
+            <element signature="method#openbook#0;class#Gui#0" expanded="false" />
+            <element signature="method#openrating#0;class#Gui#0" expanded="false" />
+            <element signature="method#savebook#0;class#Gui#0" expanded="false" />
+            <element signature="method#saverating#0;class#Gui#0" expanded="false" />
+            <element signature="method#findpos#0;class#Gui#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="94" column="28" lean-forward="false" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
+          <folding>
+            <element signature="method#Rec#0;class#Rec#0" expanded="false" />
+            <element signature="method#Rec#1;class#Rec#0" expanded="false" />
+            <element signature="method#methoda#0;class#Rec#0" expanded="false" />
+            <element signature="method#mostsimilar#0;class#Rec#0" expanded="false" />
+            <element signature="method#oldmethodb#0;class#Rec#0" expanded="false" />
+            <element signature="method#methodc#0;class#Rec#0" expanded="false" />
+            <element signature="method#methodd#0;class#Rec#0" expanded="false" />
+            <element signature="e#9614#9632#0" expanded="false" />
+            <element signature="method#sort#0;class#Rec#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -336,45 +390,151 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
+            <element signature="method#main#0;class#Gui#0" expanded="false" />
+            <element signature="class#search#0;class#Gui#0" expanded="false" />
+            <element signature="class#cover#0;class#Gui#0" expanded="false" />
+            <element signature="class#open#0;class#Gui#0" expanded="false" />
+            <element signature="class#save#0;class#Gui#0" expanded="false" />
+            <element signature="class#addbook#0;class#Gui#0" expanded="false" />
+            <element signature="class#addreader#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletereader#0;class#Gui#0" expanded="false" />
+            <element signature="class#changebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#changereader#0;class#Gui#0" expanded="false" />
+            <element signature="method#openbook#0;class#Gui#0" expanded="false" />
+            <element signature="method#openrating#0;class#Gui#0" expanded="false" />
+            <element signature="method#savebook#0;class#Gui#0" expanded="false" />
+            <element signature="method#saverating#0;class#Gui#0" expanded="false" />
+            <element signature="method#findpos#0;class#Gui#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Rec.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
+        <state relative-caret-position="1377">
           <caret line="81" column="44" lean-forward="false" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="44" />
           <folding>
-            <element signature="e#184#192#0" expanded="true" />
-            <element signature="e#247#253#0" expanded="true" />
             <element signature="method#Rec#0;class#Rec#0" expanded="false" />
             <element signature="method#Rec#1;class#Rec#0" expanded="false" />
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="e#978#979#0" expanded="true" />
             <element signature="method#methoda#0;class#Rec#0" expanded="false" />
-            <element signature="e#1070#1076#0" expanded="true" />
-            <element signature="method#methodb#0;class#Rec#0" expanded="false" />
-            <element signature="e#2387#2393#0" expanded="true" />
+            <element signature="method#mostsimilar#0;class#Rec#0" expanded="false" />
             <element signature="method#oldmethodb#0;class#Rec#0" expanded="false" />
-            <element signature="e#4006#4012#0" expanded="true" />
             <element signature="method#methodc#0;class#Rec#0" expanded="false" />
-            <element signature="e#5394#5400#0" expanded="true" />
             <element signature="method#methodd#0;class#Rec#0" expanded="false" />
-            <element signature="e#6963#6969#0" expanded="true" />
-            <element signature="e#8592#8610#0" expanded="false" />
+            <element signature="e#9614#9632#0" expanded="false" />
             <element signature="method#sort#0;class#Rec#0" expanded="false" />
-            <element signature="e#11405#11411#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Gui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="159" column="43" lean-forward="true" selection-start-line="159" selection-start-column="43" selection-end-line="159" selection-end-column="43" />
+        <state relative-caret-position="340">
+          <caret line="28" column="72" lean-forward="false" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
           <folding>
-            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
+            <element signature="method#main#0;class#Gui#0" expanded="false" />
+            <element signature="class#search#0;class#Gui#0" expanded="false" />
+            <element signature="class#cover#0;class#Gui#0" expanded="false" />
+            <element signature="class#open#0;class#Gui#0" expanded="false" />
+            <element signature="class#save#0;class#Gui#0" expanded="false" />
+            <element signature="class#addbook#0;class#Gui#0" expanded="false" />
+            <element signature="class#addreader#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletereader#0;class#Gui#0" expanded="false" />
+            <element signature="class#changebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#changereader#0;class#Gui#0" expanded="false" />
+            <element signature="method#openbook#0;class#Gui#0" expanded="false" />
+            <element signature="method#openrating#0;class#Gui#0" expanded="false" />
+            <element signature="method#savebook#0;class#Gui#0" expanded="false" />
+            <element signature="method#saverating#0;class#Gui#0" expanded="false" />
+            <element signature="method#findpos#0;class#Gui#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="94" column="9" lean-forward="true" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
+          <folding>
+            <element signature="method#Rec#0;class#Rec#0" expanded="false" />
+            <element signature="method#Rec#1;class#Rec#0" expanded="false" />
+            <element signature="method#methoda#0;class#Rec#0" expanded="false" />
+            <element signature="method#mostsimilar#0;class#Rec#0" expanded="false" />
+            <element signature="method#oldmethodb#0;class#Rec#0" expanded="false" />
+            <element signature="method#methodc#0;class#Rec#0" expanded="false" />
+            <element signature="method#methodd#0;class#Rec#0" expanded="false" />
+            <element signature="e#9614#9632#0" expanded="false" />
+            <element signature="method#sort#0;class#Rec#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#main#0;class#Gui#0" expanded="false" />
+            <element signature="class#search#0;class#Gui#0" expanded="false" />
+            <element signature="class#cover#0;class#Gui#0" expanded="false" />
+            <element signature="class#open#0;class#Gui#0" expanded="false" />
+            <element signature="class#save#0;class#Gui#0" expanded="false" />
+            <element signature="class#addbook#0;class#Gui#0" expanded="false" />
+            <element signature="class#addreader#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletereader#0;class#Gui#0" expanded="false" />
+            <element signature="class#changebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#changereader#0;class#Gui#0" expanded="false" />
+            <element signature="method#openbook#0;class#Gui#0" expanded="false" />
+            <element signature="method#openrating#0;class#Gui#0" expanded="false" />
+            <element signature="method#savebook#0;class#Gui#0" expanded="false" />
+            <element signature="method#saverating#0;class#Gui#0" expanded="false" />
+            <element signature="method#findpos#0;class#Gui#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="245" column="16" lean-forward="false" selection-start-line="245" selection-start-column="16" selection-end-line="245" selection-end-column="16" />
+          <folding>
+            <element signature="method#main#0;class#Gui#0" expanded="false" />
+            <element signature="class#search#0;class#Gui#0" expanded="false" />
+            <element signature="class#cover#0;class#Gui#0" expanded="false" />
+            <element signature="class#open#0;class#Gui#0" expanded="false" />
+            <element signature="class#save#0;class#Gui#0" expanded="false" />
+            <element signature="class#addbook#0;class#Gui#0" expanded="false" />
+            <element signature="class#addreader#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletereader#0;class#Gui#0" expanded="false" />
+            <element signature="class#changebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#changereader#0;class#Gui#0" expanded="false" />
+            <element signature="method#openbook#0;class#Gui#0" expanded="false" />
+            <element signature="method#openrating#0;class#Gui#0" expanded="false" />
+            <element signature="method#savebook#0;class#Gui#0" expanded="false" />
+            <element signature="method#saverating#0;class#Gui#0" expanded="false" />
+            <element signature="method#findpos#0;class#Gui#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="112" column="44" lean-forward="true" selection-start-line="112" selection-start-column="44" selection-end-line="112" selection-end-column="44" />
+          <folding>
+            <element signature="method#Rec#0;class#Rec#0" expanded="false" />
+            <element signature="method#Rec#1;class#Rec#0" expanded="false" />
+            <element signature="method#methoda#0;class#Rec#0" expanded="false" />
+            <element signature="method#mostsimilar#0;class#Rec#0" expanded="false" />
+            <element signature="method#oldmethodb#0;class#Rec#0" expanded="false" />
+            <element signature="method#methodc#0;class#Rec#0" expanded="false" />
+            <element signature="method#methodd#0;class#Rec#0" expanded="false" />
+            <element signature="e#9614#9632#0" expanded="false" />
+            <element signature="method#sort#0;class#Rec#0" expanded="false" />
           </folding>
         </state>
       </provider>

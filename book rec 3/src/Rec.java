@@ -41,19 +41,13 @@ public class Rec {
     public ArrayList<Book> methoda(Reader r){
         ArrayList<Book> rec = new ArrayList<Book>();
         double avg = 0.0;
-        int numr = 0;
         for(int i = 0;i<arrbook.size();i++){
             avg = 0.0;
-            numr = 0;
             for(int x = 0;x<arrreader.size();x++){
-                if(arrreader.get(x).equals(r)==false){
-                    if(arrreader.get(x).getRating()[i]!=0.0){
-                        avg+=arrreader.get(x).getRating()[i];
-                        numr++;
-                    }
+                if(arrreader.get(x).getRating()[i]!=0.0){
+                    avg+=arrreader.get(x).getRating()[i];
                 }
             }
-            avg = avg/numr;
             arrbook.get(i).setScore(avg);
         }
         Book temp[] = new Book[arrbook.size()];
@@ -79,31 +73,69 @@ public class Rec {
         return rec;
     }
 
-    public ArrayList<Book> methodb(Reader r){
-        ArrayList<Book> rec = new ArrayList<Book>();
-        double high = -100.0;
-        double score = 0.0;
-        Reader highr = new Reader();
+    public int similarity(Reader r, Reader compare){
+        int similar = 0;
         for(int i = 0;i<arrbook.size();i++){
-            score = 0.0;
-            for(int x = 0;x<arrreader.size();x++){
-                if(arrreader.get(x).equals(r)==false){
-                    score+=arrreader.get(x).getRating()[i] * r.getRating()[i];
-                }
-            }
-            if(score>high){
-                high = score;
-                rec.clear();
-                for(int c = 0;c<arrbook.size();c++){
-                    if(arrreader.get(i).getRating()[c]!=0.0){
-                        rec.add(arrbook.get(c));
-                        rec.get(rec.size()-1).setScore(arrreader.get(i).getRating()[c]);
-                    }
-                }
-                highr = arrreader.get(i);
+            similar+=r.getRating()[i]*compare.getRating()[i];
+        }
+        return similar;
+    }
+
+    public Reader mostsimilar(Reader r){
+        Reader mostsimiar = new Reader();
+        int scores[] = new int[arrreader.size()];
+        int highest = -100;
+        int pos = 0;
+        for(int i = 0;i<arrreader.size();i++){
+            scores[i] = 0;
+        }
+        for(int i = 0;i<arrreader.size();i++){
+            if(!arrreader.get(i).equals(r)){
+                scores[i] = similarity(r,arrreader.get(i));
             }
         }
-        mostsimilar = highr;
+        for(int i = 0;i<arrreader.size();i++){
+            if(scores[i]>highest){
+                highest = scores[i];
+                pos = i;
+            }
+        }
+        mostsimiar = arrreader.get(pos);
+        return mostsimiar;
+    }
+
+    public ArrayList<Book> methodb(Reader r){
+        ArrayList<Book> rec = new ArrayList<Book>();
+        mostsimilar = mostsimilar(r);
+        for(int i = 5; i>0;i--){
+            for(int j = 0;j<arrbook.size();j++){
+                if((mostsimilar(r).getRating()[j]==i)&&(r.getRating()[j]==0)){
+                    rec.add(arrbook.get(j));
+                }
+            }
+        }
+//        double high = -100.0;
+//        double score = 0.0;
+//        Reader highr = new Reader();
+//        for(int i = 0;i<arrbook.size();i++){
+//            score = 0.0;
+//            for(int x = 0;x<arrreader.size();x++){
+//                if(arrreader.get(x).equals(r)==false){
+//                    score+=arrreader.get(x).getRating()[i] * r.getRating()[i];
+//                }
+//            }
+//            if(score>high){
+//                rec.clear();
+//                for(int c = 0;c<arrbook.size();c++){
+//                    if(arrreader.get(i).getRating()[c]!=0.0){
+//                        rec.add(arrbook.get(c));
+//                        rec.get(rec.size()-1).setScore(arrreader.get(i).getRating()[c]);
+//                    }
+//                }
+//                highr = arrreader.get(i);
+//            }
+//        }
+//        mostsimilar = highr;
         Book temp[] = new Book[rec.size()];
         Book stemp = new Book();
         for(int i = 0;i<rec.size();i++){
