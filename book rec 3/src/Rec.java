@@ -158,7 +158,7 @@ public class Rec {
         return rec;
     }
 
-    public int total(Reader r, int b){
+    public int booktotalscore(Reader r, int b){
         int scores[] = new int[arrreader.size()];
         for(int i = 0;i<arrreader.size();i++){
             scores[i] = similarity(r,arrreader.get(i)) * arrreader.get(i).getRating()[b];
@@ -177,7 +177,7 @@ public class Rec {
     public ArrayList<Book> methodc(Reader r){
         ArrayList<Book> rec = new ArrayList<Book>();
         for(int i = 0;i<arrbook.size();i++){
-            arrbook.get(i).setScore(total(r,i));
+            arrbook.get(i).setScore(booktotalscore(r,i));
         }
         Book temp[] = new Book[arrbook.size()];
         Book stemp = new Book();
