@@ -12,14 +12,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Gui.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Gui.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Gui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1428">
-              <caret line="242" column="13" lean-forward="false" selection-start-line="242" selection-start-column="13" selection-end-line="242" selection-end-column="13" />
+            <state relative-caret-position="399">
+              <caret line="485" column="8" lean-forward="true" selection-start-line="485" selection-start-column="8" selection-end-line="492" selection-end-column="9" />
               <folding>
+                <element signature="e#356#362#0" expanded="true" />
+                <element signature="e#428#436#0" expanded="true" />
                 <element signature="method#main#0;class#Gui#0" expanded="false" />
                 <element signature="class#search#0;class#Gui#0" expanded="false" />
+                <element signature="class#recommend#0;class#Gui#0" expanded="false" />
+                <element signature="e#9876#9882#0" expanded="true" />
                 <element signature="class#cover#0;class#Gui#0" expanded="false" />
                 <element signature="class#open#0;class#Gui#0" expanded="false" />
                 <element signature="class#save#0;class#Gui#0" expanded="false" />
@@ -30,8 +34,9 @@
                 <element signature="class#changebook#0;class#Gui#0" expanded="false" />
                 <element signature="class#changereader#0;class#Gui#0" expanded="false" />
                 <element signature="method#openbook#0;class#Gui#0" expanded="false" />
+                <element signature="e#20520#20528#0" expanded="true" />
                 <element signature="method#openrating#0;class#Gui#0" expanded="false" />
-                <element signature="method#savebook#0;class#Gui#0" expanded="false" />
+                <element signature="e#21304#21312#0" expanded="true" />
                 <element signature="method#saverating#0;class#Gui#0" expanded="false" />
                 <element signature="method#findpos#0;class#Gui#0" expanded="false" />
               </folding>
@@ -39,34 +44,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rec.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Rec.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Rec.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
+            <state relative-caret-position="697">
               <caret line="176" column="44" lean-forward="false" selection-start-line="176" selection-start-column="44" selection-end-line="176" selection-end-column="44" />
               <folding>
-                <element signature="e#184#192#0" expanded="true" />
-                <element signature="e#247#253#0" expanded="true" />
                 <element signature="method#Rec#0;class#Rec#0" expanded="false" />
                 <element signature="method#Rec#1;class#Rec#0" expanded="false" />
                 <element signature="method#methoda#0;class#Rec#0" expanded="false" />
-                <element signature="e#1070#1076#0" expanded="true" />
                 <element signature="method#mostsimilar#0;class#Rec#0" expanded="false" />
                 <element signature="method#methodb#0;class#Rec#0" expanded="false" />
-                <element signature="e#3109#3115#0" expanded="true" />
                 <element signature="method#oldmethodb#0;class#Rec#0" expanded="false" />
-                <element signature="e#3524#3530#0" expanded="true" />
                 <element signature="method#booktotalscore#0;class#Rec#0" expanded="false" />
                 <element signature="method#sum#0;class#Rec#0" expanded="false" />
                 <element signature="method#methodc#0;class#Rec#0" expanded="false" />
-                <element signature="e#5353#5359#0" expanded="true" />
                 <element signature="method#oldmethodc#0;class#Rec#0" expanded="false" />
-                <element signature="e#6252#6258#0" expanded="true" />
                 <element signature="method#methodd#0;class#Rec#0" expanded="false" />
-                <element signature="e#7821#7827#0" expanded="true" />
                 <element signature="e#9450#9468#0" expanded="false" />
                 <element signature="method#sort#0;class#Rec#0" expanded="false" />
-                <element signature="e#12263#12269#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,9 +104,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,6 +120,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -264,17 +260,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -284,12 +280,13 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -313,11 +310,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Gui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4114">
-          <caret line="242" column="13" lean-forward="false" selection-start-line="242" selection-start-column="13" selection-end-line="242" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#356#362#0" expanded="true" />
+            <element signature="e#428#436#0" expanded="true" />
             <element signature="method#main#0;class#Gui#0" expanded="false" />
             <element signature="class#search#0;class#Gui#0" expanded="false" />
+            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
+            <element signature="e#9876#9882#0" expanded="true" />
             <element signature="class#cover#0;class#Gui#0" expanded="false" />
             <element signature="class#open#0;class#Gui#0" expanded="false" />
             <element signature="class#save#0;class#Gui#0" expanded="false" />
@@ -328,8 +329,217 @@
             <element signature="class#changebook#0;class#Gui#0" expanded="false" />
             <element signature="class#changereader#0;class#Gui#0" expanded="false" />
             <element signature="method#openbook#0;class#Gui#0" expanded="false" />
+            <element signature="e#20520#20528#0" expanded="true" />
             <element signature="method#openrating#0;class#Gui#0" expanded="false" />
-            <element signature="method#savebook#0;class#Gui#0" expanded="false" />
+            <element signature="e#21304#21312#0" expanded="true" />
+            <element signature="method#saverating#0;class#Gui#0" expanded="false" />
+            <element signature="method#findpos#0;class#Gui#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="176" column="44" lean-forward="false" selection-start-line="176" selection-start-column="44" selection-end-line="176" selection-end-column="44" />
+          <folding>
+            <element signature="method#Rec#0;class#Rec#0" expanded="false" />
+            <element signature="method#Rec#1;class#Rec#0" expanded="false" />
+            <element signature="method#methoda#0;class#Rec#0" expanded="false" />
+            <element signature="method#mostsimilar#0;class#Rec#0" expanded="false" />
+            <element signature="method#methodb#0;class#Rec#0" expanded="false" />
+            <element signature="method#oldmethodb#0;class#Rec#0" expanded="false" />
+            <element signature="method#booktotalscore#0;class#Rec#0" expanded="false" />
+            <element signature="method#sum#0;class#Rec#0" expanded="false" />
+            <element signature="method#methodc#0;class#Rec#0" expanded="false" />
+            <element signature="method#oldmethodc#0;class#Rec#0" expanded="false" />
+            <element signature="method#methodd#0;class#Rec#0" expanded="false" />
+            <element signature="e#9450#9468#0" expanded="false" />
+            <element signature="method#sort#0;class#Rec#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#356#362#0" expanded="true" />
+            <element signature="e#428#436#0" expanded="true" />
+            <element signature="method#main#0;class#Gui#0" expanded="false" />
+            <element signature="class#search#0;class#Gui#0" expanded="false" />
+            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
+            <element signature="e#9876#9882#0" expanded="true" />
+            <element signature="class#cover#0;class#Gui#0" expanded="false" />
+            <element signature="class#open#0;class#Gui#0" expanded="false" />
+            <element signature="class#save#0;class#Gui#0" expanded="false" />
+            <element signature="class#addbook#0;class#Gui#0" expanded="false" />
+            <element signature="class#addreader#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletereader#0;class#Gui#0" expanded="false" />
+            <element signature="class#changebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#changereader#0;class#Gui#0" expanded="false" />
+            <element signature="method#openbook#0;class#Gui#0" expanded="false" />
+            <element signature="e#20520#20528#0" expanded="true" />
+            <element signature="method#openrating#0;class#Gui#0" expanded="false" />
+            <element signature="e#21304#21312#0" expanded="true" />
+            <element signature="method#saverating#0;class#Gui#0" expanded="false" />
+            <element signature="method#findpos#0;class#Gui#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2992">
+          <caret line="176" column="44" lean-forward="false" selection-start-line="176" selection-start-column="44" selection-end-line="176" selection-end-column="44" />
+          <folding>
+            <element signature="method#Rec#0;class#Rec#0" expanded="false" />
+            <element signature="method#Rec#1;class#Rec#0" expanded="false" />
+            <element signature="method#methoda#0;class#Rec#0" expanded="false" />
+            <element signature="method#mostsimilar#0;class#Rec#0" expanded="false" />
+            <element signature="method#methodb#0;class#Rec#0" expanded="false" />
+            <element signature="method#oldmethodb#0;class#Rec#0" expanded="false" />
+            <element signature="method#booktotalscore#0;class#Rec#0" expanded="false" />
+            <element signature="method#sum#0;class#Rec#0" expanded="false" />
+            <element signature="method#methodc#0;class#Rec#0" expanded="false" />
+            <element signature="method#oldmethodc#0;class#Rec#0" expanded="false" />
+            <element signature="method#methodd#0;class#Rec#0" expanded="false" />
+            <element signature="e#9450#9468#0" expanded="false" />
+            <element signature="method#sort#0;class#Rec#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="242" column="13" lean-forward="false" selection-start-line="242" selection-start-column="13" selection-end-line="242" selection-end-column="13" />
+          <folding>
+            <element signature="e#356#362#0" expanded="true" />
+            <element signature="e#428#436#0" expanded="true" />
+            <element signature="method#main#0;class#Gui#0" expanded="false" />
+            <element signature="class#search#0;class#Gui#0" expanded="false" />
+            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
+            <element signature="e#9876#9882#0" expanded="true" />
+            <element signature="class#cover#0;class#Gui#0" expanded="false" />
+            <element signature="class#open#0;class#Gui#0" expanded="false" />
+            <element signature="class#save#0;class#Gui#0" expanded="false" />
+            <element signature="class#addbook#0;class#Gui#0" expanded="false" />
+            <element signature="class#addreader#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletereader#0;class#Gui#0" expanded="false" />
+            <element signature="class#changebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#changereader#0;class#Gui#0" expanded="false" />
+            <element signature="method#openbook#0;class#Gui#0" expanded="false" />
+            <element signature="e#20520#20528#0" expanded="true" />
+            <element signature="method#openrating#0;class#Gui#0" expanded="false" />
+            <element signature="e#21304#21312#0" expanded="true" />
+            <element signature="method#saverating#0;class#Gui#0" expanded="false" />
+            <element signature="method#findpos#0;class#Gui#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="176" column="44" lean-forward="false" selection-start-line="176" selection-start-column="44" selection-end-line="176" selection-end-column="44" />
+          <folding>
+            <element signature="method#Rec#0;class#Rec#0" expanded="false" />
+            <element signature="method#Rec#1;class#Rec#0" expanded="false" />
+            <element signature="method#methoda#0;class#Rec#0" expanded="false" />
+            <element signature="method#mostsimilar#0;class#Rec#0" expanded="false" />
+            <element signature="method#methodb#0;class#Rec#0" expanded="false" />
+            <element signature="method#oldmethodb#0;class#Rec#0" expanded="false" />
+            <element signature="method#booktotalscore#0;class#Rec#0" expanded="false" />
+            <element signature="method#sum#0;class#Rec#0" expanded="false" />
+            <element signature="method#methodc#0;class#Rec#0" expanded="false" />
+            <element signature="method#oldmethodc#0;class#Rec#0" expanded="false" />
+            <element signature="method#methodd#0;class#Rec#0" expanded="false" />
+            <element signature="e#9450#9468#0" expanded="false" />
+            <element signature="method#sort#0;class#Rec#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4114">
+          <caret line="242" column="13" lean-forward="false" selection-start-line="242" selection-start-column="13" selection-end-line="242" selection-end-column="13" />
+          <folding>
+            <element signature="e#356#362#0" expanded="true" />
+            <element signature="e#428#436#0" expanded="true" />
+            <element signature="method#main#0;class#Gui#0" expanded="false" />
+            <element signature="class#search#0;class#Gui#0" expanded="false" />
+            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
+            <element signature="e#9876#9882#0" expanded="true" />
+            <element signature="class#cover#0;class#Gui#0" expanded="false" />
+            <element signature="class#open#0;class#Gui#0" expanded="false" />
+            <element signature="class#save#0;class#Gui#0" expanded="false" />
+            <element signature="class#addbook#0;class#Gui#0" expanded="false" />
+            <element signature="class#addreader#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletereader#0;class#Gui#0" expanded="false" />
+            <element signature="class#changebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#changereader#0;class#Gui#0" expanded="false" />
+            <element signature="method#openbook#0;class#Gui#0" expanded="false" />
+            <element signature="e#20520#20528#0" expanded="true" />
+            <element signature="method#openrating#0;class#Gui#0" expanded="false" />
+            <element signature="e#21304#21312#0" expanded="true" />
+            <element signature="method#saverating#0;class#Gui#0" expanded="false" />
+            <element signature="method#findpos#0;class#Gui#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2992">
+          <caret line="176" column="44" lean-forward="false" selection-start-line="176" selection-start-column="44" selection-end-line="176" selection-end-column="44" />
+          <folding>
+            <element signature="method#Rec#0;class#Rec#0" expanded="false" />
+            <element signature="method#Rec#1;class#Rec#0" expanded="false" />
+            <element signature="method#methoda#0;class#Rec#0" expanded="false" />
+            <element signature="method#mostsimilar#0;class#Rec#0" expanded="false" />
+            <element signature="method#methodb#0;class#Rec#0" expanded="false" />
+            <element signature="method#oldmethodb#0;class#Rec#0" expanded="false" />
+            <element signature="method#booktotalscore#0;class#Rec#0" expanded="false" />
+            <element signature="method#sum#0;class#Rec#0" expanded="false" />
+            <element signature="method#methodc#0;class#Rec#0" expanded="false" />
+            <element signature="method#oldmethodc#0;class#Rec#0" expanded="false" />
+            <element signature="method#methodd#0;class#Rec#0" expanded="false" />
+            <element signature="e#9450#9468#0" expanded="false" />
+            <element signature="method#sort#0;class#Rec#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4114">
+          <caret line="242" column="13" lean-forward="false" selection-start-line="242" selection-start-column="13" selection-end-line="242" selection-end-column="13" />
+          <folding>
+            <element signature="e#356#362#0" expanded="true" />
+            <element signature="e#428#436#0" expanded="true" />
+            <element signature="method#main#0;class#Gui#0" expanded="false" />
+            <element signature="class#search#0;class#Gui#0" expanded="false" />
+            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
+            <element signature="e#9876#9882#0" expanded="true" />
+            <element signature="class#cover#0;class#Gui#0" expanded="false" />
+            <element signature="class#open#0;class#Gui#0" expanded="false" />
+            <element signature="class#save#0;class#Gui#0" expanded="false" />
+            <element signature="class#addbook#0;class#Gui#0" expanded="false" />
+            <element signature="class#addreader#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletereader#0;class#Gui#0" expanded="false" />
+            <element signature="class#changebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#changereader#0;class#Gui#0" expanded="false" />
+            <element signature="method#openbook#0;class#Gui#0" expanded="false" />
+            <element signature="e#20520#20528#0" expanded="true" />
+            <element signature="method#openrating#0;class#Gui#0" expanded="false" />
+            <element signature="e#21304#21312#0" expanded="true" />
             <element signature="method#saverating#0;class#Gui#0" expanded="false" />
             <element signature="method#findpos#0;class#Gui#0" expanded="false" />
           </folding>
@@ -341,28 +551,19 @@
         <state relative-caret-position="1496">
           <caret line="211" column="19" lean-forward="false" selection-start-line="211" selection-start-column="19" selection-end-line="211" selection-end-column="19" />
           <folding>
-            <element signature="e#184#192#0" expanded="true" />
-            <element signature="e#247#253#0" expanded="true" />
             <element signature="method#Rec#0;class#Rec#0" expanded="false" />
             <element signature="method#Rec#1;class#Rec#0" expanded="false" />
             <element signature="method#methoda#0;class#Rec#0" expanded="false" />
-            <element signature="e#1070#1076#0" expanded="true" />
             <element signature="method#mostsimilar#0;class#Rec#0" expanded="false" />
             <element signature="method#methodb#0;class#Rec#0" expanded="false" />
-            <element signature="e#3109#3115#0" expanded="true" />
             <element signature="method#oldmethodb#0;class#Rec#0" expanded="false" />
-            <element signature="e#3524#3530#0" expanded="true" />
             <element signature="method#booktotalscore#0;class#Rec#0" expanded="false" />
             <element signature="method#sum#0;class#Rec#0" expanded="false" />
             <element signature="method#methodc#0;class#Rec#0" expanded="false" />
-            <element signature="e#5353#5359#0" expanded="true" />
             <element signature="method#oldmethodc#0;class#Rec#0" expanded="false" />
-            <element signature="e#6252#6258#0" expanded="true" />
             <element signature="method#methodd#0;class#Rec#0" expanded="false" />
-            <element signature="e#7821#7827#0" expanded="true" />
             <element signature="e#9450#9468#0" expanded="false" />
             <element signature="method#sort#0;class#Rec#0" expanded="false" />
-            <element signature="e#12263#12269#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -372,8 +573,12 @@
         <state relative-caret-position="4114">
           <caret line="242" column="13" lean-forward="false" selection-start-line="242" selection-start-column="13" selection-end-line="242" selection-end-column="13" />
           <folding>
+            <element signature="e#356#362#0" expanded="true" />
+            <element signature="e#428#436#0" expanded="true" />
             <element signature="method#main#0;class#Gui#0" expanded="false" />
             <element signature="class#search#0;class#Gui#0" expanded="false" />
+            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
+            <element signature="e#9876#9882#0" expanded="true" />
             <element signature="class#cover#0;class#Gui#0" expanded="false" />
             <element signature="class#open#0;class#Gui#0" expanded="false" />
             <element signature="class#save#0;class#Gui#0" expanded="false" />
@@ -384,8 +589,9 @@
             <element signature="class#changebook#0;class#Gui#0" expanded="false" />
             <element signature="class#changereader#0;class#Gui#0" expanded="false" />
             <element signature="method#openbook#0;class#Gui#0" expanded="false" />
+            <element signature="e#20520#20528#0" expanded="true" />
             <element signature="method#openrating#0;class#Gui#0" expanded="false" />
-            <element signature="method#savebook#0;class#Gui#0" expanded="false" />
+            <element signature="e#21304#21312#0" expanded="true" />
             <element signature="method#saverating#0;class#Gui#0" expanded="false" />
             <element signature="method#findpos#0;class#Gui#0" expanded="false" />
           </folding>
@@ -397,28 +603,19 @@
         <state relative-caret-position="816">
           <caret line="171" column="0" lean-forward="false" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
           <folding>
-            <element signature="e#184#192#0" expanded="true" />
-            <element signature="e#247#253#0" expanded="true" />
             <element signature="method#Rec#0;class#Rec#0" expanded="false" />
             <element signature="method#Rec#1;class#Rec#0" expanded="false" />
             <element signature="method#methoda#0;class#Rec#0" expanded="false" />
-            <element signature="e#1070#1076#0" expanded="true" />
             <element signature="method#mostsimilar#0;class#Rec#0" expanded="false" />
             <element signature="method#methodb#0;class#Rec#0" expanded="false" />
-            <element signature="e#3109#3115#0" expanded="true" />
             <element signature="method#oldmethodb#0;class#Rec#0" expanded="false" />
-            <element signature="e#3524#3530#0" expanded="true" />
             <element signature="method#booktotalscore#0;class#Rec#0" expanded="false" />
             <element signature="method#sum#0;class#Rec#0" expanded="false" />
             <element signature="method#methodc#0;class#Rec#0" expanded="false" />
-            <element signature="e#5353#5359#0" expanded="true" />
             <element signature="method#oldmethodc#0;class#Rec#0" expanded="false" />
-            <element signature="e#6252#6258#0" expanded="true" />
             <element signature="method#methodd#0;class#Rec#0" expanded="false" />
-            <element signature="e#7821#7827#0" expanded="true" />
             <element signature="e#9450#9468#0" expanded="false" />
             <element signature="method#sort#0;class#Rec#0" expanded="false" />
-            <element signature="e#12263#12269#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -428,8 +625,12 @@
         <state relative-caret-position="4114">
           <caret line="242" column="13" lean-forward="true" selection-start-line="242" selection-start-column="13" selection-end-line="242" selection-end-column="13" />
           <folding>
+            <element signature="e#356#362#0" expanded="true" />
+            <element signature="e#428#436#0" expanded="true" />
             <element signature="method#main#0;class#Gui#0" expanded="false" />
             <element signature="class#search#0;class#Gui#0" expanded="false" />
+            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
+            <element signature="e#9876#9882#0" expanded="true" />
             <element signature="class#cover#0;class#Gui#0" expanded="false" />
             <element signature="class#open#0;class#Gui#0" expanded="false" />
             <element signature="class#save#0;class#Gui#0" expanded="false" />
@@ -440,8 +641,9 @@
             <element signature="class#changebook#0;class#Gui#0" expanded="false" />
             <element signature="class#changereader#0;class#Gui#0" expanded="false" />
             <element signature="method#openbook#0;class#Gui#0" expanded="false" />
+            <element signature="e#20520#20528#0" expanded="true" />
             <element signature="method#openrating#0;class#Gui#0" expanded="false" />
-            <element signature="method#savebook#0;class#Gui#0" expanded="false" />
+            <element signature="e#21304#21312#0" expanded="true" />
             <element signature="method#saverating#0;class#Gui#0" expanded="false" />
             <element signature="method#findpos#0;class#Gui#0" expanded="false" />
           </folding>
@@ -453,28 +655,19 @@
         <state relative-caret-position="561">
           <caret line="106" column="44" lean-forward="false" selection-start-line="106" selection-start-column="44" selection-end-line="106" selection-end-column="44" />
           <folding>
-            <element signature="e#184#192#0" expanded="true" />
-            <element signature="e#247#253#0" expanded="true" />
             <element signature="method#Rec#0;class#Rec#0" expanded="false" />
             <element signature="method#Rec#1;class#Rec#0" expanded="false" />
             <element signature="method#methoda#0;class#Rec#0" expanded="false" />
-            <element signature="e#1070#1076#0" expanded="true" />
             <element signature="method#mostsimilar#0;class#Rec#0" expanded="false" />
             <element signature="method#methodb#0;class#Rec#0" expanded="false" />
-            <element signature="e#3109#3115#0" expanded="true" />
             <element signature="method#oldmethodb#0;class#Rec#0" expanded="false" />
-            <element signature="e#3524#3530#0" expanded="true" />
             <element signature="method#booktotalscore#0;class#Rec#0" expanded="false" />
             <element signature="method#sum#0;class#Rec#0" expanded="false" />
             <element signature="method#methodc#0;class#Rec#0" expanded="false" />
-            <element signature="e#5353#5359#0" expanded="true" />
             <element signature="method#oldmethodc#0;class#Rec#0" expanded="false" />
-            <element signature="e#6252#6258#0" expanded="true" />
             <element signature="method#methodd#0;class#Rec#0" expanded="false" />
-            <element signature="e#7821#7827#0" expanded="true" />
             <element signature="e#9450#9468#0" expanded="false" />
             <element signature="method#sort#0;class#Rec#0" expanded="false" />
-            <element signature="e#12263#12269#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -484,8 +677,12 @@
         <state relative-caret-position="1394">
           <caret line="240" column="18" lean-forward="false" selection-start-line="240" selection-start-column="18" selection-end-line="240" selection-end-column="18" />
           <folding>
+            <element signature="e#356#362#0" expanded="true" />
+            <element signature="e#428#436#0" expanded="true" />
             <element signature="method#main#0;class#Gui#0" expanded="false" />
             <element signature="class#search#0;class#Gui#0" expanded="false" />
+            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
+            <element signature="e#9876#9882#0" expanded="true" />
             <element signature="class#cover#0;class#Gui#0" expanded="false" />
             <element signature="class#open#0;class#Gui#0" expanded="false" />
             <element signature="class#save#0;class#Gui#0" expanded="false" />
@@ -496,8 +693,9 @@
             <element signature="class#changebook#0;class#Gui#0" expanded="false" />
             <element signature="class#changereader#0;class#Gui#0" expanded="false" />
             <element signature="method#openbook#0;class#Gui#0" expanded="false" />
+            <element signature="e#20520#20528#0" expanded="true" />
             <element signature="method#openrating#0;class#Gui#0" expanded="false" />
-            <element signature="method#savebook#0;class#Gui#0" expanded="false" />
+            <element signature="e#21304#21312#0" expanded="true" />
             <element signature="method#saverating#0;class#Gui#0" expanded="false" />
             <element signature="method#findpos#0;class#Gui#0" expanded="false" />
           </folding>
@@ -509,28 +707,19 @@
         <state relative-caret-position="425">
           <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding>
-            <element signature="e#184#192#0" expanded="true" />
-            <element signature="e#247#253#0" expanded="true" />
             <element signature="method#Rec#0;class#Rec#0" expanded="false" />
             <element signature="method#Rec#1;class#Rec#0" expanded="false" />
             <element signature="method#methoda#0;class#Rec#0" expanded="false" />
-            <element signature="e#1070#1076#0" expanded="true" />
             <element signature="method#mostsimilar#0;class#Rec#0" expanded="false" />
             <element signature="method#methodb#0;class#Rec#0" expanded="false" />
-            <element signature="e#3109#3115#0" expanded="true" />
             <element signature="method#oldmethodb#0;class#Rec#0" expanded="false" />
-            <element signature="e#3524#3530#0" expanded="true" />
             <element signature="method#booktotalscore#0;class#Rec#0" expanded="false" />
             <element signature="method#sum#0;class#Rec#0" expanded="false" />
             <element signature="method#methodc#0;class#Rec#0" expanded="false" />
-            <element signature="e#5353#5359#0" expanded="true" />
             <element signature="method#oldmethodc#0;class#Rec#0" expanded="false" />
-            <element signature="e#6252#6258#0" expanded="true" />
             <element signature="method#methodd#0;class#Rec#0" expanded="false" />
-            <element signature="e#7821#7827#0" expanded="true" />
             <element signature="e#9450#9468#0" expanded="false" />
             <element signature="method#sort#0;class#Rec#0" expanded="false" />
-            <element signature="e#12263#12269#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -540,8 +729,12 @@
         <state relative-caret-position="340">
           <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
           <folding>
+            <element signature="e#356#362#0" expanded="true" />
+            <element signature="e#428#436#0" expanded="true" />
             <element signature="method#main#0;class#Gui#0" expanded="false" />
             <element signature="class#search#0;class#Gui#0" expanded="false" />
+            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
+            <element signature="e#9876#9882#0" expanded="true" />
             <element signature="class#cover#0;class#Gui#0" expanded="false" />
             <element signature="class#open#0;class#Gui#0" expanded="false" />
             <element signature="class#save#0;class#Gui#0" expanded="false" />
@@ -552,8 +745,9 @@
             <element signature="class#changebook#0;class#Gui#0" expanded="false" />
             <element signature="class#changereader#0;class#Gui#0" expanded="false" />
             <element signature="method#openbook#0;class#Gui#0" expanded="false" />
+            <element signature="e#20520#20528#0" expanded="true" />
             <element signature="method#openrating#0;class#Gui#0" expanded="false" />
-            <element signature="method#savebook#0;class#Gui#0" expanded="false" />
+            <element signature="e#21304#21312#0" expanded="true" />
             <element signature="method#saverating#0;class#Gui#0" expanded="false" />
             <element signature="method#findpos#0;class#Gui#0" expanded="false" />
           </folding>
@@ -565,28 +759,19 @@
         <state relative-caret-position="612">
           <caret line="94" column="28" lean-forward="false" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
           <folding>
-            <element signature="e#184#192#0" expanded="true" />
-            <element signature="e#247#253#0" expanded="true" />
             <element signature="method#Rec#0;class#Rec#0" expanded="false" />
             <element signature="method#Rec#1;class#Rec#0" expanded="false" />
             <element signature="method#methoda#0;class#Rec#0" expanded="false" />
-            <element signature="e#1070#1076#0" expanded="true" />
             <element signature="method#mostsimilar#0;class#Rec#0" expanded="false" />
             <element signature="method#methodb#0;class#Rec#0" expanded="false" />
-            <element signature="e#3109#3115#0" expanded="true" />
             <element signature="method#oldmethodb#0;class#Rec#0" expanded="false" />
-            <element signature="e#3524#3530#0" expanded="true" />
             <element signature="method#booktotalscore#0;class#Rec#0" expanded="false" />
             <element signature="method#sum#0;class#Rec#0" expanded="false" />
             <element signature="method#methodc#0;class#Rec#0" expanded="false" />
-            <element signature="e#5353#5359#0" expanded="true" />
             <element signature="method#oldmethodc#0;class#Rec#0" expanded="false" />
-            <element signature="e#6252#6258#0" expanded="true" />
             <element signature="method#methodd#0;class#Rec#0" expanded="false" />
-            <element signature="e#7821#7827#0" expanded="true" />
             <element signature="e#9450#9468#0" expanded="false" />
             <element signature="method#sort#0;class#Rec#0" expanded="false" />
-            <element signature="e#12263#12269#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -596,8 +781,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#356#362#0" expanded="true" />
+            <element signature="e#428#436#0" expanded="true" />
             <element signature="method#main#0;class#Gui#0" expanded="false" />
             <element signature="class#search#0;class#Gui#0" expanded="false" />
+            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
+            <element signature="e#9876#9882#0" expanded="true" />
             <element signature="class#cover#0;class#Gui#0" expanded="false" />
             <element signature="class#open#0;class#Gui#0" expanded="false" />
             <element signature="class#save#0;class#Gui#0" expanded="false" />
@@ -608,8 +797,9 @@
             <element signature="class#changebook#0;class#Gui#0" expanded="false" />
             <element signature="class#changereader#0;class#Gui#0" expanded="false" />
             <element signature="method#openbook#0;class#Gui#0" expanded="false" />
+            <element signature="e#20520#20528#0" expanded="true" />
             <element signature="method#openrating#0;class#Gui#0" expanded="false" />
-            <element signature="method#savebook#0;class#Gui#0" expanded="false" />
+            <element signature="e#21304#21312#0" expanded="true" />
             <element signature="method#saverating#0;class#Gui#0" expanded="false" />
             <element signature="method#findpos#0;class#Gui#0" expanded="false" />
           </folding>
@@ -621,28 +811,19 @@
         <state relative-caret-position="1377">
           <caret line="81" column="44" lean-forward="false" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="44" />
           <folding>
-            <element signature="e#184#192#0" expanded="true" />
-            <element signature="e#247#253#0" expanded="true" />
             <element signature="method#Rec#0;class#Rec#0" expanded="false" />
             <element signature="method#Rec#1;class#Rec#0" expanded="false" />
             <element signature="method#methoda#0;class#Rec#0" expanded="false" />
-            <element signature="e#1070#1076#0" expanded="true" />
             <element signature="method#mostsimilar#0;class#Rec#0" expanded="false" />
             <element signature="method#methodb#0;class#Rec#0" expanded="false" />
-            <element signature="e#3109#3115#0" expanded="true" />
             <element signature="method#oldmethodb#0;class#Rec#0" expanded="false" />
-            <element signature="e#3524#3530#0" expanded="true" />
             <element signature="method#booktotalscore#0;class#Rec#0" expanded="false" />
             <element signature="method#sum#0;class#Rec#0" expanded="false" />
             <element signature="method#methodc#0;class#Rec#0" expanded="false" />
-            <element signature="e#5353#5359#0" expanded="true" />
             <element signature="method#oldmethodc#0;class#Rec#0" expanded="false" />
-            <element signature="e#6252#6258#0" expanded="true" />
             <element signature="method#methodd#0;class#Rec#0" expanded="false" />
-            <element signature="e#7821#7827#0" expanded="true" />
             <element signature="e#9450#9468#0" expanded="false" />
             <element signature="method#sort#0;class#Rec#0" expanded="false" />
-            <element signature="e#12263#12269#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -652,8 +833,12 @@
         <state relative-caret-position="340">
           <caret line="28" column="72" lean-forward="false" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
           <folding>
+            <element signature="e#356#362#0" expanded="true" />
+            <element signature="e#428#436#0" expanded="true" />
             <element signature="method#main#0;class#Gui#0" expanded="false" />
             <element signature="class#search#0;class#Gui#0" expanded="false" />
+            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
+            <element signature="e#9876#9882#0" expanded="true" />
             <element signature="class#cover#0;class#Gui#0" expanded="false" />
             <element signature="class#open#0;class#Gui#0" expanded="false" />
             <element signature="class#save#0;class#Gui#0" expanded="false" />
@@ -664,8 +849,9 @@
             <element signature="class#changebook#0;class#Gui#0" expanded="false" />
             <element signature="class#changereader#0;class#Gui#0" expanded="false" />
             <element signature="method#openbook#0;class#Gui#0" expanded="false" />
+            <element signature="e#20520#20528#0" expanded="true" />
             <element signature="method#openrating#0;class#Gui#0" expanded="false" />
-            <element signature="method#savebook#0;class#Gui#0" expanded="false" />
+            <element signature="e#21304#21312#0" expanded="true" />
             <element signature="method#saverating#0;class#Gui#0" expanded="false" />
             <element signature="method#findpos#0;class#Gui#0" expanded="false" />
           </folding>
@@ -677,28 +863,19 @@
         <state relative-caret-position="1309">
           <caret line="94" column="9" lean-forward="true" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
           <folding>
-            <element signature="e#184#192#0" expanded="true" />
-            <element signature="e#247#253#0" expanded="true" />
             <element signature="method#Rec#0;class#Rec#0" expanded="false" />
             <element signature="method#Rec#1;class#Rec#0" expanded="false" />
             <element signature="method#methoda#0;class#Rec#0" expanded="false" />
-            <element signature="e#1070#1076#0" expanded="true" />
             <element signature="method#mostsimilar#0;class#Rec#0" expanded="false" />
             <element signature="method#methodb#0;class#Rec#0" expanded="false" />
-            <element signature="e#3109#3115#0" expanded="true" />
             <element signature="method#oldmethodb#0;class#Rec#0" expanded="false" />
-            <element signature="e#3524#3530#0" expanded="true" />
             <element signature="method#booktotalscore#0;class#Rec#0" expanded="false" />
             <element signature="method#sum#0;class#Rec#0" expanded="false" />
             <element signature="method#methodc#0;class#Rec#0" expanded="false" />
-            <element signature="e#5353#5359#0" expanded="true" />
             <element signature="method#oldmethodc#0;class#Rec#0" expanded="false" />
-            <element signature="e#6252#6258#0" expanded="true" />
             <element signature="method#methodd#0;class#Rec#0" expanded="false" />
-            <element signature="e#7821#7827#0" expanded="true" />
             <element signature="e#9450#9468#0" expanded="false" />
             <element signature="method#sort#0;class#Rec#0" expanded="false" />
-            <element signature="e#12263#12269#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -708,8 +885,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#356#362#0" expanded="true" />
+            <element signature="e#428#436#0" expanded="true" />
             <element signature="method#main#0;class#Gui#0" expanded="false" />
             <element signature="class#search#0;class#Gui#0" expanded="false" />
+            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
+            <element signature="e#9876#9882#0" expanded="true" />
             <element signature="class#cover#0;class#Gui#0" expanded="false" />
             <element signature="class#open#0;class#Gui#0" expanded="false" />
             <element signature="class#save#0;class#Gui#0" expanded="false" />
@@ -720,33 +901,9 @@
             <element signature="class#changebook#0;class#Gui#0" expanded="false" />
             <element signature="class#changereader#0;class#Gui#0" expanded="false" />
             <element signature="method#openbook#0;class#Gui#0" expanded="false" />
+            <element signature="e#20520#20528#0" expanded="true" />
             <element signature="method#openrating#0;class#Gui#0" expanded="false" />
-            <element signature="method#savebook#0;class#Gui#0" expanded="false" />
-            <element signature="method#saverating#0;class#Gui#0" expanded="false" />
-            <element signature="method#findpos#0;class#Gui#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="242" column="13" lean-forward="false" selection-start-line="242" selection-start-column="13" selection-end-line="242" selection-end-column="13" />
-          <folding>
-            <element signature="method#main#0;class#Gui#0" expanded="false" />
-            <element signature="class#search#0;class#Gui#0" expanded="false" />
-            <element signature="class#cover#0;class#Gui#0" expanded="false" />
-            <element signature="class#open#0;class#Gui#0" expanded="false" />
-            <element signature="class#save#0;class#Gui#0" expanded="false" />
-            <element signature="class#addbook#0;class#Gui#0" expanded="false" />
-            <element signature="class#addreader#0;class#Gui#0" expanded="false" />
-            <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
-            <element signature="class#deletereader#0;class#Gui#0" expanded="false" />
-            <element signature="class#changebook#0;class#Gui#0" expanded="false" />
-            <element signature="class#changereader#0;class#Gui#0" expanded="false" />
-            <element signature="method#openbook#0;class#Gui#0" expanded="false" />
-            <element signature="method#openrating#0;class#Gui#0" expanded="false" />
-            <element signature="method#savebook#0;class#Gui#0" expanded="false" />
+            <element signature="e#21304#21312#0" expanded="true" />
             <element signature="method#saverating#0;class#Gui#0" expanded="false" />
             <element signature="method#findpos#0;class#Gui#0" expanded="false" />
           </folding>
@@ -755,31 +912,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Rec.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
+        <state relative-caret-position="697">
           <caret line="176" column="44" lean-forward="false" selection-start-line="176" selection-start-column="44" selection-end-line="176" selection-end-column="44" />
           <folding>
-            <element signature="e#184#192#0" expanded="true" />
-            <element signature="e#247#253#0" expanded="true" />
             <element signature="method#Rec#0;class#Rec#0" expanded="false" />
             <element signature="method#Rec#1;class#Rec#0" expanded="false" />
             <element signature="method#methoda#0;class#Rec#0" expanded="false" />
-            <element signature="e#1070#1076#0" expanded="true" />
             <element signature="method#mostsimilar#0;class#Rec#0" expanded="false" />
             <element signature="method#methodb#0;class#Rec#0" expanded="false" />
-            <element signature="e#3109#3115#0" expanded="true" />
             <element signature="method#oldmethodb#0;class#Rec#0" expanded="false" />
-            <element signature="e#3524#3530#0" expanded="true" />
             <element signature="method#booktotalscore#0;class#Rec#0" expanded="false" />
             <element signature="method#sum#0;class#Rec#0" expanded="false" />
             <element signature="method#methodc#0;class#Rec#0" expanded="false" />
-            <element signature="e#5353#5359#0" expanded="true" />
             <element signature="method#oldmethodc#0;class#Rec#0" expanded="false" />
-            <element signature="e#6252#6258#0" expanded="true" />
             <element signature="method#methodd#0;class#Rec#0" expanded="false" />
-            <element signature="e#7821#7827#0" expanded="true" />
             <element signature="e#9450#9468#0" expanded="false" />
             <element signature="method#sort#0;class#Rec#0" expanded="false" />
-            <element signature="e#12263#12269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="485" column="8" lean-forward="true" selection-start-line="485" selection-start-column="8" selection-end-line="492" selection-end-column="9" />
+          <folding>
+            <element signature="e#356#362#0" expanded="true" />
+            <element signature="e#428#436#0" expanded="true" />
+            <element signature="method#main#0;class#Gui#0" expanded="false" />
+            <element signature="class#search#0;class#Gui#0" expanded="false" />
+            <element signature="class#recommend#0;class#Gui#0" expanded="false" />
+            <element signature="e#9876#9882#0" expanded="true" />
+            <element signature="class#cover#0;class#Gui#0" expanded="false" />
+            <element signature="class#open#0;class#Gui#0" expanded="false" />
+            <element signature="class#save#0;class#Gui#0" expanded="false" />
+            <element signature="class#addbook#0;class#Gui#0" expanded="false" />
+            <element signature="class#addreader#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#deletereader#0;class#Gui#0" expanded="false" />
+            <element signature="class#changebook#0;class#Gui#0" expanded="false" />
+            <element signature="class#changereader#0;class#Gui#0" expanded="false" />
+            <element signature="method#openbook#0;class#Gui#0" expanded="false" />
+            <element signature="e#20520#20528#0" expanded="true" />
+            <element signature="method#openrating#0;class#Gui#0" expanded="false" />
+            <element signature="e#21304#21312#0" expanded="true" />
+            <element signature="method#saverating#0;class#Gui#0" expanded="false" />
+            <element signature="method#findpos#0;class#Gui#0" expanded="false" />
           </folding>
         </state>
       </provider>
