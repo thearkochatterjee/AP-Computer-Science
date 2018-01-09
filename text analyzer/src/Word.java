@@ -18,4 +18,8 @@ public class Word {
 
         return numsym;
     }
+
+    private boolean hasdipthong(){
+        return true;
+    }
 }
