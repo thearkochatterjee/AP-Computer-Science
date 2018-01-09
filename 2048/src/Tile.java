@@ -5,6 +5,16 @@ public class Tile extends JLabel{
     private int value = 0;
 
     public Tile(){
+        value = 0;
+        super.setVerticalAlignment(JLabel.CENTER);
+        super.setHorizontalAlignment(JLabel.CENTER);
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public int generatevalue(){
         Random r = new Random();
         value = r.nextInt()+1;
         switch (value){
@@ -15,11 +25,6 @@ public class Tile extends JLabel{
                 value = 4;
                 break;
         }
-        super.setVerticalAlignment(JLabel.CENTER);
-        super.setHorizontalAlignment(JLabel.CENTER);
-    }
-
-    public int getValue() {
         return value;
     }
 
