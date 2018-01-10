@@ -1,74 +1,44 @@
+import java.util.ArrayList;
+
 public class Word {
     private String word = "";
+    private int syllable = 0;
+    private String type = "";
 
     public Word(){
         word = "";
+        syllable = 0;
+        type = "";
     }
 
-    public Word(String word){
-        this.word = word;
+    public Word(String line){
+        String parts[] = line.split(",");
+        word = parts[0];
+        syllable = Integer.valueOf(parts[1]);
+        type = parts[2];
     }
 
     public String getWord() {
         return word;
     }
 
+    public String getType() {
+        return type;
+    }
+
+    public int getSyllable() {
+        return syllable;
+    }
+
     public void setWord(String word) {
         this.word = word;
     }
 
-    public int number_of_syllibles(){
-        char chword[] = word.toLowerCase().toCharArray();
-        int nums = 0;
-        for(int i = 0;i<chword.length;i++){
-            if(!isvowel(chword[chword.length-1])){
-                if(isvowel(chword[i])&&!isvowel(chword[i+1])){
-                    nums++;
-                }
-                else{
-                    if(isvowel(chword[i])){
-                        nums++;
-                    }
-                }
-            }
-            else{
-                if(i!=0){
-                    if(isvowel(chword[i])&&!isvowel(chword[i-1])){
-                        nums++;
-                    }
-                }
-                else{
-                    if(isvowel(chword[i])){
-                        nums++;
-                    }
-                }
-            }
-        }
-        if(hassilente()){
-            nums--;
-        }
-        return nums;
+    public void setType(String type) {
+        this.type = type;
     }
 
-    private boolean isvowel(char test){
-        char vowels[] = {'a','e','i','o','u'};
-        boolean t = false;
-        for(int i = 0;i<5;i++){
-            if(test==vowels[i]){
-                t=true;
-            }
-        }
-        return t;
-    }
-
-    private boolean hassilente(){
-        boolean silent = false;
-        char letter[] = word.toLowerCase().toCharArray();
-        for(int i = 0;i<word.length()-1;i++){
-            if(!isvowel(letter[i])&&letter[i+1]=='e'){
-                silent=true;
-            }
-        }
-        return silent;
+    public void setSyllable(int syllable) {
+        this.syllable = syllable;
     }
 }
