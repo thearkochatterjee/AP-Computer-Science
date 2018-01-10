@@ -11,4 +11,8 @@ public class InputPane extends Container{
         add(lbltext,BorderLayout.NORTH);
         lbltext.setText("Text");
     }
+
+    public JTextArea getTxttext() {
+        return txttext;
+    }
 }

@@ -10,11 +10,12 @@ public class MainGui extends JFrame {
     private JMenuBar mnubar = new JMenuBar();
     private JMenu mnufile = new JMenu();
     private JMenuItem mnuopen = new JMenuItem();
+    private static MainPane pane = new MainPane();
 
     public MainGui(){
         setSize(500,500);
         setTitle("Text Analyzer");
-        getContentPane().add(new MainPane());
+        getContentPane().add(pane);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setJMenuBar(mnubar);
         mnubar.add(mnufile);
@@ -28,7 +29,17 @@ public class MainGui extends JFrame {
     static class open implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
-            open("src/assets/Gettysburg.txt");
+            switch (Integer.valueOf(JOptionPane.showInputDialog("Which text file would you like to open? (1 Gettysburg, 2 6th grader, 3 college)"))){
+                case 1:
+                    open("src/assets/Gettysburg.txt");
+                    break;
+                case 2:
+                    open("src/assets/test-6th-grader.txt");
+                    break;
+                case 3:
+                    open("src/assets/test-college-grad.txt");
+                    break;
+            }
         }
     }
 
@@ -45,6 +56,6 @@ public class MainGui extends JFrame {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+        pane.getPanein().getTxttext().setText(text);
     }
 }
