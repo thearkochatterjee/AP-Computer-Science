@@ -18,12 +18,17 @@ public class Word {
     }
 
     public int number_of_syllibles(){
-        char chword[] = word.toCharArray();
+        char chword[] = word.toLowerCase().toCharArray();
         int nums = 0;
         for(int i = 0;i<chword.length;i++){
             if(!isvowel(chword[chword.length-1])){
                 if(isvowel(chword[i])&&!isvowel(chword[i+1])){
                     nums++;
+                }
+                else{
+                    if(isvowel(chword[i])){
+                        nums++;
+                    }
                 }
             }
             else{
@@ -32,7 +37,15 @@ public class Word {
                         nums++;
                     }
                 }
+                else{
+                    if(isvowel(chword[i])){
+                        nums++;
+                    }
+                }
             }
+        }
+        if(hassilente()){
+            nums--;
         }
         return nums;
     }
@@ -46,5 +59,16 @@ public class Word {
             }
         }
         return t;
+    }
+
+    private boolean hassilente(){
+        boolean silent = false;
+        char letter[] = word.toLowerCase().toCharArray();
+        for(int i = 0;i<word.length()-1;i++){
+            if(!isvowel(letter[i])&&letter[i+1]=='e'){
+                silent=true;
+            }
+        }
+        return silent;
     }
 }
