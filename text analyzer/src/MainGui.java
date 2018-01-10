@@ -1,6 +1,10 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class MainGui extends JFrame {
     private JMenuBar mnubar = new JMenuBar();
@@ -24,7 +28,23 @@ public class MainGui extends JFrame {
     static class open implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
-
+            open("src/assets/Gettysburg.txt");
         }
+    }
+
+    private static void open(String path){
+        String text = "";
+        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                text += " " + line.trim();
+            }
+            br.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }
