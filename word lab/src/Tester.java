@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class Tester {
-    private static ArrayList<Word> arrwords = new ArrayList<Word>();
     private static WordAnalyzer analyzer = new WordAnalyzer();
 
     public static void main(String args[]){
@@ -14,13 +13,13 @@ public class Tester {
         do {
             analyzer.setWord(JOptionPane.showInputDialog("What is the word?"));
             open("src/assets/dictionary/"+analyzer.getWord().toLowerCase().toCharArray()[0]+".txt");
-            analyzer.setArrwords(arrwords);
             JOptionPane.showMessageDialog(null,"The number of syllables is "+analyzer.number_of_syllibles());
             again = JOptionPane.showInputDialog("Do you want to run again?");
         }while (again.equals("yes"));
     }
 
     public static void open(String path){
+        ArrayList<Word> arrwords = new ArrayList<Word>();
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
             String line;
             while ((line = br.readLine()) != null) {
