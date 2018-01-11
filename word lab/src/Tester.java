@@ -7,30 +7,28 @@ import java.util.ArrayList;
 
 public class Tester {
     private static WordAnalyzer analyzer = new WordAnalyzer();
+    private static ArrayList<WordAnalyzer> arranalyzer = new ArrayList<WordAnalyzer>();
 
     public static void main(String args[]){
         String again = "";
+        String more = "";
+        ArrayList<String> arrwords = new ArrayList<String>();
         do {
-            analyzer.setWord(JOptionPane.showInputDialog("What is the word?"));
-            open("src/assets/dictionary/"+analyzer.getWord().toLowerCase().toCharArray()[0]+".txt");
-            JOptionPane.showMessageDialog(null,"The number of syllables is "+analyzer.number_of_syllibles());
+            arranalyzer.clear();
+            do{
+                arrwords.add(JOptionPane.showInputDialog("What is the word you want to check?(0 to exit)"));
+            }while(!arrwords.get(arrwords.size()-1).equals("0"));
+            arrwords.remove(arrwords.indexOf("0"));
+            for (String w: arrwords) {
+                JOptionPane.showMessageDialog(null,w);
+            }
+            for (String w: arrwords) {
+                arranalyzer.add(new WordAnalyzer(w));
+            }
+            for (WordAnalyzer a: arranalyzer) {
+                JOptionPane.showMessageDialog(null,"The number of syllables in "+a.getWord()+" is "+a.number_of_syllibles());
+            }
             again = JOptionPane.showInputDialog("Do you want to run again?");
         }while (again.equals("yes"));
-    }
-
-    public static void open(String path){
-        ArrayList<Word> arrwords = new ArrayList<Word>();
-        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
-            String line;
-            while ((line = br.readLine()) != null) {
-                arrwords.add(new Word(line));
-            }
-            br.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        analyzer.setArrwords(arrwords);
     }
 }

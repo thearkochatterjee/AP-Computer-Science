@@ -1,4 +1,8 @@
 import javax.swing.*;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class WordAnalyzer {
@@ -8,6 +12,11 @@ public class WordAnalyzer {
     public WordAnalyzer(){
         word = "";
         arrwords = new ArrayList<Word>();
+    }
+
+    public WordAnalyzer(String word){
+        this.word = word;
+        this.arrwords = open("src/assets/dictionary/"+word.toLowerCase().toCharArray()[0]+".txt");
     }
 
     public String getWord() {
@@ -91,5 +100,22 @@ public class WordAnalyzer {
             }
         }
         return silent;
+    }
+
+    private ArrayList<Word> open(String path){
+        ArrayList<Word> arrallwords = new ArrayList<Word>();
+        arrallwords.clear();
+        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                arrallwords.add(new Word(line));
+            }
+            br.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return arrallwords;
     }
 }

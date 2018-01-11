@@ -10,6 +10,7 @@ eild,1,adjective
 elect,1,adjective
 else,1,adjective
 eyed,1,adjective
+eagle,2,noun
 earnest,2,adjective
 earthborn,2,adjective
 earthbound,2,adjective
