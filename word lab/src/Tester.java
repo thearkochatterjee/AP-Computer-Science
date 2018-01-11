@@ -27,6 +27,7 @@ public class Tester {
             }
             for (WordAnalyzer a: arranalyzer) {
                 JOptionPane.showMessageDialog(null,"The number of syllables in "+a.getWord()+" is "+a.number_of_syllibles());
+                System.out.println("The number of syllables in "+a.getWord()+" is "+a.number_of_syllibles());
             }
             again = JOptionPane.showInputDialog("Do you want to run again?");
         }while (again.equals("yes"));
