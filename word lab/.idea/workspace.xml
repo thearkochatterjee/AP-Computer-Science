@@ -12,7 +12,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Tester.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Tester.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tester.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="277">
@@ -41,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordAnalyzer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WordAnalyzer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/WordAnalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="52" column="21" lean-forward="false" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+            <state relative-caret-position="171">
+              <caret line="50" column="50" lean-forward="false" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#WordAnalyzer#0;class#WordAnalyzer#0" expanded="false" />
@@ -64,6 +64,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>air</find>
+    </findStrings>
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -74,8 +79,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/Word.java" />
         <option value="$PROJECT_DIR$/src/assets/dictionary/e.txt" />
-        <option value="$PROJECT_DIR$/src/WordAnalyzer.java" />
         <option value="$PROJECT_DIR$/src/Tester.java" />
+        <option value="$PROJECT_DIR$/src/WordAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/assets/dictionary/a.txt" />
       </list>
     </option>
   </component>
@@ -554,15 +560,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WordAnalyzer.java">
+    <entry file="file://$PROJECT_DIR$/src/assets/dictionary/a.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="52" column="21" lean-forward="false" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#WordAnalyzer#0;class#WordAnalyzer#0" expanded="false" />
-            <element signature="method#hassilente#0;class#WordAnalyzer#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="101" column="20" lean-forward="true" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -574,6 +576,18 @@
             <element signature="imports" expanded="true" />
             <element signature="e#330#344#0" expanded="true" />
             <element signature="e#496#504#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WordAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="50" column="50" lean-forward="false" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#WordAnalyzer#0;class#WordAnalyzer#0" expanded="false" />
+            <element signature="method#hassilente#0;class#WordAnalyzer#0" expanded="false" />
           </folding>
         </state>
       </provider>

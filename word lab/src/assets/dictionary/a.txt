@@ -98,7 +98,7 @@ aidless,2,adjective
 ailing,2,adjective
 aimless,2,adjective
 ain,2,adjective
-air,2,adjective
+air,1,noun
 airborne,2,adjective
 airless,2,adjective
 airsick,2,adjective
