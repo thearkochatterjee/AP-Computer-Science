@@ -20,13 +20,10 @@ public class Tester {
             }while(!arrwords.get(arrwords.size()-1).equals("0"));
             arrwords.remove(arrwords.indexOf("0"));
             for (String w: arrwords) {
-                JOptionPane.showMessageDialog(null,w);
-            }
-            for (String w: arrwords) {
                 arranalyzer.add(new WordAnalyzer(w));
             }
             for (WordAnalyzer a: arranalyzer) {
-                JOptionPane.showMessageDialog(null,"The number of syllables in "+a.getWord()+" is "+a.number_of_syllibles());
+//                JOptionPane.showMessageDialog(null,"The number of syllables in "+a.getWord()+" is "+a.number_of_syllibles());
                 System.out.println("The number of syllables in "+a.getWord()+" is "+a.number_of_syllibles());
             }
             again = JOptionPane.showInputDialog("Do you want to run again?");

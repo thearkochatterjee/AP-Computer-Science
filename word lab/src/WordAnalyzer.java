@@ -51,11 +51,6 @@ public class WordAnalyzer {
                     if(isvowel(chword[i])&&!isvowel(chword[i+1])){
                         nums++;
                     }
-                    else{
-                        if(isvowel(chword[i])){
-                            nums++;
-                        }
-                    }
                 }
                 else{
                     if(i!=0){
