@@ -1,15 +1,21 @@
+import javax.swing.*;
 import java.util.ArrayList;
 
 public class TextAnalyzer {
     private String text = "";
-    private ArrayList<Word> arrword = new ArrayList<Word>();
+    private ArrayList<WordAnalyzer> arrword = new ArrayList<WordAnalyzer>();
+
+    public TextAnalyzer(){
+        text = "";
+        arrword = new ArrayList<WordAnalyzer>();
+    }
 
     public TextAnalyzer(String text){
         this.text = text;
         inputtowords();
     }
 
-    public ArrayList<Word> getArrword() {
+    public ArrayList<WordAnalyzer> getArrword() {
         return arrword;
     }
 
@@ -17,7 +23,7 @@ public class TextAnalyzer {
         return text;
     }
 
-    public void setArrword(ArrayList<Word> arrword) {
+    public void setArrword(ArrayList<WordAnalyzer> arrword) {
         this.arrword = arrword;
     }
 
@@ -27,9 +33,7 @@ public class TextAnalyzer {
     }
 
     public int numberofsenctences(){
-        int nums = 0;
-
-        return nums;
+        return text.split("[.!?]").length;
     }
 
     public int numberofwords(){
@@ -46,7 +50,7 @@ public class TextAnalyzer {
 
     public int totalconssoants(){
         int numc = 0;
-        for (Word w: arrword) {
+        for (WordAnalyzer w: arrword) {
             numc+=w.number_of_consonents();
         }
         return numc;
@@ -54,7 +58,7 @@ public class TextAnalyzer {
 
     public int totalvowels(){
         int numv = 0;
-        for (Word w: arrword) {
+        for (WordAnalyzer w: arrword) {
             numv += w.number_of_vowels();
         }
         return numv;
@@ -62,8 +66,10 @@ public class TextAnalyzer {
 
     private void inputtowords(){
         String words[] = text.split(" ");
-        for(int i = 0;i<words.length;i++){
-            arrword.add(new Word(words[i]));
+        for(int i = 0;i<words.length-1;i++){
+            if(!words[i].equals("")){
+                arrword.add(new WordAnalyzer(words[i].toLowerCase()));
+            }
         }
     }
 }

@@ -19,11 +19,17 @@ public class OutputPane extends Container{
         add(lblnumbervowels);
         lblout.setText("Information");
         lblnumsentences.setText("Number of Sentences");
-
+        lblnumwords.setText("Number of Words");
+        lblnumsyllibles.setText("Number of Syllables");
+        lblnumberconsonents.setText("Number of Consonants");
+        lblnumbervowels.setText("Number of Vowels");
     }
 
     public void setOutput(TextAnalyzer textAnalyzer){
         lblnumwords.setText("Number of Words: "+textAnalyzer.numberofwords());
-
+        lblnumbervowels.setText("Number of Vowels: "+textAnalyzer.totalvowels());
+        lblnumberconsonents.setText("Number of Consonants: "+textAnalyzer.totalconssoants());
+        lblnumsyllibles.setText("Number of Syllables: "+textAnalyzer.totalsyllibles());
+        lblnumsentences.setText("Number of Sentences: "+textAnalyzer.numberofsenctences());
     }
 }

@@ -11,6 +11,7 @@ public class MainGui extends JFrame {
     private JMenu mnufile = new JMenu();
     private JMenuItem mnuopen = new JMenuItem();
     private static MainPane pane = new MainPane();
+    private static TextAnalyzer textAnalyzer = new TextAnalyzer();
 
     public MainGui(){
         setSize(500,500);
@@ -40,6 +41,7 @@ public class MainGui extends JFrame {
                     open("src/assets/test-college-grad.txt");
                     break;
             }
+            pane.getPanein().reformat(5);
         }
     }
 
@@ -56,6 +58,9 @@ public class MainGui extends JFrame {
         } catch (IOException e) {
             e.printStackTrace();
         }
+//        JOptionPane.showMessageDialog(null,text);
         pane.getPanein().getTxttext().setText(text);
+        textAnalyzer.setText(text);
+        pane.getPaneout().setOutput(textAnalyzer);
     }
 }

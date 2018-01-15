@@ -5,6 +5,7 @@ bare,1,adjective
 barred,1,adjective
 bats,1,adjective
 beaut,1,adjective
+beauty,2,adjective
 beige,1,adjective
 bent,1,adjective
 birch,1,adjective
