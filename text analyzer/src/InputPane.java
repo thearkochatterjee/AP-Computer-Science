@@ -49,7 +49,19 @@ public class InputPane extends Container{
     private ArrayList<String> reformat_method_2(int amount){
         ArrayList<String> arrline = new ArrayList<String>();
         String arrwords[] = txttext.getText().trim().split(" ");
-        
+        int total = 0;
+        String temp = "";
+        for(int i = 0;i<arrwords.length;i++){
+            total += arrwords[i].length();
+            if(total<amount){
+                temp += arrwords[i] + " ";
+            }
+            else {
+                arrline.add(temp.trim());
+                temp = "";
+                total = 0;
+            }
+        }
         return arrline;
     }
 }

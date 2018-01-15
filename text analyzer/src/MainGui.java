@@ -41,7 +41,7 @@ public class MainGui extends JFrame {
                     open("src/assets/test-college-grad.txt");
                     break;
             }
-            pane.getPanein().reformat(5);
+            pane.getPanein().reformat(pane.getPanein().getTxttext().getWidth()/40);
         }
     }
 
