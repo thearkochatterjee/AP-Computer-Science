@@ -15,7 +15,14 @@ public class WordAnalyzer {
     }
 
     public WordAnalyzer(String word){
-        this.word = word;
+        if(haspunctuation(word)){
+            for(int i = 0;i<word.length()-1;i++){
+                this.word += word.toCharArray()[i];
+            }
+        }
+        else{
+            this.word = word;
+        }
         this.arrwords = open("src/assets/dictionary/"+word.toLowerCase().toCharArray()[0]+".txt");
     }
 
@@ -141,13 +148,7 @@ public class WordAnalyzer {
         return alphabet;
     }
 
-    private boolean haspunctuation(){
-        boolean punctuation = false;
-        for (char l: letters()) {
-            if(word.toCharArray()[word.length()-1]==l){
-                punctuation = true;
-            }
-        }
-        return !punctuation;
+    private boolean haspunctuation(String word){
+        return (word.endsWith(".")||word.endsWith("?")||word.endsWith("!")||word.endsWith(","));
     }
 }

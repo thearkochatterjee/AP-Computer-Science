@@ -763,6 +763,7 @@ terroristic,4,adjective
 tertiary,4,adjective
 tessellated,4,adjective
 testiculate,4,adjective
+testing,2,verb
 testudinal,4,adjective
 tetrabasic,4,adjective
 tetracyclic,4,adjective

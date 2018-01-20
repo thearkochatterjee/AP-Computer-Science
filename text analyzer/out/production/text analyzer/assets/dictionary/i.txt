@@ -295,6 +295,7 @@ invalid,3,adjective
 invasive,3,adjective
 invected,3,adjective
 invective,3,adjective
+invented,3,verb
 inventive,3,adjective
 inversive,3,adjective
 invited,3,adjective
@@ -1402,6 +1403,7 @@ indenture,3,noun
 indentures,3,noun
 indexer,3,noun
 indexers,3,noun
+index,2,noun
 indican,3,noun
 indicant,3,noun
 indicants,3,noun

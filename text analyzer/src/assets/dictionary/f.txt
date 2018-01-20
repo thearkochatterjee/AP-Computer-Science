@@ -2384,6 +2384,7 @@ freckles,2,noun
 freebie,2,noun
 freebies,2,noun
 freedman,2,noun
+freedom,2,noun
 freeing,2,noun
 freeness,2,noun
 freer,2,noun
@@ -3118,6 +3119,7 @@ foreclosures,3,noun
 forecourses,3,noun
 forefather,3,noun
 forefathers,3,noun
+fathers,2,noun
 forefinger,3,noun
 forefingers,3,noun
 foregoer,3,noun

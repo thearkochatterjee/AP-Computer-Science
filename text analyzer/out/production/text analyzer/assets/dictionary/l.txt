@@ -166,8 +166,9 @@ lithic,2,adjective
 litho,2,adjective
 lithoid,2,adjective
 litten,2,adjective
+little,2,adjective
 littler,2,adjective
-littlest,2,adjective
+littlest,3,adjective
 livelong,2,adjective
 lively,2,adjective
 livid,2,adjective
@@ -343,6 +344,7 @@ liable,3,adjective
 lianoid,3,adjective
 libellous,3,adjective
 libelous,3,adjective
+liberty,3,noun
 libertine,3,adjective
 licentious,3,adjective
 lichenoid,3,adjective

@@ -527,6 +527,7 @@ gonorrheic,4,adjective
 gorillian,4,adjective
 governable,4,adjective
 governessy,4,adjective
+government,3,noun
 governmental,4,adjective
 gradational,4,adjective
 gradualism,4,adjective

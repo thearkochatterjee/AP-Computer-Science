@@ -571,6 +571,7 @@ when,1,noun
 whens,1,noun
 where,1,noun
 wheres,1,noun
+whether,2,verb
 whet,1,noun
 whets,1,noun
 whey,1,noun

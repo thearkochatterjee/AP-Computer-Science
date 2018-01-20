@@ -1523,6 +1523,7 @@ higglers,2,noun
 highball,2,noun
 highballs,2,noun
 highboy,2,noun
+highly,2,adjective
 highboys,2,noun
 highbrow,2,noun
 highbrows,2,noun

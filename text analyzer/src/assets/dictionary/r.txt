@@ -1505,6 +1505,7 @@ relish,2,noun
 reload,2,noun
 reloads,2,noun
 remains,2,noun
+remaining,3,adjective
 remake,2,noun
 remakes,2,noun
 remark,2,noun

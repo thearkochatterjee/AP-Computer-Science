@@ -4956,6 +4956,7 @@ poundages,3,noun
 pourparler,3,noun
 pourparlers,3,noun
 poverty,3,noun
+power,2,adjective
 powerboat,3,noun
 powerboats,3,noun
 practices,3,noun

@@ -1900,6 +1900,7 @@ contemptibly,4,adverb
 contentedly,4,adverb
 contentiously,4,adverb
 contestingly,4,adverb
+continent,3,noun
 continently,4,adverb
 contingently,4,adverb
 continuedly,4,adverb

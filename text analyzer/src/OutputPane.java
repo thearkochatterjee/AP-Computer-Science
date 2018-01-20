@@ -2,34 +2,34 @@ import javax.swing.*;
 import java.awt.*;
 
 public class OutputPane extends Container{
-    private JLabel lblnumwords = new JLabel();
-    private JLabel lblnumsentences = new JLabel();
-    private JLabel lblnumsyllibles = new JLabel();
-    private JLabel lblnumbervowels = new JLabel();
-    private JLabel lblnumberconsonents = new JLabel();
     private JLabel lblout = new JLabel();
+    private JList lstout = new JList();
+    private DefaultListModel dlm = new DefaultListModel();
 
     public OutputPane(){
-        setLayout(new GridLayout(5,1));
-        add(lblout);
-        add(lblnumsentences);
-        add(lblnumwords);
-        add(lblnumsyllibles);
-        add(lblnumberconsonents);
-        add(lblnumbervowels);
+        setLayout(new BorderLayout());
+        lstout.setModel(dlm);
+        dlm.clear();
+        add(lblout,BorderLayout.NORTH);
+        add(lstout);
         lblout.setText("Information");
-        lblnumsentences.setText("Number of Sentences");
-        lblnumwords.setText("Number of Words");
-        lblnumsyllibles.setText("Number of Syllables");
-        lblnumberconsonents.setText("Number of Consonants");
-        lblnumbervowels.setText("Number of Vowels");
     }
 
     public void setOutput(TextAnalyzer textAnalyzer){
-        lblnumwords.setText("Number of Words: "+textAnalyzer.numberofwords());
-        lblnumbervowels.setText("Number of Vowels: "+textAnalyzer.totalvowels());
-        lblnumberconsonents.setText("Number of Consonants: "+textAnalyzer.totalconssoants());
-        lblnumsyllibles.setText("Number of Syllables: "+textAnalyzer.totalsyllibles());
-        lblnumsentences.setText("Number of Sentences: "+textAnalyzer.numberofsenctences());
+        dlm.clear();
+        dlm.addElement("Number of Words:");
+        dlm.addElement(textAnalyzer.numberofwords());
+        dlm.addElement("Number of Vowels:");
+        dlm.addElement(textAnalyzer.totalvowels());
+        dlm.addElement("Number of Consonants:");
+        dlm.addElement(textAnalyzer.totalconssoants());
+        dlm.addElement("Number of Syllables:");
+        dlm.addElement(textAnalyzer.totalsyllibles());
+        dlm.addElement("Number of Sentences:");
+        dlm.addElement(textAnalyzer.numberofsenctences());
+        dlm.addElement("Coleman Index:");
+        dlm.addElement(textAnalyzer.coleman_index());
+        dlm.addElement("Readability Score:");
+        dlm.addElement(textAnalyzer.readability_score());
     }
 }

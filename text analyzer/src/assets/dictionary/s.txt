@@ -364,6 +364,7 @@ silty,2,adjective
 silvan,2,adjective
 silvern,2,adjective
 simplex,2,adjective
+simple,2,adjective
 sincere,2,adjective
 sinful,2,adjective
 singing,2,adjective
@@ -1050,6 +1051,7 @@ sessional,3,adjective
 setaceous,3,adjective
 setiform,3,adjective
 setulose,3,adjective
+seven,2,adjective
 sevenfold,3,adjective
 seventeen,3,adjective
 seventeenth,3,adjective
@@ -6237,6 +6239,7 @@ structure,2,noun
 structures,2,noun
 strudel,2,noun
 strudels,2,noun
+struggled,2,verb
 struggler,2,noun
 strugglers,2,noun
 strumpet,2,noun
