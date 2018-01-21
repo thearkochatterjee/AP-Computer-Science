@@ -42,9 +42,10 @@ public class TextAnalyzer {
 
     public double readability_score(){
         double score = 0;
+        ValueRounding vround = new ValueRounding();
         score = 206.835 - 84.6 * avgw() - 1.015 * avgs()-2;
-        score = roundvalue(score, 3);
-        return score;
+        vround.setValue(score);
+        return vround.roundtodecnum(3);
     }
 
     private double avgs(){
@@ -57,9 +58,10 @@ public class TextAnalyzer {
 
     public double coleman_index(){
         double score = 0;
+        ValueRounding vround = new ValueRounding();
         score = 5.89 * (total_characters()/numberofwords()) - 0.3 * (numberofsenctences() / numberofwords()) - 15.8;
-        score = roundvalue(score, 3);
-        return score;
+        vround.setValue(score);
+        return vround.roundtodecnum(3);
     }
 
     public double numberofsenctences(){
@@ -126,12 +128,5 @@ public class TextAnalyzer {
                 arrword.add(new WordAnalyzer(words[i].toLowerCase()));
             }
         }
-    }
-
-    private double roundvalue(double value, int numdec){
-        double v = value * Math.pow(10,numdec);
-        v = Math.round(v);
-        v = v / Math.pow(10,numdec);
-        return v;
     }
 }

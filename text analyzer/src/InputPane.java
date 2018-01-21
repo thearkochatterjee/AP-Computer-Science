@@ -5,12 +5,14 @@ import java.util.ArrayList;
 public class InputPane extends Container{
     private JTextArea txttext = new JTextArea();
     private JLabel lbltext = new JLabel();
+    private ScrollPane scrtext = new ScrollPane();
 
     public InputPane() {
         setLayout(new BorderLayout());
-        add(txttext);
+        add(scrtext);
         add(lbltext,BorderLayout.NORTH);
         lbltext.setText("Text");
+        scrtext.add(txttext);
     }
 
     public JTextArea getTxttext() {
@@ -39,7 +41,7 @@ public class InputPane extends Container{
         if((arrwords.length%amount)!=0){
             String temp = "";
             for(int i = 0;i<arrwords.length%amount;i++){
-                temp+=arrwords[i+arrline.size()*amount];
+                temp+=arrwords[i+arrline.size()*amount]+ " ";
             }
             arrline.add(temp);
         }
