@@ -2,6 +2,8 @@ oared,1,adjective
 oke,1,adjective
 once,1,adjective
 ope,1,adjective
+our,2,noun
+ours,2,noun
 over,1,adjective
 own,1,adjective
 oafish,2,adjective

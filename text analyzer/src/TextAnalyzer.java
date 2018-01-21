@@ -70,8 +70,8 @@ public class TextAnalyzer {
 
     public double totalsyllibles(){
         int numsym = 0;
-        for(int i = 0;i<arrword.size();i++){
-            numsym+=arrword.get(i).number_of_syllibles();
+        for(WordAnalyzer w: arrword){
+            numsym += w.number_of_syllibles();
         }
         return numsym;
     }
@@ -94,7 +94,8 @@ public class TextAnalyzer {
 
     private void inputtowords(){
         String words[] = text.split(" ");
-        for(int i = 0;i<words.length-1;i++){
+        arrword.clear();
+        for(int i = 0;i<words.length;i++){
             if(!words[i].equals("")){
                 arrword.add(new WordAnalyzer(words[i].toLowerCase()));
                 System.out.println(arrword.get(arrword.size()-1).getWord());

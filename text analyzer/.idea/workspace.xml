@@ -16,7 +16,7 @@
         <entry file="file://$PROJECT_DIR$/src/MainGui.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="48" column="8" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="63" selection-end-column="50" />
+              <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,8 +53,8 @@
       <file leaf-file-name="TextAnalyzer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TextAnalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="99" column="74" lean-forward="false" selection-start-line="99" selection-start-column="74" selection-end-line="99" selection-end-column="74" />
+            <state relative-caret-position="202">
+              <caret line="96" column="24" lean-forward="true" selection-start-line="96" selection-start-column="24" selection-end-line="96" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#168#182#0" expanded="true" />
@@ -63,17 +63,24 @@
                 <element signature="method#setText#0;class#TextAnalyzer#0" expanded="false" />
                 <element signature="method#total_characters#0;class#TextAnalyzer#0" expanded="false" />
                 <element signature="method#readability_score#0;class#TextAnalyzer#0" expanded="false" />
-                <element signature="method#coleman_index#0;class#TextAnalyzer#0" expanded="false" />
-                <element signature="e#1551#1552#0" expanded="true" />
-                <element signature="e#1588#1589#0" expanded="true" />
                 <element signature="method#totalconssoants#0;class#TextAnalyzer#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gettysburg.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/assets/Gettysburg.txt">
+      <file leaf-file-name="o.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/dictionary/o.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="syllables-optimized-list.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/syllables-optimized-list.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -82,13 +89,32 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="test-6th-grader.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/test-6th-grader.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gettysburg.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/Gettysburg.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="88" lean-forward="false" selection-start-line="0" selection-start-column="88" selection-end-line="0" selection-end-column="88" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="WordAnalyzer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WordAnalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+            <state relative-caret-position="141">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
-                <element signature="method#WordAnalyzer#1;class#WordAnalyzer#0" expanded="false" />
                 <element signature="method#number_of_syllibles#0;class#WordAnalyzer#0" expanded="false" />
               </folding>
             </state>
@@ -114,6 +140,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ours</find>
+    </findStrings>
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -128,11 +159,12 @@
         <option value="$PROJECT_DIR$/src/Dictionary.java" />
         <option value="$PROJECT_DIR$/src/Word.java" />
         <option value="$PROJECT_DIR$/src/InputPane.java" />
-        <option value="$PROJECT_DIR$/src/MainGui.java" />
         <option value="$PROJECT_DIR$/src/OutputPane.java" />
-        <option value="$PROJECT_DIR$/src/TextAnalyzer.java" />
         <option value="$PROJECT_DIR$/src/WordAnalyzer.java" />
         <option value="$PROJECT_DIR$/src/assets/Gettysburg.txt" />
+        <option value="$PROJECT_DIR$/src/assets/dictionary/o.txt" />
+        <option value="$PROJECT_DIR$/src/TextAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/MainGui.java" />
       </list>
     </option>
   </component>
@@ -352,27 +384,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Tester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-          <folding>
-            <element signature="e#64#65#0" expanded="false" />
-            <element signature="e#93#94#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="58" column="52" lean-forward="false" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MainPane.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -408,9 +419,6 @@
             <element signature="method#setText#0;class#TextAnalyzer#0" expanded="false" />
             <element signature="method#total_characters#0;class#TextAnalyzer#0" expanded="false" />
             <element signature="method#readability_score#0;class#TextAnalyzer#0" expanded="false" />
-            <element signature="method#coleman_index#0;class#TextAnalyzer#0" expanded="false" />
-            <element signature="e#1551#1552#0" expanded="true" />
-            <element signature="e#1588#1589#0" expanded="true" />
             <element signature="method#totalconssoants#0;class#TextAnalyzer#0" expanded="false" />
           </folding>
         </state>
@@ -498,9 +506,6 @@
             <element signature="method#setText#0;class#TextAnalyzer#0" expanded="false" />
             <element signature="method#total_characters#0;class#TextAnalyzer#0" expanded="false" />
             <element signature="method#readability_score#0;class#TextAnalyzer#0" expanded="false" />
-            <element signature="method#coleman_index#0;class#TextAnalyzer#0" expanded="false" />
-            <element signature="e#1551#1552#0" expanded="true" />
-            <element signature="e#1588#1589#0" expanded="true" />
             <element signature="method#totalconssoants#0;class#TextAnalyzer#0" expanded="false" />
           </folding>
         </state>
@@ -580,9 +585,6 @@
             <element signature="method#setText#0;class#TextAnalyzer#0" expanded="false" />
             <element signature="method#total_characters#0;class#TextAnalyzer#0" expanded="false" />
             <element signature="method#readability_score#0;class#TextAnalyzer#0" expanded="false" />
-            <element signature="method#coleman_index#0;class#TextAnalyzer#0" expanded="false" />
-            <element signature="e#1551#1552#0" expanded="true" />
-            <element signature="e#1588#1589#0" expanded="true" />
             <element signature="method#totalconssoants#0;class#TextAnalyzer#0" expanded="false" />
           </folding>
         </state>
@@ -662,9 +664,6 @@
             <element signature="method#setText#0;class#TextAnalyzer#0" expanded="false" />
             <element signature="method#total_characters#0;class#TextAnalyzer#0" expanded="false" />
             <element signature="method#readability_score#0;class#TextAnalyzer#0" expanded="false" />
-            <element signature="method#coleman_index#0;class#TextAnalyzer#0" expanded="false" />
-            <element signature="e#1551#1552#0" expanded="true" />
-            <element signature="e#1588#1589#0" expanded="true" />
             <element signature="method#totalconssoants#0;class#TextAnalyzer#0" expanded="false" />
           </folding>
         </state>
@@ -745,9 +744,6 @@
             <element signature="method#setText#0;class#TextAnalyzer#0" expanded="false" />
             <element signature="method#total_characters#0;class#TextAnalyzer#0" expanded="false" />
             <element signature="method#readability_score#0;class#TextAnalyzer#0" expanded="false" />
-            <element signature="method#coleman_index#0;class#TextAnalyzer#0" expanded="false" />
-            <element signature="e#1551#1552#0" expanded="true" />
-            <element signature="e#1588#1589#0" expanded="true" />
             <element signature="method#totalconssoants#0;class#TextAnalyzer#0" expanded="false" />
           </folding>
         </state>
@@ -817,13 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/test-6th-grader.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/InputPane.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -861,32 +850,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TextAnalyzer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="99" column="74" lean-forward="false" selection-start-line="99" selection-start-column="74" selection-end-line="99" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#168#182#0" expanded="true" />
-            <element signature="method#TextAnalyzer#0;class#TextAnalyzer#0" expanded="false" />
-            <element signature="method#TextAnalyzer#1;class#TextAnalyzer#0" expanded="false" />
-            <element signature="method#setText#0;class#TextAnalyzer#0" expanded="false" />
-            <element signature="method#total_characters#0;class#TextAnalyzer#0" expanded="false" />
-            <element signature="method#readability_score#0;class#TextAnalyzer#0" expanded="false" />
-            <element signature="method#coleman_index#0;class#TextAnalyzer#0" expanded="false" />
-            <element signature="e#1551#1552#0" expanded="true" />
-            <element signature="e#1588#1589#0" expanded="true" />
-            <element signature="method#totalconssoants#0;class#TextAnalyzer#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WordAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        <state relative-caret-position="141">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="method#WordAnalyzer#1;class#WordAnalyzer#0" expanded="false" />
             <element signature="method#number_of_syllibles#0;class#WordAnalyzer#0" expanded="false" />
           </folding>
         </state>
@@ -895,15 +863,56 @@
     <entry file="file://$PROJECT_DIR$/src/assets/Gettysburg.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+          <caret line="0" column="88" lean-forward="false" selection-start-line="0" selection-start-column="88" selection-end-line="0" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/dictionary/o.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/syllables-optimized-list.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/test-6th-grader.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TextAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="96" column="24" lean-forward="true" selection-start-line="96" selection-start-column="24" selection-end-line="96" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#168#182#0" expanded="true" />
+            <element signature="method#TextAnalyzer#0;class#TextAnalyzer#0" expanded="false" />
+            <element signature="method#TextAnalyzer#1;class#TextAnalyzer#0" expanded="false" />
+            <element signature="method#setText#0;class#TextAnalyzer#0" expanded="false" />
+            <element signature="method#total_characters#0;class#TextAnalyzer#0" expanded="false" />
+            <element signature="method#readability_score#0;class#TextAnalyzer#0" expanded="false" />
+            <element signature="method#totalconssoants#0;class#TextAnalyzer#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainGui.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="48" column="8" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="63" selection-end-column="50" />
+          <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
