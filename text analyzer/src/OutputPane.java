@@ -27,9 +27,11 @@ public class OutputPane extends Container{
         dlm.addElement(textAnalyzer.totalsyllibles());
         dlm.addElement("Number of Sentences:");
         dlm.addElement(textAnalyzer.numberofsenctences());
-        dlm.addElement("Coleman Index:");
+        dlm.addElement("Coleman Index (years of formal education):");
         dlm.addElement(textAnalyzer.coleman_index());
         dlm.addElement("Readability Score:");
         dlm.addElement(textAnalyzer.readability_score());
+        dlm.addElement("Readability Grade");
+        dlm.addElement(textAnalyzer.readability_grade());
     }
 }

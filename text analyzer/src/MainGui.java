@@ -9,38 +9,52 @@ import java.io.IOException;
 public class MainGui extends JFrame {
     private JMenuBar mnubar = new JMenuBar();
     private JMenu mnufile = new JMenu();
-    private JMenuItem mnuopen = new JMenuItem();
+    private JMenuItem mnuopengettysburg = new JMenuItem();
+    private JMenuItem mnuopen6thgrade = new JMenuItem();
+    private JMenuItem mnuopencollege = new JMenuItem();
     private static MainPane pane = new MainPane();
     private static TextAnalyzer textAnalyzer = new TextAnalyzer();
 
     public MainGui(){
-        setSize(500,500);
+        setSize(520,500);
         setTitle("Text Analyzer");
         getContentPane().add(pane);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setJMenuBar(mnubar);
         mnubar.add(mnufile);
-        mnufile.add(mnuopen);
+        mnufile.add(mnuopengettysburg);
+        mnufile.add(mnuopen6thgrade);
+        mnufile.add(mnuopencollege);
         mnufile.setText("File");
-        mnuopen.setText("Open");
+        mnuopengettysburg.setText("Open Gettysburg");
+        mnuopen6thgrade.setText("Open 6th Grade");
+        mnuopencollege.setText("Open College");
         setVisible(true);
-        mnuopen.addActionListener(new open());
+        mnuopengettysburg.addActionListener(new opengettysburg());
+        mnuopencollege.addActionListener(new opencollege());
+        mnuopen6thgrade.addActionListener(new open6thgrade());
     }
 
-    static class open implements ActionListener{
+    static class opengettysburg implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
-            switch (Integer.valueOf(JOptionPane.showInputDialog("Which text file would you like to open? (1 Gettysburg, 2 6th grader, 3 college)"))){
-                case 1:
-                    open("src/assets/Gettysburg.txt");
-                    break;
-                case 2:
-                    open("src/assets/test-6th-grader.txt");
-                    break;
-                case 3:
-                    open("src/assets/test-college-grad.txt");
-                    break;
-            }
+            open("src/assets/Gettysburg.txt");
+            pane.getPanein().reformat(pane.getPanein().getTxttext().getWidth()/40);
+        }
+    }
+
+    static class open6thgrade implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            open("src/assets/test-6th-grader.txt");
+            pane.getPanein().reformat(pane.getPanein().getTxttext().getWidth()/40);
+        }
+    }
+
+    static class opencollege implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            open("src/assets/test-college-grad.txt");
             pane.getPanein().reformat(pane.getPanein().getTxttext().getWidth()/40);
         }
     }

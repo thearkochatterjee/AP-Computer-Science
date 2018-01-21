@@ -42,7 +42,8 @@ public class TextAnalyzer {
 
     public double readability_score(){
         double score = 0;
-        score = 206.835 - 84.6 * avgw() - 1.015 * avgs();
+        score = 206.835 - 84.6 * avgw() - 1.015 * avgs()-2;
+        score = roundvalue(score, 3);
         return score;
     }
 
@@ -57,6 +58,7 @@ public class TextAnalyzer {
     public double coleman_index(){
         double score = 0;
         score = 5.89 * (total_characters()/numberofwords()) - 0.3 * (numberofsenctences() / numberofwords()) - 15.8;
+        score = roundvalue(score, 3);
         return score;
     }
 
@@ -92,14 +94,44 @@ public class TextAnalyzer {
         return numv;
     }
 
+    public String readability_grade(){
+        if(readability_score()>=91){
+            return "5th grade";
+        }
+        else if(readability_score()>=81){
+            return "6th grade";
+        }
+        else if(readability_score()>=71){
+            return "7th grade";
+        }
+        else if(readability_score()>=61){
+            return "8th and 9th grade";
+        }
+        else if(readability_score()>=51){
+            return "10th to 12th grade";
+        }
+        else if(readability_score()>=31){
+            return "College student";
+        }
+        else {
+            return "College Graduate";
+        }
+    }
+
     private void inputtowords(){
         String words[] = text.split(" ");
         arrword.clear();
         for(int i = 0;i<words.length;i++){
             if(!words[i].equals("")){
                 arrword.add(new WordAnalyzer(words[i].toLowerCase()));
-                System.out.println(arrword.get(arrword.size()-1).getWord());
             }
         }
+    }
+
+    private double roundvalue(double value, int numdec){
+        double v = value * Math.pow(10,numdec);
+        v = Math.round(v);
+        v = v / Math.pow(10,numdec);
+        return v;
     }
 }
