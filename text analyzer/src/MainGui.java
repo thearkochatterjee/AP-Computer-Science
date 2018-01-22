@@ -5,6 +5,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class MainGui extends JFrame {
     private JMenuBar mnubar = new JMenuBar();
@@ -12,6 +13,7 @@ public class MainGui extends JFrame {
     private JMenuItem mnuopengettysburg = new JMenuItem();
     private JMenuItem mnuopen6thgrade = new JMenuItem();
     private JMenuItem mnuopencollege = new JMenuItem();
+    private JMenuItem mnuanalyze = new JMenuItem();
     private static MainPane pane = new MainPane();
     private static TextAnalyzer textAnalyzer = new TextAnalyzer();
 
@@ -25,14 +27,17 @@ public class MainGui extends JFrame {
         mnufile.add(mnuopengettysburg);
         mnufile.add(mnuopen6thgrade);
         mnufile.add(mnuopencollege);
+        mnufile.add(mnuanalyze);
         mnufile.setText("File");
         mnuopengettysburg.setText("Open Gettysburg");
         mnuopen6thgrade.setText("Open 6th Grade");
         mnuopencollege.setText("Open College");
+        mnuanalyze.setText("Analyze");
         setVisible(true);
         mnuopengettysburg.addActionListener(new opengettysburg());
         mnuopencollege.addActionListener(new opencollege());
         mnuopen6thgrade.addActionListener(new open6thgrade());
+        mnuanalyze.addActionListener(new analyze());
     }
 
     static class opengettysburg implements ActionListener{
@@ -56,6 +61,20 @@ public class MainGui extends JFrame {
         public void actionPerformed(ActionEvent e) {
             open("src/assets/test-college-grad.txt");
             pane.getPanein().reformat(pane.getPanein().getTxttext().getWidth()/40);
+        }
+    }
+
+    static class analyze implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            String text = "";
+            String arrline[] = pane.getPanein().getTxttext().getText().split("\n");
+            for(String t: arrline){
+                text+=t+" ";
+            }
+            text.trim();
+            textAnalyzer.setText(text);
+            pane.getPaneout().setOutput(textAnalyzer);
         }
     }
 

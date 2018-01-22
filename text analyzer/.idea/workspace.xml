@@ -12,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainGui.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainGui.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="15" column="66" lean-forward="true" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
+            <state relative-caret-position="51">
+              <caret line="75" column="39" lean-forward="false" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -24,7 +24,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InputPane.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InputPane.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/InputPane.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
@@ -123,10 +123,10 @@
         <option value="$PROJECT_DIR$/src/assets/Gettysburg.txt" />
         <option value="$PROJECT_DIR$/src/assets/dictionary/o.txt" />
         <option value="$PROJECT_DIR$/src/OutputPane.java" />
-        <option value="$PROJECT_DIR$/src/MainGui.java" />
         <option value="$PROJECT_DIR$/src/ValueRounding.java" />
         <option value="$PROJECT_DIR$/src/TextAnalyzer.java" />
         <option value="$PROJECT_DIR$/src/InputPane.java" />
+        <option value="$PROJECT_DIR$/src/MainGui.java" />
       </list>
     </option>
   </component>
@@ -870,20 +870,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainGui.java">
+    <entry file="file://$PROJECT_DIR$/src/InputPane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="15" column="66" lean-forward="true" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
+        <state relative-caret-position="238">
+          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/InputPane.java">
+    <entry file="file://$PROJECT_DIR$/src/MainGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        <state relative-caret-position="51">
+          <caret line="75" column="39" lean-forward="false" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
