@@ -23,6 +23,8 @@ public class FTEmp extends Emp{
 
     @Override
     public String toString() {
-        return id + " " + hrs + " " + wage + " " + findgp();
+        ValueRounding vgp = new ValueRounding();
+        vgp.setValue(findgp());
+        return id + " " + hrs + " " + wage + " " + vgp.roundtodecnum(2) + " " + uniondues;
     }
 }

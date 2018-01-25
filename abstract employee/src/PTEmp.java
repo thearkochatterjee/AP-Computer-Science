@@ -1,7 +1,7 @@
 public class PTEmp extends Emp{
-    private String season;
+    private int season;
 
-    public PTEmp(int id, double hrs, double wage, String season){
+    public PTEmp(int id, double hrs, double wage, int season){
         super(id, hrs, wage);
         this.season = season;
     }
@@ -12,6 +12,8 @@ public class PTEmp extends Emp{
     }
 
     public String toString() {
-        return id + " " + hrs + " " + wage + " " + findgp();
+        ValueRounding vgp = new ValueRounding();
+        vgp.setValue(findgp());
+        return id + " " + hrs + " " + wage + " " + vgp.roundtodecnum(2) + " " + season;
     }
 }
