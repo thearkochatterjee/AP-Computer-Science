@@ -25,5 +25,4 @@ abstract public class Emp {
     abstract public String toString();
 
     static public int totalempls = 0;
-
 }

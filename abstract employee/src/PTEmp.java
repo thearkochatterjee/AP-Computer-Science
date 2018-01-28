@@ -8,12 +8,14 @@ public class PTEmp extends Emp{
 
     @Override
     public double findgp() {
-        return wage * hrs;
+        double gp = 0.0;
+        gp =  wage * hrs;
+        return gp;
     }
 
     public String toString() {
         ValueRounding vgp = new ValueRounding();
         vgp.setValue(findgp());
-        return id + " " + hrs + " " + wage + " " + vgp.roundtodecnum(2) + " " + season;
+        return "id: " + id + " hours: " + hrs + " wage: " + wage + " grosspay: " + vgp.roundtodecnum(2) + " season: " + season;
     }
 }

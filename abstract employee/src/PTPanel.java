@@ -7,11 +7,13 @@ public class PTPanel extends Panel {
     private JList lstpart = new JList();
     private DefaultListModel dlmpart = new DefaultListModel();
     private ScrollPane scrpart = new ScrollPane();
+    private JLabel lbltotalemp = new JLabel();
 
     public PTPanel(){
         setLayout(new BorderLayout());
         add(scrpart);
         add(lblpart, BorderLayout.NORTH);
+        add(lbltotalemp, BorderLayout.SOUTH);
         scrpart.add(lstpart);
         lstpart.setModel(dlmpart);
         lblpart.setText("Part Time Employee");
@@ -23,5 +25,6 @@ public class PTPanel extends Panel {
                 dlmpart.addElement(e.toString());
             }
         }
+        lbltotalemp.setText("Number of Employees: " + arremps.size());
     }
 }

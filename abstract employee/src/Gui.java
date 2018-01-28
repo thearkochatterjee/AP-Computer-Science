@@ -13,7 +13,7 @@ public class Gui extends JFrame{
 
     public Gui(){
         setTitle("Employee");
-        setSize(500,500);
+        setSize(700,500);
         getContentPane().add(pane);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setJMenuBar(mnubar);

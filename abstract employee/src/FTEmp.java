@@ -13,18 +13,20 @@ public class FTEmp extends Emp{
 
     @Override
     public double findgp() {
+        double gp = 0.0;
         if(hrs<=40){
-            return hrs * wage - uniondues;
+            gp =  hrs * wage - uniondues;
         }
         else{
-            return 40 * wage + 1.5 * (hrs-40) * wage - uniondues;
+            gp =  40 * wage + 1.5 * (hrs-40) * wage - uniondues;
         }
+        return gp;
     }
 
     @Override
     public String toString() {
         ValueRounding vgp = new ValueRounding();
         vgp.setValue(findgp());
-        return id + " " + hrs + " " + wage + " " + vgp.roundtodecnum(2) + " " + uniondues;
+        return "id: "+id + " hours: " + hrs + " wage: " + wage + " grosspay: " + vgp.roundtodecnum(2) + " union dues" + uniondues;
     }
 }

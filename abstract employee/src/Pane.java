@@ -6,6 +6,7 @@ public class Pane extends Container{
     private FTPanel ftpanel = new FTPanel();
     private PTPanel ptpanel = new PTPanel();
 
+
     public Pane(){
         setLayout(new GridLayout(1,2));
         add(ftpanel);
