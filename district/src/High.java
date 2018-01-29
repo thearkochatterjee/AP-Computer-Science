@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class High extends Student{
+    private int act, sat;
 
     public High(String name, int grade, ArrayList<Double> arrtest, ArrayList<Double> arrproject, ArrayList<Double> arrhomework){
         super(name, grade, arrtest, arrproject, arrhomework);

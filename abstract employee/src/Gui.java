@@ -13,7 +13,7 @@ public class Gui extends JFrame{
 
     public Gui(){
         setTitle("Employee");
-        setSize(700,500);
+        setSize(900,500);
         getContentPane().add(pane);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setJMenuBar(mnubar);
@@ -37,7 +37,7 @@ public class Gui extends JFrame{
             for(int i = 0;i<numemps;i++){
                 vhr.setValue(r.nextDouble()*1000+1);
                 vwage.setValue(r.nextDouble()*1000+1);
-                vunion.setValue(r.nextDouble()*20+1);
+                vunion.setValue(vwage.getValue()*0.05);
                 boolean fulltime = false;
                 fulltime = r.nextBoolean();
                 if(fulltime){

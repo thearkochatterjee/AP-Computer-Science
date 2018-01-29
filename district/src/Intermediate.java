@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
-public class Elementary extends Student{
+public class Intermediate extends Student{
 
-    public Elementary(String name, int grade, ArrayList<Double> arrtest, ArrayList<Double> arrproject, ArrayList<Double> arrhomework){
+    public Intermediate(String name, int grade, ArrayList<Double> arrtest, ArrayList<Double> arrproject, ArrayList<Double> arrhomework){
         super(name, grade, arrtest, arrproject, arrhomework);
     }
 
