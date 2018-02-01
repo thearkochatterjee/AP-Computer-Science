@@ -1,40 +1,26 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Elementary extends Student{
 
-    public Elementary(String name, int grade, ArrayList<Double> arrtest, ArrayList<Double> arrproject, ArrayList<Double> arrhomework){
-        super(name, grade, arrtest, arrproject, arrhomework);
+    public Elementary(String fname, String lname, ArrayList<Double> arrtest, ArrayList<Double> arrproject, ArrayList<Double> arrhomework){
+        super(fname, lname, arrtest, arrproject, arrhomework);
     }
 
     @Override
     public double percentage() {
-        return testavg() * 20 + projectavg() * 40 + hwavg() * 40;
+        return testavg() * 20 + projavg() * 40 + hwavg() * 40;
     }
 
-    private double testavg(){
-        double avg = 0.0;
-        for(Double g: arrtest){
-            avg+=g;
-        }
-        avg = avg/arrtest.size();
-        return avg;
+    @Override
+    public int creategrade() {
+        Random r = new Random();
+        grade = r.nextInt(3) +1;
+        return grade;
     }
 
-    private double projectavg(){
-        double avg = 0.0;
-        for(Double g: arrproject){
-            avg+= g;
-        }
-        avg = avg / arrproject.size();
-        return avg;
-    }
-
-    private double hwavg(){
-        double avg = 0.0;
-        for(Double g: arrhomework){
-            avg+=g;
-        }
-        avg = avg / arrhomework.size();
-        return avg;
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }

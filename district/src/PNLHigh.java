@@ -9,5 +9,6 @@ public class PNLHigh extends JPanel{
     public PNLHigh(){
         setLayout(new BorderLayout());
         add(lsthigh);
+        add(lblhigh, BorderLayout.NORTH);
     }
 }

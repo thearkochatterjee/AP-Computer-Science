@@ -1,10 +1,18 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 public class High extends Student{
     private int act, sat;
 
-    public High(String name, int grade, ArrayList<Double> arrtest, ArrayList<Double> arrproject, ArrayList<Double> arrhomework){
-        super(name, grade, arrtest, arrproject, arrhomework);
+    public High(String fname, String lname, ArrayList<Double> arrtest, ArrayList<Double> arrproject, ArrayList<Double> arrhomework, int act, int sat){
+        super(fname, lname, arrtest, arrproject, arrhomework);
+    }
+
+    @Override
+    public int creategrade() {
+        Random r = new Random();
+        grade = r.nextInt(4)+9;
+        return grade;
     }
 
     @Override
@@ -26,5 +34,10 @@ public class High extends Student{
         }
         percent += total * 0.4;
         return percent;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + " " + act + " " + sat;
     }
 }
