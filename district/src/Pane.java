@@ -19,5 +19,7 @@ public class Pane extends Container{
     public void input(ArrayList<Student> arrstu){
         pnlelementary.input(arrstu);
         pnlintermediate.input(arrstu);
+        pnlmiddle.input(arrstu);
+        pnlhigh.input(arrstu);
     }
 }
