@@ -15,6 +15,7 @@ public class Gui extends JFrame{
 
     public Gui(){
         setTitle("District");
+        setSize(500,500);
         getContentPane().add(pane);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);

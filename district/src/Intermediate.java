@@ -22,6 +22,7 @@ public class Intermediate extends Student{
 
     @Override
     public String toString() {
-        return super.toString() + " " + oaa;
+//        return super.toString() + " " + oaa;
+        return String.format("%50s %10f %n", super.toString(), oaa);
     }
 }

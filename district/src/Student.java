@@ -90,6 +90,7 @@ abstract public class Student {
 
     public String toString(){
 //        return String.format("%", fname, lname, testavg(), projavg(), hwavg());
-        return fname + " " + lname + " " + testavg() + " " + projavg() + " " + hwavg();
+        return String.format("%6s %20.2s %12.2f %10.2f %10.2f%n", fname, lname, testavg(), projavg(), hwavg());
+//        return fname + " " + lname + " " + testavg() + " " + projavg() + " " + hwavg();
     }
 }
