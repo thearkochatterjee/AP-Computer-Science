@@ -14,7 +14,7 @@ public class PNLelementary extends JPanel{
         add(lblelementary,BorderLayout.NORTH);
         scrstu.add(lststu);
         lststu.setModel(dlmstu);
-        lststu.setFont(new Font("MONOSPACED",Font.PLAIN,12));
+        lststu.setFont(new Font("MONOSPACED",Font.PLAIN,18));
         lblelementary.setText("Elementary School");
     }
 

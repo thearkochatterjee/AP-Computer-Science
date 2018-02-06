@@ -23,7 +23,7 @@ public class Gui extends JFrame {
 
     public Gui(){
         setTitle("District");
-        setSize(900,500);
+        setSize(1300,500);
         getContentPane().add(pane);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setJMenuBar(mnubar);
@@ -62,9 +62,9 @@ public class Gui extends JFrame {
             for(int i = 0;i<numstu;i++){
                 fname = arrfname.get(r.nextInt(arrfname.size()));
                 lname = arrlname.get(r.nextInt(arrlname.size()));
-                testavg = r.nextDouble()*100 +1;
-                projavg = r.nextDouble()*100+1;
-                hwavg = r.nextDouble()*100+1;
+                testavg = r.nextDouble()*50 +50;
+                projavg = r.nextDouble()*50+50;
+                hwavg = r.nextDouble()*50+50;
                 school = r.nextInt(3)+1;
                 if(school==1){
                     if(r.nextBoolean()){
@@ -84,6 +84,7 @@ public class Gui extends JFrame {
                     arrstu.add(new High(fname, lname, testavg, projavg, hwavg, act, i+1));
                 }
                 arrstu.get(arrstu.size()-1).creategrade();
+                arrstu.get(arrstu.size()-1).studentfee();
             }
             pane.input(arrstu);
         }

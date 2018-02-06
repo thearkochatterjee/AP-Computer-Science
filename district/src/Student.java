@@ -84,7 +84,7 @@ abstract public class Student {
 
     abstract public String principallist();
 
-    abstract public double studentfee();
+    abstract public void studentfee();
 
     @Override
     public String toString() {

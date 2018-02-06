@@ -16,7 +16,7 @@ public class Elementary extends Student{
 
     @Override
     public double percentage() {
-        return 0;
+        return (testavg / 100) * 20 + (projavg / 100) * 40 + (hwavg / 100) * 40;
     }
 
     @Override
@@ -41,7 +41,7 @@ public class Elementary extends Student{
     @Override
     public String principallist() {
         Random r = new Random();
-        if(r.nextBoolean()){
+        if(percentage()>=80){
             return "Made";
         }
         else{
@@ -50,12 +50,13 @@ public class Elementary extends Student{
     }
 
     @Override
-    public double studentfee() {
-        return 0;
+    public void studentfee() {
+        Random r = new Random();
+        fee = Math.round((r.nextDouble()*20+1)*100)/100;
     }
 
     @Override
     public String toString() {
-        return super.toString() + " Percentage " + percentage() + " Letter Grade " + lettergrade() + " Fees " + studentfee() + " PList " + principallist() + " Participate " + participate;
+        return "Percentage " + percentage() + " Letter Grade " + lettergrade() + " PList " + principallist() + " Participate " + participate + " " + super.toString();
     }
 }

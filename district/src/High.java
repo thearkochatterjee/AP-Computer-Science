@@ -40,8 +40,7 @@ public class High extends Student{
 
     @Override
     public String principallist() {
-        Random r = new Random();
-        if(r.nextBoolean()){
+        if(percentage()>=90){
             return "Made";
         }
         else{
@@ -50,12 +49,13 @@ public class High extends Student{
     }
 
     @Override
-    public double studentfee() {
-        return 0;
+    public void studentfee() {
+        Random r = new Random();
+        fee = Math.round((r.nextDouble()*20+1)*100)/100;
     }
 
     @Override
     public String toString() {
-        return super.toString() + " Percentage " + percentage() + " Letter Grade " + lettergrade() + " Fees " + studentfee() + " PList " + principallist();
+        return "Percentage " + percentage() + " Letter Grade " + lettergrade() + " PList " + principallist() + " ACT " + actscore + " " + super.toString();
     }
 }

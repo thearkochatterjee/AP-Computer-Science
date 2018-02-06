@@ -14,7 +14,7 @@ public class PNLhigh extends JPanel{
         add(lblhigh, BorderLayout.NORTH);
         scrstu.add(lststu);
         lststu.setModel(dlmhigh);
-        lststu.setFont(new Font("MONOSPACED", Font.PLAIN,12));
+        lststu.setFont(new Font("MONOSPACED", Font.PLAIN,18));
         lblhigh.setText("High School");
     }
 

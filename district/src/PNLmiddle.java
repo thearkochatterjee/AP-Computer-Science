@@ -14,7 +14,7 @@ public class PNLmiddle extends JPanel{
         add(lblmiddle, BorderLayout.NORTH);
         scrstu.add(lststu);
         lststu.setModel(dlmmiddle);
-        lststu.setFont(new Font("MONOSPACED", Font.PLAIN,12));
+        lststu.setFont(new Font("MONOSPACED", Font.PLAIN,18));
         lblmiddle.setText("Middle School");
     }
 
