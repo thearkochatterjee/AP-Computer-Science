@@ -9,7 +9,13 @@ public class PNLhigh extends JPanel{
     private DefaultListModel dlmhigh = new DefaultListModel();
 
     public PNLhigh(){
-
+        setLayout(new BorderLayout());
+        add(scrstu);
+        add(lblhigh, BorderLayout.NORTH);
+        scrstu.add(lststu);
+        lststu.setModel(dlmhigh);
+        lststu.setFont(new Font("MONOSPACED", Font.PLAIN,12));
+        lblhigh.setText("High School");
     }
 
     public void input(ArrayList<Student> arrstu){

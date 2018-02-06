@@ -1,14 +1,23 @@
 abstract public class Student {
     protected String fname, lname;
-    protected double testavg, projavg, hwavg;
-    protected int grade;
+    protected double testavg, projavg, hwavg, fee;
+    protected int grade, id;
 
-    public Student(String fname, String lname, double testavg, double projavg, double hwavg){
+    public Student(String fname, String lname, double testavg, double projavg, double hwavg, int id){
         this.fname = fname;
         this.lname = lname;
         this.testavg = testavg;
         this.projavg = projavg;
         this.hwavg = hwavg;
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public double getFee() {
+        return fee;
     }
 
     public String getLname() {
@@ -59,6 +68,14 @@ abstract public class Student {
         this.testavg = testavg;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setFee(double fee) {
+        this.fee = fee;
+    }
+
     abstract public double percentage();
 
     abstract public void creategrade();
@@ -67,8 +84,10 @@ abstract public class Student {
 
     abstract public String principallist();
 
+    abstract public double studentfee();
+
     @Override
     public String toString() {
-        return String.format("%1s %15s %15.2f %5.2f %5.2f%n", fname, lname, testavg, projavg, hwavg);
+        return "ID " + id + " First Name " + fname + " Last Name " + lname + " Grade " + grade +" Fee " + fee + " Test Avg " + testavg + " Project Avg " + projavg + " HW Avg "+ hwavg;
     }
 }

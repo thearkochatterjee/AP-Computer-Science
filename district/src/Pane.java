@@ -6,7 +6,9 @@ public class Pane extends Container{
     private Paneover paneover = new Paneover();
 
     public Pane(){
-
+        setLayout(new GridLayout(2,1));
+        add(panelist);
+        add(paneover);
     }
 
     public void input(ArrayList<Student> arrstu){
