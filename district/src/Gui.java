@@ -20,6 +20,8 @@ public class Gui extends JFrame {
     private ArrayList<Student> arrstu = new ArrayList<Student>();
     private ArrayList<String> arrfname = new ArrayList<String>();
     private ArrayList<String> arrlname = new ArrayList<String>();
+    private JMenuItem mnusearch = new JMenuItem();
+    private JMenuItem mnusort = new JMenuItem();
 
     public Gui(){
         setTitle("District");
@@ -32,11 +34,15 @@ public class Gui extends JFrame {
         mnuadd.add(mnuremove);
         mnuadd.add(mnuchange);
         mnuadd.add(mnuviewgrading);
+        mnuadd.add(mnusort);
+        mnuadd.add(mnusearch);
         mnuadd.setText("File");
         mnuaddstu.setText("Add Student");
         mnuremove.setText("Remove Student");
         mnuchange.setText("Change Student");
         mnuviewgrading.setText("View Grading System");
+        mnusort.setText("Sort");
+        mnusearch.setText("Search");
         openfname("src/assets/MaleNames.txt");
         openfname("src/assets/FemaleNames.txt");
         openlname("src/assets/LastNames.txt");
@@ -45,6 +51,38 @@ public class Gui extends JFrame {
         mnuremove.addActionListener(new remove());
         mnuviewgrading.addActionListener(new view());
         mnuchange.addActionListener(new change());
+        mnusearch.addActionListener(new search());
+        mnusort.addActionListener(new sort());
+    }
+
+    class sort implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            Student temp = arrstu.get(0);
+            for(int f = 0;f<arrstu.size()-1;f++){
+                for(int b = f;b<arrstu.size();b++){
+                    if(arrstu.get(f).percentage()<arrstu.get(b).percentage()){
+                        temp = arrstu.get(f);
+                        arrstu.set(f, arrstu.get(b));
+                        arrstu.set(b,temp);
+                    }
+                }
+            }
+            pane.input(arrstu);
+        }
+    }
+
+    class search implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            int search = Integer.valueOf(JOptionPane.showInputDialog("What is the id for the student you want to search for?"));
+            for(int i = 0;i<arrstu.size();i++){
+                if(search == arrstu.get(i).getId()){
+                    JOptionPane.showMessageDialog(null,arrstu.get(i).toString());
+                    break;
+                }
+            }
+        }
     }
 
     class addstu implements ActionListener{
@@ -177,7 +215,7 @@ public class Gui extends JFrame {
     class view implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
-            JOptionPane.showMessageDialog(null, "Elementary School\nMiddle School\nHigh School\n");
+            JOptionPane.showMessageDialog(null, "Elementary School\n20% test\n40% project\n40% hw\nMiddle School\n35% test\n35% project\n30%hw\nHigh School\n50% test\n30% project\n20% hw");
         }
     }
 

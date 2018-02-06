@@ -19,6 +19,7 @@ public class PNLhigh extends JPanel{
     }
 
     public void input(ArrayList<Student> arrstu){
+        dlmhigh.clear();
         for(Student stu: arrstu){
             if(stu instanceof High){
                 dlmhigh.addElement(stu.toString());

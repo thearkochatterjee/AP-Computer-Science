@@ -19,6 +19,7 @@ public class PNLmiddle extends JPanel{
     }
 
     public void input(ArrayList<Student> arrstu){
+        dlmmiddle.clear();
         for(Student stu: arrstu){
             if(stu instanceof Middle){
                 dlmmiddle.addElement(stu.toString());

@@ -19,6 +19,7 @@ public class PNLelementary extends JPanel{
     }
 
     public void input(ArrayList<Student> arrstu){
+        dlmstu.clear();
         for(Student stu: arrstu){
             if(stu instanceof Elementary){
                 dlmstu.addElement(stu.toString());
