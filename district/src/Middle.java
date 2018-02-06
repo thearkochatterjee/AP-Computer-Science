@@ -3,7 +3,7 @@ import java.util.Random;
 public class Middle extends Student{
     private int mapscore = 0;
 
-    public Middle(String fname, String lname, double testavg, double projavg, double hwavg, int mapscor, int id){
+    public Middle(String fname, String lname, double testavg, double projavg, double hwavg, int mapscore, int id){
         super(fname, lname, testavg, projavg, hwavg, id);
         this.mapscore = mapscore;
     }

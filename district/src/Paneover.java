@@ -55,7 +55,8 @@ public class Paneover extends Container{
         avgfee = avgfee / arrstu.size();
         lblavggradeout.setText(String.valueOf(average(arrdata)));
         lblpricountout.setText(String.valueOf(plistcount));
-        lblavgfee.setText(String.valueOf(avgfee));
+        lblavgfeeout.setText(String.valueOf(avgfee));
+        lblpercentplistout.setText(String.valueOf(plistcount/arrstu.size()*100)+"%");
     }
 
     private double average(ArrayList<Integer> data){
