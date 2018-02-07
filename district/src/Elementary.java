@@ -52,7 +52,7 @@ public class Elementary extends Student{
     @Override
     public void studentfee() {
         Random r = new Random();
-        fee = Math.round((r.nextDouble()*20+1)*100)/100;
+        fee = Math.round((r.nextDouble()*20+20)*100)/100;
     }
 
     @Override

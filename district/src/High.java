@@ -51,7 +51,7 @@ public class High extends Student{
     @Override
     public void studentfee() {
         Random r = new Random();
-        fee = Math.round((r.nextDouble()*20+1)*100)/100;
+        fee = Math.round((r.nextDouble()*20+10)*100)/100;
     }
 
     @Override
