@@ -52,6 +52,21 @@ public class iterative extends calculation{
 
     @Override
     public int gcf(int num1, int num2) {
-        return 0;
+        int f = 0;
+        for(int i = 1;i<=smaller(num1, num2);i++){
+            if(((num1%i)==0)&&(num2%i)==0){
+                f = i;
+            }
+        }
+        return f;
+    }
+
+    private int smaller(int num1, int num2){
+        if(num1<num2){
+            return num1;
+        }
+        else{
+            return num2;
+        }
     }
 }

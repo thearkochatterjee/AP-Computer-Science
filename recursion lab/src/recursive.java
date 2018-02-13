@@ -55,6 +55,11 @@ public class recursive extends calculation{
 
     @Override
     public int gcf(int num1, int num2) {
-        return 0;
+        if (num2==0){
+            return num1;
+        }
+        else{
+            return gcf(num2, num1%num2);
+        }
     }
 }

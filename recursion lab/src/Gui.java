@@ -15,7 +15,7 @@ public class Gui extends JFrame{
 
     public Gui(){
         setTitle("Recursion");
-        setSize(250,200);
+        setSize(250,300);
         setJMenuBar(mnubar);
         getContentPane().add(pane);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -68,7 +68,9 @@ public class Gui extends JFrame{
         public void actionPerformed(ActionEvent e) {
             calculation c1 = new iterative();
             calculation c2 = new recursive();
-            int val = Integer.valueOf(pane.getTxtin().getText());
+            int num1 = Integer.valueOf(pane.getTxtin().getText().split(",")[0]);
+            int num2 = Integer.valueOf(pane.getTxtin().getText().split(",")[1]);
+            pane.output(c1.gcf(num1, num2), c2.gcf(num1, num2));
         }
     }
 
