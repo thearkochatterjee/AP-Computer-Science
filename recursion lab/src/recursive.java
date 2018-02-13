@@ -29,4 +29,32 @@ public class recursive extends calculation{
             return fabonacci(in-1) + fabonacci(in-2);
         }
     }
+
+    @Override
+    public boolean isPallindrome(String in) {
+        if(in.length()==0||in.length()==1){
+            return true;
+        }
+        else if (in.charAt(0)==in.charAt(in.length()-1)){
+            return isPallindrome(in.substring(1,in.length()-1));
+        }
+        else{
+            return false;
+        }
+    }
+
+    @Override
+    public int factorial(int in) {
+        if(in == 1){
+            return 1;
+        }
+        else {
+            return in *  factorial(in - 1);
+        }
+    }
+
+    @Override
+    public int gcf(int num1, int num2) {
+        return 0;
+    }
 }

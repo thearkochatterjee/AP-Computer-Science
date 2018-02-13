@@ -28,4 +28,30 @@ public class iterative extends calculation{
         }
         return x;
     }
+
+    @Override
+    public boolean isPallindrome(String in) {
+        boolean pal = true;
+        for(int i = 0;i<in.length();i++){
+            if(in.charAt(i)!=in.charAt(in.length()-1-i)){
+                pal = false;
+                break;
+            }
+        }
+        return pal;
+    }
+
+    @Override
+    public int factorial(int in) {
+        int fac = 1;
+        for(int i = 1;i<=in;i++){
+            fac *= i;
+        }
+        return fac;
+    }
+
+    @Override
+    public int gcf(int num1, int num2) {
+        return 0;
+    }
 }
