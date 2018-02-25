@@ -44,4 +44,8 @@ public class MainPane extends Container{
         }
         lblout.setText("Iterative:\n"+out1+"\nRecursive:\n"+out2);
     }
+
+    public void output(String c1, String c2){
+        lblout.setText("Iterative:\n"+c1+"\nRecursive:\n"+c2);
+    }
 }

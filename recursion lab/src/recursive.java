@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class recursive extends calculation{
 
     @Override
@@ -65,6 +67,27 @@ public class recursive extends calculation{
 
     @Override
     public String reverse(String in) {
-        return null;
+        if ((in==null)||(in.length() <= 1) )
+            return in;
+        return reverse(in.substring(1)) + in.charAt(0);
+    }
+
+    @Override
+    public String tobinary(int in) {
+        if(in==0||in==1){
+            return String.valueOf(in);
+        }
+        else {
+            return tobinary(in/2) + String.valueOf(in%2);
+        }
+    }
+
+    @Override
+    public int toarabic(String in) {
+        int len = in.length();
+        if (len == 0) return 0;
+        String now = in.substring(0,1);
+        String later = in.substring(1);
+        return Integer.parseInt(now) * (int)Math.pow(2, len-1) + toarabic(later);
     }
 }

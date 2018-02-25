@@ -13,4 +13,8 @@ abstract public class calculation {
     abstract public int factorial(int in);
 
     abstract public int gcf(int num1, int num2);
+
+    abstract public String tobinary(int in);
+
+    abstract public int toarabic(String in);
 }

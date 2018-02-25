@@ -12,6 +12,9 @@ public class Gui extends JFrame{
     private JMenuItem mnufactorial = new JMenuItem();
     private JMenuItem mnupal = new JMenuItem();
     private JMenuItem mnugcf = new JMenuItem();
+    private JMenuItem mnureverse = new JMenuItem();
+    private JMenuItem mnutobinary = new JMenuItem();
+    private JMenuItem mnutoarabic = new JMenuItem();
 
     public Gui(){
         setTitle("Recursion");
@@ -26,6 +29,9 @@ public class Gui extends JFrame{
         mnucalculation.add(mnufactorial);
         mnucalculation.add(mnugcf);
         mnucalculation.add(mnupal);
+        mnucalculation.add(mnureverse);
+        mnucalculation.add(mnutoarabic);
+        mnucalculation.add(mnutobinary);
         mnucalculation.setText("Calculations");
         mnuexponent.setText("Exponential");
         mnufabancci.setText("Fabancci");
@@ -33,6 +39,9 @@ public class Gui extends JFrame{
         mnupal.setText("Palindrome");
         mnufactorial.setText("Factorial");
         mnusummation.setText("Summation");
+        mnureverse.setText("Reverse");
+        mnutobinary.setText("To Binary");
+        mnutoarabic.setText("To Arabic");
         setVisible(true);
         mnufactorial.addActionListener(new factorial());
         mnufabancci.addActionListener(new fab());
@@ -40,6 +49,37 @@ public class Gui extends JFrame{
         mnupal.addActionListener(new pal());
         mnugcf.addActionListener(new gcf());
         mnuexponent.addActionListener(new exponent());
+        mnureverse.addActionListener(new reverse());
+        mnutoarabic.addActionListener(new arabic());
+        mnutobinary.addActionListener(new binary());
+    }
+
+    class arabic implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            calculation c1 = new iterative();
+            calculation c2 = new recursive();
+            pane.output(c1.toarabic(pane.getTxtin().getText()), c2.toarabic(pane.getTxtin().getText()));
+        }
+    }
+
+    class binary implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            calculation c1 = new iterative();
+            calculation c2 = new recursive();
+            int val = Integer.valueOf(pane.getTxtin().getText());
+            pane.output(c1.tobinary(val), c2.tobinary(val));
+        }
+    }
+
+    class reverse implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            calculation c1 = new iterative();
+            calculation c2 = new recursive();
+            pane.output(c1.reverse(pane.getTxtin().getText()), c2.reverse(pane.getTxtin().getText()));
+        }
     }
 
     class fab implements ActionListener{

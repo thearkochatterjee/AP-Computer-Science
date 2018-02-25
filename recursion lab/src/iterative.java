@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class iterative extends calculation{
 
     @Override
@@ -72,6 +74,44 @@ public class iterative extends calculation{
 
     @Override
     public String reverse(String in) {
-        return null;
+        String reverse = "";
+        for(int i = in.length()-1;i>=0;i--){
+            reverse += in.charAt(i);
+        }
+        return reverse;
+    }
+
+    @Override
+    public String tobinary(int in) {
+        int container[] = new int[100];
+        int i = 0;
+        String bi = "";
+        while (in > 0){
+            container[i] = in%2;
+            i++;
+            in = in/2;
+        }
+        for (int j = i -1 ; j >= 0 ; j--){
+            bi += container[j];
+        }
+        return bi;
+    }
+
+    @Override
+    public int toarabic(String in) {
+        int decimal = 0;
+        int n = 0;
+        int binary = Integer.valueOf(in);
+        while(true){
+            if(binary == 0){
+                break;
+            } else {
+                int temp = binary%10;
+                decimal += temp*Math.pow(2, n);
+                binary = binary/10;
+                n++;
+            }
+        }
+        return decimal;
     }
 }
