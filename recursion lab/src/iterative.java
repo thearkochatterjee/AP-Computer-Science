@@ -69,4 +69,9 @@ public class iterative extends calculation{
             return num2;
         }
     }
+
+    @Override
+    public String reverse(String in) {
+        return null;
+    }
 }

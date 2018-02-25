@@ -62,4 +62,9 @@ public class recursive extends calculation{
             return gcf(num2, num1%num2);
         }
     }
+
+    @Override
+    public String reverse(String in) {
+        return null;
+    }
 }

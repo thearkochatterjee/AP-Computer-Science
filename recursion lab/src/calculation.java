@@ -8,6 +8,8 @@ abstract public class calculation {
 
     abstract public boolean isPallindrome(String in);
 
+    abstract public String reverse(String in);
+
     abstract public int factorial(int in);
 
     abstract public int gcf(int num1, int num2);
