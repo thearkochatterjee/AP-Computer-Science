@@ -18,7 +18,7 @@ public class Gui extends JFrame{
 
     public Gui(){
         setTitle("Recursion");
-        setSize(250,300);
+        setSize(500,300);
         setJMenuBar(mnubar);
         getContentPane().add(pane);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

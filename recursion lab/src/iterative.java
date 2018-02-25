@@ -102,15 +102,11 @@ public class iterative extends calculation{
         int decimal = 0;
         int n = 0;
         int binary = Integer.valueOf(in);
-        while(true){
-            if(binary == 0){
-                break;
-            } else {
-                int temp = binary%10;
-                decimal += temp*Math.pow(2, n);
-                binary = binary/10;
-                n++;
-            }
+        while(binary != 0){
+            int temp = binary%10;
+            decimal += temp*Math.pow(2, n);
+            binary = binary/10;
+            n++;
         }
         return decimal;
     }
