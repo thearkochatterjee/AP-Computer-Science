@@ -53,21 +53,39 @@ public class Magpie4
 		{
 			response = transformIWantToStatement(statement);
 		}
+		else if (findKeyword(statement,"I want")>=0){
+			response = transformIWantStatement(statement);
+		}
 
 		else
 		{
 			// Look for a two word (you <something> me)
 			// pattern
-			int psn = findKeyword(statement, "you", 0);
+			if(statement.contains("me")){
+				int psn = findKeyword(statement, "you", 0);
 
-			if (psn >= 0
-					&& findKeyword(statement, "me", psn) >= 0)
-			{
-				response = transformYouMeStatement(statement);
+				if (psn >= 0
+						&& findKeyword(statement, "me", psn) >= 0)
+				{
+					response = transformYouMeStatement(statement);
+				}
+				else
+				{
+					response = getRandomResponse();
+				}
 			}
-			else
-			{
-				response = getRandomResponse();
+			else{
+				int psn = findKeyword(statement, "I", 0);
+
+				if (psn >= 0
+						&& findKeyword(statement, "you", psn) >= 0)
+				{
+					response = transformIYouStatement(statement);
+				}
+				else
+				{
+					response = getRandomResponse();
+				}
 			}
 		}
 		return response;
@@ -83,8 +101,7 @@ public class Magpie4
 	{
 		//  Remove the final period, if there is one
 		statement = statement.trim();
-		String lastChar = statement.substring(statement
-				.length() - 1);
+		String lastChar = statement.substring(statement.length() - 1);
 		if (lastChar.equals("."))
 		{
 			statement = statement.substring(0, statement
@@ -93,6 +110,19 @@ public class Magpie4
 		int psn = findKeyword (statement, "I want to", 0);
 		String restOfStatement = statement.substring(psn + 9).trim();
 		return "What would it mean to " + restOfStatement + "?";
+	}
+
+	private String transformIWantStatement(String statement){
+		statement = statement.trim();
+		String lastChar = statement.substring(statement.length() - 1);
+		if (lastChar.equals("."))
+		{
+			statement = statement.substring(0, statement
+					.length() - 1);
+		}
+		int psn = findKeyword (statement, "I want", 0);
+		String restOfStatement = statement.substring(psn + 6).trim();
+		return "Would you really be happy if you had " + restOfStatement + "?";
 	}
 
 	
@@ -120,6 +150,24 @@ public class Magpie4
 		
 		String restOfStatement = statement.substring(psnOfYou + 3, psnOfMe).trim();
 		return "What makes you think that I " + restOfStatement + " you?";
+	}
+
+	private String transformIYouStatement(String statement){
+		statement = statement.trim();
+		String lastChar = statement.substring(statement
+				.length() - 1);
+		if (lastChar.equals("."))
+		{
+			statement = statement.substring(0, statement
+					.length() - 1);
+		}
+
+
+		int psnofi = findKeyword(statement,"i",0);
+		int psnOfYou = findKeyword (statement, "you", psnofi+1);
+
+		String restOfStatement = statement.substring(psnofi + 1, psnOfYou).trim();
+		return "Why do you " + restOfStatement + " me?";
 	}
 	
 	

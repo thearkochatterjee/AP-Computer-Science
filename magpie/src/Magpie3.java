@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 /**
  * A program to carry on conversations with a human user.
  * This version: 
@@ -33,6 +35,21 @@ public class Magpie3
 		if (statement.length() == 0)
 		{
 			response = "Say something, please.";
+		}
+		else if (findKeyword(statement,"cat")>=0||findKeyword(statement,"dog")>=0){
+			response = "Tell me more about your pets.";
+		}
+		else if (findKeyword(statement,"Bob Bobson")>=0){
+			response = "He sounds like a good person.";
+		}
+		else if (findKeyword(statement,"Hi")>=0){
+			response = "Hello";
+		}
+		else if (findKeyword(statement,"Pizza")>=0){
+			response = "You're making me hungry.";
+		}
+		else if (findKeyword(statement,"shopping")>=0){
+			response = "What are you going to get?";
 		}
 		else if (findKeyword(statement, "no") >= 0)
 		{
@@ -144,7 +161,7 @@ public class Magpie3
 	 */
 	private String getRandomResponse()
 	{
-		final int NUMBER_OF_RESPONSES = 4;
+		final int NUMBER_OF_RESPONSES = 6;
 		double r = Math.random();
 		int whichResponse = (int) (r * NUMBER_OF_RESPONSES);
 		String response = "";
@@ -164,6 +181,12 @@ public class Magpie3
 		else if (whichResponse == 3)
 		{
 			response = "You don't say.";
+		}
+		else if (whichResponse == 4){
+			response = "I don't know.";
+		}
+		else if (whichResponse == 5){
+			response = "Sorry, what did you say?";
 		}
 
 		return response;
