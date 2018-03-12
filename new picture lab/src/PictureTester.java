@@ -144,8 +144,17 @@ public class PictureTester
   }
 
   public static void testCopy(){
-      Picture copy = new Picture("src/mypicture.jpg");
+      Picture orginal = new Picture("src/caterpillar.jpg");
+      Picture copy = new Picture();
+      copy.copy(orginal,10,10);
+      copy.explore();
+  }
 
+  public static void testCopy2(){
+      Picture orginal = new Picture("src/caterpillar.jpg");
+      Picture copy = new Picture();
+      copy.copy(orginal,10,100,10,100);
+      copy.explore();
   }
   
   /** Main method for testing.  Every class can have a main
@@ -172,8 +181,9 @@ public class PictureTester
 //    testMirrorGull();
 //    testMirrorDiagonal();
 //    testMirrorTemple();
-//    testCollage();
+    testCollage();
     testCopy();
+    testCopy2();
 //    testEdgeDetection();
 //    testEdgeDetection2();
 //    testChromakey();
