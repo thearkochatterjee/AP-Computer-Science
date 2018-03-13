@@ -10,7 +10,6 @@ public class MainPane extends Container{
     private JLabel lblcardremain = new JLabel();
     private JButton cmdreplace = new JButton();
     private JButton cmdrestart = new JButton();
-    private ArrayList<CardImg> cardplay = new ArrayList<CardImg>();
 
     public MainPane(){
 
