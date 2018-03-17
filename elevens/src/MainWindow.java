@@ -8,5 +8,6 @@ public class MainWindow extends JFrame{
         setSize(500,500);
         getContentPane().add(pane);
         setVisible(true);
+
     }
 }

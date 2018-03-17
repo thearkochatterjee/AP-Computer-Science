@@ -17,5 +17,9 @@ public class CardPane extends JPanel{
         for(int i = 0;i<9;i++){
             cards.add(new CardImg(d.getCards().get(i)));
         }
+        removeAll();
+        for(CardImg c: cards){
+            add(c);
+        }
     }
 }
