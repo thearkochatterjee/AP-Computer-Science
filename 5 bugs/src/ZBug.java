@@ -39,6 +39,7 @@ public class ZBug extends Bug{
             turn();
             turn();
             turn();
+            steps = 0;
             tcount = 2;
         }
     }
