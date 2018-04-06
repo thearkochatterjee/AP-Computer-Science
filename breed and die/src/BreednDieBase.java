@@ -6,10 +6,19 @@ import info.gridworld.grid.Location;
 import java.awt.*;
 import java.util.ArrayList;
 
-public class Female extends Critter{
-    public Female()
-    {
-        setColor(Color.RED);
+abstract public class BreednDieBase extends Critter{
+    protected int age;
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public boolean isMature(){
+        return age > 5;
     }
 
     /**
@@ -84,14 +93,5 @@ public class Female extends Critter{
                 locs.add(neighborLoc);
         }
         return locs;
-    }
-
-    public boolean canBreed(){
-        for(int i = 0;i<getActors().size();i++){
-            if(getActors().get(i) instanceof Male){
-                return true;
-            }
-        }
-        return false;
     }
 }
