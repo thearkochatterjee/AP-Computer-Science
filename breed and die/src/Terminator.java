@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Terminator extends BreednDieBase{
     public Terminator(){
-        setDeathage(10000);
+        setDeathage(500);
         setColor(Color.BLACK);
     }
 
@@ -26,8 +26,13 @@ public class Terminator extends BreednDieBase{
 
     private ArrayList<Location> attackloc(){
         ArrayList<Location> arrattack = new ArrayList<Location>();
-        for(int i = 0; i < getGrid().getNeighbors(getLocation()).size(); i++){
-            arrattack.add(getGrid().getNeighbors(getLocation()).get(i).getLocation());
+        try {
+            for (int i = 0; i < getGrid().getNeighbors(getLocation()).size(); i++) {
+                arrattack.add(getGrid().getNeighbors(getLocation()).get(i).getLocation());
+            }
+        }
+        catch (Exception e){
+
         }
         return arrattack;
     }

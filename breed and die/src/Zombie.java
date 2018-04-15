@@ -12,7 +12,7 @@ import java.util.Random;
 public class Zombie extends BreednDieBase{
     public Zombie(){
         setColor(Color.green);
-        setDeathage(1000);
+        setDeathage(300);
     }
 
     @Override
@@ -60,8 +60,15 @@ public class Zombie extends BreednDieBase{
 
     private ArrayList<Location> attackloc(){
         ArrayList<Location> arrattack = new ArrayList<Location>();
-        for(int i = 0; i < getGrid().getNeighbors(getLocation()).size(); i++){
-            arrattack.add(getGrid().getNeighbors(getLocation()).get(i).getLocation());
+        try {
+            if (getGrid().getNeighbors(getLocation()).size() > 0) {
+                for (int i = 0; i < getGrid().getNeighbors(getLocation()).size(); i++) {
+                    arrattack.add(getGrid().getNeighbors(getLocation()).get(i).getLocation());
+                }
+            }
+        }
+        catch (Exception e){
+
         }
         return arrattack;
     }
