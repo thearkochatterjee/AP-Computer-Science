@@ -15,10 +15,11 @@ public class Tester {
         int rpos = 0;
         int cpos = 0;
         int rocknum = 0;
-        int intialzombie = 10;
+        int intialzombie = 0;
         int intialmale = 100;
         int intialfemale = 100;
-        int intialterminator = 5;
+        int intialterminator = 0;
+        int intialblackwidow = 10;
         ActorWorld world = new ActorWorld(new BoundedGrid<>(rbound, cbound));
         rocknum = r.nextInt(20)+1;
         for(int i = 0;i<rocknum;i++){
@@ -38,6 +39,10 @@ public class Tester {
         for(int i = 0; i <intialterminator; i++){
             world.add(avaliblepos(world, rbound, cbound), new Terminator());
         }
+        for(int i = 0; i < intialblackwidow; i++){
+            world.add(avaliblepos(world, rbound, cbound), new BlackWidow());
+        }
+//        world.add(avaliblepos(world, rbound, cbound), new DonJohn());
         world.show();
     }
 

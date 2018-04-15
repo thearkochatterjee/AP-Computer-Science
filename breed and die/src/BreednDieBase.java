@@ -108,6 +108,14 @@ abstract public class BreednDieBase extends Critter{
     }
 
     public double distance(Actor a){
-        return Math.pow(Math.pow(getLocation().getCol() + a.getLocation().getCol(), 2) + Math.pow(getLocation().getRow() + a.getLocation().getRow(), 2), 0.5);
+        double dis = 0.0;
+        double dis2 = 0.0;
+        dis = getLocation().getCol() + a.getLocation().getCol();
+        dis = Math.pow(dis, 2);
+        dis2 = getLocation().getRow() + a.getLocation().getRow();
+        dis2 = Math.pow(dis2, 2);
+        dis = dis + dis2;
+        dis = Math.pow(dis, 0.5);
+        return dis;
     }
 }

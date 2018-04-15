@@ -1,8 +1,11 @@
 import info.gridworld.actor.Critter;
 
-public class DonJohn extends BreednDieBase{
-    public DonJohn(){
+import java.awt.*;
 
+public class DonJohn extends Male{
+    public DonJohn(){
+        setDeathage(200);
+        setColor(Color.BLUE);
     }
 
     @Override

@@ -1,4 +1,5 @@
 import info.gridworld.actor.Actor;
+import info.gridworld.actor.ActorWorld;
 import info.gridworld.actor.Critter;
 import info.gridworld.grid.Grid;
 import info.gridworld.grid.Location;
@@ -35,6 +36,9 @@ public class Female extends BreednDieBase{
 
     @Override
     public void action() {
+//        if(closetodonjohn()){
+//            moveTo(getActors().get(nearestDonJohn()).getLocation());
+//        }
         if(canbreed()){
             Random r = new Random();
             int numkid = r.nextInt(possibleloc().size())+1;
@@ -45,8 +49,14 @@ public class Female extends BreednDieBase{
                         m.putSelfInGrid(getGrid(), possibleloc().get(i));
                     }
                     else{
-                        Female f = new Female();
-                        f.putSelfInGrid(getGrid(), possibleloc().get(i));
+                        if(r.nextBoolean()){
+                            Female f = new Female();
+                            f.putSelfInGrid(getGrid(), possibleloc().get(i));
+                        }
+                        else {
+                            BlackWidow b = new BlackWidow();
+                            b.putSelfInGrid(getGrid(), possibleloc().get(i));
+                        }
                     }
                 }
                 catch (Exception e){
@@ -73,9 +83,43 @@ public class Female extends BreednDieBase{
         return arrpossible;
     }
 
-    private boolean hasMature(){
-        boolean mature = false;
-
-        return mature;
-    }
+//    public boolean closetodonjohn(){
+//        boolean close = false;
+//        for(Actor a: getActors()){
+//            if((distance(a) < 10) && (a instanceof DonJohn)){
+//                close = true;
+//            }
+//        }
+//        return close;
+//    }
+//
+//    private int directionto(Actor a){
+//        if(a.getLocation().getRow() > getLocation().getRow()){
+//            return Location.SOUTH;
+//        }
+//        else if (a.getLocation().getRow() < getLocation().getRow()){
+//            return Location.NORTH;
+//        }
+//        else if (a.getLocation().getCol() > getLocation().getCol()){
+//            return Location.WEST;
+//        }
+//        else if (a.getLocation().getCol() < getLocation().getCol()){
+//            return Location.EAST;
+//        }
+//        return 0;
+//    }
+//
+//    public int nearestDonJohn(){
+//        int pos = 0;
+//        double dist = 10000000.0;
+//        for(int i = 0; i < getActors().size();i++){
+//            if(getActors().get(i) instanceof DonJohn){
+//                if (distance(getActors().get(i)) < dist){
+//                    dist = distance(getActors().get(i));
+//                    pos = i;
+//                }
+//            }
+//        }
+//        return pos;
+//    }
 }

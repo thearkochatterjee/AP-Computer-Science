@@ -43,7 +43,7 @@ public class CrabRunner
         world.add(new Location(5, 3), new Bug());
         world.add(new Location(4, 5), new Female());
         world.add(new Location(6, 1), new Male());
-        world.add(new Location(7, 4), new Zombie());
+        world.add(new Location(7, 4), new BlackWidow());
         world.show();
     }
 }
