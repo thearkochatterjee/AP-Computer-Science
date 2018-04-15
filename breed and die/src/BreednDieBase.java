@@ -110,9 +110,9 @@ abstract public class BreednDieBase extends Critter{
     public double distance(Actor a){
         double dis = 0.0;
         double dis2 = 0.0;
-        dis = getLocation().getCol() + a.getLocation().getCol();
+        dis = getLocation().getCol() - a.getLocation().getCol();
         dis = Math.pow(dis, 2);
-        dis2 = getLocation().getRow() + a.getLocation().getRow();
+        dis2 = getLocation().getRow() - a.getLocation().getRow();
         dis2 = Math.pow(dis2, 2);
         dis = dis + dis2;
         dis = Math.pow(dis, 0.5);

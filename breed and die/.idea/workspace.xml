@@ -76,7 +76,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Flocking.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Flocking.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Flocking.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="218">
@@ -118,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BreednDieBase.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BreednDieBase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BreednDieBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="111" column="26" lean-forward="true" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#457#458#0" expanded="true" />
@@ -177,20 +177,20 @@
         <option value="$PROJECT_DIR$/src/DonJohn.java" />
         <option value="$PROJECT_DIR$/src/BlackWidow.java" />
         <option value="$PROJECT_DIR$/src/Leader.java" />
-        <option value="$PROJECT_DIR$/src/BreednDieBase.java" />
         <option value="$PROJECT_DIR$/src/CrabRunner.java" />
         <option value="$PROJECT_DIR$/src/Male.java" />
         <option value="$PROJECT_DIR$/src/Tester.java" />
         <option value="$PROJECT_DIR$/src/Female.java" />
         <option value="$PROJECT_DIR$/src/Flocking.java" />
+        <option value="$PROJECT_DIR$/src/BreednDieBase.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1358" />
+    <option name="x" value="1446" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1364" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -725,20 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BreednDieBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Leader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -840,6 +826,20 @@
             <element signature="e#312#313#0" expanded="true" />
             <element signature="e#342#343#0" expanded="true" />
             <element signature="method#posleader#0;class#Flocking#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BreednDieBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="111" column="26" lean-forward="true" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
           </folding>
         </state>
       </provider>
