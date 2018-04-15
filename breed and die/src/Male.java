@@ -7,6 +7,8 @@ import java.awt.*;
 import java.util.ArrayList;
 
 public class Male extends BreednDieBase{
+    private boolean infected;
+
     public Male()
     {
         setColor(Color.RED);
@@ -40,6 +42,6 @@ public class Male extends BreednDieBase{
     }
 
     public boolean isMature(){
-        return age > 5;
+        return age > 20;
     }
 }

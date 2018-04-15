@@ -9,15 +9,15 @@ import java.util.Random;
 
 public class Tester {
     public static void main(String args[]){
-        int rbound = 60;
-        int cbound = 60;
+        int rbound = 100;
+        int cbound = 100;
         Random r = new Random();
         int rpos = 0;
         int cpos = 0;
         int rocknum = 0;
         int intialzombie = 50;
-        int intialmale = 30;
-        int intialfemale = 30;
+        int intialmale = 10;
+        int intialfemale = 10;
         int intialterminator = 50;
         ActorWorld world = new ActorWorld(new BoundedGrid<>(rbound, cbound));
         rocknum = r.nextInt(20)+1;
@@ -32,12 +32,12 @@ public class Tester {
         for(int i = 0; i < intialfemale; i++){
             world.add(avaliblepos(world, rbound, cbound), new Female());
         }
-        for(int i = 0; i < intialzombie; i++){
-            world.add(avaliblepos(world, rbound, cbound), new Zombie());
-        }
-        for(int i = 0; i <intialterminator; i++){
-            world.add(avaliblepos(world, rbound, cbound), new Terminator());
-        }
+//        for(int i = 0; i < intialzombie; i++){
+//            world.add(avaliblepos(world, rbound, cbound), new Zombie());
+//        }
+//        for(int i = 0; i <intialterminator; i++){
+//            world.add(avaliblepos(world, rbound, cbound), new Terminator());
+//        }
         world.show();
     }
 

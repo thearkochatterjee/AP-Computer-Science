@@ -5,81 +5,77 @@ import info.gridworld.grid.Location;
 
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Female extends BreednDieBase{
+    private boolean infected;
+
     public Female()
     {
         setColor(Color.RED);
         setDeathage(200);
     }
 
-    private ArrayList<Male> close(){
-        ArrayList<Male> arrmale = new ArrayList<Male>();
-        for(int i = 0; i < getActors().size(); i++){
-            if (getActors().get(i) instanceof Male) {
-                for (int d = 0; d < 9; i++) {
-                    if (getLocation().getAdjacentLocation(d).compareTo(getActors().get(i).getLocation()) == 0) {
-                        arrmale.add(new Male());
-                    }
-                }
-                if (above(getActors().get(i)) || below(getActors().get(i)) || left(getActors().get(i)) || right(getActors().get(i))) {
-                    arrmale.add(new Male());
-                }
-            }
-        }
-        return arrmale;
+    public boolean canbreed(){
+        return isMature() && closetoMale();
     }
 
-    public boolean canbreed(){
-        return close().size() > 0;
+    public boolean closetoMale(){
+        for(Actor a: getActors()){
+            if ((a instanceof Male) && (((Male) a).isMature())){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean isMature(){
+        return age > 20 && age < 150;
     }
 
     @Override
     public void action() {
+        if(canbreed()){
+            Random r = new Random();
+            int numkid = r.nextInt(possibleloc().size())+1;
+            for(int i = 0; i < numkid; i++){
+                try {
+                    if(r.nextBoolean()){
+                        Male m = new Male();
+                        m.putSelfInGrid(getGrid(), possibleloc().get(i));
+                    }
+                    else{
+                        Female f = new Female();
+                        f.putSelfInGrid(getGrid(), possibleloc().get(i));
+                    }
+                }
+                catch (Exception e){
 
+                }
+            }
+        }
     }
 
-    //    public void makeMove(Location loc)
-//    {
-//        age++;
-//        if (loc.equals(getLocation()))
-//        {
-//            double r = Math.random();
-//            int angle;
-//            if (r < 0.5)
-//                angle = Location.LEFT;
-//            else
-//                angle = Location.RIGHT;
-//            setDirection(getDirection() + angle);
-//        }
-//        else
-//            super.makeMove(loc);
-//        if(age > deathage && getActors().contains(this)){
-//            removeSelfFromGrid();
-//        }
-//    }
+    private ArrayList<Location> possibleloc(){
+        ArrayList<Location> arrpossible = new ArrayList<Location>();
+        for(int i = 0;i<9;i++){
+            arrpossible.add(getLocation().getAdjacentLocation(i * 45));
+        }
+        arrpossible.add(new Location(getLocation().getRow() +2, getLocation().getCol()));
+        arrpossible.add(new Location(getLocation().getRow() -2, getLocation().getCol()));
+        arrpossible.add(new Location(getLocation().getRow(), getLocation().getCol()-2));
+        arrpossible.add(new Location(getLocation().getRow(), getLocation().getCol()+2));
+        for(int i = 0; i < arrpossible.size(); i++){
+            if(!getGrid().isValid(arrpossible.get(i)) || arrpossible.get(i).getRow()< 1 || arrpossible.get(i).getCol() < 1 || arrpossible.get(i).getCol() > getGrid().getNumCols() || arrpossible.get(i).getRow() > getGrid().getNumRows()){
+                arrpossible.remove(arrpossible.get(i));
+            }
+        }
+        return arrpossible;
+    }
 
     private boolean hasMature(){
         boolean mature = false;
-        for(int i = 0; i < close().size();i++){
 
-        }
         return mature;
-    }
-
-    private boolean above(Actor a){
-        return ((getLocation().getRow() + 2) == a .getLocation().getRow()) && (getLocation().getCol() == a.getLocation().getCol());
-    }
-
-    private boolean below(Actor a){
-        return ((getLocation().getRow() - 2) == a .getLocation().getRow()) && (getLocation().getCol() == a.getLocation().getCol());
-    }
-
-    private boolean left(Actor a){
-        return ((getLocation().getRow()) == a .getLocation().getRow()) && ((getLocation().getCol() + 2) == a.getLocation().getCol());
-    }
-
-    private boolean right(Actor a){
-        return ((getLocation().getRow()) == a .getLocation().getRow()) && ((getLocation().getCol() - 2) == a.getLocation().getCol());
     }
 }
