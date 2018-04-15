@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 abstract public class BreednDieBase extends Critter{
     protected int age;
+    protected  int deathage;
 
     public int getAge() {
         return age;
@@ -17,9 +18,15 @@ abstract public class BreednDieBase extends Critter{
         this.age = age;
     }
 
+    public void setDeathage(int deathage) {
+        this.deathage = deathage;
+    }
+
     public boolean isMature(){
         return age > 5;
     }
+
+    abstract public void action();
 
     /**
      * A crab gets the actors in the three locations immediately in front, to its
@@ -46,7 +53,7 @@ abstract public class BreednDieBase extends Critter{
     {
         ArrayList<Location> locs = new ArrayList<Location>();
         int[] dirs =
-                { Location.LEFT, Location.RIGHT };
+                {Location.NORTH, Location.NORTHEAST, Location.EAST, Location.SOUTHEAST, Location.SOUTH, Location.SOUTHWEST, Location.WEST, Location.NORTHWEST};
         for (Location loc : getLocationsInDirections(dirs))
             if (getGrid().get(loc) == null)
                 locs.add(loc);
@@ -58,6 +65,7 @@ abstract public class BreednDieBase extends Critter{
      */
     public void makeMove(Location loc)
     {
+        age++;
         if (loc.equals(getLocation()))
         {
             double r = Math.random();
@@ -70,6 +78,10 @@ abstract public class BreednDieBase extends Critter{
         }
         else
             super.makeMove(loc);
+        if(age > deathage){
+            removeSelfFromGrid();
+        }
+        action();
     }
 
     /**
