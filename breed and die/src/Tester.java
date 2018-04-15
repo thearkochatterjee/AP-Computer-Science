@@ -20,6 +20,7 @@ public class Tester {
         int intialfemale = 100;
         int intialterminator = 0;
         int intialblackwidow = 10;
+        int intialflock = 4;
         ActorWorld world = new ActorWorld(new BoundedGrid<>(rbound, cbound));
         rocknum = r.nextInt(20)+1;
         for(int i = 0;i<rocknum;i++){
@@ -42,6 +43,10 @@ public class Tester {
         for(int i = 0; i < intialblackwidow; i++){
             world.add(avaliblepos(world, rbound, cbound), new BlackWidow());
         }
+        for(int i = 0;i<intialflock;i++){
+            world.add(avaliblepos(world, rbound, cbound), new Flocking(i));
+        }
+        world.add(avaliblepos(world, rbound, cbound), new Leader());
 //        world.add(avaliblepos(world, rbound, cbound), new DonJohn());
         world.show();
     }

@@ -118,4 +118,14 @@ abstract public class BreednDieBase extends Critter{
         dis = Math.pow(dis, 0.5);
         return dis;
     }
+
+    public ArrayList<Color> gencolors(){
+        ArrayList<Color> arrcolor = new ArrayList<Color>();
+        arrcolor.add(Color.BLUE);
+        arrcolor.add(Color.BLACK);
+        arrcolor.add(Color.PINK);
+        arrcolor.add(Color.YELLOW);
+        arrcolor.add(Color.CYAN);
+        return arrcolor;
+    }
 }

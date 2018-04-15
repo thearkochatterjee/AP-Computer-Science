@@ -41,9 +41,11 @@ public class CrabRunner
         world.add(new Location(3, 8), new Flower());
         world.add(new Location(6, 5), new Bug());
         world.add(new Location(5, 3), new Bug());
-        world.add(new Location(4, 5), new Female());
-        world.add(new Location(6, 1), new Male());
-        world.add(new Location(7, 4), new BlackWidow());
+        world.add(new Location(4, 5), new Leader());
+        world.add(new Location(6, 1), new Flocking(0));
+        world.add(new Location(7, 4), new Flocking(1));
+        world.add(new Location(7, 5), new Flocking(2));
+        world.add(new Location(7, 6), new Flocking(3));
         world.show();
     }
 }

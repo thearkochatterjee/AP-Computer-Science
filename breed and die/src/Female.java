@@ -13,7 +13,7 @@ public class Female extends BreednDieBase{
 
     public Female()
     {
-        setColor(Color.RED);
+        setColor(Color.CYAN);
         setDeathage(200);
     }
 
