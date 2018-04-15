@@ -67,8 +67,13 @@ public class Flocking extends BreednDieBase{
         rpos = r.nextInt(members().size()+1);
         Location loc = members().get(rpos);
         getGrid().get(loc).removeSelfFromGrid();
-        Leader l = new Leader();
-        l.putSelfInGrid(getGrid(), avaliblepos());
+        try {
+            Leader l = new Leader();
+            l.putSelfInGrid(getGrid(), avaliblepos());
+        }
+        catch (Exception e){
+
+        }
     }
 
     private Location avaliblepos(){

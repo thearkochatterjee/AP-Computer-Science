@@ -47,7 +47,7 @@ public class Tester {
             world.add(avaliblepos(world, rbound, cbound), new Flocking(i));
         }
         world.add(avaliblepos(world, rbound, cbound), new Leader());
-//        world.add(avaliblepos(world, rbound, cbound), new DonJohn());
+        world.add(avaliblepos(world, rbound, cbound), new DonJohn());
         world.show();
     }
 

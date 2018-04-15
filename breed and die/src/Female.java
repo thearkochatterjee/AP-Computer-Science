@@ -10,9 +10,11 @@ import java.util.Random;
 
 public class Female extends BreednDieBase{
     private boolean infected;
+    private boolean meetdonjohn = false;
 
     public Female()
     {
+        meetdonjohn = false;
         setColor(Color.CYAN);
         setDeathage(200);
     }
@@ -22,8 +24,8 @@ public class Female extends BreednDieBase{
     }
 
     public boolean closetoMale(){
-        for(Actor a: getActors()){
-            if ((a instanceof Male) && (((Male) a).isMature())){
+        for(Location a: getGrid().getOccupiedLocations()){
+            if (((getGrid().get(a) instanceof Male) || (getGrid().get(a) instanceof DonJohn)) && (((Male) getGrid().get(a)).isMature())){
                 return true;
             }
         }
@@ -39,6 +41,9 @@ public class Female extends BreednDieBase{
 //        if(closetodonjohn()){
 //            moveTo(getActors().get(nearestDonJohn()).getLocation());
 //        }
+        if (!meetdonjohn && DonJohnpresent()){
+            setDirection(directionto(nearestDonJohn()));
+        }
         if(canbreed()){
             Random r = new Random();
             int numkid = r.nextInt(possibleloc().size())+1;
@@ -83,6 +88,26 @@ public class Female extends BreednDieBase{
         return arrpossible;
     }
 
+    public boolean DonJohnpresent(){
+        boolean present = false;
+        for(Location l: getGrid().getOccupiedLocations()){
+            if(getGrid().get(l) instanceof DonJohn){
+                present = true;
+            }
+        }
+        return present;
+    }
+
+    public ArrayList<Location> donjohnloc(){
+        ArrayList<Location> arrloc = new ArrayList<Location>();
+        for(Location l: getGrid().getOccupiedLocations()){
+            if(getGrid().get(l) instanceof DonJohn){
+                arrloc.add(l);
+            }
+        }
+        return arrloc;
+    }
+
 //    public boolean closetodonjohn(){
 //        boolean close = false;
 //        for(Actor a: getActors()){
@@ -93,33 +118,31 @@ public class Female extends BreednDieBase{
 //        return close;
 //    }
 //
-//    private int directionto(Actor a){
-//        if(a.getLocation().getRow() > getLocation().getRow()){
-//            return Location.SOUTH;
-//        }
-//        else if (a.getLocation().getRow() < getLocation().getRow()){
-//            return Location.NORTH;
-//        }
-//        else if (a.getLocation().getCol() > getLocation().getCol()){
-//            return Location.WEST;
-//        }
-//        else if (a.getLocation().getCol() < getLocation().getCol()){
-//            return Location.EAST;
-//        }
-//        return 0;
-//    }
+    private int directionto(Location a){
+        if(a.getRow() > getLocation().getRow()){
+            return Location.SOUTH;
+        }
+        else if (a.getRow() < getLocation().getRow()){
+            return Location.NORTH;
+        }
+        else if (a.getCol() > getLocation().getCol()){
+            return Location.WEST;
+        }
+        else if (a.getCol() < getLocation().getCol()){
+            return Location.EAST;
+        }
+        return 0;
+    }
 //
-//    public int nearestDonJohn(){
-//        int pos = 0;
-//        double dist = 10000000.0;
-//        for(int i = 0; i < getActors().size();i++){
-//            if(getActors().get(i) instanceof DonJohn){
-//                if (distance(getActors().get(i)) < dist){
-//                    dist = distance(getActors().get(i));
-//                    pos = i;
-//                }
-//            }
-//        }
-//        return pos;
-//    }
+    public Location nearestDonJohn(){
+        Location pos = new Location(0,0);
+        double dist = 10000000.0;
+        for(Location l: donjohnloc()){
+            if (distance(getGrid().get(l)) < dist){
+                dist = distance(getGrid().get(l));
+                pos = l;
+            }
+        }
+        return pos;
+    }
 }
