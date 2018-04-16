@@ -11,7 +11,7 @@ public class Male extends BreednDieBase{
 
     public Male()
     {
-        setColor(Color.YELLOW);
+        setColor(Color.GRAY);
         setDeathage(200);
     }
 

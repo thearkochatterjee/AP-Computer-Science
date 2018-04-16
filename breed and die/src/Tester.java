@@ -9,16 +9,16 @@ import java.util.Random;
 
 public class Tester {
     public static void main(String args[]){
-        int rbound = 100;
-        int cbound = 100;
+        int rbound = 60;
+        int cbound = 60;
         Random r = new Random();
         int rpos = 0;
         int cpos = 0;
         int rocknum = 0;
-        int intialzombie = 0;
-        int intialmale = 100;
-        int intialfemale = 100;
-        int intialterminator = 0;
+        int intialzombie = 10;
+        int intialmale = 60;
+        int intialfemale = 60;
+        int intialterminator = 10;
         int intialblackwidow = 10;
         int intialflock = 4;
         ActorWorld world = new ActorWorld(new BoundedGrid<>(rbound, cbound));
