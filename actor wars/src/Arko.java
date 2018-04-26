@@ -27,15 +27,9 @@ public class Arko extends Peon{
         setDirection(m.directionTo(arrpath.get(0)));
         move();
         arrpath.remove(0);
-//        DynamicValue<Location> dl = LocationFinder.findClosestInstanceDynamicLocation(getLocation(), Wheat.class, getGrid());
-//        perform(moveToGradual(dl));
-//        perform(moveToGradual(LocationFinder.findClosestInstanceDynamicLocation(getLocation(), Wheat.class, getGrid())));
-
-//        this.perform();
         if(closetowheat()){
-            myactions.add(Action.attackHP(10));
-//            perform(myactions.get(0));
-//            perform(Action.attackHP(5));
+            setDirection(m.directionTo(LocationFinder.findClosestInstanceLocation(getLocation(),Wheat.class,getGrid())));
+            myactions.add(Action.attackHP(5));
         }
         if(energylow()){
             if(getItemCount(Wheat.class) > 0) {
