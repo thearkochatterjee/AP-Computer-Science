@@ -28,10 +28,12 @@ public class Arko extends Peon{
 
     private void playerhunting(){
 
+        survive();
     }
 
     private void ironhunting(){
 
+        survive();
     }
 
     private void wheathunting(){
@@ -50,10 +52,12 @@ public class Arko extends Peon{
             myactions.clear();
             myactions.add(Action.attackHP(5));
         }
-        if(energylow()){
-            if(getItemCount(Wheat.class) > 0) {
-                myactions.add(Action.use(Wheat.class));
-            }
+        survive();
+    }
+
+    private void survive(){
+        if(energylow() || healthlow()){
+            eatwheat();
         }
     }
 
@@ -81,8 +85,18 @@ public class Arko extends Peon{
         return false;
     }
 
+    private boolean hasWheatinvent(){
+        return amountofwheatinvent() > 0;
+    }
+
+    private boolean hasironinvent(){
+        return amountofiron() > 0;
+    }
+
     private void eatwheat(){
-        myactions.add(Action.use(Wheat.class));
+        if(hasWheatinvent()){
+            myactions.add(Action.use(Wheat.class));
+        }
     }
 
     public int amountofwheatinvent(){
