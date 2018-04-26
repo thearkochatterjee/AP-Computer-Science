@@ -15,7 +15,7 @@
       <file leaf-file-name="Tester.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="0">
               <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -27,25 +27,21 @@
       <file leaf-file-name="Arko.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Arko.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            <state relative-caret-position="34">
+              <caret line="69" column="13" lean-forward="true" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#402#412#0" expanded="true" />
-                <element signature="e#2554#2555#0" expanded="true" />
-                <element signature="e#2602#2603#0" expanded="true" />
-                <element signature="e#2641#2642#0" expanded="true" />
-                <element signature="e#2684#2685#0" expanded="true" />
-                <element signature="e#2718#2719#0" expanded="true" />
-                <element signature="e#2756#2757#0" expanded="true" />
-                <element signature="e#2790#2791#0" expanded="true" />
-                <element signature="e#2829#2830#0" expanded="true" />
-                <element signature="method#locwheat#0;class#Arko#0" expanded="false" />
-                <element signature="e#2928#2938#0" expanded="true" />
-                <element signature="e#3238#3248#0" expanded="true" />
-                <element signature="method#nearestwheat#0;class#Arko#0" expanded="false" />
-                <element signature="method#distance#0;class#Arko#0" expanded="false" />
-                <element signature="method#rounddirection#0;class#Arko#0" expanded="false" />
+                <element signature="e#2257#2258#0" expanded="true" />
+                <element signature="e#2311#2312#0" expanded="true" />
+                <element signature="e#2350#2351#0" expanded="true" />
+                <element signature="e#2398#2399#0" expanded="true" />
+                <element signature="e#2430#2431#0" expanded="true" />
+                <element signature="e#2477#2478#0" expanded="true" />
+                <element signature="e#2511#2512#0" expanded="true" />
+                <element signature="e#2549#2550#0" expanded="true" />
+                <element signature="e#2583#2584#0" expanded="true" />
+                <element signature="e#2622#2623#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,8 +50,8 @@
       <file leaf-file-name="Peon.java" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Peon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1067">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="e#817#818#0" expanded="true" />
                 <element signature="e#849#850#0" expanded="true" />
@@ -67,18 +63,8 @@
       <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-197">
+            <state relative-caret-position="17">
               <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Wheat.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Wheat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-95">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -87,7 +73,7 @@
       <file leaf-file-name="Action.java" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Action.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3315">
+            <state relative-caret-position="238">
               <caret line="276" column="63" lean-forward="false" selection-start-line="276" selection-start-column="57" selection-end-line="276" selection-end-column="63" />
               <folding />
             </state>
@@ -97,8 +83,8 @@
       <file leaf-file-name="LocationFinder.java" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/LocationFinder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1756">
-              <caret line="206" column="0" lean-forward="true" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
+            <state relative-caret-position="3281">
+              <caret line="206" column="0" lean-forward="false" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -107,8 +93,8 @@
       <file leaf-file-name="Pathfinder.java" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Pathfinder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="194" column="29" lean-forward="true" selection-start-line="194" selection-start-column="29" selection-end-line="194" selection-end-column="29" />
+            <state relative-caret-position="3179">
+              <caret line="194" column="29" lean-forward="false" selection-start-line="194" selection-start-column="29" selection-end-line="194" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -117,8 +103,8 @@
       <file leaf-file-name="ActiveActor.java" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/ActiveActor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1661">
-              <caret line="146" column="44" lean-forward="true" selection-start-line="146" selection-start-column="44" selection-end-line="146" selection-end-column="44" />
+            <state relative-caret-position="2244">
+              <caret line="146" column="44" lean-forward="false" selection-start-line="146" selection-start-column="44" selection-end-line="146" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -192,8 +178,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -256,6 +240,8 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -396,6 +382,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -406,7 +393,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23454833" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23454833" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -463,6 +450,104 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Peon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Wheat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4692">
+          <caret line="276" column="63" lean-forward="false" selection-start-line="276" selection-start-column="57" selection-end-line="276" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/LocationFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3502">
+          <caret line="206" column="0" lean-forward="true" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Pathfinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3298">
+          <caret line="194" column="29" lean-forward="true" selection-start-line="194" selection-start-column="29" selection-end-line="194" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/ActiveActor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2482">
+          <caret line="146" column="44" lean-forward="true" selection-start-line="146" selection-start-column="44" selection-end-line="146" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/lib/ChrisKrueger.jar!/Oultima.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="9" lean-forward="false" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+          <folding>
+            <marker date="1364911242000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1364911242000" expanded="false" signature="113:325" ph="..." />
+            <marker date="1364911242000" expanded="true" signature="582:1095" ph="{...}" />
+            <marker date="1364911242000" expanded="false" signature="746:836" ph="checkPermission(perm) → {" />
+            <marker date="1364911242000" expanded="false" signature="1001:1024" ph="}" />
+            <marker date="1364911242000" expanded="true" signature="1119:2081" ph="{...}" />
+            <marker date="1364911242000" expanded="true" signature="2115:2519" ph="{...}" />
+            <marker date="1364911242000" expanded="true" signature="2584:2664" ph="{...}" />
+            <marker date="1364911242000" expanded="true" signature="2703:2778" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Arko.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#402#412#0" expanded="true" />
+            <element signature="e#2257#2258#0" expanded="true" />
+            <element signature="e#2311#2312#0" expanded="true" />
+            <element signature="e#2350#2351#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2477#2478#0" expanded="true" />
+            <element signature="e#2511#2512#0" expanded="true" />
+            <element signature="e#2549#2550#0" expanded="true" />
+            <element signature="e#2583#2584#0" expanded="true" />
+            <element signature="e#2622#2623#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tester.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -498,20 +583,16 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#402#412#0" expanded="true" />
-            <element signature="e#2554#2555#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2641#2642#0" expanded="true" />
-            <element signature="e#2684#2685#0" expanded="true" />
-            <element signature="e#2718#2719#0" expanded="true" />
-            <element signature="e#2756#2757#0" expanded="true" />
-            <element signature="e#2790#2791#0" expanded="true" />
-            <element signature="e#2829#2830#0" expanded="true" />
-            <element signature="method#locwheat#0;class#Arko#0" expanded="false" />
-            <element signature="e#2928#2938#0" expanded="true" />
-            <element signature="e#3238#3248#0" expanded="true" />
-            <element signature="method#nearestwheat#0;class#Arko#0" expanded="false" />
-            <element signature="method#distance#0;class#Arko#0" expanded="false" />
-            <element signature="method#rounddirection#0;class#Arko#0" expanded="false" />
+            <element signature="e#2257#2258#0" expanded="true" />
+            <element signature="e#2311#2312#0" expanded="true" />
+            <element signature="e#2350#2351#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2477#2478#0" expanded="true" />
+            <element signature="e#2511#2512#0" expanded="true" />
+            <element signature="e#2549#2550#0" expanded="true" />
+            <element signature="e#2583#2584#0" expanded="true" />
+            <element signature="e#2622#2623#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -551,20 +632,16 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#402#412#0" expanded="true" />
-            <element signature="e#2554#2555#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2641#2642#0" expanded="true" />
-            <element signature="e#2684#2685#0" expanded="true" />
-            <element signature="e#2718#2719#0" expanded="true" />
-            <element signature="e#2756#2757#0" expanded="true" />
-            <element signature="e#2790#2791#0" expanded="true" />
-            <element signature="e#2829#2830#0" expanded="true" />
-            <element signature="method#locwheat#0;class#Arko#0" expanded="false" />
-            <element signature="e#2928#2938#0" expanded="true" />
-            <element signature="e#3238#3248#0" expanded="true" />
-            <element signature="method#nearestwheat#0;class#Arko#0" expanded="false" />
-            <element signature="method#distance#0;class#Arko#0" expanded="false" />
-            <element signature="method#rounddirection#0;class#Arko#0" expanded="false" />
+            <element signature="e#2257#2258#0" expanded="true" />
+            <element signature="e#2311#2312#0" expanded="true" />
+            <element signature="e#2350#2351#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2477#2478#0" expanded="true" />
+            <element signature="e#2511#2512#0" expanded="true" />
+            <element signature="e#2549#2550#0" expanded="true" />
+            <element signature="e#2583#2584#0" expanded="true" />
+            <element signature="e#2622#2623#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -604,20 +681,16 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#402#412#0" expanded="true" />
-            <element signature="e#2554#2555#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2641#2642#0" expanded="true" />
-            <element signature="e#2684#2685#0" expanded="true" />
-            <element signature="e#2718#2719#0" expanded="true" />
-            <element signature="e#2756#2757#0" expanded="true" />
-            <element signature="e#2790#2791#0" expanded="true" />
-            <element signature="e#2829#2830#0" expanded="true" />
-            <element signature="method#locwheat#0;class#Arko#0" expanded="false" />
-            <element signature="e#2928#2938#0" expanded="true" />
-            <element signature="e#3238#3248#0" expanded="true" />
-            <element signature="method#nearestwheat#0;class#Arko#0" expanded="false" />
-            <element signature="method#distance#0;class#Arko#0" expanded="false" />
-            <element signature="method#rounddirection#0;class#Arko#0" expanded="false" />
+            <element signature="e#2257#2258#0" expanded="true" />
+            <element signature="e#2311#2312#0" expanded="true" />
+            <element signature="e#2350#2351#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2477#2478#0" expanded="true" />
+            <element signature="e#2511#2512#0" expanded="true" />
+            <element signature="e#2549#2550#0" expanded="true" />
+            <element signature="e#2583#2584#0" expanded="true" />
+            <element signature="e#2622#2623#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -657,20 +730,16 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#402#412#0" expanded="true" />
-            <element signature="e#2554#2555#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2641#2642#0" expanded="true" />
-            <element signature="e#2684#2685#0" expanded="true" />
-            <element signature="e#2718#2719#0" expanded="true" />
-            <element signature="e#2756#2757#0" expanded="true" />
-            <element signature="e#2790#2791#0" expanded="true" />
-            <element signature="e#2829#2830#0" expanded="true" />
-            <element signature="method#locwheat#0;class#Arko#0" expanded="false" />
-            <element signature="e#2928#2938#0" expanded="true" />
-            <element signature="e#3238#3248#0" expanded="true" />
-            <element signature="method#nearestwheat#0;class#Arko#0" expanded="false" />
-            <element signature="method#distance#0;class#Arko#0" expanded="false" />
-            <element signature="method#rounddirection#0;class#Arko#0" expanded="false" />
+            <element signature="e#2257#2258#0" expanded="true" />
+            <element signature="e#2311#2312#0" expanded="true" />
+            <element signature="e#2350#2351#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2477#2478#0" expanded="true" />
+            <element signature="e#2511#2512#0" expanded="true" />
+            <element signature="e#2549#2550#0" expanded="true" />
+            <element signature="e#2583#2584#0" expanded="true" />
+            <element signature="e#2622#2623#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -710,20 +779,16 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#402#412#0" expanded="true" />
-            <element signature="e#2554#2555#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2641#2642#0" expanded="true" />
-            <element signature="e#2684#2685#0" expanded="true" />
-            <element signature="e#2718#2719#0" expanded="true" />
-            <element signature="e#2756#2757#0" expanded="true" />
-            <element signature="e#2790#2791#0" expanded="true" />
-            <element signature="e#2829#2830#0" expanded="true" />
-            <element signature="method#locwheat#0;class#Arko#0" expanded="false" />
-            <element signature="e#2928#2938#0" expanded="true" />
-            <element signature="e#3238#3248#0" expanded="true" />
-            <element signature="method#nearestwheat#0;class#Arko#0" expanded="false" />
-            <element signature="method#distance#0;class#Arko#0" expanded="false" />
-            <element signature="method#rounddirection#0;class#Arko#0" expanded="false" />
+            <element signature="e#2257#2258#0" expanded="true" />
+            <element signature="e#2311#2312#0" expanded="true" />
+            <element signature="e#2350#2351#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2477#2478#0" expanded="true" />
+            <element signature="e#2511#2512#0" expanded="true" />
+            <element signature="e#2549#2550#0" expanded="true" />
+            <element signature="e#2583#2584#0" expanded="true" />
+            <element signature="e#2622#2623#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -763,20 +828,16 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#402#412#0" expanded="true" />
-            <element signature="e#2554#2555#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2641#2642#0" expanded="true" />
-            <element signature="e#2684#2685#0" expanded="true" />
-            <element signature="e#2718#2719#0" expanded="true" />
-            <element signature="e#2756#2757#0" expanded="true" />
-            <element signature="e#2790#2791#0" expanded="true" />
-            <element signature="e#2829#2830#0" expanded="true" />
-            <element signature="method#locwheat#0;class#Arko#0" expanded="false" />
-            <element signature="e#2928#2938#0" expanded="true" />
-            <element signature="e#3238#3248#0" expanded="true" />
-            <element signature="method#nearestwheat#0;class#Arko#0" expanded="false" />
-            <element signature="method#distance#0;class#Arko#0" expanded="false" />
-            <element signature="method#rounddirection#0;class#Arko#0" expanded="false" />
+            <element signature="e#2257#2258#0" expanded="true" />
+            <element signature="e#2311#2312#0" expanded="true" />
+            <element signature="e#2350#2351#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2477#2478#0" expanded="true" />
+            <element signature="e#2511#2512#0" expanded="true" />
+            <element signature="e#2549#2550#0" expanded="true" />
+            <element signature="e#2583#2584#0" expanded="true" />
+            <element signature="e#2622#2623#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -798,20 +859,16 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#402#412#0" expanded="true" />
-            <element signature="e#2554#2555#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2641#2642#0" expanded="true" />
-            <element signature="e#2684#2685#0" expanded="true" />
-            <element signature="e#2718#2719#0" expanded="true" />
-            <element signature="e#2756#2757#0" expanded="true" />
-            <element signature="e#2790#2791#0" expanded="true" />
-            <element signature="e#2829#2830#0" expanded="true" />
-            <element signature="method#locwheat#0;class#Arko#0" expanded="false" />
-            <element signature="e#2928#2938#0" expanded="true" />
-            <element signature="e#3238#3248#0" expanded="true" />
-            <element signature="method#nearestwheat#0;class#Arko#0" expanded="false" />
-            <element signature="method#distance#0;class#Arko#0" expanded="false" />
-            <element signature="method#rounddirection#0;class#Arko#0" expanded="false" />
+            <element signature="e#2257#2258#0" expanded="true" />
+            <element signature="e#2311#2312#0" expanded="true" />
+            <element signature="e#2350#2351#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2477#2478#0" expanded="true" />
+            <element signature="e#2511#2512#0" expanded="true" />
+            <element signature="e#2549#2550#0" expanded="true" />
+            <element signature="e#2583#2584#0" expanded="true" />
+            <element signature="e#2622#2623#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -851,20 +908,16 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#402#412#0" expanded="true" />
-            <element signature="e#2554#2555#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2641#2642#0" expanded="true" />
-            <element signature="e#2684#2685#0" expanded="true" />
-            <element signature="e#2718#2719#0" expanded="true" />
-            <element signature="e#2756#2757#0" expanded="true" />
-            <element signature="e#2790#2791#0" expanded="true" />
-            <element signature="e#2829#2830#0" expanded="true" />
-            <element signature="method#locwheat#0;class#Arko#0" expanded="false" />
-            <element signature="e#2928#2938#0" expanded="true" />
-            <element signature="e#3238#3248#0" expanded="true" />
-            <element signature="method#nearestwheat#0;class#Arko#0" expanded="false" />
-            <element signature="method#distance#0;class#Arko#0" expanded="false" />
-            <element signature="method#rounddirection#0;class#Arko#0" expanded="false" />
+            <element signature="e#2257#2258#0" expanded="true" />
+            <element signature="e#2311#2312#0" expanded="true" />
+            <element signature="e#2350#2351#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2477#2478#0" expanded="true" />
+            <element signature="e#2511#2512#0" expanded="true" />
+            <element signature="e#2549#2550#0" expanded="true" />
+            <element signature="e#2583#2584#0" expanded="true" />
+            <element signature="e#2622#2623#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -904,20 +957,16 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#402#412#0" expanded="true" />
-            <element signature="e#2554#2555#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2641#2642#0" expanded="true" />
-            <element signature="e#2684#2685#0" expanded="true" />
-            <element signature="e#2718#2719#0" expanded="true" />
-            <element signature="e#2756#2757#0" expanded="true" />
-            <element signature="e#2790#2791#0" expanded="true" />
-            <element signature="e#2829#2830#0" expanded="true" />
-            <element signature="method#locwheat#0;class#Arko#0" expanded="false" />
-            <element signature="e#2928#2938#0" expanded="true" />
-            <element signature="e#3238#3248#0" expanded="true" />
-            <element signature="method#nearestwheat#0;class#Arko#0" expanded="false" />
-            <element signature="method#distance#0;class#Arko#0" expanded="false" />
-            <element signature="method#rounddirection#0;class#Arko#0" expanded="false" />
+            <element signature="e#2257#2258#0" expanded="true" />
+            <element signature="e#2311#2312#0" expanded="true" />
+            <element signature="e#2350#2351#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2477#2478#0" expanded="true" />
+            <element signature="e#2511#2512#0" expanded="true" />
+            <element signature="e#2549#2550#0" expanded="true" />
+            <element signature="e#2583#2584#0" expanded="true" />
+            <element signature="e#2622#2623#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -957,20 +1006,16 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#402#412#0" expanded="true" />
-            <element signature="e#2554#2555#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2641#2642#0" expanded="true" />
-            <element signature="e#2684#2685#0" expanded="true" />
-            <element signature="e#2718#2719#0" expanded="true" />
-            <element signature="e#2756#2757#0" expanded="true" />
-            <element signature="e#2790#2791#0" expanded="true" />
-            <element signature="e#2829#2830#0" expanded="true" />
-            <element signature="method#locwheat#0;class#Arko#0" expanded="false" />
-            <element signature="e#2928#2938#0" expanded="true" />
-            <element signature="e#3238#3248#0" expanded="true" />
-            <element signature="method#nearestwheat#0;class#Arko#0" expanded="false" />
-            <element signature="method#distance#0;class#Arko#0" expanded="false" />
-            <element signature="method#rounddirection#0;class#Arko#0" expanded="false" />
+            <element signature="e#2257#2258#0" expanded="true" />
+            <element signature="e#2311#2312#0" expanded="true" />
+            <element signature="e#2350#2351#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2477#2478#0" expanded="true" />
+            <element signature="e#2511#2512#0" expanded="true" />
+            <element signature="e#2549#2550#0" expanded="true" />
+            <element signature="e#2583#2584#0" expanded="true" />
+            <element signature="e#2622#2623#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1010,20 +1055,16 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#402#412#0" expanded="true" />
-            <element signature="e#2554#2555#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2641#2642#0" expanded="true" />
-            <element signature="e#2684#2685#0" expanded="true" />
-            <element signature="e#2718#2719#0" expanded="true" />
-            <element signature="e#2756#2757#0" expanded="true" />
-            <element signature="e#2790#2791#0" expanded="true" />
-            <element signature="e#2829#2830#0" expanded="true" />
-            <element signature="method#locwheat#0;class#Arko#0" expanded="false" />
-            <element signature="e#2928#2938#0" expanded="true" />
-            <element signature="e#3238#3248#0" expanded="true" />
-            <element signature="method#nearestwheat#0;class#Arko#0" expanded="false" />
-            <element signature="method#distance#0;class#Arko#0" expanded="false" />
-            <element signature="method#rounddirection#0;class#Arko#0" expanded="false" />
+            <element signature="e#2257#2258#0" expanded="true" />
+            <element signature="e#2311#2312#0" expanded="true" />
+            <element signature="e#2350#2351#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2477#2478#0" expanded="true" />
+            <element signature="e#2511#2512#0" expanded="true" />
+            <element signature="e#2549#2550#0" expanded="true" />
+            <element signature="e#2583#2584#0" expanded="true" />
+            <element signature="e#2622#2623#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1048,15 +1089,15 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/ActiveActor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1661">
-          <caret line="146" column="44" lean-forward="true" selection-start-line="146" selection-start-column="44" selection-end-line="146" selection-end-column="44" />
+        <state relative-caret-position="2244">
+          <caret line="146" column="44" lean-forward="false" selection-start-line="146" selection-start-column="44" selection-end-line="146" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="0">
           <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1066,39 +1107,39 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Pathfinder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="194" column="29" lean-forward="true" selection-start-line="194" selection-start-column="29" selection-end-line="194" selection-end-column="29" />
+        <state relative-caret-position="3179">
+          <caret line="194" column="29" lean-forward="false" selection-start-line="194" selection-start-column="29" selection-end-line="194" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/LocationFinder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1756">
-          <caret line="206" column="0" lean-forward="true" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-197">
-          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        <state relative-caret-position="3281">
+          <caret line="206" column="0" lean-forward="false" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Wheat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
+        <state relative-caret-position="-204">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Action.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3315">
+        <state relative-caret-position="238">
           <caret line="276" column="63" lean-forward="false" selection-start-line="276" selection-start-column="57" selection-end-line="276" selection-end-column="63" />
           <folding />
         </state>
@@ -1106,8 +1147,8 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Peon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1067">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="e#817#818#0" expanded="true" />
             <element signature="e#849#850#0" expanded="true" />
@@ -1117,25 +1158,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Arko.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        <state relative-caret-position="34">
+          <caret line="69" column="13" lean-forward="true" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#402#412#0" expanded="true" />
-            <element signature="e#2554#2555#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2641#2642#0" expanded="true" />
-            <element signature="e#2684#2685#0" expanded="true" />
-            <element signature="e#2718#2719#0" expanded="true" />
-            <element signature="e#2756#2757#0" expanded="true" />
-            <element signature="e#2790#2791#0" expanded="true" />
-            <element signature="e#2829#2830#0" expanded="true" />
-            <element signature="method#locwheat#0;class#Arko#0" expanded="false" />
-            <element signature="e#2928#2938#0" expanded="true" />
-            <element signature="e#3238#3248#0" expanded="true" />
-            <element signature="method#nearestwheat#0;class#Arko#0" expanded="false" />
-            <element signature="method#distance#0;class#Arko#0" expanded="false" />
-            <element signature="method#rounddirection#0;class#Arko#0" expanded="false" />
+            <element signature="e#2257#2258#0" expanded="true" />
+            <element signature="e#2311#2312#0" expanded="true" />
+            <element signature="e#2350#2351#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2477#2478#0" expanded="true" />
+            <element signature="e#2511#2512#0" expanded="true" />
+            <element signature="e#2549#2550#0" expanded="true" />
+            <element signature="e#2583#2584#0" expanded="true" />
+            <element signature="e#2622#2623#0" expanded="true" />
           </folding>
         </state>
       </provider>
