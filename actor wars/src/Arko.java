@@ -3,6 +3,7 @@ import com.gawdl3y.util.ModifiableInteger;
 import com.gawdl3y.util.ModifiableLocation;
 import com.sun.nio.sctp.PeerAddressChangeNotification;
 import info.gridworld.actor.Actor;
+import info.gridworld.actor.Flower;
 import info.gridworld.grid.Location;
 import org.masonacm.actorwars.*;
 import org.masonacm.actorwars.Action;
@@ -12,22 +13,26 @@ import java.util.ArrayList;
 
 public class Arko extends Peon{
     private ArrayList<Location> arrpath = new ArrayList<Location>();
+    private ArrayList<Location> arrtravel = new ArrayList<Location>();
 
     public Arko(){
         super();
         arrpath = new ArrayList<Location>();
+        arrtravel = new ArrayList<Location>();
     }
 
     @Override
     public void peonAct() {
         int i = 0;
         try{
-            if(i == 0) {
-                hunting(Wheat.class);
-            }
-            else if(i==1){
-                hunting(Peon.class);
-            }
+            hunting(Wheat.class);
+//            wheathunting();
+////            if(i == 0) {
+////                hunting(Wheat.class);
+////            }
+////            else if(i==1){
+////                hunting(Peon.class);
+////            }
         }
         catch (Exception e){
             i++;
@@ -37,15 +42,7 @@ public class Arko extends Peon{
 
     private void hunting(Class<?> e){
         ModifiableLocation m = new ModifiableLocation();
-        boolean fix = false;
-//        if((arrpath.size() < 3) && (arrpath.size() > 1) && !fix){
-//            arrpath = Pathfinder.findPath(getLocation(), searchfor(2,e), getGrid());
-//            fix = true;
-//        }
-//        else if(arrpath.size() < 1){
-//            arrpath = Pathfinder.findPath(getLocation(), LocationFinder.findClosestInstanceLocation(getLocation(), e, getGrid()), getGrid());
-//        }
-        if(arrpath.size() < 1){
+        if(arrpath.isEmpty()){
             arrpath = Pathfinder.findPath(getLocation(), LocationFinder.findClosestInstanceLocation(getLocation(), e, getGrid()), getGrid());
         }
         else {
@@ -62,9 +59,36 @@ public class Arko extends Peon{
         survive();
     }
 
+    private boolean error(){
+        for(int i = 2;i<arrtravel.size();i++){
+            if(arrtravel.get(i) == arrtravel.get(i - 2)){
+                return true;
+            }
+        }
+        for(int i = 3;i<arrtravel.size();i++){
+            if(arrtravel.get(i) == arrtravel.get(i - 3)){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private void followpath(ArrayList<Location> path, int i){
+        moveTo(arrpath.get(i));
+    }
+
+    public void removepath(){
+        for(Location l: getGrid().getOccupiedLocations()){
+            if(getGrid().get(l) instanceof Flower){
+                getGrid().remove(l);
+            }
+        }
+    }
+
     public void showpath(){
         for(Location l: arrpath){
-            JOptionPane.showMessageDialog(null,l.toString());
+//            JOptionPane.showMessageDialog(null,l.toString());
+            getGrid().put(l,new Flower());
         }
     }
 
