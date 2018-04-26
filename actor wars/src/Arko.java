@@ -20,13 +20,14 @@ public class Arko extends Peon{
     public void peonAct() {
         ModifiableLocation m = new ModifiableLocation();
         if(arrpath.size() < 1){
-//            arrpath = Pathfinder.findPath(getDynamicLocation(), modifiableLocation(closestpeon()), getGrid());
             arrpath = Pathfinder.findPath(getLocation(), LocationFinder.findClosestInstanceLocation(getLocation(), Wheat.class, getGrid()), getGrid());
         }
-        m.setValue(getLocation());
-        setDirection(m.directionTo(arrpath.get(0)));
-        move();
-        arrpath.remove(0);
+        else {
+            m.setValue(getLocation());
+            setDirection(m.directionTo(arrpath.get(0)));
+            move();
+            arrpath.remove(0);
+        }
         if(closetowheat()){
             setDirection(m.directionTo(LocationFinder.findClosestInstanceLocation(getLocation(),Wheat.class,getGrid())));
             myactions.add(Action.attackHP(5));
