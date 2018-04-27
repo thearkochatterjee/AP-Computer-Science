@@ -25,14 +25,14 @@ public class Arko extends Peon{
     public void peonAct() {
         int i = 0;
         try{
-            hunting(Wheat.class);
+//            hunting(Wheat.class);
 //            wheathunting();
-////            if(i == 0) {
-////                hunting(Wheat.class);
-////            }
-////            else if(i==1){
-////                hunting(Peon.class);
-////            }
+            if(i == 0) {
+                hunting(Wheat.class);
+            }
+            else if(i==1){
+                hunting(Peon.class);
+            }
         }
         catch (Exception e){
             i++;
