@@ -52,30 +52,16 @@ public class Arko extends Peon{
             arrpath.remove(0);
         }
         if(close(e)){
-            setDirection(m.directionTo(LocationFinder.findClosestInstanceLocation(getLocation(), e,getGrid())));
+            setDirection(m.directionTo(arrpath.get(0)));
             myactions.clear();
             myactions.add(Action.attackHP(5));
         }
         survive();
     }
 
-    private boolean error(){
-        for(int i = 2;i<arrtravel.size();i++){
-            if(arrtravel.get(i) == arrtravel.get(i - 2)){
-                return true;
-            }
-        }
-        for(int i = 3;i<arrtravel.size();i++){
-            if(arrtravel.get(i) == arrtravel.get(i - 3)){
-                return true;
-            }
-        }
-        return false;
-    }
-
-    private void followpath(ArrayList<Location> path, int i){
-        moveTo(arrpath.get(i));
-    }
+//    private int attackhealth(Location l){
+//
+//    }
 
     public void removepath(){
         for(Location l: getGrid().getOccupiedLocations()){
@@ -107,22 +93,6 @@ public class Arko extends Peon{
             }
         }
         return null;
-    }
-
-    public void adjust(){
-        ModifiableLocation m = new ModifiableLocation();
-        if(arrpath.size()==2){
-            for(int i = 0;i<2;i++){
-                m.setValue(getLocation());
-                for(Actor a: getGrid().getNeighbors(arrpath.get(i))){
-                    if(a instanceof Wheat){
-                        setDirection(m.directionTo(arrpath.get(i)));
-                        myactions.clear();
-                        myactions.add(Action.attackHP(5));
-                    }
-                }
-            }
-        }
     }
 
     private void wheathunting(){
