@@ -33,6 +33,7 @@ public class thearko extends Peon{
             setDirection(m.directionTo(arrpath.get(0)));
             move();
             arrpath.remove(0);
+            checkpath();
         }
         if(closetowheat()){
             setDirection(m.directionTo(LocationFinder.findClosestInstanceLocation(getLocation(),Wheat.class,getGrid())));
@@ -48,14 +49,25 @@ public class thearko extends Peon{
 
     private void checkpath(){
         for(int i = 0;i<arrpath.size()-1;i++){
-            if(checkclose(arrpath.get(i), arrpath.get(i+1)){
-
+            if(!checkclose(arrpath.get(i), arrpath.get(i+1))){
+                if(!checkclosetowheat(arrpath.get(i))){
+                    arrpath.remove(i);
+                }
             }
         }
     }
 
     private boolean checkclose(Location l1, Location l2){
         return (((l1.getRow()+1)==l2.getRow()) || ((l1.getRow()-1)==l2.getRow()) || ((l1.getCol()+1)==l2.getCol()));
+    }
+
+    private boolean checkclosetowheat(Location l){
+        for(Actor a: getGrid().getNeighbors(l)){
+            if(a instanceof Wheat){
+                return true;
+            }
+        }
+        return false;
     }
 
     public void showpath(){
