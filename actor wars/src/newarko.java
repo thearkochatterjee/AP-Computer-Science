@@ -15,6 +15,7 @@ public class newarko extends Peon{
     public  newarko(){
         super();
         arrattackorder.add(Wheat.class);
+        arrattackorder.add(Tree.class);
         arrattackorder.add(Peon.class);
     }
 
@@ -22,10 +23,15 @@ public class newarko extends Peon{
     public void peonAct() {
         try{
             hunt(arrattackorder.get(i));
+            showstats();
         }
         catch (Exception e){
 
         }
+    }
+
+    private void showstats(){
+        System.out.println(getHealth() + " , " + getEnergy());
     }
 
     private void hunt(Class<?> e){
@@ -69,7 +75,7 @@ public class newarko extends Peon{
 
     private void attack(Class<?> e){
         if(e.getName() == getFacing().getClass().getName()){
-            myactions.add(Action.attackHP(5));
+            myactions.add(Action.attackEP(32));
         }
         else{
             avoidclass(getFacing().getClass());
@@ -92,12 +98,6 @@ public class newarko extends Peon{
         }
     }
 
-    public void printallaction(){
-        for(int i = 0;i<myactions.size();i++){
-            System.out.println(myactions.get(i).toString());
-        }
-    }
-
     private boolean energylow(){
         return getEnergy() < 30;
     }
@@ -112,8 +112,13 @@ public class newarko extends Peon{
 ////            myactions.add(Action.healSelfHP(10));
 //            System.out.println("Needs to heal");
 //        }
+        if(healthlow()){
+            myactions.clear();
+            myactions.add(Action.healSelfHP(10));
+        }
         if(energylow()){
             if(getItemCount(Wheat.class) > 0){
+                myactions.clear();
                 myactions.add(Action.use(Wheat.class));
             }
         }
@@ -122,7 +127,7 @@ public class newarko extends Peon{
     private void eatclosewheat(){
         face(Wheat.class);
         if(isFacing(Wheat.class)){
-            myactions.add(Action.attackHP(5));
+            myactions.add(Action.attackEP(30));
         }
     }
 
