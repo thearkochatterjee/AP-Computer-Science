@@ -10,6 +10,8 @@ import java.util.Random;
 public class newarko extends Peon{
     private ArrayList<Location> arrpath = new ArrayList<Location>();
     private ArrayList<Class> arrattackorder = new ArrayList<Class>();
+    private ArrayList<Class> arrsearch = new ArrayList<Class>();
+    private ArrayList<Integer> arrhealth = new ArrayList<Integer>();
     private int i = 0;
 
     public  newarko(){
@@ -17,12 +19,27 @@ public class newarko extends Peon{
         arrattackorder.add(Wheat.class);
         arrattackorder.add(Tree.class);
         arrattackorder.add(Peon.class);
+        arrhealth.add(4);
+        arrhealth.add(10);
+        arrhealth.add(50);
+        arrhealth.add(50);
+        arrhealth.add(20);
     }
 
     @Override
     public void peonAct() {
         try{
-            hunt(arrattackorder.get(i));
+            if(hasdesire(Wheat.class) && desirecount(Wheat.class) > 1) {
+                hunt(Wheat.class);
+            }
+            else if(hasdesire(Tree.class) && desirecount(Tree.class) > 1 && getItemCount(Wood.class) < 4 && !hastool(Axe.class)){
+                hunt(Tree.class);
+                craftitem(Axe.class);
+            }
+            else if(hasdesire(Tree.class) && desirecount(Tree.class) > 1 && getItemCount(Wood.class) < 4 && hastool(Axe.class)){
+                toolhunt(Tree.class,Axe.class);
+                craftitem(Fence.class);
+            }
             showstats();
         }
         catch (Exception e){
@@ -30,8 +47,71 @@ public class newarko extends Peon{
         }
     }
 
+    private boolean cancreatebarrier(int radius){
+        return getItemCount(Fence.class) < (radius*8);
+    }
+
+    private boolean barrierbroken(){
+        return getGrid().getEmptyAdjacentLocations(getLocation()).size() != 0;
+    }
+
+    public int fencecount(){
+        return getItemCount(Fence.class);
+    }
+
+    public int woodcount(){
+        return getItemCount(Wood.class);
+    }
+
+    public int treecount(){
+        return getItemCount(Tree.class);
+    }
+
+    public int rockcount(){
+        return getItemCount(Rock.class);
+    }
+
+    public int ironcount(){
+        return getItemCount(Iron.class);
+    }
+
+    public int holycount(){
+        return getItemCount(HolyPin.class);
+    }
+
+    public boolean hastool(Class<?> e){
+        return getItemCount(e) > 0;
+    }
+
+    public boolean haspickaxe(){
+        return hastool(Pickaxe.class);
+    }
+
+    private void craftitem(Class<?> e){
+        if(e.getName().equals(Fence.class.getName()) && canCraft(e)){
+            myactions.add(Action.craft(e));
+        }
+        else if(getItemCount(e) == 0 && canCraft(e)){
+            myactions.add(Action.craft(e));
+        }
+    }
+
     private void showstats(){
         System.out.println(getHealth() + " , " + getEnergy());
+    }
+
+    private void toolhunt(Class<?> e, Class<?> t){
+        if(hasdesire(e) && (desirecount(e) > 1) && getItemCount(t) > 0) {
+            movetoclosest(e);
+            if(closeto(e)) {
+                face(e);
+                if (isFacing(e)) {
+                    myactions.clear();
+                    myactions.add(Action.use(t));
+                }
+            }
+            survive();
+        }
     }
 
     private void hunt(Class<?> e){
@@ -47,6 +127,24 @@ public class newarko extends Peon{
         }
         else{
             i++;
+        }
+    }
+
+    private int healthnumber(Class<?> e){
+        if(e.getName() == Wheat.class.getName()){
+            return 0;
+        }
+        else if(e.getName() == Tree.class.getName()){
+            return 1;
+        }
+        else if(e.getName() == Rock.class.getName()){
+            return 2;
+        }
+        else if(e.getName() == Iron.class.getName()){
+            return 3;
+        }
+        else {
+            return 4;
         }
     }
 
@@ -75,11 +173,15 @@ public class newarko extends Peon{
 
     private void attack(Class<?> e){
         if(e.getName() == getFacing().getClass().getName()){
-            myactions.add(Action.attackEP(32));
+            myactions.add(Action.attackEP(energyneeded(arrhealth.get(healthnumber(e)))));
         }
         else{
             avoidclass(getFacing().getClass());
         }
+    }
+
+    private int energyneeded(int health){
+        return (int)(Math.pow(health + 2, 2) - 4);
     }
 
     private void avoidclass(Class<?> e){
