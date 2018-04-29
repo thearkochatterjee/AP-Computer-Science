@@ -14,6 +14,7 @@ public class newarko extends Peon{
     private ArrayList<Integer> arrhealth = new ArrayList<Integer>();
     private int i = 0;
     private int age = 0;
+    private Location shelter = null;
 
     public  newarko(){
         super();
@@ -39,9 +40,12 @@ public class newarko extends Peon{
                 hunt(Tree.class);
                 craftitem(Axe.class);
             }
-            else if(hasdesire(Tree.class) && desirecount(Tree.class) > 1 && getItemCount(Wood.class) < 4 && hastool(Axe.class)){
+            else if(hasdesire(Tree.class) && desirecount(Tree.class) > 1 && getItemCount(Wood.class) < 4 && hastool(Axe.class) && getItemCount(Fence.class) < 9 && shelter == null){
                 toolhunt(Tree.class,Axe.class);
                 craftitem(Fence.class);
+            }
+            else{
+                createshelter();
             }
             showstats();
         }
@@ -50,12 +54,22 @@ public class newarko extends Peon{
         }
     }
 
-    private boolean cancreatebarrier(int radius){
-        return getItemCount(Fence.class) < (radius*8);
+    private boolean cancreatebarrier(){
+        return getItemCount(Fence.class) < 8;
     }
 
     private boolean barrierbroken(){
         return getGrid().getEmptyAdjacentLocations(getLocation()).size() != 0;
+    }
+
+    private void createshelter(){
+        if(shelter == null) {
+            shelter = getLocation();
+        }
+        for(Location l: getGrid().getEmptyAdjacentLocations(getLocation())){
+            setDirection(LocationFinder.directionTo(getLocation(),l));
+            myactions.add(Action.place(Fence.class));
+        }
     }
 
     public int fencecount(){
