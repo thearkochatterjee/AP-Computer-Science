@@ -6,7 +6,7 @@ public class Tester {
     public static void main(String args[]){
         ActorWarWorld world = new ActorWarWorld();
         world.add(new newarko());
-        world.add(new newarko());
+//        world.add(new newarko());
         world.show();
     }
 }
