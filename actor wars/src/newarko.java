@@ -1,12 +1,9 @@
-import com.gawdl3y.util.DynamicValue;
-import com.gawdl3y.util.ModifiableLocation;
 import info.gridworld.actor.Actor;
 import info.gridworld.actor.Flower;
 import info.gridworld.grid.Location;
 import org.masonacm.actorwars.*;
 import org.masonacm.actorwars.Action;
 
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -14,7 +11,6 @@ public class newarko extends Peon{
     private ArrayList<Location> arrpath = new ArrayList<Location>();
     private ArrayList<Class> arrattackorder = new ArrayList<Class>();
     private int i = 0;
-    private Location previouslocation;
 
     public  newarko(){
         super();
@@ -100,10 +96,6 @@ public class newarko extends Peon{
         for(int i = 0;i<myactions.size();i++){
             System.out.println(myactions.get(i).toString());
         }
-    }
-
-    private boolean hasmoved(){
-        return !(previouslocation == getLocation());
     }
 
     private boolean energylow(){

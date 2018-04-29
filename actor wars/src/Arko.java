@@ -1,74 +1,146 @@
-import com.gawdl3y.util.DynamicValue;
-import com.gawdl3y.util.ModifiableInteger;
-import com.gawdl3y.util.ModifiableLocation;
-import com.sun.nio.sctp.PeerAddressChangeNotification;
 import info.gridworld.actor.Actor;
 import info.gridworld.actor.Flower;
 import info.gridworld.grid.Location;
 import org.masonacm.actorwars.*;
 import org.masonacm.actorwars.Action;
 
-import javax.swing.*;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Arko extends Peon{
     private ArrayList<Location> arrpath = new ArrayList<Location>();
-    private ArrayList<Location> arrtravel = new ArrayList<Location>();
+    private ArrayList<Class> arrattackorder = new ArrayList<Class>();
+    private int i = 0;
+    private Location previouslocation;
 
-    public Arko(){
+    public  Arko(){
         super();
-        arrpath = new ArrayList<Location>();
-        arrtravel = new ArrayList<Location>();
+        arrattackorder.add(Wheat.class);
+        arrattackorder.add(Peon.class);
     }
 
     @Override
     public void peonAct() {
-        int i = 0;
         try{
-//            hunting(Wheat.class);
-//            wheathunting();
-            if(i == 0) {
-                hunting(Wheat.class);
-            }
-            else if(i==1){
-                hunting(Peon.class);
-            }
+            hunt(arrattackorder.get(i));
         }
         catch (Exception e){
+
+        }
+    }
+
+    private void hunt(Class<?> e){
+        if(hasdesire(e) && (desirecount(e) > 1)) {
+            movetoclosest(e);
+            if(closeto(e)) {
+                face(e);
+                if (isFacing(e)) {
+                    attack(e);
+                }
+            }
+            survive();
+        }
+        else{
             i++;
-
         }
     }
 
-    private void hunting(Class<?> e){
-        ModifiableLocation m = new ModifiableLocation();
-        if(arrpath.isEmpty()){
-            arrpath = Pathfinder.findPath(getLocation(), LocationFinder.findClosestInstanceLocation(getLocation(), e, getGrid()), getGrid());
-        }
-        else {
-            m.setValue(getLocation());
-            setDirection(m.directionTo(arrpath.get(0)));
-            move();
-            arrpath.remove(0);
-        }
-        if(close(e)){
-            setDirection(m.directionTo(arrpath.get(0)));
-            myactions.clear();
-            myactions.add(Action.attackHP(5));
-        }
-        survive();
-    }
-
-//    private int attackhealth(Location l){
-//
-//    }
-
-    public void removepath(){
+    private int desirecount(Class<?> e){
+        int c = 0;
         for(Location l: getGrid().getOccupiedLocations()){
-            if(getGrid().get(l) instanceof Flower){
-                getGrid().remove(l);
+            if(e.isInstance(getGrid().get(l))){
+                c++;
             }
         }
+        return c;
+    }
+
+    private void removefacing(){
+        getGrid().remove(getFacing().getLocation());
+    }
+
+    private boolean hasdesire(Class<?> e){
+        for(Location l: getGrid().getOccupiedLocations()){
+            if(e.isInstance(getGrid().get(l))){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private void attack(Class<?> e){
+        if(e.getName() == getFacing().getClass().getName()){
+            myactions.add(Action.attackHP(5));
+        }
+        else{
+            avoidclass(getFacing().getClass());
+        }
+    }
+
+    private void avoidclass(Class<?> e){
+        ArrayList<Location> possible = getGrid().getEmptyAdjacentLocations(getLocation());
+        Random r = new Random();
+        setDirection(LocationFinder.directionTo(getLocation(),possible.get(r.nextInt(possible.size()))));
+        move();
+    }
+
+    private void movetoclosest(Class<?> e){
+        if(!closeto(e)) {
+            myactions.add(moveToGradual(LocationFinder.findClosestInstanceDynamicLocation(getDynamicLocation(), e, getGrid())));
+        }
+        else {
+            myactions.clear();
+        }
+    }
+
+    public void printallaction(){
+        for(int i = 0;i<myactions.size();i++){
+            System.out.println(myactions.get(i).toString());
+        }
+    }
+
+    private boolean hasmoved(){
+        return !(previouslocation == getLocation());
+    }
+
+    private boolean energylow(){
+        return getEnergy() < 30;
+    }
+
+    private boolean healthlow(){
+        return getHealth() < 7;
+    }
+
+    private void survive(){
+//        if(healthlow()){
+////            myactions.clear();
+////            myactions.add(Action.healSelfHP(10));
+//            System.out.println("Needs to heal");
+//        }
+        if(energylow()){
+            if(getItemCount(Wheat.class) > 0){
+                myactions.add(Action.use(Wheat.class));
+            }
+        }
+    }
+
+    private void eatclosewheat(){
+        face(Wheat.class);
+        if(isFacing(Wheat.class)){
+            myactions.add(Action.attackHP(5));
+        }
+    }
+
+    private void face(Class<?> e){
+        setDirection(LocationFinder.directionTo(getLocation(),LocationFinder.findClosestInstanceLocation(getLocation(),e,getGrid())));
+    }
+
+    public void showfacing(){
+        System.out.println(getFacing().getClass().getName());
+    }
+
+    public boolean isfacingwheat(){
+        return isFacing(Wheat.class);
     }
 
     public void showpath(){
@@ -76,72 +148,6 @@ public class Arko extends Peon{
 //            JOptionPane.showMessageDialog(null,l.toString());
             getGrid().put(l,new Flower());
         }
-    }
-
-    public Location searchfor(int radius, Class<?> e){
-        int startr = getLocation().getRow()-radius;
-        int startc = getLocation().getCol()-radius;
-        ModifiableLocation m = new ModifiableLocation();
-        for(int r = startr; r<(startr + 2 * radius); r++){
-            for(int c = startc; c<(startc + 2 * radius); c++){
-                m.setValue(getLocation());
-                for(Actor a: getGrid().getNeighbors(new Location(r,c))){
-                    if(e.isInstance(a)){
-                        return a.getLocation();
-                    }
-                }
-            }
-        }
-        return null;
-    }
-
-    private void wheathunting(){
-        ModifiableLocation m = new ModifiableLocation();
-        if(arrpath.size() < 1){
-            arrpath = Pathfinder.findPath(getLocation(), LocationFinder.findClosestInstanceLocation(getLocation(), Wheat.class, getGrid()), getGrid());
-        }
-        else {
-            m.setValue(getLocation());
-            setDirection(m.directionTo(arrpath.get(0)));
-            move();
-            arrpath.remove(0);
-        }
-        if(closetowheat()){
-            setDirection(m.directionTo(LocationFinder.findClosestInstanceLocation(getLocation(),Wheat.class,getGrid())));
-            myactions.clear();
-            myactions.add(Action.attackHP(5));
-        }
-        survive();
-    }
-
-    private void survive(){
-        if(energylow() || healthlow()){
-            eatwheat();
-        }
-    }
-
-    public ModifiableLocation modifiableLocation(Peon p){
-        ModifiableLocation m = new ModifiableLocation();
-        m.setValue(p.getDynamicLocation());
-        return m;
-    }
-
-    public boolean hasWheat(){
-        for(Location l: getGrid().getOccupiedLocations()){
-            if(getGrid().get(l) instanceof Wheat){
-                return true;
-            }
-        }
-        return false;
-    }
-
-    private boolean close(Class<?> e){
-        for(Actor a: getGrid().getNeighbors(getLocation())){
-            if(e.isInstance(a)){
-                return true;
-            }
-        }
-        return false;
     }
 
     public boolean closetowheat(){
@@ -153,33 +159,12 @@ public class Arko extends Peon{
         return false;
     }
 
-    private boolean hasWheatinvent(){
-        return amountofwheatinvent() > 0;
-    }
-
-    private boolean hasironinvent(){
-        return amountofiron() > 0;
-    }
-
-    private void eatwheat(){
-        if(hasWheatinvent()){
-            myactions.add(Action.use(Wheat.class));
+    private boolean closeto(Class<?> e){
+        for(Actor a: getGrid().getNeighbors(getLocation())){
+            if(e.isInstance(a)){
+                return true;
+            }
         }
-    }
-
-    public int amountofwheatinvent(){
-        return getItemCount(Wheat.class);
-    }
-
-    public int amountofiron(){
-        return getItemCount(Iron.class);
-    }
-
-    private boolean healthlow(){
-        return getHealth() < 7;
-    }
-
-    private boolean energylow(){
-        return getEnergy() < 30;
+        return false;
     }
 }
