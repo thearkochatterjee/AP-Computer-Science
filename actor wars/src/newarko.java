@@ -246,7 +246,7 @@ public class newarko extends Peon{
         }
         if(excessenergy()){
             myactions.clear();
-            myactions.add(Action.healSelfHP(10));
+            myactions.add(Action.spawn(this.getClass()));
         }
     }
 
@@ -255,7 +255,7 @@ public class newarko extends Peon{
     }
 
     private boolean excessenergy(){
-        return getEnergy() > 500;
+        return getEnergy() > 700;
     }
 
     private void eatclosewheat(){
