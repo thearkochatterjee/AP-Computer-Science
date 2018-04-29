@@ -13,9 +13,11 @@ public class newarko extends Peon{
     private ArrayList<Class> arrsearch = new ArrayList<Class>();
     private ArrayList<Integer> arrhealth = new ArrayList<Integer>();
     private int i = 0;
+    private int age = 0;
 
     public  newarko(){
         super();
+        age = 0;
         arrattackorder.add(Wheat.class);
         arrattackorder.add(Tree.class);
         arrattackorder.add(Peon.class);
@@ -29,6 +31,7 @@ public class newarko extends Peon{
     @Override
     public void peonAct() {
         try{
+            age++;
             if(hasdesire(Wheat.class) && desirecount(Wheat.class) > 1) {
                 hunt(Wheat.class);
             }
@@ -97,7 +100,7 @@ public class newarko extends Peon{
     }
 
     private void showstats(){
-        System.out.println(getHealth() + " , " + getEnergy());
+        System.out.println("Health: " + getHealth() + " , Energy: " + getEnergy() + " , Age: " + age + " , Arko");
     }
 
     private void toolhunt(Class<?> e, Class<?> t){
