@@ -82,6 +82,10 @@ public class newarko extends Peon{
         return getItemCount(HolyPin.class);
     }
 
+    public int wheatcount(){
+        return getItemCount(Wheat.class);
+    }
+
     public boolean hastool(Class<?> e){
         return getItemCount(e) > 0;
     }
@@ -212,11 +216,6 @@ public class newarko extends Peon{
     }
 
     private void survive(){
-//        if(healthlow()){
-////            myactions.clear();
-////            myactions.add(Action.healSelfHP(10));
-//            System.out.println("Needs to heal");
-//        }
         if(healthlow()){
             myactions.clear();
             myactions.add(Action.healSelfHP(10));
@@ -227,6 +226,22 @@ public class newarko extends Peon{
                 myactions.add(Action.use(Wheat.class));
             }
         }
+        if(excesswheat()){
+            myactions.clear();
+            myactions.add(Action.use(Wheat.class));
+        }
+        if(excessenergy()){
+            myactions.clear();
+            myactions.add(Action.healSelfHP(10));
+        }
+    }
+
+    private boolean excesswheat(){
+        return getItemCount(Wheat.class) > 10;
+    }
+
+    private boolean excessenergy(){
+        return getEnergy() > 500;
     }
 
     private void eatclosewheat(){

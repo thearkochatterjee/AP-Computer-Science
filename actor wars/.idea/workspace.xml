@@ -15,8 +15,8 @@
       <file leaf-file-name="newarko.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/newarko.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="97" column="43" lean-forward="true" selection-start-line="97" selection-start-column="43" selection-end-line="97" selection-end-column="43" />
+            <state relative-caret-position="367">
+              <caret line="234" column="49" lean-forward="false" selection-start-line="234" selection-start-column="49" selection-end-line="234" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#324#334#0" expanded="true" />
@@ -39,22 +39,28 @@
                 <element signature="e#2249#2250#0" expanded="true" />
                 <element signature="e#2278#2279#0" expanded="true" />
                 <element signature="e#2328#2329#0" expanded="true" />
-                <element signature="e#2369#2370#0" expanded="true" />
-                <element signature="e#2411#2412#0" expanded="true" />
-                <element signature="e#4382#4383#0" expanded="true" />
-                <element signature="e#4441#4442#0" expanded="true" />
-                <element signature="e#4993#4994#0" expanded="true" />
-                <element signature="e#5050#5051#0" expanded="true" />
-                <element signature="e#5650#5651#0" expanded="true" />
-                <element signature="e#5689#5690#0" expanded="true" />
-                <element signature="e#5723#5724#0" expanded="true" />
-                <element signature="e#5761#5762#0" expanded="true" />
+                <element signature="e#2358#2359#0" expanded="true" />
+                <element signature="e#2406#2407#0" expanded="true" />
+                <element signature="e#2447#2448#0" expanded="true" />
+                <element signature="e#2489#2490#0" expanded="true" />
+                <element signature="e#4460#4461#0" expanded="true" />
+                <element signature="e#4519#4520#0" expanded="true" />
+                <element signature="e#5071#5072#0" expanded="true" />
+                <element signature="e#5128#5129#0" expanded="true" />
+                <element signature="e#5728#5729#0" expanded="true" />
+                <element signature="e#5767#5768#0" expanded="true" />
+                <element signature="e#5801#5802#0" expanded="true" />
+                <element signature="e#5839#5840#0" expanded="true" />
+                <element signature="e#6452#6453#0" expanded="true" />
+                <element signature="e#6505#6506#0" expanded="true" />
+                <element signature="e#6542#6543#0" expanded="true" />
+                <element signature="e#6582#6583#0" expanded="true" />
                 <element signature="method#eatclosewheat#0;class#newarko#0" expanded="false" />
                 <element signature="method#face#0;class#newarko#0" expanded="false" />
-                <element signature="e#6647#6648#0" expanded="true" />
-                <element signature="e#6715#6716#0" expanded="true" />
-                <element signature="e#6752#6753#0" expanded="true" />
-                <element signature="e#6796#6797#0" expanded="true" />
+                <element signature="e#6951#6952#0" expanded="true" />
+                <element signature="e#7019#7020#0" expanded="true" />
+                <element signature="e#7056#7057#0" expanded="true" />
+                <element signature="e#7100#7101#0" expanded="true" />
                 <element signature="method#showpath#0;class#newarko#0" expanded="false" />
                 <element signature="method#closetowheat#0;class#newarko#0" expanded="false" />
                 <element signature="method#closeto#0;class#newarko#0" expanded="false" />
@@ -63,104 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rock.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Rock.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Iron.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Iron.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-              <folding>
-                <element signature="e#119#120#0" expanded="true" />
-                <element signature="e#144#145#0" expanded="true" />
-                <element signature="e#164#165#0" expanded="true" />
-                <element signature="e#189#190#0" expanded="true" />
-                <element signature="e#234#235#0" expanded="true" />
-                <element signature="e#263#264#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IronOre.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/IronOre.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HolyPin.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/HolyPin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Quarry.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Quarry.java">
+      <file leaf-file-name="Tester.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tester.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Fence.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Fence.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-141">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding>
-                <element signature="e#774#775#0" expanded="true" />
-                <element signature="e#809#810#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Axe.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Axe.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pickaxe.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Pickaxe.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-              <folding>
-                <element signature="e#359#360#0" expanded="true" />
-                <element signature="e#388#389#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Utils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-41">
-              <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+              <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -181,6 +94,7 @@
       <find>direction</find>
       <find>heal</find>
       <find>attack</find>
+      <find>surv</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -192,9 +106,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/thearko.java" />
-        <option value="$PROJECT_DIR$/src/Tester.java" />
         <option value="$PROJECT_DIR$/src/Arko.java" />
         <option value="$PROJECT_DIR$/src/HealthStats.java" />
+        <option value="$PROJECT_DIR$/src/Tester.java" />
         <option value="$PROJECT_DIR$/src/newarko.java" />
       </list>
     </option>
@@ -240,21 +154,6 @@
               <item name="actor wars" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="actor wars" type="b2602c69:ProjectViewProjectNode" />
-              <item name="actor wars" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="ActorWars-0.13.1.jar" type="ab9368bb:PsiFileNode" />
-            </path>
-            <path>
-              <item name="actor wars" type="b2602c69:ProjectViewProjectNode" />
-              <item name="actor wars" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="ActorWars-0.13.1.jar" type="ab9368bb:PsiFileNode" />
-              <item name="actorwars" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="actor wars" type="b2602c69:ProjectViewProjectNode" />
@@ -894,16 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Arko.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -989,17 +878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Pickaxe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-41">
@@ -1074,10 +952,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/src/lib/ActorWars-0.13.1.jar!/org/masonacm/actorwars/Pickaxe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding>
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/newarko.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="97" column="43" lean-forward="true" selection-start-line="97" selection-start-column="43" selection-end-line="97" selection-end-column="43" />
+        <state relative-caret-position="367">
+          <caret line="234" column="49" lean-forward="false" selection-start-line="234" selection-start-column="49" selection-end-line="234" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#324#334#0" expanded="true" />
@@ -1100,22 +997,28 @@
             <element signature="e#2249#2250#0" expanded="true" />
             <element signature="e#2278#2279#0" expanded="true" />
             <element signature="e#2328#2329#0" expanded="true" />
-            <element signature="e#2369#2370#0" expanded="true" />
-            <element signature="e#2411#2412#0" expanded="true" />
-            <element signature="e#4382#4383#0" expanded="true" />
-            <element signature="e#4441#4442#0" expanded="true" />
-            <element signature="e#4993#4994#0" expanded="true" />
-            <element signature="e#5050#5051#0" expanded="true" />
-            <element signature="e#5650#5651#0" expanded="true" />
-            <element signature="e#5689#5690#0" expanded="true" />
-            <element signature="e#5723#5724#0" expanded="true" />
-            <element signature="e#5761#5762#0" expanded="true" />
+            <element signature="e#2358#2359#0" expanded="true" />
+            <element signature="e#2406#2407#0" expanded="true" />
+            <element signature="e#2447#2448#0" expanded="true" />
+            <element signature="e#2489#2490#0" expanded="true" />
+            <element signature="e#4460#4461#0" expanded="true" />
+            <element signature="e#4519#4520#0" expanded="true" />
+            <element signature="e#5071#5072#0" expanded="true" />
+            <element signature="e#5128#5129#0" expanded="true" />
+            <element signature="e#5728#5729#0" expanded="true" />
+            <element signature="e#5767#5768#0" expanded="true" />
+            <element signature="e#5801#5802#0" expanded="true" />
+            <element signature="e#5839#5840#0" expanded="true" />
+            <element signature="e#6452#6453#0" expanded="true" />
+            <element signature="e#6505#6506#0" expanded="true" />
+            <element signature="e#6542#6543#0" expanded="true" />
+            <element signature="e#6582#6583#0" expanded="true" />
             <element signature="method#eatclosewheat#0;class#newarko#0" expanded="false" />
             <element signature="method#face#0;class#newarko#0" expanded="false" />
-            <element signature="e#6647#6648#0" expanded="true" />
-            <element signature="e#6715#6716#0" expanded="true" />
-            <element signature="e#6752#6753#0" expanded="true" />
-            <element signature="e#6796#6797#0" expanded="true" />
+            <element signature="e#6951#6952#0" expanded="true" />
+            <element signature="e#7019#7020#0" expanded="true" />
+            <element signature="e#7056#7057#0" expanded="true" />
+            <element signature="e#7100#7101#0" expanded="true" />
             <element signature="method#showpath#0;class#newarko#0" expanded="false" />
             <element signature="method#closetowheat#0;class#newarko#0" expanded="false" />
             <element signature="method#closeto#0;class#newarko#0" expanded="false" />
