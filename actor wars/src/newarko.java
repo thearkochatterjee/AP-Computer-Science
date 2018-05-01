@@ -33,25 +33,57 @@ public class newarko extends Peon{
     public void peonAct() {
         try{
             age++;
-            if(hasdesire(Wheat.class) && desirecount(Wheat.class) > 1) {
+            if(energylow() || healthlow()){
                 hunt(Wheat.class);
             }
-            else if(hasdesire(Tree.class) && desirecount(Tree.class) > 1 && getItemCount(Wood.class) < 4 && !hastool(Axe.class)){
-                hunt(Tree.class);
-                craftitem(Axe.class);
-            }
-            else if(hasdesire(Tree.class) && desirecount(Tree.class) > 1 && getItemCount(Wood.class) < 4 && hastool(Axe.class) && getItemCount(Fence.class) < 9 && shelter == null){
-                toolhunt(Tree.class,Axe.class);
-                craftitem(Fence.class);
-            }
             else{
-                createshelter();
+                huntpeon(otherpeon());
             }
+//            if(hasdesire(Wheat.class) && desirecount(Wheat.class) > 1) {
+//                hunt(Wheat.class);
+//            }
+//            else if(hasdesire(Tree.class) && desirecount(Tree.class) > 1 && getItemCount(Wood.class) < 4 && !hastool(Axe.class)){
+//                hunt(Tree.class);
+//                craftitem(Axe.class);
+//            }
+//            else if(hasdesire(Tree.class) && desirecount(Tree.class) > 1 && getItemCount(Wood.class) < 4 && hastool(Axe.class) && getItemCount(Fence.class) < 9 && shelter == null){
+//                toolhunt(Tree.class,Axe.class);
+//                craftitem(Fence.class);
+//            }
+//            else{
+//                hunt(otherpeon());
+//                createshelter();
+//            }
             showstats();
         }
         catch (Exception e){
 
         }
+    }
+
+    private void huntpeon(Class<?> e){
+        if(hasdesire(e)) {
+            movetoclosest(e);
+            if(closeto(e)) {
+                face(e);
+                if (isFacing(e)) {
+                    attack(e);
+                }
+            }
+            survive();
+        }
+        else{
+            i++;
+        }
+    }
+
+    private Class<?> otherpeon(){
+        for(Location l: getGrid().getOccupiedLocations()){
+            if(!(getGrid().get(l) instanceof newarko) && (getGrid().get(l) instanceof Peon)){
+                return getGrid().get(l).getClass();
+            }
+        }
+        return null;
     }
 
     private boolean cancreatebarrier(){
@@ -194,7 +226,12 @@ public class newarko extends Peon{
 
     private void attack(Class<?> e){
         if(e.getName() == getFacing().getClass().getName()){
-            myactions.add(Action.attackEP(energyneeded(arrhealth.get(healthnumber(e)))));
+            if(isFacing(otherpeon())){
+                myactions.add(Action.attackEP(energyneeded(5)));
+            }
+            else {
+                myactions.add(Action.attackEP(energyneeded(arrhealth.get(healthnumber(e)))));
+            }
         }
         else{
             avoidclass(getFacing().getClass());
