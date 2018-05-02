@@ -150,7 +150,9 @@ public class newarko extends Peon{
     }
 
     private void showstats(){
-        System.out.println("Health: " + getHealth() + " , Energy: " + getEnergy() + " , Age: " + age + " , Arko");
+        if(getGrid().getOccupiedLocations().contains(this)) {
+            System.out.println("Health: " + getHealth() + " , Energy: " + getEnergy() + " , Age: " + age + " , Arko");
+        }
     }
 
     private void toolhunt(Class<?> e, Class<?> t){
