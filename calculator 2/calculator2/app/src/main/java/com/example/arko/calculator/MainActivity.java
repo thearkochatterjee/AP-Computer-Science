@@ -19,39 +19,54 @@ public class MainActivity extends AppCompatActivity {
         TextView lblans = (TextView) findViewById(R.id.lblans);
         EditText txtnum1 = (EditText) findViewById(R.id.txtnum1);
         EditText txtnum2 = (EditText) findViewById(R.id.txtnum2);
-        double num1 = 0.0;
-        double num2 = 0.0;
-        double ans = 0.0;
-        num1 = Double.valueOf(txtnum1.getText().toString());
-        num2 = Double.valueOf(txtnum2.getText().toString());
-        ans = num1 + num2;
-        lblans.setText(String.valueOf(ans));
+        try {
+            double num1 = 0.0;
+            double num2 = 0.0;
+            double ans = 0.0;
+            num1 = Double.valueOf(txtnum1.getText().toString());
+            num2 = Double.valueOf(txtnum2.getText().toString());
+            ans = num1 + num2;
+            lblans.setText(String.valueOf(ans));
+        }
+        catch (Exception e){
+            lblans.setText("Input Numbers");
+        }
     }
 
     public void btnsubtractclick(View v){
         TextView lblans = (TextView) findViewById(R.id.lblans);
         EditText txtnum1 = (EditText) findViewById(R.id.txtnum1);
         EditText txtnum2 = (EditText) findViewById(R.id.txtnum2);
-        double num1 = 0.0;
-        double num2 = 0.0;
-        double ans = 0.0;
-        num1 = Double.valueOf(txtnum1.getText().toString());
-        num2 = Double.valueOf(txtnum2.getText().toString());
-        ans = num1 - num2;
-        lblans.setText(String.valueOf(ans));
+        try {
+            double num1 = 0.0;
+            double num2 = 0.0;
+            double ans = 0.0;
+            num1 = Double.valueOf(txtnum1.getText().toString());
+            num2 = Double.valueOf(txtnum2.getText().toString());
+            ans = num1 - num2;
+            lblans.setText(String.valueOf(ans));
+        }
+        catch (Exception e){
+            lblans.setText("Input Numbers");
+        }
     }
 
     public void btnmultiplyclick(View v){
         TextView lblans = (TextView) findViewById(R.id.lblans);
         EditText txtnum1 = (EditText) findViewById(R.id.txtnum1);
         EditText txtnum2 = (EditText) findViewById(R.id.txtnum2);
-        double num1 = 0.0;
-        double num2 = 0.0;
-        double ans = 0.0;
-        num1 = Double.valueOf(txtnum1.getText().toString());
-        num2 = Double.valueOf(txtnum2.getText().toString());
-        ans = num1 * num2;
-        lblans.setText(String.valueOf(ans));
+        try {
+            double num1 = 0.0;
+            double num2 = 0.0;
+            double ans = 0.0;
+            num1 = Double.valueOf(txtnum1.getText().toString());
+            num2 = Double.valueOf(txtnum2.getText().toString());
+            ans = num1 * num2;
+            lblans.setText(String.valueOf(ans));
+        }
+        catch (Exception e){
+            lblans.setText("Input Numbers");
+        }
     }
 
     public void btndivideclick(View v){
@@ -61,10 +76,15 @@ public class MainActivity extends AppCompatActivity {
         double num1 = 0.0;
         double num2 = 0.0;
         double ans = 0.0;
-        num1 = Double.valueOf(txtnum1.getText().toString());
-        num2 = Double.valueOf(txtnum2.getText().toString());
-        ans = num1 / num2;
-        lblans.setText(String.valueOf(ans));
+        try {
+            num1 = Double.valueOf(txtnum1.getText().toString());
+            num2 = Double.valueOf(txtnum2.getText().toString());
+            ans = num1 / num2;
+            lblans.setText(String.valueOf(ans));
+        }
+        catch (Exception e){
+            lblans.setText("Divide by Zero Error");
+        }
     }
 
     public void btnclearclock(View v){
@@ -80,36 +100,85 @@ public class MainActivity extends AppCompatActivity {
         TextView lblans = (TextView) findViewById(R.id.lblans);
         EditText txtnum1 = (EditText) findViewById(R.id.txtnum1);
         EditText txtnum2 = (EditText) findViewById(R.id.txtnum2);
-        double num1 = 0.0;
-        double num2 = 0.0;
-        double ans = 0.0;
-        num1 = Double.valueOf(txtnum1.getText().toString());
-        num2 = Double.valueOf(txtnum2.getText().toString());
-        ans = Math.pow(num1,num2);
-        lblans.setText(String.valueOf(ans));
+        try {
+            double num1 = 0.0;
+            double num2 = 0.0;
+            double ans = 0.0;
+            num1 = Double.valueOf(txtnum1.getText().toString());
+            num2 = Double.valueOf(txtnum2.getText().toString());
+            ans = Math.pow(num1, num2);
+            lblans.setText(String.valueOf(ans));
+        }
+        catch (Exception e){
+            lblans.setText("Input Numbers");
+        }
     }
 
     public void topfact(View v){
         TextView lblans = (TextView) findViewById(R.id.lblans);
         EditText txtnum1 = (EditText) findViewById(R.id.txtnum1);
-        double num1 = 0.0;
-        double ans = 1.0;
-        num1 = Double.valueOf(txtnum1.getText().toString());
-        for(int i = 1;i<=num1;i++){
-            ans *= i;
+        try {
+            double num1 = 0.0;
+            double ans = 1.0;
+            num1 = Double.valueOf(txtnum1.getText().toString());
+            for (int i = 1; i <= num1; i++) {
+                ans *= i;
+            }
+            lblans.setText(String.valueOf(ans));
         }
-        lblans.setText(String.valueOf(ans));
+        catch (Exception e){
+            lblans.setText("Input Numbers");
+        }
     }
 
     public void botfact(View v){
         TextView lblans = (TextView) findViewById(R.id.lblans);
         EditText txtnum2 = (EditText) findViewById(R.id.txtnum2);
-        double num2 = 0.0;
-        double ans = 1.0;
-        num2 = Double.valueOf(txtnum2.getText().toString());
-        for(int i = 1;i<=num2;i++){
-            ans *= i;
+        try {
+            double num2 = 0.0;
+            double ans = 1.0;
+            num2 = Double.valueOf(txtnum2.getText().toString());
+            for (int i = 1; i <= num2; i++) {
+                ans *= i;
+            }
+            lblans.setText(String.valueOf(ans));
         }
-        lblans.setText(String.valueOf(ans));
+        catch (Exception e){
+            lblans.setText("Input Numbers");
+        }
+    }
+
+    public void sumtop(View v){
+        TextView lblans = (TextView) findViewById(R.id.lblans);
+        EditText txtnum1 = (EditText) findViewById(R.id.txtnum1);
+        try {
+            double num1 = 0.0;
+            double ans = 0.0;
+            num1 = Double.valueOf(txtnum1.getText().toString());
+            for (int i = 0; i <= num1; i++) {
+                ans += i;
+            }
+            lblans.setText(String.valueOf(ans));
+        }
+        catch (Exception e){
+            lblans.setText("Input Numbers");
+        }
+    }
+
+    public void sumbot(View v){
+        TextView lblans = (TextView) findViewById(R.id.lblans);
+        EditText txtnum2 = (EditText) findViewById(R.id.txtnum2);
+        try {
+            double num2 = 0.0;
+            double ans = 0.0;
+            num2 = Double.valueOf(txtnum2.getText().toString());
+            for (int i = 0; i <= num2; i++) {
+                ans += i;
+            }
+            lblans.setText(String.valueOf(ans));
+        }
+        catch (Exception e){
+            lblans.setText("Input Numbers");
+        }
     }
 }
