@@ -49,13 +49,13 @@ public class PictureTester
   public static void testEdgeDetection()
   {
     Picture swan = new Picture("src/swan.jpg");
-    swan.edgeDetection(10);
+    swan.edgeDetection(25);
     swan.explore();
   }
 
   public static void testEdgeDetection2(){
       Picture swan = new Picture("src/swan.jpg");
-      swan.edgedetection2(10);
+      swan.edgedetection2(25);
       swan.explore();
   }
 
@@ -181,9 +181,9 @@ public class PictureTester
 //    testMirrorGull();
 //    testMirrorDiagonal();
 //    testMirrorTemple();
-    testCollage();
-    testCopy();
-    testCopy2();
+//    testCollage();
+//    testCopy();
+//    testCopy2();
 //    testEdgeDetection();
 //    testEdgeDetection2();
 //    testChromakey();
